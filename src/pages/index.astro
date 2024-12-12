@@ -26,7 +26,7 @@ import Layout from '../layouts/Layout.astro';
 			>
 				<!-- Item 1 -->
 				<div
-					class="absolute duration-1000 ease-in-out mt-32"
+					class="absolute duration-1000 ease-in-out mt-11"
 					data-carousel-item
 				>
 					<div class="relative">
@@ -44,7 +44,7 @@ import Layout from '../layouts/Layout.astro';
 				</div>
 				<!-- Item 2 -->
 				<div
-					class="hidden duration-1000 ease-in-out mt-32"
+					class="hidden duration-1000 ease-in-out mt-11"
 					data-carousel-item
 				>
 					<div class="relative">
@@ -62,7 +62,7 @@ import Layout from '../layouts/Layout.astro';
 				</div>
 				<!-- Item 3 -->
 				<div
-					class="hidden duration-1000 ease-in-out mt-32"
+					class="hidden duration-1000 ease-in-out mt-11"
 					data-carousel-item
 				>
 					<div class="relative">
@@ -80,7 +80,7 @@ import Layout from '../layouts/Layout.astro';
 				</div>
 				<!-- Item 4 -->
 				<div
-					class="hidden duration-1000 ease-in-out mt-32"
+					class="hidden duration-1000 ease-in-out mt-11"
 					data-carousel-item
 				>
 					<div class="relative">
@@ -98,7 +98,7 @@ import Layout from '../layouts/Layout.astro';
 				</div>
 				<!-- Item 5 -->
 				<div
-					class="hidden duration-1000 ease-in-out mt-32"
+					class="hidden duration-1000 ease-in-out mt-11"
 					data-carousel-item
 				>
 					<div class="relative">
@@ -116,7 +116,7 @@ import Layout from '../layouts/Layout.astro';
 				</div>
 				<!-- Item 6 -->
 				<div
-					class="hidden duration-1000 ease-in-out mt-32"
+					class="hidden duration-1000 ease-in-out mt-11"
 					data-carousel-item
 				>
 					<div class="relative">
@@ -436,7 +436,7 @@ import Layout from '../layouts/Layout.astro';
 	<div class="grid grid-cols-1  md:grid-cols-3 gap-6 ">
 	
 	  <!-- Card 1 -->
-	  <div class="max-w-80 bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden relative ">
+	  <div class="max-w-80 bg-white  rounded-lg shadow-lg overflow-hidden relative ">
 		<a href="#">
 		  <img class="rounded-t-lg w-full object-cover h-80 inset-0" src="https://picsum.photos/300/200" alt="Card image" />
 		</a>
@@ -483,7 +483,7 @@ import Layout from '../layouts/Layout.astro';
 	  </div>
   
 	  <!-- Card 2 -->
-	  <div class="max-w-80 bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden relative">
+	  <div class="max-w-80 bg-white rounded-lg shadow-lg overflow-hidden relative">
 		<a href="#">
 		  <img class="rounded-t-lg w-full object-cover h-80 inset-0" src="https://picsum.photos/300/200" alt="Card image" />
 		</a>
@@ -530,7 +530,7 @@ import Layout from '../layouts/Layout.astro';
 	  </div>
   
 	  <!-- Card 3 -->
-	  <div class="max-w-80 bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden relative">
+	  <div class="max-w-80 bg-white  rounded-lg shadow-lg overflow-hidden relative">
 		<a href="#">
 		  <img class="rounded-t-lg w-full object-cover h-80 inset-0" src="https://picsum.photos/300/200" alt="Card image" />
 		</a>
@@ -577,7 +577,7 @@ import Layout from '../layouts/Layout.astro';
 	  </div>
   
 	  <!-- Repeat Cards for Row 2 -->
-	  <div class="max-w-80 bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden relative">
+	  <div class="max-w-80 bg-white  rounded-lg shadow-lg overflow-hidden relative">
 		<a href="#">
 		  <img class="rounded-t-lg w-full object-cover h-80 inset-0" src="https://picsum.photos/300/200" alt="Card image" />
 		</a>
@@ -623,7 +623,7 @@ import Layout from '../layouts/Layout.astro';
 		</div>
 	  </div>
   
-	  <div class="max-w-80 bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden relative">
+	  <div class="max-w-80 bg-white rounded-lg shadow-lg overflow-hidden relative">
 		<a href="#">
 		  <img class="rounded-t-lg w-full object-cover h-80 inset-0" src="https://picsum.photos/300/200" alt="Card image" />
 		</a>
@@ -669,7 +669,7 @@ import Layout from '../layouts/Layout.astro';
 		</div>
 	  </div>
 	  
-	  <div class="max-w-80 bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden relative">
+	  <div class="max-w-80 bg-white rounded-lg shadow-lg overflow-hidden relative">
 		<a href="#">
 		  <img class="rounded-t-lg w-full object-cover h-80 inset-0" src="https://picsum.photos/300/200" alt="Card image" />
 		</a>
@@ -1039,54 +1039,58 @@ import Layout from '../layouts/Layout.astro';
   </div>
   
   <div class="container mx-auto mt-20 mb-11">
-	<div class="row flex justify-center ">
-		<iframe width="1100" height="600" 
-		    src="https://www.youtube.com/embed/Pt-HX0iSOuA?si=tg9LSkohDRH4KwIe" 
-		    title="YouTube video player" frameborder="0" 
-		    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-		    referrerpolicy="strict-origin-when-cross-origin"
-		    allowfullscreen>
-		</iframe>
-	</div>
-  </div>
+    <div class="row flex justify-center">
+        <!-- Wrapper for Responsive iframe -->
+        <div class="relative pb-[56.25%] w-full max-w-full">
+            <iframe 
+                src="https://www.youtube.com/embed/Pt-HX0iSOuA?si=tg9LSkohDRH4KwIe" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+                class="absolute inset-0 w-full h-full">
+            </iframe>
+        </div>
+    </div>
+</div>
+
   
-  <div class="container mx-auto mt-24 ">
-    <div class="row flex mx-auto justify-center items-center gap-24">
+<div class="container mx-auto mt-24">
+    <div class="row  mx-auto grid grid-cols-2 md:grid-cols-4 justify-center items-center gap-12 sm:gap-16 md:gap-24">
         <!-- Water Project -->
         <div class="flex flex-col items-center text-center">
-            <p class=" ">
+            <p>
                 <svg xmlns="http://www.w3.org/2000/svg"
-				  width="99" height="99"
-				  class="fill-maroon hover:fill-customBeige duration-300"
-				  viewBox="0 0 512 512">
-				<path d="M224 0c17.7 0 32 14.3 32 32l0 12 96-12c17.7 0 32 14.3 32 32s-14.3 32-32 32L256 84l-31-3.9-1-.1-1 .1L192 84 96 96C78.3 96 64 81.7 64 64s14.3-32 32-32l96 12 0-12c0-17.7 14.3-32 32-32zM0 224c0-17.7 14.3-32 32-32l96 0 22.6-22.6c6-6 14.1-9.4 22.6-9.4l18.7 0 0-43.8 32-4 32 4 0 43.8 18.7 0c8.5 0 16.6 3.4 22.6 9.4L320 192l32 0c88.4 0 160 71.6 160 160c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32s-14.3-32-32-32l-36.1 0c-20.2 29-53.9 48-91.9 48s-71.7-19-91.9-48L32 320c-17.7 0-32-14.3-32-32l0-64zM436.8 423.4c1.9-4.5 6.3-7.4 11.2-7.4s9.2 2.9 11.2 7.4l18.2 42.4c1.8 4.1 2.7 8.6 2.7 13.1l0 1.2c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-1.2c0-4.5 .9-8.9 2.7-13.1l18.2-42.4z"/>
-			</svg>
-
+                    class="fill-maroon hover:fill-customBeige duration-300 w-24 md:w-32"
+                    viewBox="0 0 512 512">
+                    <path d="M224 0c17.7 0 32 14.3 32 32l0 12 96-12c17.7 0 32 14.3 32 32s-14.3 32-32 32L256 84l-31-3.9-1-.1-1 .1L192 84 96 96C78.3 96 64 81.7 64 64s14.3-32 32-32l96 12 0-12c0-17.7 14.3-32 32-32zM0 224c0-17.7 14.3-32 32-32l96 0 22.6-22.6c6-6 14.1-9.4 22.6-9.4l18.7 0 0-43.8 32-4 32 4 0 43.8 18.7 0c8.5 0 16.6 3.4 22.6 9.4L320 192l32 0c88.4 0 160 71.6 160 160c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32s-14.3-32-32-32l-36.1 0c-20.2 29-53.9 48-91.9 48s-71.7-19-91.9-48L32 320c-17.7 0-32-14.3-32-32l0-64zM436.8 423.4c1.9-4.5 6.3-7.4 11.2-7.4s9.2 2.9 11.2 7.4l18.2 42.4c1.8 4.1 2.7 8.6 2.7 13.1l0 1.2c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-1.2c0-4.5 .9-8.9 2.7-13.1l18.2-42.4z"/>
+                </svg>
             </p>
-            <p class="mt-6 ">
-
-                <span class="text-3xl font-semibold">302,800 + </span><br> <br>
+            <p class="mt-6">
+                <span class="text-3xl font-semibold">302,800 + </span><br><br>
                 People benefited <br>
                 from water <br>
                 project
             </p>
         </div>
-        
+
         <!-- Provided with Food -->
         <div class="flex flex-col items-center text-center">
-            <p class="">
-                <svg xmlns="http://www.w3.org/2000/svg" class="hover:stroke-customBeige duration-300"
-				    width="99" height="99" viewBox="0 0 24 24"
-				    fill="none" stroke="#7a132b" stroke-width="2"
-				    stroke-linecap="round" stroke-linejoin="round"
-				    class="lucide lucide-utensils">
-				    <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/>
-				    <path d="M7 2v20"/>
-				    <path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/>
-				</svg>
+            <p>
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    class="hover:stroke-customBeige duration-300 w-24 md:w-32"
+                    width="99" height="99" viewBox="0 0 24 24"
+                    fill="none" stroke="#7a132b" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-utensils">
+                    <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/>
+                    <path d="M7 2v20"/>
+                    <path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/>
+                </svg>
             </p>
             <p class="mt-6">
-                <span class="text-3xl  font-semibold ">282,000 + </span> <br> <br>
+                <span class="text-3xl font-semibold">282,000 + </span><br><br>
                 People provided <br>
                 with food
             </p>
@@ -1094,17 +1098,16 @@ import Layout from '../layouts/Layout.astro';
 
         <!-- Masjid Project -->
         <div class="flex flex-col items-center text-center">
-            <p class="">
-                <svg xmlns="http://www.w3.org/2000/svg" 
-				class="hover:fill-customBeige fill-maroon duration-300"
-				width="99" height="99"
-				viewBox="0 0 640 512">
-				
-				<path d="M400 0c5 0 9.8 2.4 12.8 6.4c34.7 46.3 78.1 74.9 133.5 111.5c0 0 0 0 0 0s0 0 0 0c5.2 3.4 10.5 7 16 10.6c28.9 19.2 45.7 51.7 45.7 86.1c0 28.6-11.3 54.5-29.8 73.4l-356.4 0c-18.4-19-29.8-44.9-29.8-73.4c0-34.4 16.7-66.9 45.7-86.1c5.4-3.6 10.8-7.1 16-10.6c0 0 0 0 0 0s0 0 0 0C309.1 81.3 352.5 52.7 387.2 6.4c3-4 7.8-6.4 12.8-6.4zM288 512l0-72c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 72-48 0c-17.7 0-32-14.3-32-32l0-128c0-17.7 14.3-32 32-32l416 0c17.7 0 32 14.3 32 32l0 128c0 17.7-14.3 32-32 32l-48 0 0-72c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 72-64 0 0-58c0-19-8.4-37-23-49.2L400 384l-25 20.8C360.4 417 352 435 352 454l0 58-64 0zM70.4 5.2c5.7-4.3 13.5-4.3 19.2 0l16 12C139.8 42.9 160 83.2 160 126l0 2L0 128l0-2C0 83.2 20.2 42.9 54.4 17.2l16-12zM0 160l160 0 0 136.6c-19.1 11.1-32 31.7-32 55.4l0 128c0 9.6 2.1 18.6 5.8 26.8c-6.6 3.4-14 5.2-21.8 5.2l-64 0c-26.5 0-48-21.5-48-48L0 176l0-16z"/>
-			</svg>
+            <p>
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    class="hover:fill-customBeige fill-maroon duration-300 w-24 md:w-32"
+                    width="99" height="99"
+                    viewBox="0 0 640 512">
+                    <path d="M400 0c5 0 9.8 2.4 12.8 6.4c34.7 46.3 78.1 74.9 133.5 111.5c0 0 0 0 0 0s0 0 0 0c5.2 3.4 10.5 7 16 10.6c28.9 19.2 45.7 51.7 45.7 86.1c0 28.6-11.3 54.5-29.8 73.4l-356.4 0c-18.4-19-29.8-44.9-29.8-73.4c0-34.4 16.7-66.9 45.7-86.1c5.4-3.6 10.8-7.1 16-10.6c0 0 0 0 0 0s0 0 0 0C309.1 81.3 352.5 52.7 387.2 6.4c3-4 7.8-6.4 12.8-6.4zM288 512l0-72c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 72-48 0c-17.7 0-32-14.3-32-32l0-128c0-17.7 14.3-32 32-32l416 0c17.7 0 32 14.3 32 32l0 128c0 17.7-14.3 32-32 32l-48 0 0-72c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 72-64 0 0-58c0-19-8.4-37-23-49.2L400 384l-25 20.8C360.4 417 352 435 352 454l0 58-64 0zM70.4 5.2c5.7-4.3 13.5-4.3 19.2 0l16 12C139.8 42.9 160 83.2 160 126l0 2L0 128l0-2C0 83.2 20.2 42.9 54.4 17.2l16-12zM0 160l160 0 0 136.6c-19.1 11.1-32 31.7-32 55.4l0 128c0 9.6 2.1 18.6 5.8 26.8c-6.6 3.4-14 5.2-21.8 5.2l-64 0c-26.5 0-48-21.5-48-48L0 176l0-16z"/>
+                </svg>
             </p>
             <p class="mt-6">
-                 <span class="text-3xl  font-semibold">26,300 +</span> <br> <br>
+                <span class="text-3xl font-semibold">26,300 +</span><br><br>
                 Beneficiaries of <br>
                 Masjid Project
             </p>
@@ -1112,267 +1115,219 @@ import Layout from '../layouts/Layout.astro';
 
         <!-- Eye Care -->
         <div class="flex flex-col items-center text-center">
-            <p class="">
+            <p>
                 <svg xmlns="http://www.w3.org/2000/svg"
-				class="hover:fill-customBeige fill-maroon duration-300" 
-				width="99" height="99"
-				viewBox="0 0 576 512">
-				<path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM144 256a144 144 0 1 1 288 0 144 144 0 1 1 -288 0zm144-64c0 35.3-28.7 64-64 64c-7.1 0-13.9-1.2-20.3-3.3c-5.5-1.8-11.9 1.6-11.7 7.4c.3 6.9 1.3 13.8 3.2 20.7c13.7 51.2 66.4 81.6 117.6 67.9s81.6-66.4 67.9-117.6c-11.1-41.5-47.8-69.4-88.6-71.1c-5.8-.2-9.2 6.1-7.4 11.7c2.1 6.4 3.3 13.2 3.3 20.3z"/>
-				</svg>
+                    class="hover:fill-customBeige fill-maroon duration-300 w-24 md:w-32"
+                    width="99" height="99"
+                    viewBox="0 0 576 512">
+                    <path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM144 256a144 144 0 1 1 288 0 144 144 0 1 1 -288 0zm144-64c0 35.3-28.7 64-64 64c-7.1 0-13.9-1.2-20.3-3.3c-5.5-1.8-11.9 1.6-11.7 7.4c.3 6.9 1.3 13.8 3.2 20.7c13.7 51.2 66.4 81.6 117.6 67.9s81.6-66.4 67.9-117.6c-11.1-41.5-47.8-69.4-88.6-71.1c-5.8-.2-9.2 6.1-7.4 11.7c2.1 6.4 3.3 13.2 3.3 20.3z"/>
+                </svg>
             </p>
             <p class="mt-6">
-                <span class="text-3xl   font-semibold ">40,000 +</span>   <br> <br>
+                <span class="text-3xl font-semibold">40,000 +</span><br><br>
                 Beneficiaries of <br>
                 Eye Care
             </p>
         </div>
     </div>
 </div>
+
 <!-- +++++++++++++++++++++++++++++++Ongoing Appeals+++++++++++++++++++++++++++++++ -->
 <!--  -->
-<div class="container mx-auto mt-24 mb-10">
-    <div class="row flex gap-3 overflow-x-auto overflow-y-hidden ">
+<div class="container mx-auto mt-24 ">
+    <div class="row flex gap-3 overflow-x-auto overflow-y-hidden">
         <!-- Image 1 -->
-		<div class="max-w-xs bg-white rounded-lg shadow-lg overflow-hidden relative flex-shrink-0">
-			<a href="#">
-			  <img class="rounded-t-lg w-full object-cover h-80 inset-0" src="https://picsum.photos/300/200" alt="Card image" />
-			</a>
-			<div class="p-5">
-			  <p class="flex items-center justify-center mt-1">
-				<a href="#" class="px-4 py-1 inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
-				 DONATE NOW
-				</a>
-			  </p>
-			  <p class="text-center ">
-				<a class="text-center mt-3" href="">Water Hand Pump</a>
-			  </p>
-			</div>
-		  </div>
-   
-        <!-- Image 2 -->
-	
-		<div class="max-w-xs bg-white rounded-lg shadow-lg overflow-hidden relative flex-shrink-0">
-			<a href="#">
-			  <img class="rounded-t-lg w-full object-cover h-80 inset-0" src="https://picsum.photos/300/200" alt="Card image" />
-			</a>
-			<div class="p-5">
-			  <p class="flex items-center justify-center mt-6">
-				<a href="#" class="px-4 py-2 inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
-				  DONATE NOW
-				</a>
-			  </p>
-			  <p class="text-center">
-				<a class="text-center" href="">Water Well</a>
-			  </p>
-			</div>
-		  </div>
+        <div class="max-w-xs md:max-w-xs bg-white rounded-lg shadow-lg overflow-hidden relative flex-shrink-0">
+            <a href="#">
+                <img class="rounded-t-lg w-full object-cover h-80 inset-0" src="https://picsum.photos/300/200" alt="Card image" />
+            </a>
+            <div class="p-5">
+                <p class="flex items-center justify-center mt-6">
+                    <a href="#" class="px-4 py-2 inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
+                        DONATE NOW
+                    </a>
+                </p>
+                <p class="text-center">
+                    <a class="text-center" href="">Build a Musjid</a>
+                </p>
+            </div>
+        </div>
 
-        <!-- Image 3 -->  	
-		<div class="max-w-xs bg-white rounded-lg shadow-lg overflow-hidden relative flex-shrink-0">
-			<a href="#">
-			  <img class="rounded-t-lg w-full object-cover h-80 inset-0" src="https://picsum.photos/300/200" alt="Card image" />
-			</a>
-			<div class="p-5">
-			  <p class="flex items-center justify-center mt-6">
-				<a href="#" class="px-4 py-2 inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
-				  DONATE NOW 
-				</a>
-			  </p>
-			  <p class="text-center">
-				<a class="text-center" href="">Rickshaw</a>
-			  </p>
-			</div>
-		  </div>
+        <!-- Image 2 -->
+		<div class="max-w-xs md:max-w-xs bg-white rounded-lg shadow-lg overflow-hidden relative flex-shrink-0">
+            <a href="#">
+                <img class="rounded-t-lg w-full object-cover h-80 inset-0" src="https://picsum.photos/300/200" alt="Card image" />
+            </a>
+            <div class="p-5">
+                <p class="flex items-center justify-center mt-6">
+                    <a href="#" class="px-4 py-2 inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
+                        DONATE NOW
+                    </a>
+                </p>
+                <p class="text-center">
+                    <a class="text-center" href="">Build a Musjid</a>
+                </p>
+            </div>
+        </div>
+
+        <!-- Image 3 -->
+       <div class="max-w-xs md:max-w-xs bg-white rounded-lg shadow-lg overflow-hidden relative flex-shrink-0">
+            <a href="#">
+                <img class="rounded-t-lg w-full object-cover h-80 inset-0" src="https://picsum.photos/300/200" alt="Card image" />
+            </a>
+            <div class="p-5">
+                <p class="flex items-center justify-center mt-6">
+                    <a href="#" class="px-4 py-2 inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
+                        DONATE NOW
+                    </a>
+                </p>
+                <p class="text-center">
+                    <a class="text-center" href="">Build a Musjid</a>
+                </p>
+            </div>
+        </div>
 
         <!-- Image 4 -->
-		<div class="max-w-xs bg-white rounded-lg shadow-lg overflow-hidden relative flex-shrink-0">
-			<a href="#">
-			  <img class="rounded-t-lg w-full object-cover h-80 inset-0" src="https://picsum.photos/300/200" alt="Card image" />
-			</a>
-			<div class="p-5">
-			  <p class="flex items-center justify-center mt-6">
-				<a href="#" class="px-4 py-2 inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
-				  DONATE NOW
-				</a>
-			  </p>
-			  <p class="text-center">
-				<a class="text-center" href="">Sewing Machine</a>
-			  </p>
-			</div>
-		  </div>
+        <div class="max-w-xs md:max-w-xs bg-white rounded-lg shadow-lg overflow-hidden relative flex-shrink-0">
+            <a href="#">
+                <img class="rounded-t-lg w-full object-cover h-80 inset-0" src="https://picsum.photos/300/200" alt="Card image" />
+            </a>
+            <div class="p-5">
+                <p class="flex items-center justify-center mt-6">
+                    <a href="#" class="px-4 py-2 inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
+                        DONATE NOW
+                    </a>
+                </p>
+                <p class="text-center">
+                    <a class="text-center" href="">Build a Musjid</a>
+                </p>
+            </div>
+        </div>
 
         <!-- Image 5 -->
-
-		<div class="max-w-xs bg-white rounded-lg shadow-lg overflow-hidden relative flex-shrink-0">
-			<a href="#">
-			  <img class="rounded-t-lg w-full object-cover h-80 inset-0" src="https://picsum.photos/300/200" alt="Card image" />
-			</a>
-			<div class="p-5">
-			  <p class="flex items-center justify-center mt-6">
-				<a href="#" class="px-4 py-2 inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
-				 DONATE NOW 
-				</a>
-			  </p>
-			  <p class="text-center">
-				<a class="text-center" href="">Eye Camp</a>
-			  </p>
-			</div>
-		  </div>
+		<div class="max-w-xs md:max-w-xs bg-white rounded-lg shadow-lg overflow-hidden relative flex-shrink-0">
+            <a href="#">
+                <img class="rounded-t-lg w-full object-cover h-80 inset-0" src="https://picsum.photos/300/200" alt="Card image" />
+            </a>
+            <div class="p-5">
+                <p class="flex items-center justify-center mt-6">
+                    <a href="#" class="px-4 py-2 inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
+                        DONATE NOW
+                    </a>
+                </p>
+                <p class="text-center">
+                    <a class="text-center" href="">Build a Musjid</a>
+                </p>
+            </div>
+        </div>
 
         <!-- Image 6 -->
-		
-		<div class="max-w-xs bg-white rounded-lg shadow-lg overflow-hidden relative flex-shrink-0">
-			<a href="#">
-			  <img class="rounded-t-lg w-full object-cover h-80 inset-0" src="https://picsum.photos/300/200" alt="Card image" />
-			</a>
-			<div class="p-5">
-			  <p class="flex items-center justify-center mt-6">
-				<a href="#" class="px-4 py-2 inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
-				  DONATE NOW
-				</a>
-			  </p>
-			  <p class="text-center">
-				<a class="text-center" href="">Eye Surgery</a>
-			  </p>
-			</div>
-		  </div>
+        <div class="max-w-xs md:max-w-xs bg-white rounded-lg shadow-lg overflow-hidden relative flex-shrink-0">
+            <a href="#">
+                <img class="rounded-t-lg w-full object-cover h-80 inset-0" src="https://picsum.photos/300/200" alt="Card image" />
+            </a>
+            <div class="p-5">
+                <p class="flex items-center justify-center mt-6">
+                    <a href="#" class="px-4 py-2 inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
+                        DONATE NOW
+                    </a>
+                </p>
+                <p class="text-center">
+                    <a class="text-center" href="">Build a Musjid</a>
+                </p>
+            </div>
+        </div>
 
         <!-- Image 7 -->
-			
-		<div class="max-w-xs bg-white rounded-lg shadow-lg overflow-hidden relative flex-shrink-0">
-			<a href="#">
-			  <img class="rounded-t-lg w-full object-cover h-80 inset-0" src="https://picsum.photos/300/200" alt="Card image" />
-			</a>
-			<div class="p-5">
-			  <p class="flex items-center justify-center mt-6">
-				<a href="#" class="px-4 py-2 inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
-				  DONATE NOW 
-				</a>
-			  </p>
-			  <p class="text-center">
-				<a class="text-center" href="">Food Pack</a>
-			  </p>
-			</div>
-		  </div>
+        <div class="max-w-xs md:max-w-xs bg-white rounded-lg shadow-lg overflow-hidden relative flex-shrink-0">
+            <a href="#">
+                <img class="rounded-t-lg w-full object-cover h-80 inset-0" src="https://picsum.photos/300/200" alt="Card image" />
+            </a>
+            <div class="p-5">
+                <p class="flex items-center justify-center mt-6">
+                    <a href="#" class="px-4 py-2 inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
+                        DONATE NOW
+                    </a>
+                </p>
+                <p class="text-center">
+                    <a class="text-center" href="">Build a Musjid</a>
+                </p>
+            </div>
+        </div>
 
         <!-- Image 8 -->
-        
-		<div class="max-w-xs bg-white rounded-lg shadow-lg overflow-hidden relative flex-shrink-0">
-			<a href="#">
-			  <img class="rounded-t-lg w-full object-cover h-80 inset-0" src="https://picsum.photos/300/200" alt="Card image" />
-			</a>
-			<div class="p-5">
-			  <p class="flex items-center justify-center mt-6">
-				<a href="#" class="px-4 py-2 inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
-				  DONATE NOW
-				</a>
-			  </p>
-			  <p class="text-center">
-				<a class="text-center" href="">Cooked Food</a>
-			  </p>
-			</div>
-		  </div>
+		<div class="max-w-xs md:max-w-xs bg-white rounded-lg shadow-lg overflow-hidden relative flex-shrink-0">
+            <a href="#">
+                <img class="rounded-t-lg w-full object-cover h-80 inset-0" src="https://picsum.photos/300/200" alt="Card image" />
+            </a>
+            <div class="p-5">
+                <p class="flex items-center justify-center mt-6">
+                    <a href="#" class="px-4 py-2 inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
+                        DONATE NOW
+                    </a>
+                </p>
+                <p class="text-center">
+                    <a class="text-center" href="">Build a Musjid</a>
+                </p>
+            </div>
+        </div>
 
         <!-- Image 9 -->
-	
-		<div class="max-w-xs bg-white rounded-lg shadow-lg overflow-hidden relative flex-shrink-0">
-			<a href="#">
-			  <img class="rounded-t-lg w-full object-cover h-80 inset-0" src="https://picsum.photos/300/200" alt="Card image" />
-			</a>
-			<div class="p-5">
-			  <p class="flex items-center justify-center mt-6">
-				<a href="#" class="px-4 py-2 inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
-				 DONATE NOW 
-				</a>
-			  </p>
-			  <p class="text-center">
-				<a class="text-center" href="">Support A Maktab Monthly</a>
-			  </p>
-			</div>
-		  </div>
+		<div class="max-w-xs md:max-w-xs bg-white rounded-lg shadow-lg overflow-hidden relative flex-shrink-0">
+            <a href="#">
+                <img class="rounded-t-lg w-full object-cover h-80 inset-0" src="https://picsum.photos/300/200" alt="Card image" />
+            </a>
+            <div class="p-5">
+                <p class="flex items-center justify-center mt-6">
+                    <a href="#" class="px-4 py-2 inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
+                        DONATE NOW
+                    </a>
+                </p>
+                <p class="text-center">
+                    <a class="text-center" href="">Build a Musjid</a>
+                </p>
+            </div>
+        </div>
 
         <!-- Image 10 -->
-        
-		<div class="max-w-xs bg-white rounded-lg shadow-lg overflow-hidden relative flex-shrink-0">
-			<a href="#">
-			  <img class="rounded-t-lg w-full object-cover h-80 inset-0" src="https://picsum.photos/300/200" alt="Card image" />
-			</a>
-			<div class="p-5">
-			  <p class="flex items-center justify-center mt-6">
-				<a href="#" class="px-4 py-2 inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
-				  DONATE NOW 
-				</a>
-			  </p>
-			  <p class="text-center">
-				<a class="text-center" href="">Bulid a Musjid</a>
-			  </p>
-			</div>
-		  </div>
+        <div class="max-w-xs md:max-w-xs bg-white rounded-lg shadow-lg overflow-hidden relative flex-shrink-0">
+            <a href="#">
+                <img class="rounded-t-lg w-full object-cover h-80 inset-0" src="https://picsum.photos/300/200" alt="Card image" />
+            </a>
+            <div class="p-5">
+                <p class="flex items-center justify-center mt-6">
+                    <a href="#" class="px-4 py-2 inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
+                        DONATE NOW
+                    </a>
+                </p>
+                <p class="text-center">
+                    <a class="text-center" href="">Build a Musjid</a>
+                </p>
+            </div>
+		</div>
+	</div>
+  </div>
+</div>
 
-		  <div class="max-w-xs bg-white rounded-lg shadow-lg overflow-hidden relative flex-shrink-0">
-			<a href="#">
-			  <img class="rounded-t-lg w-full object-cover h-80 inset-0" src="https://icharms.alwahabfoundation.org/storage/program_rate/fLp6DBCdbq80EYbuq0PaioBt0NMiNNB93AaXnYhY.jpgg " alt="Card image" />
-			</a>
-			<div class="p-5">
-			  <p class="flex items-center justify-center mt-6">
-				<a href="#" class="px-4 py-2 inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
-				  DONATE NOW 
-				</a>
-			  </p>
-			  <p class="text-center">
-				<a class="text-center" href="">Musallah</a>
-			  </p>
-			</div>
-		  </div>
+<div class="container">
+<p class="mt-11 flex justify-center">
+	<a class="py-2 px-6 bg-maroon text-white hover:bg-customBeige rounded-full font-semibold text-2xl" href="">VIEW ALL APPEALS</a>
+ </p>
+</div>
 
-		  <div class="max-w-xs bg-white rounded-lg shadow-lg overflow-hidden relative flex-shrink-0">
-			<a href="#">
-			  <img class="rounded-t-lg w-full object-cover h-80 inset-0" src="https://icharms.alwahabfoundation.org/storage/program_rate/vL1BkFdQmC9ru0F9CyKpyAzQQPidKLZSg3RtsOU2.jpg" alt="Card image" />
-			</a>
-			<div class="p-5">
-			  <p class="flex items-center justify-center mt-6">
-				<a href="#" class="px-4 py-2 inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
-				  DONATE NOW 
-				</a>
-			  </p>
-			  <p class="text-center">
-				<a class="text-center" href="">Sadaqah</a>
-			  </p>
-			</div>
-		  </div>
-
-		  <div class="max-w-xs bg-white rounded-lg shadow-lg overflow-hidden relative flex-shrink-0">
-			<a href="#">
-			  <img class="rounded-t-lg w-full object-cover h-80 inset-0" src="https://icharms.alwahabfoundation.org/storage/program/ctw0fhWZ2O0k8bYgJOzd5GfUgHNTmhWkQn3HHNGk.jpg" alt="Card image" />
-			</a>
-			<div class="p-5">
-			  <p class="flex items-center justify-center mt-6">
-				<a href="#" class="px-4 py-2 inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
-				  DONATE NOW 
-				</a>
-			  </p>
-			  <p class="text-center">
-				<a class="text-center" href="">Zakat</a>
-			  </p>
-			</div>
-		  </div>
-
-		  <div class="max-w-xs bg-white rounded-lg shadow-lg overflow-hidden relative flex-shrink-0">
-			<a href="#">
-			  <img class="rounded-t-lg w-full object-cover h-80 inset-0" src="https://icharms.alwahabfoundation.org/storage/program/E1f5Gyd4MIUANNg8Pvfdr0ITe69b4eBHAcLM1Wt4.jpg" alt="Card image" />
-			</a>
-			<div class="p-5">
-			  <p class="flex items-center justify-center mt-6">
-				<a href="#" class="px-4 py-2 inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
-				  DONATE NOW 
-				</a>
-			  </p>
-			  <p class="text-center">
-				<a class="text-center" href="">Where Most Needed</a>
-			  </p>
-			</div>
-		  </div>
-    </div>
+<div class="container">
+	<div class="row mt-20">
+		<p class="text-4xl text-maroon font-semibold text-center">Why Have We Rebranded?</p>
+		<p class="text-xl text-grey text-center">
+			<span class="text-grey font-semibold">Ummah Charity International</span>is now <span class="text-grey font-semibold">Al-Wahab Foundation.</span> We have <span class="text-grey font-semibold">rebranded </span>to <br/>
+			create a new, stronger identity for the organisation. This decision was taken after <br/>
+			careful deliberation by our board of trustees and senior staff, the goal being to create <br/>
+			a new, stronger and bespoke identity for the organisation. We envision a world free of <br/>
+			poverty, and discrimination, where people can realise their potential and live with <br/>
+			peace and tranquillity. To learn more about our current changes, please read <br/>
+			<a class="text-maroon text-lg font-semibold hover:text-customBeige" href="">our rebranding journey.</a>
+		</p>
+	</div>
 </div>
 
 
