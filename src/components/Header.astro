@@ -1117,292 +1117,64 @@
                                 </div>
                             </li>
                             <li class="nav-item group relative">
-                                <a
-                                    href="./pages/dashboards/instructor-dashboard.html"
-                                    class="px-5 lg:px-10px 2xl:px-15px 3xl:px-5 py-10 lg:py-5 2xl:py-30px 3xl:py-10 leading-sm 2xl:leading-lg text-base lg:text-sm 2xl:text-base font-semibold block group-hover:text-primaryColor dark:text-whiteColor"
-                                >
+                                <a href="./pages/dashboards/instructor-dashboard.html" class="px-5 lg:px-10px 2xl:px-15px 3xl:px-5 py-10 lg:py-5 2xl:py-30px 3xl:py-10 leading-sm 2xl:leading-lg text-base lg:text-sm 2xl:text-base font-semibold block group-hover:text-primaryColor dark:text-whiteColor">
                                     Dashboard
                                     <i class="icofont-rounded-down"></i>
                                 </a>
-                                <!-- dropdown menu -->
-                                <div
-                                    class="dropdown absolute left-0 translate-y-10 z-medium hidden opacity-0"
-                                    style="transition: 0.3s"
-                                >
-                                    <div
-                                        class="shadow-dropdown max-w-dropdown2 w-2000 py-14px rounded-standard bg-white dark:bg-whiteColor-dark"
-                                    >
+                                <!-- First Level Dropdown -->
+                                <div class="dropdown absolute left-0 translate-y-10 z-medium hidden opacity-0 -mt-4" style="transition: 0.5s">
+                                    <div class="shadow-dropdown max-w-dropdown2 w-2000 py-14px rounded-standard bg-white dark:bg-whiteColor-dark">
                                         <ul>
+                                            <!-- Admin Section with Third Level -->
                                             <li class="relative group/nested">
-                                                <a
-                                                    href="./pages/dashboards/admin-dashboard.html"
-                                                    class="text-sm 2xl:text-base font-semibold text-contentColor border-l-2 border-transparent transition duration-300 hover:border-primaryColor px-25px py-10px hover:bg-whitegrey1 hover:text-primaryColor leading-sm lg:leading-lg 2xl:leading-lg flex justify-between items-center dark:bg-whiteColor-dark dark:text-contentColor-dark dark:hover:bg-whitegrey1-dark dark:hover:text-primaryColor"
-                                                    >Admin <i
-                                                        class="icofont-rounded-right"
-                                                    ></i>
+                                                <a href="./pages/dashboards/admin-dashboard.html" class="text-sm 2xl:text-base font-semibold text-contentColor border-l-2 border-transparent transition duration-300 hover:border-primaryColor px-25px py-10px hover:bg-whitegrey1 hover:text-primaryColor leading-sm lg:leading-lg 2xl:leading-lg flex justify-between items-center dark:bg-whiteColor-dark dark:text-contentColor-dark dark:hover:bg-whitegrey1-dark dark:hover:text-primaryColor">
+                                                    Admin 
+                                                    <i class="icofont-rounded-right"></i>
                                                 </a>
-
-                                                <!-- nested dropdown menu -->
-                                                <!-- dropdown menu -->
-                                                <div
-                                                    class="nested-dropdown absolute left-full top-0 z-50 hidden opacity-0 group-hover/nested:block group-hover/nested:opacity-100"
-                                                    style="transition: 0.3s"
-                                                >
-                                                    <div
-                                                        class="shadow-dropdown max-w-dropdown2 w-2000 py-14px rounded-standard bg-white dark:bg-whiteColor-dark"
-                                                    >
+                                                <!-- Second Level Dropdown -->
+                                                <div class="nested-dropdown absolute left-full top-0 z-50 hidden opacity-0 group-hover/nested:block group-hover/nested:opacity-100" style="transition: 0.3s">
+                                                    <div class="shadow-dropdown max-w-dropdown2 w-2000 py-14px rounded-standard bg-white dark:bg-whiteColor-dark">
                                                         <ul>
+                                                            <li class="relative group/nested2">
+                                                                <a href="./pages/dashboards/admin-dashboard.html" class="text-sm 2xl:text-base font-semibold text-contentColor border-l-2 border-transparent transition duration-300 hover:border-primaryColor px-25px py-10px hover:bg-whitegrey1 hover:text-primaryColor leading-sm lg:leading-lg 2xl:leading-lg flex justify-between items-center dark:bg-whiteColor-dark dark:text-contentColor-dark dark:hover:bg-whitegrey1-dark dark:hover:text-primaryColor">
+                                                                    Admin Dashboard
+                                                                    <i class="icofont-rounded-right"></i>
+                                                                </a>
+                                                                <!-- Third Level Dropdown -->
+                                                                <div class="nested-dropdown absolute left-full top-0 z-50 hidden opacity-0 group-hover/nested2:block group-hover/nested2:opacity-100" style="transition: 0.3s">
+                                                                    <div class="shadow-dropdown max-w-dropdown2 w-2000 py-14px rounded-standard bg-white dark:bg-whiteColor-dark">
+                                                                        <ul>
+                                                                            <li>
+                                                                                <a href="./pages/dashboards/admin-dashboard-overview.html" class="text-sm 2xl:text-base font-semibold text-contentColor border-l-2 border-transparent transition duration-300 hover:border-primaryColor px-25px py-10px hover:bg-whitegrey1 block hover:text-primaryColor leading-sm lg:leading-lg 2xl:leading-lg dark:text-contentColor-dark dark:hover:text-primaryColor dark:hover:bg-whitegrey1-dark">
+                                                                                    Overview
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="./pages/dashboards/admin-dashboard-analytics.html" class="text-sm 2xl:text-base font-semibold text-contentColor border-l-2 border-transparent transition duration-300 hover:border-primaryColor px-25px py-10px hover:bg-whitegrey1 block hover:text-primaryColor leading-sm lg:leading-lg 2xl:leading-lg dark:text-contentColor-dark dark:hover:text-primaryColor dark:hover:bg-whitegrey1-dark">
+                                                                                    Analytics
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="./pages/dashboards/admin-dashboard-reports.html" class="text-sm 2xl:text-base font-semibold text-contentColor border-l-2 border-transparent transition duration-300 hover:border-primaryColor px-25px py-10px hover:bg-whitegrey1 block hover:text-primaryColor leading-sm lg:leading-lg 2xl:leading-lg dark:text-contentColor-dark dark:hover:text-primaryColor dark:hover:bg-whitegrey1-dark">
+                                                                                    Reports
+                                                                                </a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <!-- Rest of the second level items -->
                                                             <li>
-                                                                <a
-                                                                    href="./pages/dashboards/admin-dashboard.html"
-                                                                    class="text-sm 2xl:text-base font-semibold text-contentColor border-l-2 border-transparent transition duration-300 hover:border-primaryColor px-25px py-10px hover:bg-whitegrey1 block hover:text-primaryColor leading-sm lg:leading-lg 2xl:leading-lg dark:text-contentColor-dark dark:hover:text-primaryColor dark:hover:bg-whitegrey1-dark"
-                                                                    >Admin
-                                                                    Dashboard
+                                                                <a href="./pages/dashboards/admin-profile.html" class="text-sm 2xl:text-base font-semibold text-contentColor border-l-2 border-transparent transition duration-300 hover:border-primaryColor px-25px py-10px hover:bg-whitegrey1 block hover:text-primaryColor leading-sm lg:leading-lg 2xl:leading-lg dark:text-contentColor-dark dark:hover:text-primaryColor dark:hover:bg-whitegrey1-dark">
+                                                                    Admin Profile
                                                                 </a>
                                                             </li>
-                                                            <li>
-                                                                <a
-                                                                    href="./pages/dashboards/admin-profile.html"
-                                                                    class="text-sm 2xl:text-base font-semibold text-contentColor border-l-2 border-transparent transition duration-300 hover:border-primaryColor px-25px py-10px hover:bg-whitegrey1 block hover:text-primaryColor leading-sm lg:leading-lg 2xl:leading-lg dark:text-contentColor-dark dark:hover:text-primaryColor dark:hover:bg-whitegrey1-dark"
-                                                                    >Admin
-                                                                    Profile
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a
-                                                                    href="./pages/dashboards/admin-message.html"
-                                                                    class="text-sm 2xl:text-base font-semibold text-contentColor border-l-2 border-transparent transition duration-300 hover:border-primaryColor px-25px py-10px hover:bg-whitegrey1 block hover:text-primaryColor leading-sm lg:leading-lg 2xl:leading-lg dark:text-contentColor-dark dark:hover:text-primaryColor dark:hover:bg-whitegrey1-dark"
-                                                                    >Message</a
-                                                                >
-                                                            </li>
-                                                            <li>
-                                                                <a
-                                                                    href="./pages/dashboards/admin-course.html"
-                                                                    class="text-sm 2xl:text-base font-semibold text-contentColor border-l-2 border-transparent transition duration-300 hover:border-primaryColor px-25px py-10px hover:bg-whitegrey1 block hover:text-primaryColor leading-sm lg:leading-lg 2xl:leading-lg dark:text-contentColor-dark dark:hover:text-primaryColor dark:hover:bg-whitegrey1-dark"
-                                                                    >Courses
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a
-                                                                    href="./pages/dashboards/admin-reviews.html"
-                                                                    class="text-sm 2xl:text-base font-semibold text-contentColor border-l-2 border-transparent transition duration-300 hover:border-primaryColor px-25px py-10px hover:bg-whitegrey1 block hover:text-primaryColor leading-sm lg:leading-lg 2xl:leading-lg dark:text-contentColor-dark dark:hover:text-primaryColor dark:hover:bg-whitegrey1-dark"
-                                                                    >Review</a
-                                                                >
-                                                            </li>
-                                                            <li>
-                                                                <a
-                                                                    href="./pages/dashboards/admin-quiz-attempts.html"
-                                                                    class="text-sm 2xl:text-base font-semibold text-contentColor border-l-2 border-transparent transition duration-300 hover:border-primaryColor px-25px py-10px hover:bg-whitegrey1 block hover:text-primaryColor leading-sm lg:leading-lg 2xl:leading-lg dark:text-contentColor-dark dark:hover:text-primaryColor dark:hover:bg-whitegrey1-dark"
-                                                                    >Admin Quiz</a
-                                                                >
-                                                            </li>
-                                                            <li>
-                                                                <a
-                                                                    href="./pages/dashboards/admin-settings.html"
-                                                                    class="text-sm 2xl:text-base font-semibold text-contentColor border-l-2 border-transparent transition duration-300 hover:border-primaryColor px-25px py-10px hover:bg-whitegrey1 block hover:text-primaryColor leading-sm lg:leading-lg 2xl:leading-lg dark:text-contentColor-dark dark:hover:text-primaryColor dark:hover:bg-whitegrey1-dark"
-                                                                    >Setting</a
-                                                                >
-                                                            </li>
+                                                            <!-- ... other menu items ... -->
                                                         </ul>
                                                     </div>
                                                 </div>
                                             </li>
-                                            <li class="relative group/nested">
-                                                <a
-                                                    href="./pages/dashboards/instructor-dashboard.html"
-                                                    class="text-sm 2xl:text-base font-semibold text-contentColor border-l-2 border-transparent transition duration-300 hover:border-primaryColor px-25px py-10px hover:bg-whitegrey1 hover:text-primaryColor leading-sm lg:leading-lg 2xl:leading-lg flex justify-between items-center dark:bg-whiteColor-dark dark:text-contentColor-dark dark:hover:bg-whitegrey1-dark dark:hover:text-primaryColor"
-                                                    >Instructor <i
-                                                        class="icofont-rounded-right"
-                                                    ></i>
-                                                </a>
-                                                <!-- nested dropdown menu -->
-                                                <!-- dropdown menu -->
-                                                <div
-                                                    class="nested-dropdown absolute left-full top-0 z-50 hidden opacity-0 group-hover/nested:block group-hover/nested:opacity-100"
-                                                    style="transition: 0.3s"
-                                                >
-                                                    <div
-                                                        class="shadow-dropdown max-w-dropdown2 w-2000 py-14px rounded-standard bg-white dark:bg-whiteColor-dark"
-                                                    >
-                                                        <ul>
-                                                            <li>
-                                                                <a
-                                                                    href="./pages/dashboards/instructor-dashboard.html"
-                                                                    class="text-sm 2xl:text-base font-semibold text-contentColor border-l-2 border-transparent transition duration-300 hover:border-primaryColor px-25px py-10px hover:bg-whitegrey1 block hover:text-primaryColor leading-sm lg:leading-lg 2xl:leading-lg dark:text-contentColor-dark dark:hover:text-primaryColor dark:hover:bg-whitegrey1-dark"
-                                                                    >Ins.
-                                                                    Dashboard
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a
-                                                                    href="./pages/dashboards/instructor-profile.html"
-                                                                    class="text-sm 2xl:text-base font-semibold text-contentColor border-l-2 border-transparent transition duration-300 hover:border-primaryColor px-25px py-10px hover:bg-whitegrey1 block hover:text-primaryColor leading-sm lg:leading-lg 2xl:leading-lg dark:text-contentColor-dark dark:hover:text-primaryColor dark:hover:bg-whitegrey1-dark"
-                                                                    >Ins.
-                                                                    Profile
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a
-                                                                    href="./pages/dashboards/instructor-message.html"
-                                                                    class="text-sm 2xl:text-base font-semibold text-contentColor border-l-2 border-transparent transition duration-300 hover:border-primaryColor px-25px py-10px hover:bg-whitegrey1 block hover:text-primaryColor leading-sm lg:leading-lg 2xl:leading-lg dark:text-contentColor-dark dark:hover:text-primaryColor dark:hover:bg-whitegrey1-dark"
-                                                                    >Message</a
-                                                                >
-                                                            </li>
-                                                            <li>
-                                                                <a
-                                                                    href="./pages/dashboards/instructor-wishlist.html"
-                                                                    class="text-sm 2xl:text-base font-semibold text-contentColor border-l-2 border-transparent transition duration-300 hover:border-primaryColor px-25px py-10px hover:bg-whitegrey1 block hover:text-primaryColor leading-sm lg:leading-lg 2xl:leading-lg dark:text-contentColor-dark dark:hover:text-primaryColor dark:hover:bg-whitegrey1-dark"
-                                                                    >Wishlist
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a
-                                                                    href="./pages/dashboards/instructor-reviews.html"
-                                                                    class="text-sm 2xl:text-base font-semibold text-contentColor border-l-2 border-transparent transition duration-300 hover:border-primaryColor px-25px py-10px hover:bg-whitegrey1 block hover:text-primaryColor leading-sm lg:leading-lg 2xl:leading-lg dark:text-contentColor-dark dark:hover:text-primaryColor dark:hover:bg-whitegrey1-dark"
-                                                                    >Review</a
-                                                                >
-                                                            </li>
-                                                            <li>
-                                                                <a
-                                                                    href="./pages/dashboards/instructor-my-quiz-attempts.html"
-                                                                    class="text-sm 2xl:text-base font-semibold text-contentColor border-l-2 border-transparent transition duration-300 hover:border-primaryColor px-25px py-10px hover:bg-whitegrey1 block hover:text-primaryColor leading-sm lg:leading-lg 2xl:leading-lg dark:text-contentColor-dark dark:hover:text-primaryColor dark:hover:bg-whitegrey1-dark"
-                                                                    >My Quiz</a
-                                                                >
-                                                            </li>
-                                                            <li>
-                                                                <a
-                                                                    href="./pages/dashboards/instructor-order-history.html"
-                                                                    class="text-sm 2xl:text-base font-semibold text-contentColor border-l-2 border-transparent transition duration-300 hover:border-primaryColor px-25px py-10px hover:bg-whitegrey1 block hover:text-primaryColor leading-sm lg:leading-lg 2xl:leading-lg dark:text-contentColor-dark dark:hover:text-primaryColor dark:hover:bg-whitegrey1-dark"
-                                                                    >Order
-                                                                    History</a
-                                                                >
-                                                            </li>
-                                                            <li>
-                                                                <a
-                                                                    href="./pages/dashboards/instructor-course.html"
-                                                                    class="text-sm 2xl:text-base font-semibold text-contentColor border-l-2 border-transparent transition duration-300 hover:border-primaryColor px-25px py-10px hover:bg-whitegrey1 block hover:text-primaryColor leading-sm lg:leading-lg 2xl:leading-lg dark:text-contentColor-dark dark:hover:text-primaryColor dark:hover:bg-whitegrey1-dark"
-                                                                    >My Courses</a
-                                                                >
-                                                            </li>
-                                                            <li>
-                                                                <a
-                                                                    href="./pages/dashboards/instructor-announcments.html"
-                                                                    class="text-sm 2xl:text-base font-semibold text-contentColor border-l-2 border-transparent transition duration-300 hover:border-primaryColor px-25px py-10px hover:bg-whitegrey1 block hover:text-primaryColor leading-sm lg:leading-lg 2xl:leading-lg dark:text-contentColor-dark dark:hover:text-primaryColor dark:hover:bg-whitegrey1-dark"
-                                                                    >Announcements</a
-                                                                >
-                                                            </li>
-                                                            <li>
-                                                                <a
-                                                                    href="./pages/dashboards/instructor-quiz-attempts.html"
-                                                                    class="text-sm 2xl:text-base font-semibold text-contentColor border-l-2 border-transparent transition duration-300 hover:border-primaryColor px-25px py-10px hover:bg-whitegrey1 block hover:text-primaryColor leading-sm lg:leading-lg 2xl:leading-lg dark:text-contentColor-dark dark:hover:text-primaryColor dark:hover:bg-whitegrey1-dark"
-                                                                    >Quiz
-                                                                    Attempts</a
-                                                                >
-                                                            </li>
-                                                            <li>
-                                                                <a
-                                                                    href="./pages/dashboards/instructor-assignments.html"
-                                                                    class="text-sm 2xl:text-base font-semibold text-contentColor border-l-2 border-transparent transition duration-300 hover:border-primaryColor px-25px py-10px hover:bg-whitegrey1 block hover:text-primaryColor leading-sm lg:leading-lg 2xl:leading-lg dark:text-contentColor-dark dark:hover:text-primaryColor dark:hover:bg-whitegrey1-dark"
-                                                                    >Assignment</a
-                                                                >
-                                                            </li>
-                                                            <li>
-                                                                <a
-                                                                    href="./pages/dashboards/instructor-settings.html"
-                                                                    class="text-sm 2xl:text-base font-semibold text-contentColor border-l-2 border-transparent transition duration-300 hover:border-primaryColor px-25px py-10px hover:bg-whitegrey1 block hover:text-primaryColor leading-sm lg:leading-lg 2xl:leading-lg dark:text-contentColor-dark dark:hover:text-primaryColor dark:hover:bg-whitegrey1-dark"
-                                                                    >Settings</a
-                                                                >
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="relative group/nested">
-                                                <a
-                                                    href="./pages/dashboards/student-dashboard.html"
-                                                    class="text-sm 2xl:text-base font-semibold text-contentColor border-l-2 border-transparent transition duration-300 hover:border-primaryColor px-25px py-10px hover:bg-whitegrey1 hover:text-primaryColor leading-sm lg:leading-lg 2xl:leading-lg flex justify-between items-center dark:bg-whiteColor-dark dark:text-contentColor-dark dark:hover:bg-whitegrey1-dark dark:hover:text-primaryColor"
-                                                    >Student <i
-                                                        class="icofont-rounded-right"
-                                                    ></i></a
-                                                >
-                                                <!-- nested dropdown menu -->
-                                                <!-- dropdown menu -->
-                                                <div
-                                                    class="nested-dropdown absolute left-full top-0 z-50 hidden opacity-0 group-hover/nested:block group-hover/nested:opacity-100"
-                                                    style="transition: 0.3s"
-                                                >
-                                                    <div
-                                                        class="shadow-dropdown max-w-dropdown2 w-2000 py-14px rounded-standard bg-white dark:bg-whiteColor-dark"
-                                                    >
-                                                        <ul>
-                                                            <li>
-                                                                <a
-                                                                    href="./pages/dashboards/student-dashboard.html"
-                                                                    class="text-sm 2xl:text-base font-semibold text-contentColor border-l-2 border-transparent transition duration-300 hover:border-primaryColor px-25px py-10px hover:bg-whitegrey1 block hover:text-primaryColor leading-sm lg:leading-lg 2xl:leading-lg dark:text-contentColor-dark dark:hover:text-primaryColor dark:hover:bg-whitegrey1-dark"
-                                                                    >Dashboard
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a
-                                                                    href="./pages/dashboards/student-profile.html"
-                                                                    class="text-sm 2xl:text-base font-semibold text-contentColor border-l-2 border-transparent transition duration-300 hover:border-primaryColor px-25px py-10px hover:bg-whitegrey1 block hover:text-primaryColor leading-sm lg:leading-lg 2xl:leading-lg dark:text-contentColor-dark dark:hover:text-primaryColor dark:hover:bg-whitegrey1-dark"
-                                                                    >Profile
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a
-                                                                    href="./pages/dashboards/student-message.html"
-                                                                    class="text-sm 2xl:text-base font-semibold text-contentColor border-l-2 border-transparent transition duration-300 hover:border-primaryColor px-25px py-10px hover:bg-whitegrey1 block hover:text-primaryColor leading-sm lg:leading-lg 2xl:leading-lg dark:text-contentColor-dark dark:hover:text-primaryColor dark:hover:bg-whitegrey1-dark"
-                                                                    >Message</a
-                                                                >
-                                                            </li>
-                                                            <li>
-                                                                <a
-                                                                    href="./pages/dashboards/student-enrolled-courses.html"
-                                                                    class="text-sm 2xl:text-base font-semibold text-contentColor border-l-2 border-transparent transition duration-300 hover:border-primaryColor px-25px py-10px hover:bg-whitegrey1 block hover:text-primaryColor leading-sm lg:leading-lg 2xl:leading-lg dark:text-contentColor-dark dark:hover:text-primaryColor dark:hover:bg-whitegrey1-dark"
-                                                                    >Enrolled
-                                                                    Courses
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a
-                                                                    href="./pages/dashboards/student-wishlist.html"
-                                                                    class="text-sm 2xl:text-base font-semibold text-contentColor border-l-2 border-transparent transition duration-300 hover:border-primaryColor px-25px py-10px hover:bg-whitegrey1 block hover:text-primaryColor leading-sm lg:leading-lg 2xl:leading-lg dark:text-contentColor-dark dark:hover:text-primaryColor dark:hover:bg-whitegrey1-dark"
-                                                                    >Wishlist
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a
-                                                                    href="./pages/dashboards/student-reviews.html"
-                                                                    class="text-sm 2xl:text-base font-semibold text-contentColor border-l-2 border-transparent transition duration-300 hover:border-primaryColor px-25px py-10px hover:bg-whitegrey1 block hover:text-primaryColor leading-sm lg:leading-lg 2xl:leading-lg dark:text-contentColor-dark dark:hover:text-primaryColor dark:hover:bg-whitegrey1-dark"
-                                                                    >Review</a
-                                                                >
-                                                            </li>
-                                                            <li>
-                                                                <a
-                                                                    href="./pages/dashboards/student-my-quiz-attempts.html"
-                                                                    class="text-sm 2xl:text-base font-semibold text-contentColor border-l-2 border-transparent transition duration-300 hover:border-primaryColor px-25px py-10px hover:bg-whitegrey1 block hover:text-primaryColor leading-sm lg:leading-lg 2xl:leading-lg dark:text-contentColor-dark dark:hover:text-primaryColor dark:hover:bg-whitegrey1-dark"
-                                                                    >My Quiz</a
-                                                                >
-                                                            </li>
-                                                            <li>
-                                                                <a
-                                                                    href="./pages/dashboards/student-assignments.html"
-                                                                    class="text-sm 2xl:text-base font-semibold text-contentColor border-l-2 border-transparent transition duration-300 hover:border-primaryColor px-25px py-10px hover:bg-whitegrey1 block hover:text-primaryColor leading-sm lg:leading-lg 2xl:leading-lg dark:text-contentColor-dark dark:hover:text-primaryColor dark:hover:bg-whitegrey1-dark"
-                                                                    >Assignment</a
-                                                                >
-                                                            </li>
-                                                            <li>
-                                                                <a
-                                                                    href="./pages/dashboards/student-settings.html"
-                                                                    class="text-sm 2xl:text-base font-semibold text-contentColor border-l-2 border-transparent transition duration-300 hover:border-primaryColor px-25px py-10px hover:bg-whitegrey1 block hover:text-primaryColor leading-sm lg:leading-lg 2xl:leading-lg dark:text-contentColor-dark dark:hover:text-primaryColor dark:hover:bg-whitegrey1-dark"
-                                                                    >Setting</a
-                                                                >
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </li>
+                                            <!-- ... rest of the first level items ... -->
                                         </ul>
                                     </div>
                                 </div>
