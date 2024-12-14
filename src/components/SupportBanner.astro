@@ -1,0 +1,48 @@
+---
+// Props interface for the BannerDetails
+export interface Props {
+  BannerDetails: {
+    leftDescription: string;
+    rightDescription: string;
+    src: string;
+  }[];
+}
+
+// Destructuring the BannerDetails from Astro.props
+const { BannerDetails } = Astro.props;
+---
+
+{BannerDetails.map((BannerDetail) => (
+  <div
+   
+    class="relative w-full px-4 mt-20 sm:px-6 lg:px-8 bg-cover bg-center bg-no-repeat"
+    style={{ backgroundImage: `url(${BannerDetail.src})` }} 
+  >
+    {/* Color Overlay */}
+    <div class="absolute inset-0 bg-[#740B2E] opacity-70"></div>
+
+    {/* Content */}
+    <div class="relative z-10 text-white text-center flex items-center justify-start py-16 sm:py-24">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full">
+        {/* Left Column */}
+        <div class="flex flex-col md:items-center items-start justify-center text-center sm:text-left">
+          <p class="text-2xl sm:text-3xl lg:text-4xl font-semibold leading-tight">
+            {BannerDetail.leftDescription} <br/>
+            <button class="mt-6 bg-[#c9945a] hover:bg-white text-[#740B2E] text-white duration-300 px-6 py-2 left-8 inline-flex rounded-lg text-lg font-medium">
+              SUPPORT NOW
+            </button>
+          </p>
+        </div>
+
+        {/* Right Column */}
+        <div class="flex flex-col items-center md:items-start justify-start text-center sm:text-left">
+          <div class="mt-4 sm:mt-0">
+            <p class="text-lg sm:text-xl lg:text-2xl font-normal mb-4">
+              {BannerDetail.rightDescription}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+))}

@@ -1,0 +1,31 @@
+---
+export interface Props {
+  HeadersBanners: {
+    src: string;
+    title: string;
+  }[];
+}
+
+const { HeadersBanners } = Astro.props;
+---
+
+{HeadersBanners.map((items) => (
+  <div class="relative w-full">
+    <!-- Banner Image -->
+    <img
+      src={items.src}
+      class="w-full sm:h-96 md:h-[510px] object-cover"
+      alt="Website banner UK winter"
+    />
+
+    <!-- Gradient Overlay -->
+    <div class="absolute inset-0 bg-gradient-to-t from-[#740B2E] via-transparent to-[#94434A00] opacity-60"></div>
+
+    <!-- Text Overlay at the bottom -->
+    <div class="absolute bottom-3 left-0 sm:bottom-1 w-full p-4">
+      <p class="text-lg md:text-5xl text-white text-center font-bold">
+        {items.title}
+      </p>
+    </div>
+  </div>
+))}
