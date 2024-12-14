@@ -1,0 +1,250 @@
+---
+import Layout from '../layouts/Layout.astro';
+import UmmahCharity from '../components/Ummah_Charity.astro';
+---
+<Layout>
+    <div class="relative w-full">
+        <!-- Banner Image -->
+        <img
+            src="/assets/images/website-banner-UK-winter-1.jpg"
+            class="w-full sm:h-96 md:h-[500px]  object-cover"
+            alt="Website banner UK winter"
+        />
+        
+        <!-- Gradient Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-t from-[#740B2E] via-transparent to-[#94434A00] opacity-60"></div>
+        
+        <!-- Text Overlay at the bottom -->
+        <div class="absolute bottom-3 left-0 sm:bottom-1 w-full p-4">
+            <p class="text-lg md:text-4xl text-white text-center font-semibold">
+                Rohingya Appeal in Action
+            </p>
+        </div>
+    </div>
+    
+    <UmmahCharity />
+    <div class="container mx-auto mt-20">
+        <div class="flex justify-center ">
+         <div class="grid grid-cols-1 gap-8 md:grid-cols-3 ">
+            <!-- Card 1 -->
+            <div class="bg-white rounded-lg shadow-lg w-80 overflow-hidden relative">
+                <a class="flex justify-center" href="#">
+                    <img class="rounded-t-lg w-full object-cover h-80" src="https://picsum.photos/300/200" alt="Card image" />
+                </a>
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <button class="absolute bg-white text-black hover:bg-[#c9945a] hover:text-white duration-300 text-base inline-flex items-center justify-center font-semibold w-44 top-60 left-1/2 transform -translate-x-1/2 h-8 rounded-md shadow-md">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-earth mr-2">
+                            <path d="M21.54 15H17a2 2 0 0 0-2 2v4.54"/>
+                            <path d="M7 3.34V5a3 3 0 0 0 3 3a2 2 0 0 1 2 2c0 1.1.9 2 2 2a2 2 0 0 0 2-2c0-1.1.9-2 2-2h3.17"/>
+                            <path d="M11 21.95V18a2 2 0 0 0-2-2a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05"/>
+                            <circle cx="12" cy="12" r="10"/>
+                        </svg>
+                        BANGLADESH
+                    </button>
+                </div>
+                <div class="p-5">
+                    <a class="flex justify-center" href="#">
+                        <h5 class="text-xl tracking-tight text-black text-center mt-2">Clean Drinking Water</h5>
+                    </a>
+                    <p class="mb-5 mt-5 text-sm text-black flex items-center justify-center font-semibold sm:text-base md:text-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-receipt-pound-sterling">
+                            <path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"/>
+                            <path d="M8 13h5"/>
+                            <path d="M10 17V9.5a2.5 2.5 0 0 1 5 0"/>
+                            <path d="M8 17h7"/>
+                        </svg>
+                        50.00
+                    </p>
+                    <p class="flex items-center justify-center mb-7 mt-2 relative">
+                        <a href="#" class="px-6 py-3 items-center inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
+                            DONATE NOW
+                            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10" stroke="currentColor" stroke-width="2">
+                                <path d="M1 5h12m0 0L9 1m4 4L9 9" />
+                            </svg>
+                        </a>
+                    </p>
+                </div>
+            </div>
+    
+            <!-- Card 2 -->
+            <div class="bg-white rounded-lg shadow-lg w-80 overflow-hidden relative">
+                <a class="flex justify-center" href="#">
+                    <img class="rounded-t-lg w-full object-cover h-80" src="https://picsum.photos/300/200" alt="Card image" />
+                </a>
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <button class="absolute bg-white text-black hover:bg-[#c9945a] hover:text-white duration-300 text-base inline-flex items-center justify-center font-semibold w-44 top-60 left-1/2 transform -translate-x-1/2 h-8 rounded-md shadow-md">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-earth mr-2">
+                            <path d="M21.54 15H17a2 2 0 0 0-2 2v4.54"/>
+                            <path d="M7 3.34V5a3 3 0 0 0 3 3a2 2 0 0 1 2 2c0 1.1.9 2 2 2a2 2 0 0 0 2-2c0-1.1.9-2 2-2h3.17"/>
+                            <path d="M11 21.95V18a2 2 0 0 0-2-2a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05"/>
+                            <circle cx="12" cy="12" r="10"/>
+                        </svg>
+                        BANGLADESH
+                    </button>
+                </div>
+                <div class="p-5">
+                    <a class="flex justify-center" href="#">
+                        <h5 class="text-xl tracking-tight text-black text-center mt-2">Cooked Food</h5>
+                    </a>
+                    <p class="mb-5 mt-5 text-sm text-black flex items-center justify-center font-semibold sm:text-base md:text-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-receipt-pound-sterling">
+                            <path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"/>
+                            <path d="M8 13h5"/>
+                            <path d="M10 17V9.5a2.5 2.5 0 0 1 5 0"/>
+                            <path d="M8 17h7"/>
+                        </svg>
+                        300.00
+                    </p>
+                    <p class="flex items-center justify-center mb-7 mt-2 relative">
+                        <a href="#" class="px-6 py-3 items-center inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
+                            DONATE NOW
+                            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10" stroke="currentColor" stroke-width="2">
+                                <path d="M1 5h12m0 0L9 1m4 4L9 9" />
+                            </svg>
+                        </a>
+                    </p>
+                </div>
+            </div>
+    
+            <!-- Card 3 -->
+            <div class="bg-white rounded-lg shadow-lg w-80 overflow-hidden relative">
+                <a class="flex justify-center" href="#">
+                    <img class="rounded-t-lg w-full object-cover h-80" src="https://picsum.photos/300/200" alt="Card image" />
+                </a>
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <button class="absolute bg-white text-black hover:bg-[#c9945a] hover:text-white duration-300 text-base inline-flex items-center justify-center font-semibold w-44 top-60 left-1/2 transform -translate-x-1/2 h-8 rounded-md shadow-md">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-earth mr-2">
+                            <path d="M21.54 15H17a2 2 0 0 0-2 2v4.54"/>
+                            <path d="M7 3.34V5a3 3 0 0 0 3 3a2 2 0 0 1 2 2c0 1.1.9 2 2 2a2 2 0 0 0 2-2c0-1.1.9-2 2-2h3.17"/>
+                            <path d="M11 21.95V18a2 2 0 0 0-2-2a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05"/>
+                            <circle cx="12" cy="12" r="10"/>
+                        </svg>
+                        BANGLADESH
+                    </button>
+                </div>
+                <div class="p-5">
+                    <a class="flex justify-center" href="#">
+                        <h5 class="text-xl tracking-tight text-black text-center mt-2">Medicines</h5>
+                    </a>
+                    <p class="mb-5 mt-5 text-sm text-black flex items-center justify-center font-semibold sm:text-base md:text-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-receipt-pound-sterling">
+                            <path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"/>
+                            <path d="M8 13h5"/>
+                            <path d="M10 17V9.5a2.5 2.5 0 0 1 5 0"/>
+                            <path d="M8 17h7"/>
+                        </svg>
+                        200.00
+                    </p>
+                    <p class="flex items-center justify-center mb-7 mt-2 relative">
+                        <a href="#" class="px-6 py-3 items-center inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
+                            DONATE NOW
+                            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10" stroke="currentColor" stroke-width="2">
+                                <path d="M1 5h12m0 0L9 1m4 4L9 9" />
+                            </svg>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+      </div> 
+    </div>
+    
+    
+    <!-- Support rohingya -->
+    <div class="relative w-full px-4 mt-20 sm:px-6 lg:px-8 bg-cover bg-center bg-no-repeat" style="background-image: url('/assets/images/Help-The-Homeless-in-UK.jpg');">
+        <!-- Color Overlay -->
+        <div class="absolute inset-0 bg-[#740B2E] opacity-70"></div>
+    
+        <!-- Content -->
+        <div class="relative z-10 text-white text-center flex items-center justify-start py-16 sm:py-24">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full">
+                <!-- Left Column -->
+                <div class="flex flex-col md:items-center items-start justify-center text-center sm:text-left">
+                    <p class="text-2xl sm:text-3xl lg:text-4xl  font-semibold leading-tight">
+                        SUPPORT <br/>
+                         ROHINGYA <br>
+                         REEFUGEES: <br>
+                         DONATE FOOD <br/>
+                         AND WATER <br>
+                        <span class="text-4xl">LIVES!</span> <br/>
+                        <button class="mt-6 bg-[#c9945a] hover:bg-white text-[#740B2E] text-white duration-300 px-6 py-2 left-8 inline-flex rounded-lg text-lg font-medium">SUPPORT NOW</button>
+                    </p>
+                </div>
+    
+                <!-- Right Column -->
+                <div class="flex flex-col items-center md:items-start justify-start text-center sm:text-left">
+                    <div class="mt-4 sm:mt-0">
+                        <p class="text-lg sm:text-xl lg:text-2xl font-normal mb-4">
+                            The struggles of the Rohingya Refugees continue sustainable living. 
+                            The shortage of food, as they lack basic facilities for a water,
+                            healthcare, sanitation, and shelter has declared the <span class="font-bold text-2xl">Rohingya Emergency,</span>as 60 
+                            per cent of these refugees are children. Our team is 
+                            on the ground to deal with the <span class="font-bold text-2xl">Rohingya appeal</span> by providing food packs, cooked food,
+                            and clean drinking water. Your contribution 
+                            towards the <span  class="font-bold text-2xl"> Rohingya Appeal </span>can minimise <br>
+                            the suffering of many. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container mt-16">
+        <div class="row">
+            <!-- Flex container to align content -->
+            <div class="flex flex-col md:flex-row items-center md:items-start">
+                <!-- Text content -->
+                <div class="md:w-2/3">
+                    <p class="text-maroon text-xl md:text-2xl font-bold md:pl-10">Why Donate to the Rohingya Appeal?</p>
+                    <p class="text-lg font-thin mt-3 md:pl-10">
+                        According to reports, <span class="text-grey font-bold"> over 200,000 Rohingya Children </span> are suffering from <br>
+                        malnutrition, and 80% of refugees residing in the Cox Bazar are entirely <br/>
+                        dependent on aid for survival. Since August 2017, this violence in Myanmar <br/>
+                        has resulted in the fastest-growing humanitarian crisis in the world, <br/>
+                        threatening the lives of over 900,000 people who fled as refugees. <br/> <br/>
+                        Your <span class="text-grey font-bold">Rohigya donation</span> can provide life and nourishment through food<br/>
+                        packs, cooked food, and water and give them hope for a better future. <br/>
+                        Together, we can offer relief to the <span class="text-grey font-bold">Rohingya Crisis</span>refugees and save lives <br/>
+                        through the <span class="text-grey font-bold" >Rohingya Emergency Appeal. </span>
+                    </p>
+                </div>
+    
+                <!-- Image container with responsive classes -->
+                <div class="md:w-1/3 mt-5 md:mt-2 md:ml-auto">
+                    <img class="w-[350px] h-56 " src="https://picsum.photos/200" alt="Image" />
+                </div>
+            </div>
+        </div>
+    
+        <!-- Repeat for the next section -->
+        <div class="row mt-12">
+            <div class="flex flex-col md:flex-row items-center md:items-start">
+                <!-- Text content -->
+                <div class="md:w-2/3">
+                    <p class="text-maroon text-xl md:text-2xl font-bold md:pl-10">Donate to Al-Wahab Foundation Rohingya Charity Appeal</p>
+                    <p class="text-lg font-thin mt-3 md:pl-10 mb-10">
+                        Al-Wahab Foundation has always been at the forefront of dealing with <br>
+                        emergency situations in different countries. Whether it is natural disasters, <br/>
+                        conflicts, or any sort of humanitarian crisis, our team has ensured that we<br/>
+                        are there to provide relief to as many people as possible.  <br/>
+                        Considering the<span class="text-grey font-bold"> Rohigya donationy</span> as one of the most essential causes <br/>
+                        to address, our team took radical steps to provide food packs in Rohingya <br/>
+                        Refugee Camps. In 2024, as per the directions of Chairman <br/>
+                        <a class="text-maroon hover:text-customBeige text-xl font-bold" href="">Mufti Abdul Wahab, </a>
+                        our team distributed 275 food packs, delivering hope and nourishment to 1,200 beneficiaries struggling for survival in Rohingya camps.
+                        <span class="text-grey font-bold">Rohingya donation</span> towards <a class="text-maroon hover:text-customBeige text-xl font-bold" href="">food packs</a>,
+                        <a class="text-maroon hover:text-customBeige text-xl font-bold" href="">Cooked food</a> and <a class="text-maroon hover:text-customBeige text-xl font-bold" href="">Water</a>
+                        can be a vital source for many more. Support our Rohingya charity work and be the one to make a difference. 
+                    </p>
+                </div>
+    
+                <!-- Image container with responsive classes -->
+                <div class="md:w-1/3 mt-5 md:mt-0 mb-10 md:ml-auto">
+                    <img class="w-[350px] h-56 " src="https://picsum.photos/200" alt="Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</Layout>

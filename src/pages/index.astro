@@ -1,14 +1,15 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import UmmahCharity from '../components/Ummah_Charity.astro';
 ---
 <Layout>
 	<div class="relative w-full h-56 md:min-h-screen hidden md:block">
 		<!-- Title -->
 		<div
-			class="absolute top-[500px] left-1/2 transform -translate-x-1/2 text-center z-10"
+			class="absolute  md:top-[550px] left-1/2 transform -translate-x-1/2 text-center z-10"
 		>
 			<h1
-				class="text-3xl md:text-5xl font-bold text-white uppercase drop-shadow-md"
+				class="text-xl md:text-5xl font-bold text-white uppercase drop-shadow-md"
 			>
 				KEEPING HOPES ALIVE
 			</h1>
@@ -140,10 +141,10 @@ import Layout from '../layouts/Layout.astro';
 	<div class="relative w-full h-56 block md:hidden mt-14">
 		<!-- Title -->
 		<div
-			class="absolute top-3/4 left-1/2 transform -translate-x-1/2 text-center z-10"
+			class="absolute top-[160px] md:top-[550px] left-1/2 transform -translate-x-1/2 text-center z-10"
 		>
 			<h1
-				class="text-3xl md:text-5xl font-bold text-white uppercase drop-shadow-md"
+				class="text-xl md:text-5xl font-bold text-white uppercase drop-shadow-md"
 			>
 				KEEPING HOPES ALIVE
 			</h1>
@@ -252,89 +253,20 @@ import Layout from '../layouts/Layout.astro';
 			</div>
 		</div>
 	</div>
-	<div class="md:text-lg sm:text-base flex flex-row justify-center">
-		<p class="font-semibold py-2">
-			Ummah Charity International is now Al-Wahab Foundation
-		</p>
-	</div>
-	<div
-		class="bg-[#740B2E] px-4 py-4 flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 justify-center items-center md:items-start"
-	>
-		<!-- Donate Label -->
-		<p class="text-white text-lg sm:text-base mt-1">DONATE :</p>
 
-		<!-- Program Selection -->
-		<div class="w-full md:w-auto">
-			<select
-				class="px-6 py-2 rounded-md text-[#740B2E] focus:ring-[#740B2E] w-full"
-				id="program"
-				name="program"
-				required
-			>
-				<option class="text-[#740B2E]" value="" disabled selected
-					>Select Program</option
-				>
-				<option value="program1">Program 1</option>
-				<option value="program2">Program 2</option>
-				<option value="program3">Program 3</option>
-			</select>
-		</div>
-
-		<!-- Amount Input -->
-		<div class="w-full md:w-auto">
-			<div class="flex items-center">
-				<p class="text-white mr-4 md:text-lg sm:text-base">For :</p>
-				<p
-					class="py-2 px-3 text-lg font-semibold sm:text-base text-white rounded-l-md bg-[#c9945a]"
-				>
-					£
-				</p>
-				<input
-					class="md:text-lg sm:text-base w-full md:w-28 h-[40px] text-[#740B2E] rounded-r-md"
-					type="number"
-					placeholder="Amount"
-				/>
-			</div>
-		</div>
-
-		<!-- AS Selection -->
-		<div class="w-full md:w-auto">
-			<div class="flex items-center">
-				<p class="text-white mr-4 md:text-lg sm:text-base">AS :</p>
-				<select
-					class="px-6 py-2 rounded-md text-[#740B2E] focus:ring-[#740B2E] w-full md:w-auto"
-					id="program"
-					name="program"
-					required
-				>
-					<option class="text-[#740B2E]" value="" disabled selected
-						>Select Program</option
-					>
-					<option value="program1">Program 1</option>
-					<option value="program2">Program 2</option>
-					<option value="program3">Program 3</option>
-				</select>
-			</div>
-		</div>
-
-		<!-- Submit Button -->
-		<button
-			class="bg-[#c9945a] px-8 py-2 rounded-full font-semibold hover:text-[#740B2E] duration-500 text-white text-lg sm:text-base"
-		>
-			Submit
-		</button>
-	</div>
-
+	<div class="-mt-28">
+	  <UmmahCharity />
+    </div>
 <!-- ++++++++++++++++++++++++++++ Bring Hope to Rohingya Refugees  ++++++++++++++++++++++++++++++++ -->
 
 
 <div class="container mt-16 px-4 sm:px-0">
-    <div class="flex flex-col md:flex-row items-center ">
+    <div class="flex flex-col md:flex-row items-center justify-center ">
         <!-- Left Section with Image and Text -->
-        <div class="relative max-w-full md:max-w-xl mx-auto md:ml-28">
-            <img class="h-[680px] sm:h-[500px] md:h-[680px] w-full object-cover rounded-md" src="https://images.unsplash.com/photo-1680725779155-456faadefa26" alt="Random image">
+        <div class="relative felx justify-center  md:ml-16 ">
+            <img class="h-[680px] md:h-[680px] w-full object-cover rounded-md" src="https://images.unsplash.com/photo-1680725779155-456faadefa26" alt="Random image">
             <div class="absolute inset-0 bg-[#740B2E] opacity-75 rounded-md"></div>
-            <div class="absolute inset-0 p-4 sm:p-6 md:p-8 flex flex-col justify-center">
+            <div class="absolute inset-0 p-4 sm:p-6 md:p-8 flex flex-col justify-center md:ml-11">
                 <p class="text-[#c9945a] sm:text-3xl md:text-3xl font-bold italic text-left">Bring Hope to Rohingya Refugees</p>
                 <p class="mt-6 text-white  sm:text-xs md:text-lg text-left ">
                     In August 2017, the people of Rohingya confronted brutal genocide in Myanmar,
@@ -362,7 +294,7 @@ import Layout from '../layouts/Layout.astro';
 
 			<!-- Right Section with Image -->
 			<div
-				class="relative max-w-full md:max-w-xl mx-auto mt-8 md:mt-0 md:mr-6"
+				class="relative max-w-full md:max-w-[600px] mx-auto mt-8 md:mt-0 md:mr-20"
 			>
 				<img
 					class="h-[350px] sm:h-[400px] md:h-[500px] w-full object-cover rounded-md"
@@ -455,7 +387,7 @@ import Layout from '../layouts/Layout.astro';
 			</button>
 		  </div>
 		<div class="p-5">
-		  <a href="#">
+		  <a class=" flex justify-center " href="#">
 			<h5 class="mb-2 text-2xl font-bold tracking-tight text-black text-center mt-6">Zakat</h5>
 		  </a>
 		  <p class="mb-5 mt-5 text-sm text-black flex items-center justify-center font-semibold sm:text-base md:text-xl">
@@ -484,7 +416,7 @@ import Layout from '../layouts/Layout.astro';
   
 	  <!-- Card 2 -->
 	  <div class="max-w-80 bg-white rounded-lg shadow-lg overflow-hidden relative">
-		<a href="#">
+		<a class=" flex justify-center" href="#">
 		  <img class="rounded-t-lg w-full object-cover h-80 inset-0" src="https://picsum.photos/300/200" alt="Card image" />
 		</a>
 		<div class="absolute inset-0 flex items-center justify-center">
@@ -531,7 +463,7 @@ import Layout from '../layouts/Layout.astro';
   
 	  <!-- Card 3 -->
 	  <div class="max-w-80 bg-white  rounded-lg shadow-lg overflow-hidden relative">
-		<a href="#">
+		<a class="flex justify-center" href="#">
 		  <img class="rounded-t-lg w-full object-cover h-80 inset-0" src="https://picsum.photos/300/200" alt="Card image" />
 		</a>
 		<div class="absolute inset-0 flex items-center justify-center">
@@ -549,7 +481,7 @@ import Layout from '../layouts/Layout.astro';
 			</button>
 		  </div>
 		<div class="p-5">
-		  <a href="#">
+		  <a class="flex justify-center" href="#">
 			<h5 class="mb-2 text-2xl font-bold tracking-tight text-black text-center mt-6">Build A Masjid</h5>
 		  </a>
 		  <p class="mb-5 mt-5 text-sm text-black flex items-center justify-center font-semibold sm:text-base md:text-xl">
@@ -578,7 +510,7 @@ import Layout from '../layouts/Layout.astro';
   
 	  <!-- Repeat Cards for Row 2 -->
 	  <div class="max-w-80 bg-white  rounded-lg shadow-lg overflow-hidden relative">
-		<a href="#">
+		<a class="flex justify-center" href="#">
 		  <img class="rounded-t-lg w-full object-cover h-80 inset-0" src="https://picsum.photos/300/200" alt="Card image" />
 		</a>
 		<div class="absolute inset-0 flex items-center justify-center">
@@ -596,7 +528,7 @@ import Layout from '../layouts/Layout.astro';
 			</button>
 		  </div>
 		<div class="p-5">
-		  <a href="#">
+		  <a class="flex justify-center" href="#">
 			<h5 class="mb-2 text-2xl font-bold tracking-tight text-black text-center mt-6">Eye Surgery</h5>
 		  </a>
 		  <p class="mb-5 mt-5 text-sm text-black flex items-center justify-center font-semibold sm:text-base md:text-xl">
@@ -624,7 +556,7 @@ import Layout from '../layouts/Layout.astro';
 	  </div>
   
 	  <div class="max-w-80 bg-white rounded-lg shadow-lg overflow-hidden relative">
-		<a href="#">
+		<a class="flex justify-center" href="#">
 		  <img class="rounded-t-lg w-full object-cover h-80 inset-0" src="https://picsum.photos/300/200" alt="Card image" />
 		</a>
 		<div class="absolute inset-0 flex items-center justify-center">
@@ -642,7 +574,7 @@ import Layout from '../layouts/Layout.astro';
 			</button>
 		  </div>
 		<div class="p-5">
-		  <a href="#">
+		  <a class="flex justify-center" href="#">
 			<h5 class="mb-2 text-2xl font-bold tracking-tight text-black text-center mt-6">Sewing Machine</h5>
 		  </a>
 		  <p class="mb-5 mt-5 text-sm text-black flex items-center justify-center font-semibold sm:text-base md:text-xl">
@@ -670,7 +602,7 @@ import Layout from '../layouts/Layout.astro';
 	  </div>
 	  
 	  <div class="max-w-80 bg-white rounded-lg shadow-lg overflow-hidden relative">
-		<a href="#">
+		<a class="" href="#">
 		  <img class="rounded-t-lg w-full object-cover h-80 inset-0" src="https://picsum.photos/300/200" alt="Card image" />
 		</a>
 		<div class="absolute inset-0 flex items-center justify-center">
@@ -688,7 +620,7 @@ import Layout from '../layouts/Layout.astro';
 			</button>
 		  </div>
 		<div class="p-5">
-		  <a href="#">
+		  <a class="flex justify-center" href="#">
 			<h5 class="mb-2 text-2xl font-bold tracking-tight text-black text-center mt-6">Water Well</h5>
 		  </a>
 		  <p class="mb-5 mt-5 text-sm text-black flex items-center justify-center font-semibold sm:text-base md:text-xl">
