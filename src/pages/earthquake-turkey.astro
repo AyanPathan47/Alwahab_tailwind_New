@@ -1,0 +1,51 @@
+---
+import Layout from "../layouts/Layout.astro";
+import HeadersBanner from "../components/HeadersBanner.astro";
+import UmmahCharity from "../components/Ummah_Charity.astro";
+import CardforCountry from "../components/CardforCountry.astro";
+const card =[
+    {
+        name: 'PAKISTAN',
+        title: 'Emergency Relief',
+        amount :'ANY AMOUNT',
+    },
+    {
+        name: 'PAKISTAN',
+        title: 'Food Pack',
+        amount :'50.00',
+    },
+    {
+        name: 'UGANDA',
+        title: 'Cooked Food',
+        amount :'200.00',
+    },
+
+]
+
+const HeaderBannerData = [
+    {
+        src: "/assets/images/website-banner-masjid.jpg",
+        title: "Turkey Syria \nEarthquake Appeal",
+    },
+];
+---
+
+<Layout>
+    <HeadersBanner HeadersBanners={HeaderBannerData} />
+    <UmmahCharity />
+    <div class="mt-12">
+        <p class="text-maroon text-xl md:text-3xl font-bold text-center">
+            Provide Sustenance: Donate to Turkey Syria Earthquake Appeal
+        </p>
+       <p class="font-thin text-grey text-base md:text-xl text-center mt-5">In early February 2023, Turkiye was hit by a devastating series of major earthquakes near the border<br> with Syria. Tragically, over 51,000 people lost their lives, crushed beneath collapsed buildings<br> in what became the worst natural disaster in decades. As we continue to assist the affected <br>communities, your donation can make a significant impact. </p>
+        <p class="font-thin text-grey text-base md:text-xl text-center mt-5">
+            With your support, we can provide <a href="">essential food packs</a> and cooked meals to those who have lost<br>  everything and are in desperate need. Join us in our efforts to meet the ongoing needs of the <br> survivors and help save lives. Your generosity can bring hope and sustenance to those <br>facing immense challenges.  <span class="text-grey font-bold"
+                >Turkey earthquake survivors </span
+            >now and make a difference!
+        </p>
+    </div>
+<!--card -->
+<CardforCountry CountryCardDetails={card}/>
+
+    
+</Layout>

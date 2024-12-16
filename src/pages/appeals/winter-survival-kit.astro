@@ -1,0 +1,96 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import HeadersBanner from "../../components/HeadersBanner.astro";
+import UmmahCharity from "../../components/Ummah_Charity.astro";
+import CardforCountry from "../../components/CardforCountry.astro";
+import SupportBanner from "../../components/SupportBanner.astro";
+const card = [
+    {
+        name: "PAKISTAN",
+        title: "Winter Survival Kit",
+        amount: "50.00",
+    },
+    {
+        name: "AFGHANISTAN",
+        title: "Winter Survival Kit",
+        amount: "50.00",
+    },
+    {
+        name: "UNITED KINGDOM",
+        title: "Winter Survival Kit",
+        amount: "50.00",
+    },
+    {
+        name: "PAKISTAN",
+        title: "Food Pack",
+        amount: "50.00",
+    },
+    {
+        name: "UNITED KINGDOM",
+        title: "Food Pack",
+        amount: "50.00",
+    },
+    {
+        name: "AFGHANISTAN",
+        title: "Food Pack",
+        amount: "50.00",
+    },
+];
+const BannerDatas = [
+    {
+        src: "/assets/images/website-banner-UK-winter-1.jpg",
+        title: " Rohingya Appeal in Action",
+    },
+];
+
+const SupportBannerDetails = [
+    {
+        leftDescription:
+            "WINTER APPEAL: HELP PROTECT THEM FROM THE HARSH WINTER ",
+        rightDescription:
+            "Imagine yourself in place of those deprived people who are compelled to live without adequate arrangements for winter including the homeless, who are compelled to live under open skies. As the temperature drops, many are left with nothing but shattered dreams and cold, empty nights. Your support to the Winter Appeal can prevent suffering for many through winter survival kit donation. As these countries struggle with increasing energy costs and inflation, together we can help them by providing winter aid. Donate to save as many lives this year as possible with Al-Wahab Foundation.",
+        src: "/assets/images/Help-The-Homeless-in-UK.jpg",
+    },
+];
+const HeaderBannerData = [
+    {
+        src: "/assets/images/website-banner-masjid.jpg",
+        title: "Winter Appeal 2024",
+    },
+];
+---
+
+<Layout>
+    <HeadersBanner HeadersBanners={HeaderBannerData} />
+    <UmmahCharity />
+    <div class="mt-12">
+        <p class="text-maroon md:text-3xl font-bold text-center text-6xl">
+            Bringing Comfort and Hope to the Most Vulnerable <br />Through
+            Winter Appeal
+        </p>
+        <p class="font-thin text-grey text-base md:text-xl text-center mt-5">
+            Climate changes aren’t always pleasant for everyone. Specifically,
+            when it comes to<br /> winter season setting in, there are many vulnerable
+            people who struggle to survive<br /> through this period following various
+            challenges. Regrettably, numerous<br /> communities have been dealing
+            with the downfall in terms of global social and<br /> economic state.
+        </p>
+        <p class="font-thin text-grey text-base md:text-xl text-center mt-5">
+            Like every year, Al-Wahab Foundation has stepped forward to support
+            to the <br />underprivileged individuals and families in Pakistan,
+            Afghanistan, and in the UK. Join<br /> us in our <span
+                class="text-grey font-bold">Winter Appeal</span
+            > and make a difference in the lives of those in need.
+        </p>
+    </div>
+
+    <!--card -->
+    <CardforCountry CountryCardDetails={card} />
+
+    <!--support banner -->
+    <SupportBanner BannerDetails={SupportBannerDetails} />
+
+    <div>
+        <img src="" alt="" class="" />
+    </div>
+</Layout>
