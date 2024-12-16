@@ -1,0 +1,49 @@
+---
+export interface Props{
+    SeeOtherProjects:{
+        title : string,
+        description : string,
+        src: string,
+    }[];
+}
+const {SeeOtherProjects} = Astro.props
+---
+
+<div class="container mx-auto mt-20">
+    <div class="flex justify-center">
+      <!-- Scrollable Cards Wrapper -->
+      <div class="flex overflow-x-auto scroll-smooth gap-7 px-4 md:w-3/4">
+        {SeeOtherProjects.map((SeeOtherProject) => (
+          <!-- Individual Card -->
+          <div class="bg-white rounded-lg shadow-lg w-80 flex-shrink-0 overflow-hidden">
+            <a class="flex justify-center" href="#">
+              <img
+                class="rounded-t-lg w-full object-cover h-64"
+                src={SeeOtherProject.src}
+                alt="Card image"
+              />
+            </a>
+            <div class="px-4 py-2">
+              <a class="flex justify-center" href="#">
+                <h5 class="text-2xl font-bold tracking-tight text-maroon text-black text-center mt-2">
+                  {SeeOtherProject.title}
+                </h5>
+              </a>
+              <p class="py-3 text-sm text-black text-center font-light sm:text-base md:text-lg">
+                {SeeOtherProject.description || 'Any amount'}
+              </p>
+              <div class="flex items-center justify-center">
+                <a
+                  href="#"
+                  class="px-6 py-3 inline-flex items-center sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300"
+                >
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+  
