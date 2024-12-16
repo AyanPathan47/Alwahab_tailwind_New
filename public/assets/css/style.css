@@ -48,7 +48,9 @@
 ***************************************************************/
 
 /* font family */
-
+*{
+  font-family: 'montserrat', sans-serif;
+}
 /* Variables */
 
 :root {
