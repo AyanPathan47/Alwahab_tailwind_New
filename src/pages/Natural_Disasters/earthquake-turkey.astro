@@ -1,0 +1,81 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import HeadersBanner from "../../components/HeadersBanner.astro";
+import UmmahCharity from "../../components/Ummah_Charity.astro";
+import CardforCountry from "../../components/CardforCountry.astro";
+import SupportBanners from "../../components/SupportBanner.astro";
+
+const SupportBannerDetail = [
+    {
+        leftDescription:"REBUILDING LIVES IN TURKEY AFTER DEVASTATION",
+        rightDescription:"Six months have passed since the world witnessed one of the most devastating natural disasters to strike the regions of Southeast Türkiye and Northwest Syria; there is still a lot required to do to bring the sufferers back to life. Al-Wahab Foundation has been tirelessly working to rebuild lives and provide essential support. With our ongoing efforts, we are focused on offering vital aid in the form of food packs and cooked meals to those who have lost everything. Through the provision of nourishment, we aim to bring sustenance and comfort to the affected communities, offering hope and resilience as they navigate through these challenging times. Together, we stand committed to serving and rebuilding lives, ensuring that no one faces this difficult journey alone. Your support makes a significant difference in our mission to bring relief and assistance to those in need. Donate to Turkey earthquake relief efforts and help rebuild lives.",
+        src:"/assets/images/Help-The-Homeless-in-UK.jpg",
+    }
+]
+
+const card =[
+    {
+        name: 'PAKISTAN',
+        title: 'Emergency Relief',
+        amount :'ANY AMOUNT',
+        src:"https://picsum.photos/200/300",
+    },
+    {
+        name: 'PAKISTAN',
+        title: 'Food Pack',
+        amount :'50.00',
+        src:"https://picsum.photos/200/300",
+    },
+    {
+        name: 'UGANDA',
+        title: 'Cooked Food',
+        amount :'200.00',
+        src:"https://picsum.photos/200/300",
+    },
+
+]
+
+const HeaderBannerData = [
+    {
+        src: "/assets/images/website-banner-masjid.jpg",
+        title: "Turkey Syria \nEarthquake Appeal",
+    },
+];
+---
+
+<Layout>
+    <HeadersBanner HeadersBanners={HeaderBannerData} />
+    <UmmahCharity />
+    <div class="mt-12">
+        <p class="text-maroon text-xl md:text-3xl font-bold text-center">
+            Provide Sustenance: Donate to Turkey Syria Earthquake Appeal
+        </p>
+       <p class="font-thin text-grey text-base md:text-xl text-center mt-5">In early February 2023, Turkiye was hit by a devastating series of major earthquakes near the border<br> with Syria. Tragically, over 51,000 people lost their lives, crushed beneath collapsed buildings<br> in what became the worst natural disaster in decades. As we continue to assist the affected <br>communities, your donation can make a significant impact. </p>
+        <p class="font-thin text-grey text-base md:text-xl text-center mt-5">
+            With your support, we can provide <a href="">essential food packs</a> and cooked meals to those who have lost<br>  everything and are in desperate need. Join us in our efforts to meet the ongoing needs of the <br> survivors and help save lives. Your generosity can bring hope and sustenance to those <br>facing immense challenges.  <span class="text-grey font-bold"
+                >Turkey earthquake survivors </span
+            >now and make a difference!
+        </p>
+    </div>
+  <!--card -->
+  <CardforCountry CountryCardDetails={card}/>
+
+
+  <div class="container mx-auto px-4 mt-16">
+    <!-- Responsive Video Wrapper -->
+    <div class="relative w-full" style="padding-bottom: 56.25%; /* 16:9 Aspect Ratio */">
+      <iframe
+        class="absolute top-0 left-0 w-full h-full"
+        src="https://www.youtube.com/embed/1JEPUTuo5Y0?si=NPzJJaWNGBJMtDaf"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </div>
+
+  <!-- Support Banner  -->
+   <SupportBanners BannerDetails={SupportBannerDetail} /> 
+</Layout>
