@@ -1,0 +1,241 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import UmmahCharity from "../../components/Ummah_Charity.astro";
+import CardforCountry from "../../components/CardforCountry.astro";
+import SupportBanner from "../../components/SupportBanner.astro";
+import HeadersBanner from "../../components/HeadersBanner.astro";
+import SeeOtherProjectCard from "../../components/SeeOtherProjectCard.astro";
+
+const OtherProject = [
+  {
+    src: "https://alwahabfoundation.org/wp-content/uploads/2023/03/80953110-f97e-4453-986d-5774276033de-1024x768.jpg",
+    title: "Turkey & Syria Earthquake Appeal",
+    description:
+      "In early February 2023, Turkiye was hit by a devastating series of major earthquakes near the border with Syria. Tragically,",
+  },
+  {
+    src: "https://alwahabfoundation.org/wp-content/uploads/2023/12/IMG_6194a-1024x683.jpg",
+    title: "Afghanistan Earthquake Appeal",
+    description:
+      "The long-suffering Afghans once again face a daunting challenge as a massive earthquake measuring 6.3 in magnitude, struck on both",
+  },
+  {
+    src: "https://alwahabfoundation.org/wp-content/uploads/2023/09/IMG_3855-1024x768.jpg",
+    title: "Morocco Earthquake Appeal",
+    description:
+      "A disastrous earthquake struck Morocco on Friday night, September 8th, at just past 11 PM local time resulting in a",
+  },
+];
+
+const HeaderBannerData = [
+  {
+    src: "/assets/images/website-banner-UK-winter-1.jpg",
+    title: "AFGHAINSTAN \nEARTHQUAKE APPEAL",
+  },
+];
+const SupportBannerDetails = [
+  {
+    src: "/assets/images/Help-The-Homeless-in-UK.jpg",
+    leftDescription: "SUPPORT \nROHINGYA \nREEFUGEES: \nDONATE FOOD AND WATER ",
+    rightDescription:
+      "Since 2001, Afghanistan has been facing instability that resulted in malnutrition, severe poverty, and hindered access to basic necessities. As of April 2023, more than 40% of the population is facing alarming levels of acute food insecurity. In such a situation, the earthquake has pushed Afghanistan into a most severe humanitarian crisis. There are millions of people struggling through the aftermath of the natural disaster and acute levels of food deprivation. Your donation towards the Afghanistan Emergency Appeal can help us save lives!",
+  },
+];
+
+const CountryCard = [
+  {
+    name: "Pakistan",
+    title: "Medical Aid",
+    amount: "ANY AMOUNT",
+    src: "",
+  },
+  {
+    name: "Afghanistan",
+    title: "Food Pack",
+    amount: "50.00",
+    src: "",
+  },
+  {
+    name: "Bangladesh",
+    title: "Cooked Food",
+    amount: "100.00",
+    src: "",
+  },
+];
+---
+
+<Layout>
+  <!-- <div class="relative w-full"> -->
+  <!-- Banner Image -->
+  <!-- <img
+            src=""
+            class="w-full sm:h-96 md:h-[510px]  object-cover"
+            alt="Website banner UK winter"
+        /> -->
+
+  <!-- Gradient Overlay -->
+  <!-- <div class="absolute inset-0 bg-gradient-to-t from-[#740B2E] via-transparent to-[#94434A00] opacity-60"></div> -->
+
+  <!-- Text Overlay at the bottom -->
+  <!-- <div class="absolute bottom-3 left-0 sm:bottom-1 w-full p-4">
+            <p class="text-lg md:text-5xl text-white text-center font-bold">
+                AFGHAINSTAN <br/> EARTHQUAKE APPEAL
+            </p>
+        </div> -->
+
+  <HeadersBanner HeadersBanners={HeaderBannerData} />
+</Layout>
+<UmmahCharity />
+
+<div class="container">
+  <div class="row">
+    <p class="text-center text-3xl text-maroon font-bold mt-20">
+      Afghanistan Earthquake Appeal
+    </p>
+    <p class="mt-7 text-grey text-lg font-semibold text-center">
+      The long-suffering Afghans once again face a daunting challenge as a
+      massive earthquake measuring <br />
+      6.3 in magnitude, struck on both Saturday, October 7, and subsequently on October
+      11, 2023. This <br />
+      catastrophic event has resulted in a death toll of over 1,000 people, whereas
+      2,000 have been <br />
+      registered for sustaining injuries.
+    </p>
+    <p class="mt-7 text-grey text-lg font-semibold text-center">
+      The earthquake’s epicentre was located 40 kilometres to the northwest of
+      Herat, a city in Afghanistan. <br />
+      Its impact extended to 12 nearby villages, all of which experienced significant
+      damage. The earthquake <br />
+      led to the destruction of 1,320 houses with reports emerging of families being
+      trapped within the <br />
+      debris of their houses <span class="text-grey text-xl font-bold"
+        >Donate to Afghanistan</span
+      > Appeal and help us provide relief to the Afghan <br />
+      earthquake victims.
+    </p>
+  </div>
+</div>
+<CardforCountry CountryCardDetails={CountryCard} />
+
+<div class="container mx-auto px-4 mt-16">
+  <div class="relative overflow-hidden pb-[40%]">
+    <iframe
+      class="absolute top-0 left-0 w-full h-full"
+      src="https://www.youtube.com/embed/rKE-aUoKWhE?si=Hix0Wt-am77ezPpB"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    >
+    </iframe>
+  </div>
+</div>
+
+<SupportBanner BannerDetails={SupportBannerDetails} />
+<div class="container">
+  <div class="row mt-16">
+    <div class="">
+      <p class="text-maroon text-3xl font-semibold text-center">
+        How Al-Wahab Foundation is Responding to Natural Disasters?
+      </p>
+      <div class="flex">
+        <p class="w-3/4 text-xl mt-12">
+          Al-Wahab Foundation, under the supervision of Chairman <a
+            class="text-maroon font-bold"
+            href="#">Mufti Abdul Wahab</a
+          >, has <br />
+          consistently taken the lead in responding to global emergency situations.
+          Whether <br />
+          facing earthquakes, floods, or pandemics, Al-Wahab Foundation team has
+          been <br />
+          committed to being on the ground, ensuring that every affected individual
+          receives <br />
+          vital <a class="text-maroon font-bold" href=""
+            >emergency relief aid.</a
+          >
+          <br />
+          <br />
+
+          Our team believes in finding out the ways to reach out to those who
+          are in dire need. <br />
+          Considering the intensity of destruction and misery of the people in <span
+            class="text-grey font-bold">Afghanistan</span
+          >, we <br />
+          are committed to pull our resources effectively to provide immediate assistance
+          <br />
+          during emergencies. Nevertheless, your support remains crucial in this
+          endeavour.<br />
+          Support us and <span class="text-grey font-bold"
+            >donate to Afghanistan</span
+          > appeal to provide relief to as many <br />
+          earthquake victims as possible.
+        </p>
+
+        <p class="w-1/4 mt-16">
+          <img class="w-96 h-56" src="https://picsum.photos/200" />
+        </p>
+      </div>
+      <div class="mt-8">
+        <p
+          class="text-maroon font-semibold text-center text-3xl md:items-start"
+        >
+          How to Donate to Afghanistan Emergency Appeal?
+        </p>
+        <div class="flex text-xl">
+          <p class="1/4 mt-20">
+            <img class="w-96 md:h-56" src="https://picsum.photos/200" alt="" />
+          </p>
+          <p class="3/4 text-center md:text-start md:ml-20 mt-12">
+            <span class="text-grey font-bold">Online Donation:</span> You can easily<span
+              class="text-grey font-bold"
+            >
+              donate to Afghanistan
+            </span>
+            <a class="text-maroon font-bold" href="">Earthquake Appeal</a>
+            <br />
+            through our secure online donation portal. Your contribution, no matter
+            how <br />
+            small, can make a big difference. <br />
+
+            <span class="text-grey font-bold">Our Donation Hotline:</span> Apart
+            from our online portal, you can <span class="text-grey"
+              >donate to <br />
+              Afghanistan Earthquake Emergency
+            </span> Relief activities by calling us on our donation hotline at 020
+            8903 8944. <br />
+
+            You have the power to make a significant difference by generously
+            contributing <br />
+            towards the <span class="text-grey font-bold"
+              >Afghanistan Emergency Appeal</span
+            > to distribute <a class="text-maroon font-bold" href=""
+              >Emergency Kit</a
+            >, which <br />
+            includes provisions such as food, clean water, medical supplies, and
+            essential <br />
+            necessities. Join hands with Al-Wahab Foundation to help revive hope
+            in the lives <br />
+            of the people of Afghanistan and enable them to live again!
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex justify-center mb-5">
+    <a
+      class="text-xl font-bold text-white px-5 py-2 rounded-full bg-maroon mt-10"
+      href="">DONATE TO AFGANISTAN EARTHQUAKE APPLE</a
+    >
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <p class="text-3xl text-grey font-semibold text-center mt-20">
+        See Other Projects
+        <SeeOtherProjectCard SeeOtherProjects={OtherProject}/>
+      </p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,185 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import HeadersBanner from "../../components/HeadersBanner.astro";
+import UmmahCharity from "../../components/Ummah_Charity.astro";
+import SupportBanner from "../../components/SupportBanner.astro";
+import RestoringLive from "../../components/RestoringLives.astro";
+import SeeOtherProjectCard from "../../components/SeeOtherProjectCard.astro";
+
+const RestoringLivesBanner =[
+  {
+    title :"Restoring Lives: Azra Extends Warm Thanks to Al-Wahab Foundation for Assistance ",
+    description:" My name is Azra, and I reside in Hatay with my family. Our lives were turned upside down by the natural disasters that struck our city. We lost our home, our belongings, and our means of income. Providing for my children became an overwhelming challenge, as we struggled to find food, clean water, and other necessities. It was a time of immense uncertainty and fear for our future. We are deeply grateful to the Al-Wahab Foundation and Mufti Abdul Wahab for their understanding and support during this difficult time. The Emergency Relief Package they provided has been a true blessing for my family. I am thankful to Almighty Allah that we still have got kind people like Mufti Abdul Wahab and the dedicated team of Al-Wahab Foundation to help suffering families in bringing ease to them. ",
+    src:"https://alwahabfoundation.org/wp-content/uploads/2023/02/IMG_1245-1.jpg",
+    buttonTitle:"Read More",
+  }
+]
+
+const SeeOtherproject = [
+  {
+  src: "https://alwahabfoundation.org/wp-content/uploads/2023/03/80953110-f97e-4453-986d-5774276033de-1024x768.jpg",
+  title: "Turkey & Syria Earthquake Appeal",
+  description: "In early February 2023, Turkiye was hit by a devastating series of major earthquakes near the border with Syria. Tragically,",
+ },
+ {
+  src :"https://alwahabfoundation.org/wp-content/uploads/2023/12/IMG_6194a-1024x683.jpg",
+  title: "Afghanistan Earthquake Appeal",
+  description:"The long-suffering Afghans once again face a daunting challenge as a massive earthquake measuring 6.3 in magnitude, struck on both",
+ },
+ {
+  src: "https://alwahabfoundation.org/wp-content/uploads/2023/09/IMG_3855-1024x768.jpg",
+  title: "Morocco Earthquake Appeal",
+  description: "A disastrous earthquake struck Morocco on Friday night, September 8th, at just past 11 PM local time resulting in a",
+ },
+]
+
+const SupportBannerDetail =[{
+  src: "/assets/images/website-banner-masjid.jpg",
+  leftDescription: "MOROCCO CALLS FOR EMERGENCY HELP!",
+  rightDescription: "The most devastating earthquake in the century has shown zero mercy to the land of Morocco. Approximately 300,000 people are affected and many more have gone missing. As per the reports, over 5,600 victims are struggling with severe injuries. Please extend your generous support and assist us in offering immediate aid to those impacted by this calamity through the Morocco Earthquake Appeal – Al-Wahab Foundation. Together, we possess the strength to give hope to the victims, illuminating the path for those navigating through these challenging times.",
+}]
+
+const HeaderBannerData = [
+    {
+        src:"/assets/images/website-banner-masjid.jpg",
+        title:"Morocco \nEarthquake Appeal",
+    }
+]
+---
+<Layout>
+    <HeadersBanner HeadersBanners={HeaderBannerData} />
+    <UmmahCharity />
+    <div class="mt-12">
+        <p class="text-maroon text-xl md:text-3xl font-bold text-center">Morocco Earthquake Appeal</p>
+        <p class="text-customBeige font-normal text-xl md:text-2xl text-center mt-6">The Most Catastrophic Earthquake in a Century</p>
+        <p class="font-thin text-grey text-base md:text-xl  text-center mt-5">A disastrous earthquake struck Morocco on Friday night, September 8th, at just past 11 PM local time <br>
+            resulting in a tragic death toll. The casualty count is nearing <span class="text-grey font-bold">3,000</span>, and over<span class="text-grey font-bold"> 5,600 </span>individuals left <br>
+            injured. According to the details, the epicenter of this earthquake of magnitude 6.8 was in the High <br>
+            Atlas Mountains, approximately <span class="text-grey font-bold">72 kilometers southwest of Marrakech.</span>
+        </p>
+    </div>
+
+
+    <div class="flex items-center justify-center mt-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Card 1 -->
+          <div class="max-w-80 bg-white rounded-lg shadow-lg overflow-hidden relative">
+            <a href="#">
+              <img class="rounded-t-lg w-full object-cover h-80" src="https://picsum.photos/300/200" alt="Card image" />
+            </a>
+            <div class="p-5">
+              <a class="flex justify-center" href="#">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-black text-center mt-6">Zakat</h5>
+              </a>
+              <p class="mb-5 mt-5 text-sm text-black flex items-center justify-center font-semibold sm:text-base md:text-xl">
+                <svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-receipt-pound-sterling">
+                  <path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z" />
+                  <path d="M8 13h5" />
+                  <path d="M10 17V9.5a2.5 2.5 0 0 1 5 0" />
+                  <path d="M8 17h7" />
+                </svg>
+                ANY AMOUNT
+              </p>
+              <p class="flex items-center justify-center mb-7 mt-6">
+                <a href="#" class="px-6 py-3 items-center inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
+                  DONATE NOW
+                  <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10" stroke="currentColor" stroke-width="2">
+                    <path d="M1 5h12m0 0L9 1m4 4L9 9" />
+                  </svg>
+                </a>
+              </p>
+            </div>
+          </div>
+      
+          <!-- Card 2 -->
+          <div class="max-w-80 bg-white rounded-lg shadow-lg overflow-hidden relative">
+            <a href="#">
+              <img class="rounded-t-lg w-full object-cover h-80" src="https://picsum.photos/300/200" alt="Card image" />
+            </a>
+            <div class="p-5">
+              <a class="flex justify-center" href="#">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-black text-center mt-6">Zakat</h5>
+              </a>
+              <p class="mb-5 mt-5 text-sm text-black flex items-center justify-center font-semibold sm:text-base md:text-xl">
+                <svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-receipt-pound-sterling">
+                  <path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z" />
+                  <path d="M8 13h5" />
+                  <path d="M10 17V9.5a2.5 2.5 0 0 1 5 0" />
+                  <path d="M8 17h7" />
+                </svg>
+                ANY AMOUNT
+              </p>
+              <p class="flex items-center justify-center mb-7 mt-6">
+                <a href="#" class="px-6 py-3 items-center inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
+                  DONATE NOW
+                  <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10" stroke="currentColor" stroke-width="2">
+                    <path d="M1 5h12m0 0L9 1m4 4L9 9" />
+                  </svg>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mx-auto px-4">
+        <div class="row">
+          <div class="relative w-full" style="padding-bottom: 56.25%;"> <!-- Aspect ratio 16:9 -->
+            <iframe 
+              class="absolute top-0 left-0 w-full h-full"
+              src="https://www.youtube.com/embed/BXesTonczTs?si=MAe0zVtjX_UoKZ2f" 
+              title="YouTube video player" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerpolicy="strict-origin-when-cross-origin" 
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+
+      <SupportBanner BannerDetails ={SupportBannerDetail}/>
+
+      <div class="container mt-16">
+        <div class="row">
+          <div>
+            <p class="text-maroon font-bold text-2xl">Al-Wahab Foundation’s Response to Natural Disasters </p>
+            <p class=" text-lg">Al-Wahab Foundation’s Response to Natural Disasters <a class="text-customBeige hover:text-maroon font-bold" href="">Mufti Abdul Wahab</a> Al-Wahab Foundation has consistently taken the lead in responding <br>
+              to global emergency situations. Whether facing earthquakes, floods, or pandemics, Al-Wahab Foundation team has been <br>
+              committed to being on the ground, ensuring that every affected individual receives vital emergency relief aid. <br><br>
+              Recognizing that natural disasters can wreak havoc in a matter of seconds, we have made it our utmost priority to <a class="text-customBeige hover:text-maroon font-bold" href="">serve <br>
+              humanity</a>  in these critical moments. We pull our resources effectively to provide immediate assistance during emergencies. <br>
+              Nevertheless, your support remains crucial in this endeavour. Support us for the <span class="text-grey font-bold">Morocco Earthquake Appeal</span> to provide  <br>
+              relief to as many calamity-stricken people as possible.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <RestoringLive ReStroingLives = {RestoringLivesBanner}/>
+<!-- +++++++++++++++++++++Ways to Contribute++++++++++++++++++++ -->
+      <div class="container mx-auto px-4 py-8">
+        <div class="row ">
+          <p class="text-maroon font-bold text-2xl">Ways to Contribute</p>
+          <p class="px-4 py-3 md:text-xl">
+           <span class="text-grey font-bold">Online Donation:</span> You can easily donate to <span class="text-grey font-bold">Morocco Earthquake Appeal</span> through our secure online donation portal. Your  <br>   
+           contribution, no matter how small, can make a big difference. <br> 
+           <span class="text-grey font-bold">Our Donation Hotline:</span> Apart from our online portal, you can donate to <span class="text-grey font-bold">Morocco Earthquake Emergency Relief</span>activities by <br>
+            calling us on our donation hotline at 020 8903 8944.  <br> <br>
+            You can make a significant impact by contributing as much as possible to provide an Emergency Kit that includes food, <br>
+            clean water, medical aid, and basic essentials. Join hands with Al-Wahab Foundation and give the people of Morocco hope to <br>
+            live again!
+        </p>
+
+        <a class="px-4 py-2 bg-maroon hover:bg-customBeige text-white text-xl rounded-full font-bold" href="">DONATE TO MOROCCO EARTHQUAKE APPEAL</a>
+        </div>
+      </div>
+
+      <div class="mx-auto px-4 py-8">
+        <p class="text-center text-grey text-4xl font-bold">See Other Projects</p>
+      </div>
+
+      <SeeOtherProjectCard SeeOtherProjects={SeeOtherproject}/>
+      
+      
+</Layout>

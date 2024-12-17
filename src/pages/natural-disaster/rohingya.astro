@@ -1,0 +1,157 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import UmmahCharity from "../../components/Ummah_Charity.astro";
+import CardforCountry from "../../components/CardforCountry.astro";
+import SupportBanner from "../../components/SupportBanner.astro";
+import HeadersBanner from "../../components/HeadersBanner.astro";
+
+const BannerDatas =[{
+    src:"/assets/images/website-banner-UK-winter-1.jpg",
+    title:" Rohingya Appeal in Action",
+}]
+
+const SupportBannerDetails =[
+    {
+        leftDescription:"Support Rohingya Refugees: Donate Food and Water",
+        rightDescription:"The struggles of the Rohingya Refugees continue as they lack basic facilities for a sustainable living. The shortage of food, water, healthcare, sanitation, and shelter has declared the Rohingya Emergency, as 60 per cent of these refugees are children. Our team is on the ground to deal with the Rohingya appeal by providing food packs, cooked food, and clean drinking water. Your contribution towards the Rohingya Appeal can minimise the suffering of many.",
+        src:"/assets/images/Help-The-Homeless-in-UK.jpg",
+
+    }
+]
+
+
+const CountryCard = [
+  {
+    name: "Bangladesh",
+    title: "Clean  Drinking Water",
+    amount: "50.00",
+    src:"https://picsum.photos/200/300",
+  },
+  {
+    name: "Bangladesh",
+    title: "Cooked Food",
+    amount: "300.00",
+    src:"https://picsum.photos/200/300",
+  },
+  {
+    name: "Bangladesh",
+    title: "Cooked Food",
+    amount:"100.00",
+    src:"https://picsum.photos/200/300",
+  }
+];
+---
+
+<Layout>
+  <HeadersBanner HeadersBanners={BannerDatas} />
+
+  <UmmahCharity />
+
+  <CardforCountry CountryCardDetails={CountryCard} />
+
+  <!-- Support rohingya -->
+<SupportBanner BannerDetails={SupportBannerDetails} />
+
+  <div class="container mt-16">
+    <div class="row">
+      <!-- Flex container to align content -->
+      <div class="flex flex-col md:flex-row items-center md:items-start">
+        <!-- Text content -->
+        <div class="md:w-2/3">
+          <p class="text-maroon text-xl md:text-2xl font-bold md:pl-10">
+            Why Donate to the Rohingya Appeal?
+          </p>
+          <p class="text-lg mt-3 md:pl-10">
+            According to reports, <span class="text-grey font-bold">
+              over 200,000 Rohingya Children
+            </span> are suffering from <br />
+            malnutrition, and 80% of refugees residing in the Cox Bazar are entirely
+            <br />
+            dependent on aid for survival. Since August 2017, this violence in Myanmar
+            <br />
+            has resulted in the fastest-growing humanitarian crisis in the world,
+            <br />
+            threatening the lives of over 900,000 people who fled as refugees. <br
+            />
+            <br />
+            Your <span class="text-grey font-bold">Rohigya donation</span> can provide
+            life and nourishment through food<br />
+            packs, cooked food, and water and give them hope for a better future.
+            <br />
+            Together, we can offer relief to the <span
+              class="text-grey font-bold">Rohingya Crisis</span
+            >refugees and save lives <br />
+            through the <span class="text-grey font-bold"
+              >Rohingya Emergency Appeal.
+            </span>
+          </p>
+        </div>
+
+        <!-- Image container with responsive classes -->
+        <div class="md:w-1/3 mt-5 md:mt-2 md:ml-auto">
+          <img
+            class="w-[350px] h-56"
+            src="https://picsum.photos/200"
+            alt="Image"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Repeat for the next section -->
+    <div class="row mt-12">
+      <div class="flex flex-col md:flex-row items-center md:items-start">
+        <!-- Text content -->
+        <div class="md:w-2/3">
+          <p class="text-maroon text-xl md:text-2xl font-bold md:pl-10">
+            Donate to Al-Wahab Foundation Rohingya Charity Appeal
+          </p>
+          <p class="text-lg mt-3 md:pl-10 mb-10">
+            Al-Wahab Foundation has always been at the forefront of dealing with <br
+            />
+            emergency situations in different countries. Whether it is natural disasters,
+            <br />
+            conflicts, or any sort of humanitarian crisis, our team has ensured that
+            we<br />
+            are there to provide relief to as many people as possible. <br />
+            Considering the<span class="text-grey font-bold">
+              Rohigya donationy</span
+            > as one of the most essential causes <br />
+            to address, our team took radical steps to provide food packs in Rohingya
+            <br />
+            Refugee Camps. In 2024, as per the directions of Chairman <br />
+            <a
+              class="text-maroon hover:text-customBeige text-xl font-bold"
+              href=""
+              >Mufti Abdul Wahab,
+            </a>
+            our team distributed 275 food packs, delivering hope and nourishment
+            to 1,200 beneficiaries struggling for survival in Rohingya camps.
+            <span class="text-grey font-bold">Rohingya donation</span> towards <a
+              class="text-maroon hover:text-customBeige text-xl font-bold"
+              href="">food packs</a
+            >,
+            <a
+              class="text-maroon hover:text-customBeige text-xl font-bold"
+              href="">Cooked food</a
+            > and <a
+              class="text-maroon hover:text-customBeige text-xl font-bold"
+              href="">Water</a
+            >
+            can be a vital source for many more. Support our Rohingya charity work
+            and be the one to make a difference.
+          </p>
+        </div>
+
+        <!-- Image container with responsive classes -->
+        <div class="md:w-1/3 mt-5 md:mt-0 mb-10 md:ml-auto">
+          <img
+            class="w-[350px] h-56"
+            src="https://picsum.photos/200"
+            alt="Image"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>

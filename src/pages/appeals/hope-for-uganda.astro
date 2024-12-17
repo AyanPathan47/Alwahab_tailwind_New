@@ -1,0 +1,306 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import HeadersBanner from "../../components/HeadersBanner.astro";
+import UmmahCharity from '../../components/Ummah_Charity.astro';
+import CardforCountry from "../../components/CardforCountry.astro";
+import SupportBanner from "../../components/SupportBanner.astro";
+import RestoringLive from "../../components/RestoringLives.astro";
+import SeeOtherProjectCards from "../../components/SeeOtherProjectCard.astro";
+
+const OtherProject =[
+    {
+        title : "Where Most Needed",
+        description : "At Al-Wahab Foundation, we believe in the power of consistent generosity. Our Where Most Needed initiative empowers you to make",
+        src: "https://alwahabfoundation.org/wp-content/uploads/2023/10/IMG_1703-1024x384.jpg",
+    },
+    {
+        title : "Serving Humanity in the UK",
+        description : "In the UK, many people face daily challenges due to rising costs and unemployment. This includes those living below the",
+        src: "https://alwahabfoundation.org/wp-content/uploads/2023/01/IMG_1267-e1673433888939-1024x768.jpg",
+    },
+    {
+        title : "Winter Survival Kit",
+        description : "As climate change intensifies worldwide, a relentless sequence of natural disasters in various countries has aggravated the difficulties faced by",
+        src: "https://alwahabfoundation.org/wp-content/uploads/2022/09/winter-banner3-1024x427.jpg",
+    }, 
+    {
+        title : "Build a Masjid",
+        description : "A mosque is the heart of the community, a place full of peace that brings the community together. In rural",
+        src: "https://alwahabfoundation.org/wp-content/uploads/2022/07/SAK04290-1024x576.jpg",
+    }, 
+    {
+        title : "Pay Zakat Online",
+        description : "The economic situation in Pakistan has caused devastation, leaving many people in desperation. Approximately 36% of the population now lives",
+        src: "https://alwahabfoundation.org/wp-content/uploads/2023/10/IMG_1703-1024x384.jpg",
+    },
+    {
+        title : "Give your Sadaqah",
+        description : "Your Sadaqah donation keeps hopes alive for those in need. Your act of charity can ease the suffering of people",
+        src: "https://alwahabfoundation.org/wp-content/uploads/2023/10/IMG_1703-1024x384.jpg",
+    },
+    {
+        title : "Support a Maktab",
+        description : "Over 280 million children around the world are deprived of education. These children are often forced into a life of",
+        src: "https://alwahabfoundation.org/wp-content/uploads/2023/10/IMG_1703-1024x384.jpg",
+    },
+    {
+        title : "Water for Life",
+        description : "Water is necessity in life. More than 1.1 billion people worldwide continue to face the challenge of lacking regular access",
+        src: "https://alwahabfoundation.org/wp-content/uploads/2023/10/IMG_1703-1024x384.jpg",
+    },
+    {
+        title : "Cooked Food",
+        description : "At Al-Wahab Foundation, we believe in the power of consistent generosity. Our Where Most Needed initiative empowers you to make",
+        src: "https://alwahabfoundation.org/wp-content/uploads/2023/10/IMG_1703-1024x384.jpg",
+    },
+]
+
+const RestroingLivesData =[
+    {
+        title : "Overcoming Hardship: Hussain's Journey with Disability and Support from Al-Wahab Foundation",
+        description : "Hussain, a 35-year-old man from Uganda, has faced challenges due to his physical disability. Finding work and supporting his family has been difficult. Fortunately, the Al-Wahab Foundation, led by Chairman AWF Mufti Abdul Wahab, visited Uganda and provided food packs to deprived families, including Hussain's. This support gave him hope and relief during a tough time. Hussain expressed deep gratitude to Mufti Abdul Wahab and the foundation for their compassionate gesture, which allowed his family to have nourishing meals and lifted the burden of food insecurity. The Al-Wahab Foundation's efforts have positively impacted the lives of many, especially those with disabilities. Join the Hope for Uganda Project to make a difference.",
+        src: "https://alwahabfoundation.org/wp-content/uploads/2023/05/Uganda-Case-Study-Hussain-1024x816.jpg",
+        buttonTitle: "Read More",
+    }
+]
+const BannerDatail =[
+    {
+        leftDescription:"SUPPORTING COMMUNITIES: DONATE FOOD AND WATER FOR UGANDA",
+        rightDescription:"In Uganda, over 40% of people struggle to live on less than £1 a day, and nearly half of the population is below the age of 15. The devastating effects of malnutrition on growing bodies lead parents to sacrifice their own meals, giving what little they have to their children. You can make a significant impact by donating to our Uganda appeal today. Your contribution can provide food packs to families, offer hot meals to school children, or even establish water wells to protect and nourish families living in challenging conditions. Together, we can make a positive difference in the lives of those facing hardship. Donate now and be a source of hope for those in need.",
+         src: "https://alwahabfoundation.org/wp-content/uploads/2023/03/little-african-schoolgirl-collects-water-in-the-bo-2022-12-06-01-17-53-utc-1.jpg",
+    }
+]
+const CountryCard =[
+    {
+        name: "UGANDA",
+        title: "Food Pack" ,
+        amount : "50.00",
+        src:"https://picsum.photos/200/300",
+        
+    },
+    {
+        name: "UGANDA",
+        title: "Cooked Food" ,
+        amount :"200.00" ,
+        src:"https://picsum.photos/200/300",
+    },
+    {
+        name: "UGANDA",
+        title: "Water Well" ,
+        amount : "2000.00",
+        src:"https://picsum.photos/200/300",
+    },
+    {
+        name: "UGANDA",
+        title: "Build A Masjid" ,
+        amount : "12000.00",
+        src:"https://picsum.photos/200/300",
+    }
+]
+
+const BannerData =[
+    {
+        src: "https://alwahabfoundation.org/wp-content/uploads/2023/03/IMG_1892-b.jpg",
+        title: "Uganda Appeal"
+    }
+]
+---
+<Layout>
+    <HeadersBanner HeadersBanners={BannerData} />
+    <UmmahCharity />
+
+    <div class="container px-4 py-8">
+        <div class="row">
+            <p class="text-maroon font-bold text-3xl text-center">Al-Wahab Foundation's Uganda Appeal</p>
+            <p class="text-grey font-normal text-xl text-center py-8">
+                Poverty in Africa has been a longstanding challenge, casting a shadow over the <br>
+                 aspirations and dreams of millions. Within this complex landscape, Uganda stands as <br>
+                 a nation grappling with its own set of socio-economic obstacles, where poverty’s <br>
+                  harsh grip affects vast segments of the population. <br> <br>
+                  However, amidst these adversities, rays of hope break through the clouds, originating <br>
+                   from the dedicated humanitarian aid by Al-Wahab Foundation. AWF has embarked <br>
+                    on a remarkable journey to alleviate poverty’s burden and uplift communities. <br>
+                     Donate food and water for Uganda and help us make an everlasting impact.
+            </p>
+    </div>
+
+    <CardforCountry CountryCardDetails={CountryCard} />
+    <SupportBanner BannerDetails={BannerDatail}/>
+    
+    <div class="container">
+        <div class="row grid px-4 py-8 justify-center gap-8 grid-cols-1 md:grid-cols-3">
+            <!-- Reusable block for stats -->
+            <div class="stat-item flex flex-col items-center text-center">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    class="stroke-maroon hover:stroke-customBeige duration-300 mb-4"
+                    width="99" height="99" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/>
+                    <path d="M7 2v20"/>
+                    <path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/>
+                </svg>
+                <p class="text-lg font-medium">
+                    850+ <br>
+                    Cooked Meals
+                </p>
+            </div>
+    
+            <div class="stat-item flex flex-col items-center text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="99" height="99"
+                class="stroke-maroon hover:stroke-customBeige duration-300 mb-4"
+                 viewBox="0 0 24 24" fill="none" stroke="currentColor" 
+                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+                 class="lucide lucide-wheat">
+                    <path d="M2 22 16 8"/>
+                    <path d="M3.47 12.53 5 11l1.53 1.53a3.5 3.5 0 0 1 0 4.94L5 19l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z"/>
+                    <path d="M7.47 8.53 9 7l1.53 1.53a3.5 3.5 0 0 1 0 4.94L9 15l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z"/>
+                    <path d="M11.47 4.53 13 3l1.53 1.53a3.5 3.5 0 0 1 0 4.94L13 11l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z"/>
+                    <path d="M20 2h2v2a4 4 0 0 1-4 4h-2V6a4 4 0 0 1 4-4Z"/>
+                    <path d="M11.47 17.47 13 19l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L5 19l1.53-1.53a3.5 3.5 0 0 1 4.94 0Z"/>
+                    <path d="M15.47 13.47 17 15l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L9 15l1.53-1.53a3.5 3.5 0 0 1 4.94 0Z"/>
+                    <path d="M19.47 9.47 21 11l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L13 11l1.53-1.53a3.5 3.5 0 0 1 4.94 0Z"/>
+                </svg>
+                <p class="text-lg font-medium">
+                    710 +  <br>
+                    Food Packs
+                </p>
+            </div>
+    
+            <div class="stat-item flex flex-col items-center text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="99" height="99"
+                class="stroke-maroon hover:stroke-customBeige duration-300 mb-4" 
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" 
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+                class="lucide lucide-glass-water">
+                <path d="M5.116 4.104A1 1 0 0 1 6.11 3h11.78a1 1 0 0 1 .994 1.105L17.19 20.21A2 2 0 0 1 15.2 22H8.8a2 2 0 0 1-2-1.79z"/>
+                <path d="M6 12a5 5 0 0 1 6 0 5 5 0 0 0 6 0"/>
+            </svg>
+                <p class="text-lg font-medium">
+                    1 <br>
+                    Water Tanker in Uganda
+                </p>
+            </div>
+        </div>
+    </div>
+    <RestoringLive ReStroingLives={RestroingLivesData} />
+
+    <div class="container">
+        <div class="row px-5 py-8">
+            <p class="text-maroon font-bold text-2xl">Sponsor a Child in Uganda: Empowering Their Future</p>
+            <p class="text-grey font-normal text-lg">
+                Education is a powerful tool for breaking the cycle of poverty. With our Uganda appeal, you can Support <br>
+                 Underprivileged Children in Uganda, empowering them with access to education, healthcare, and hope for a <br>
+                  brighter future. By becoming a sponsor, you play a pivotal role in transforming a child’s life and their family’s <br>
+                 prospects.
+            </p>
+            <p class="text-maroon font-bold text-2xl py-8">Building a Well in Uganda: Ensuring Safe Water Access</p>
+            <p class="text-lg"> <span class="font-bold text-grey">Clean and safe drinking</span> <a class="text-maroon hover:text-customBeige" href="">Water</a> is essential for human survival. In many remote areas of Uganda, access to clean  <br>
+                water is scarce, leading to waterborne diseases and hardships for the community. With your support through our  <br>
+                Uganda appeal, we can build water wells in deprived regions, providing a sustainable solution to water scarcity  <br>
+                and improving health and sanitation.
+            </p>
+            <p class="text-maroon font-bold text-2xl py-">Building a Masjid in Uganda: Developing Faith in Communities</p>
+            <p class="text-lg">In our commitment to developing strong communities, our Uganda appeal includes the construction to  <a class="text-maroon font-bold" href="">build
+             a masjid</a> in the areas where locals cannot have easy access to a secure place of worship. These mosques will serve  <br>
+             as a center for worship, educational activities, and social gatherings, bringing the community together in unity.
+            </p>
+        </div>
+    </div>
+
+    <div class="container mx-auto px-4">
+        <div class="relative w-full max-w-6xl mx-auto"> <!-- Larger max-width: 6xl -->
+            <!-- Responsive Wrapper with Aspect Ratio 16:9 -->
+            <div class="relative w-full" style="padding-bottom: 56.25%;"> <!-- 16:9 aspect ratio -->
+                <iframe
+                    class="absolute top-0 left-0 w-full h-full"
+                    src="https://www.youtube.com/embed/hEtTdN9oElY?si=Ku8EbIsAV8f1W7j2"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row px-10 py-8">
+            <p class="text-maroon font-bold text-2xl">What AWF Has Achieved So Far?</p>
+            <p class="text-lg py-4">This year <a class="text-maroon hover:text-customBeige duration-300 font-bold text-xl" href="">Mufti Abdul Wahab </a>and his team travelled to Uganda and collaborated with House of Charity Uganda. They specifically went down to one of the most impoverished regions, Namabasa. The following initiatives were brought to action during this visit under Uganda appeal by Al-Wahab Foundation:</p>
+            <p class="text-lg"><a class="text-maroon hover:text-customBeige duration-300 font-bold" href="">Cooked Food</a> – Through our Uganda Appeal, AWF and House of Charity Uganda were able to successfully <br>
+                cook and distribute 350 meals in Namabasa, and 850 meals in Raising Hope Infant School. Over 750 People <br>
+             and little children were able to get a decent meal. They returned to their homes with full stomachs and <br>
+              smiles on their faces. This was possible because of your donations of food for Uganda.
+            </p>
+            <p class="text-lg py-4"><a class="text-maroon hover:text-customBeige duration-300 font-bold" href="">Food Packs</a> – Through our Uganda Appeal, AWF and House of Charity Uganda were able to successfully <br>
+                cook and distribute 350 meals in Namabasa, and 850 meals in Raising Hope Infant School. Over 750 People <br>
+             and little children were able to get a decent meal. They returned to their homes with full stomachs and <br>
+              smiles on their faces. This was possible because of your donations of food for Uganda.
+            </p>
+            <p class="text-lg py-4"><a class="text-maroon hover:text-customBeige duration-300 font-bold" href="">Water</a> – Through our Uganda Appeal, AWF and House of Charity Uganda were able to successfully <br>
+                cook and distribute 350 meals in Namabasa, and 850 meals in Raising Hope Infant School. Over 750 People <br>
+             and little children were able to get a decent meal. They returned to their homes with full stomachs and <br>
+              smiles on their faces. This was possible because of your donations of food for Uganda.
+            </p>
+            <p class="text-lg py-4"><a class="text-maroon hover:text-customBeige duration-300 font-bold" href="">Building a Masjid</a> – Through our Uganda Appeal, AWF and House of Charity Uganda were able to successfully <br>
+                cook and distribute 350 meals in Namabasa, and 850 meals in Raising Hope Infant School. Over 750 People <br>
+             and little children were able to get a decent meal. They returned to their homes with full stomachs and <br>
+              smiles on their faces. This was possible because of your donations of food for Uganda.
+            </p>
+        </div>
+    </div>
+      
+
+    <!-- image section is remanning to add make shure to make an component -->
+
+    <div class="container">
+        <div class="row px-6 py-8">
+            <p class="text-maroon font-bold text-2xl">What AWF Has Achieved So Far?</p>
+            <p class=" text-lg ">Your donation can make a significant difference in the lives of impoverished children and their families by <br>
+               providing <a class="text-maroon font-bold hover:text-customBeige" href="">food packs</a> to combat ongoing hunger. In areas plagued by deep-rooted poverty and unreliable <br>
+                crops, the scarcity of food supply and reliable income worsens the situation. <br><br>
+
+                Clean drinking water is also a critical concern in remote regions, where shortages and inadequate <br>
+                sanitation systems lead to the spread of diseases like Cholera and Ebola. <br> <br>
+
+                <a class="text-maroon hover:text-customBeige duration-300 font-bold" href=""> Pay zakat online </a>or <a class="text-maroon hover:text-customBeige font-bold duration-300" href="">Sadaqah donation</a> can go a long way. It can cover one month’s supply of essential food <br>
+                items for a family in need or offer hot cooked meals to school children, often their only meal for the day. <br>
+                With your generous support, we can also build water wells in Uganda to ensure clean and safe water <br>
+                access, contributing to better health and sanitation for these communities. Support and contribute <br>
+                towards our Uganda appeal to make a difference!
+            </p>
+            <p class=" flex justify-center">
+               <a class="px-4 py-1 bg-maroon text-white text-lg font-bold rounded-full hover:bg-customBeige duration-300" href=""> Donate Now</a>
+            </p>
+
+            <p class=" text-2xl font-bold text-maroon pt-10">Feed Families in Uganda with Al-Wahab Foundation</p>
+            <p class="text-grey font-bold text-lg">“The best of you are those who feed others.” (Ahmad)</p>
+            <p class="text-lg text-grey font-normal">Since 2014, AWF has been tirelessly working to aid people living in poverty worldwide. Thanks to your <br>
+                generous donations, we have provided food packs to over 140,000 people facing desperate circumstances. <br>
+                As global hunger continues to rise, our commitment remains strong in reaching new individuals in regions <br>
+                where poverty threatens lives and suppresses futures. <br><br>
+                Mufti Abdul Wahab personally visited Africa to assist impoverished communities by providing food packs, <br>
+                cooked meals, and clean drinking water under his direct supervision. He envisions this project as an <br>
+                ongoing effort to safeguard as many people as possible from famine and contagious diseases in Uganda. <br><br>
+                Our network is continually expanding, and with your continued support, we can reach even more <br>
+                individuals in need. Our local expertise enables us to be on the ground, reaching those who require.
+            </p>
+            <p class="flex justify-center py-4"> 
+                <a class="px-4 py-1 bg-maroon hover:bg-customBeige text-white rounded-full font-bold" href="">DONATE NOW</a>
+            </p>
+        </div>
+    </div>
+<!-- Remanning See other componenet -->
+    <SeeOtherProjectCards SeeOtherProjects={OtherProject}/>
+<div class="container">
+    <div class="row">
+
+    </div>
+
+</div>
+
+    
+    
+</Layout>
