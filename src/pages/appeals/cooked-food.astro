@@ -1,0 +1,235 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import HeadersBanner from "../../components/HeadersBanner.astro";
+import UmmahCharity from "../../components/Ummah_Charity.astro";
+import CardforCountry from "../../components/CardforCountry.astro";
+import RestoringLives from "../../components/RestoringLives.astro";
+import SupportBanners from "../../components/SupportBanner.astro";
+import Otherproject from "../../components/SeeOtherProjectCard.astro";
+const otherproject = [
+    {
+        title: "Build a Masjid",
+        description:
+            "A mosque is the heart of the community, a place full of peace that brings the community together. In rural",
+        src: "https://picsum.photos/200",
+    },
+    {
+        title: "Pay Zakat Online",
+        description:
+            "The economic situation in Pakistan has caused devastation, leaving many people in desperation. Approximately 36% of the population now lives",
+        src: "https://picsum.photos/200",
+    },
+    {
+        title: "Women Empowerment",
+        description:
+            "Empowering women involves providing them with opportunities to acquire essential skills, boost their confidence, and cultivate independence, enabling lasting benefits",
+        src: "https://picsum.photos/200",
+    },
+    {
+        title: "Give your Sadaqah",
+        description:
+            "Your Sadaqah donation keeps hopes alive for those in need. Your act of charity can ease the suffering of people",
+        src: "https://picsum.photos/200",
+    },
+    {
+        title: "Support a Maktab",
+        description:
+            "Over 280 million children around the world are deprived of education. These children are often forced into a life of",
+        src: "https://picsum.photos/200",
+    },
+    {
+        title: "Food Packs",
+        description:
+            "Around the world, 828 million people suffer from food insecurity. Over 43 million are on the brink of famine. These",
+        src: "https://picsum.photos/200",
+    },
+    {
+        title: "Where Most Needed",
+        description:
+            "At Al-Wahab Foundation, we believe in the power of consistent generosity. Our Where Most Needed initiative empowers you to make",
+        src: "https://picsum.photos/200",
+    },
+    {
+        title: "Hope For Uganda",
+        description:
+            "Poverty in Africa has been a longstanding challenge, casting a shadow over the aspirations and dreams of millions. Within this",
+        src: "https://picsum.photos/200",
+    },
+    {
+        title: "Serving Humanity in the UK",
+        description:
+            "In the UK, many people face daily challenges due to rising costs and unemployment. This includes those living below the",
+        src: "https://picsum.photos/200",
+    },
+    {
+        title: "Winter Survival Kit",
+        description:
+            "As climate change intensifies worldwide, a relentless sequence of natural disasters in various countries has aggravated the difficulties faced by",
+        src: "https://picsum.photos/200",
+    },
+];
+
+const Restoring = [
+    {
+        title: "Thank you from Haleema ",
+        description:
+            "“Nobody wants to be at the receiving end of charity, you know. But times have been difficult, I’ve had to struggle in ways I didn’t think I would ever have to, just to feed my children. In such difficult times, when Al-Wahab Foundation provided free meals to me and my family, I just felt overwhelmed with gratitude.  It may seem like a small thing to some people, but for families like mine, this help means that someone cares and that we’re not forgotten by society. I just want to thank everyone who contributed to this project. The way Mufti Abdul Wahab is helping deprived people around is really commendable. People and organisations like Al-Wahab Foundation save people like us from hopelessness.",
+        src: "https://picsum.photos/200",
+        buttonTitle: "Provide Cooked Food",
+    },
+];
+const SupportBannerDetail = [
+    {
+        leftDescription: "RELIEVE tHEIR HUNGER",
+        rightDescription:
+            "A simple hot meal doesn’t just provide sustenance – it can also provide comfort in the hardest of times. Feeding the hungry, those reeling from crisis and struggling in abject poverty brings spiritual reward in Islam. When you donate your Sadaqah and Zakat to our Cooked Meal programme, you can feed families with nutritious hot meals that lift spirits and improve health.",
+        src: "/assets/images/Help-The-Homeless-in-UK.jpg",
+    },
+];
+
+const card = [
+    {
+        name: "UNITED KINGDOM",
+        title: "Cooked Food",
+        amount: "100.00",
+        src: "https://picsum.photos/200/300",
+    },
+    {
+        name: "PAKISTAN",
+        title: "Cooked Food",
+        amount: "100.00",
+        src: "https://picsum.photos/200/300",
+    },
+    {
+        name: "UGANDA",
+        title: "Cooked Food",
+        amount: "200.00",
+        src: "https://picsum.photos/200/300",
+    },
+];
+
+const HeaderBannerData = [
+    {
+        src: "/assets/images/website-banner-masjid.jpg",
+        title: "Turkey Syria \nEarthquake Appeal",
+    },
+];
+---
+
+<Layout>
+    <HeadersBanner HeadersBanners={HeaderBannerData} />
+    <UmmahCharity />
+    <div class="mt-12">
+        <p class="text-maroon text-xl md:text-3xl font-bold text-center">
+            Provide Hot Meals to the Hungry
+        </p>
+        <p class="text-grey text-lg font-semibold md:text-xl text-center mt-5">
+            Food insecurity in Pakistan is continuing to rise due to severe
+            weather and <br />flooding destroying food supply chains. More than
+            3 million children now <br />face chronic hunger. For thousands of
+            families suffering malnourishment,<br /> a hot meal is out of reach.
+            You can change this by donating today and <br />providing cooked
+            food to those who are struggling by providing <br />nourishment and
+            relieving hunger.
+        </p>
+    </div>
+    <!--card -->
+    <CardforCountry CountryCardDetails={card} />
+
+    <!-- Support Banner  -->
+    <SupportBanners BannerDetails={SupportBannerDetail} />
+    <div class="flex justify-center items-center pt-10 bg-gray-100">
+        <div class="bg-[#7A0B32] text-white rounded-lg w-full max-w-[1000px] h-[300px] flex items-center justify-center mx-4">
+            <div class="flex flex-col items-center text-center">
+              <!-- Icon -->
+              <div class="mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="64" height="64" fill="#D19B6A">
+                  <path d="M19 7h-2a5 5 0 0 0-10 0H5a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h.09a4.5 4.5 0 0 0 8.82 0H15v1a1 1 0 0 0 2 0v-1h.09a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1zM12 5a3 3 0 0 1 3 3h-6a3 3 0 0 1 3-3zm-6 6a2.5 2.5 0 0 1-2.45-2H8a2.5 2.5 0 0 1-2.45 2zm6 3a2.5 2.5 0 0 1-2.45-2h4.9a2.5 2.5 0 0 1-2.45 2zm6-3h-3.55a2.5 2.5 0 0 1-2.45-2h6a2.5 2.5 0 0 1-2.45 2z"/>
+                </svg>
+              </div>
+              <!-- Number and Text -->
+              <h2 class="text-3xl font-bold mb-2">45,640+</h2>
+              <p class="text-lg">Beneficiaries of Cooked Food</p>
+            </div>
+          </div>
+    </div>
+    <!--video -->
+    <div class="container mx-auto px-4 mt-16">
+        <!-- Responsive Video Wrapper -->
+        <div
+            class="relative w-full"
+            style="padding-bottom: 56.25%; /* 16:9 Aspect Ratio */"
+        >
+            <iframe
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/1JEPUTuo5Y0?si=NPzJJaWNGBJMtDaf"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+    <!--section 1 -->
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="row">
+            <p
+                class="text-2xl sm:text-3xl text-maroon font-bold mt-10 sm:mt-20 "
+            >
+                We are Right Here, Right Now for Those in Need!
+            </p>
+            <p
+                class="mt-5 sm:mt-7 text-grey text-base sm:text-lg font-semibold text-justify"
+            >
+                At Al-Wahab Foundation, we deliver your winter survival kit
+                donations to those living in deprived, remote areas, targeted
+                most under the intensive weather conditions. Our Winter Survival
+                Kits provide essential items to protect against the cold and wet
+                weather. We understand that people have the best chance of
+                survival when they are given all-round care.
+            </p>
+            <p
+                class="mt-5 sm:mt-7 text-grey text-base sm:text-lg font-semibold text-justify"
+            >
+                Al-Wahab Foundation also provides warm cooked food under winter
+                donation, where needed the most, to sustain families living in
+                the most difficult circumstances. Contribute to our winter
+                appeal and help us keep people warm and healthy.
+            </p>
+        </div>
+    </div>
+    <RestoringLives ReStroingLives={Restoring} />
+    <!--section 2 -->
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="row">
+            <p
+                class="text-2xl sm:text-3xl text-maroon font-bold mt-10 sm:mt-20 "
+            >
+            Thanks to you, Al-Wahab Foundation is feeding the hungry.
+            </p>
+            <p class="mt-5 sm:mt-7 text-grey text-base sm:text-lg font-semibold text-justify"><span class="font-bold">“Give food, out of love for Him, to the poor and the orphan and the captive, [saying] “We feed you, for Allah’s pleasure only — We desire from you neither reward nor thanks.” </span>(Holy Qur’an 76:5-12).</p>
+            <p
+                class="mt-5 sm:mt-7 text-grey text-base sm:text-lg font-semibold text-justify"
+            >
+            Since 2014, we have provided freshly cooked meals to thousands of people in need across Pakistan.  Our established teams, food supply chain and local knowledge means we can feed those in the hardest to reach areas with your donations. Launching our food-related campaigns forms part of our efforts to fight the hunger of people across Pakistan where severe poverty afflicts millions of people daily. Thanks to you, we been able to ease their suffering, using your<span class="text-maroon font-bold"> Sadaqah</span> and <span class="text-maroon font-bold">Zakat donation</span> to feed those who are weak, tired and malnourished.
+            </p>
+            <p
+                class="mt-5 sm:mt-7 text-grey text-base sm:text-lg font-semibold text-justify"
+            >
+            Al-Wahab Foundation’s <span class="font-bold">Feed the Hungry</span> programme is reaching out to thousands of people throughout Pakistan to put food on the table and put an end to food insecurity. Your Zakat and Sadaqah are 100% applicable for this project meaning your donation goes towards providing cooked food to support needy families, relieving hunger and improving their quality of life.
+            </p>
+           
+        </div>
+        <div class="flex justify-center mt-10 sm:mt-12">
+            <a
+                href="#"
+                class="bg-maroon hover:bg-customBeige text-white font-bold py-2 px-6 sm:px-8 rounded-full uppercase text-sm sm:text-base"
+            >
+                Donate UK Winter Kit £50
+            </a>
+        </div>
+    </div>
+
+
+    <Otherproject SeeOtherProjects={otherproject} />
+</Layout>
