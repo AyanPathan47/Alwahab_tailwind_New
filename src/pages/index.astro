@@ -1,6 +1,65 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import UmmahCharity from '../components/Ummah_Charity.astro';
+import SeeOtherProjectCard from '../components/SeeOtherProjectCard.astro';
+
+const OtherProject =[
+	{
+		title: "Birmingham Charity Dinner 2024: Celebrating 10 Years of Al-Wahab Foundation ",
+		description : "Al-Wahab Foundation’s 10-years celebration Charity Dinner at Crystal Plaza, Birmingham turns into a remarkable success with the participation of our... ",
+        src: "https://alwahabfoundation.org/wp-content/uploads/2024/11/awf-birmingham-event-charity-dinner-1024x684.jpg.webp",
+	},
+	{
+		title: "The Benefits & Rewards of Building a Masjid – Sadaqah Jariyah ",
+		description : "Building a masjid is one of the greatest deeds and a Sadaqah Jariyah i.e. an ongoing charity. The benefits of... 	",
+        src: "https://alwahabfoundation.org/wp-content/uploads/2024/11/masjids-awf-collage-1024x683.jpg.webp",
+	},
+	{
+		title: "Mufti Abdul Wahab’s Pakistan Relief Trip For Al-Wahab Foundation – An Overview! ",
+		description : "Like every year, Chairman Al-Wahab Foundation, Mufti Abdul Wahab recently embarked on a journey to provide relief and hope in ",
+        src: "https://alwahabfoundation.org/wp-content/uploads/2024/11/pakistan-relief-trip-mufti-abdul-wahab-1024x683.jpg.webp",
+	},
+	{
+		title: "Provide Essential Winter Survival Kits to Help the Needy in the UK ",
+		description : "Every year, winter season brings various challenges for many people living around the world. As temperatures plumet, countless people are... ",
+        src: "https://alwahabfoundation.org/wp-content/uploads/2024/11/winter-survival-kits-awf-afghanistan-1024x683.jpg.webp",
+	},
+	{
+		title: "Al-Wahab Foundation’s Impactful Presence at the Global Peace & Unity Festival 2024 ",
+		description : "The most anticipated Global Peace and Unity Festival returned to London on the 19th and 20th of October, 2024 at...",
+        src: "https://alwahabfoundation.org/wp-content/uploads/2024/10/gpu-festival-2024-awf-1024x658.jpg.webp",
+	},
+	{
+		title: "Celebrating Al-Wahab Foundation’s 10-Years – Manchester Charity Dinner Highlights! ",
+		description : "Al-Wahab Foundation’s 10-years celebration Charity Dinner at Manzil Banqueting Hall, Manchester marks its success with an overwhelming response from esteemed..",
+        src: "https://picsum.photos/300/200",
+	},
+	{
+		title: "Al-Wahab Foundation’s London Charity Dinner – Highlights from 10-Years Celebration! ",
+		description : "The most anticipated Global Peace and Unity Festival returned to London on the 19th and 20th of October, 2024 at",
+        src: "https://picsum.photos/300/200",
+	},
+	{
+		title: "What is Serving Humanity and Why is it Important?",
+		description : "The term ‘Serving humanity’ is commonly used by the members of a society but less understood when it comes to... ",
+        src: "https://picsum.photos/300/200",
+	},
+	{
+		title: "The Month of Rabi-ul-Awwal: Understanding The Significance of Reflection, Gratitude, and Charity ",
+		description : "The month of Rabi ul Awwal is a significant month in Islam, marking the birth of Prophet Muhammad (S.A.W.), celebrated ",
+        src: "https://picsum.photos/300/200",
+	},
+	{
+		title: "Acts of Sadaqah Jariyah: A Charity That Keeps on Giving ",
+		description : "In Islam, charity is the cornerstone of the faith, deeply embedded in the teachings of Quran and Sunnah. Among the... ",
+        src: "https://picsum.photos/300/200",
+	},
+	{
+		title: "What is Serving Humanity and Why is it Important?",
+		description : "The term ‘Serving humanity’ is commonly used by the members of a society but less understood when it comes to...",
+        src: "https://picsum.photos/300/200",
+	},
+]
 ---
 <Layout>
 	<div class="relative w-full h-56 md:min-h-screen hidden md:block">
@@ -742,233 +801,11 @@ import UmmahCharity from '../components/Ummah_Charity.astro';
   
 <!-- ++++++++++++++++++++++++++++++Latest Blog+++++++++++++++++++++++++++++++++++++++++ -->
 
-<div class="container mt-20 mx-auto px-4">
-	<div class="flex gap-6 overflow-x-auto scroll-smooth scrollbar-hide">
-	  <!-- Card 1 -->
-	  <div class="max-w-xs bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden relative flex-shrink-0">
-		<a href="#">
-		  <img class="rounded-t-lg w-full object-cover h-80 inset-0" src="https://alwahabfoundation.org/wp-content/uploads/2024/11/awf-birmingham-event-charity-dinner-1024x684.jpg.webp" alt="Card image" />
-		</a>
-		<div class="p-5">
-		  <p>
-			<span class="text-lg font-semibold block mb-2">
-				Birmingham Charity Dinner 2024: Celebrating 10 Years of Al-Wahab Foundation
-			</span>
-			Al-Wahab Foundation’s 10-years celebration Charity Dinner at Crystal Plaza, Birmingham 
-			turns into a remarkable success with the participation of our...
-		  </p>
-		  <p class="flex items-center justify-center mt-6">
-			<a href="#" class="px-4 py-2 inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
-			  Read More
-			</a>
-		  </p>
-		</div>
-	  </div>
-  
-	  <!-- Duplicate the above card as needed -->
-	  <div class="max-w-xs bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden relative flex-shrink-0">
-		<a href="#">
-		  <img class="rounded-t-lg w-full object-cover h-80 inset-0" src="https://alwahabfoundation.org/wp-content/uploads/2024/11/masjids-awf-collage-1024x683.jpg.webp" alt="Card image" />
-		</a>
-		<div class="p-5">
-		  <p>
-			<span class="text-lg font-semibold block mb-2">
-				The Benefits & Rewards of Building a Masjid – Sadaqah Jariyah
-			</span>
-			 Building a masjid is one of the greatest deeds and a Sadaqah Jariyah
-			 i.e. an ongoing charity. The benefits of...
-		  </p>
-		  <p class="flex items-center justify-center mt-6">
-			<a href="#" class="px-4 py-2 inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
-			  Read More
-			</a>
-		  </p>
-		</div>
-	  </div>
-
-	  <div class="max-w-xs bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden relative flex-shrink-0">
-		<a href="#">
-		  <img class="rounded-t-lg w-full object-cover h-80 inset-0" src="https://alwahabfoundation.org/wp-content/uploads/2024/11/pakistan-relief-trip-mufti-abdul-wahab-1024x683.jpg.webp" alt="Card image" />
-		</a>
-		<div class="p-5">
-		  <p>
-			<span class="text-lg font-semibold block mb-2">
-				Mufti Abdul Wahab’s Pakistan Relief Trip For Al-Wahab Foundation – An Overview!
-			</span>
-			   Like every year, Chairman Al-Wahab Foundation, Mufti Abdul Wahab recently embarked on a
-			   journey to provide relief and hope in		  
-			</p>
-		  <p class="flex items-center justify-center mt-6">
-			<a href="#" class="px-4 py-2 inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
-			  Read More
-			</a>
-		  </p>
-		</div>
-	  </div>
-
-	  <div class="max-w-xs bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden relative flex-shrink-0">
-		<a href="#">
-		  <img class="rounded-t-lg w-full object-cover h-80 inset-0" src="https://alwahabfoundation.org/wp-content/uploads/2024/11/winter-survival-kits-awf-afghanistan-1024x683.jpg.webp" alt="Card image" />
-		</a>
-		<div class="p-5">
-		  <p>
-			<span class="text-lg font-semibold block mb-2">
-				Provide Essential Winter Survival Kits to Help the Needy in the UK
-			</span>
-			   Every year, winter season brings various challenges for many people living around the world.
-			    As temperatures plumet, countless people are...		  
-			</p>
-		  <p class="flex items-center justify-center mt-6">
-			<a href="#" class="px-4 py-2 inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
-			  Read More
-			</a>
-		  </p>
-		</div>
-	  </div>
-	  <!-- Add more cards -->
-	  <div class="max-w-xs bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden relative flex-shrink-0">
-		<a href="#">
-		  <img class="rounded-t-lg w-auto object-cover h-80 inset-0" src="https://alwahabfoundation.org/wp-content/uploads/2024/10/gpu-festival-2024-awf-1024x658.jpg.webp" alt="Card image" />
-		</a>
-		<div class="p-5">
-		  <p>
-			<span class="text-lg font-semibold block mb-2">
-				Al-Wahab Foundation’s Impactful Presence at the Global Peace & Unity Festival 2024
-			</span>
-			  The most anticipated Global Peace and Unity Festival returned to London 
-			  on the 19th and 20th of October, 2024 at...		 
-			 </p>
-		  <p class="flex items-center justify-center mt-6">
-			<a href="#" class="px-4 py-2 inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
-			  Read More
-			</a>
-		  </p>
-		</div>
-	  </div>
-
-	  <div class="max-w-xs bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden relative flex-shrink-0">
-		<a href="#">
-		  <img class="rounded-t-lg w-auto object-cover h-80 inset-0" src="https://picsum.photos/300/200" alt="Card image" />
-		</a>
-		<div class="p-5">
-		  <p>
-			<span class="text-lg font-semibold block mb-2">
-				Celebrating Al-Wahab Foundation’s 10-Years – Manchester Charity Dinner Highlights!			
-			</span>
-			 Al-Wahab Foundation’s 10-years celebration Charity Dinner at Manzil Banqueting Hall,
-			 Manchester marks its success with an overwhelming response from esteemed...		 
-			 </p>
-		  <p class="flex items-center justify-center mt-6">
-			<a href="#" class="px-4 py-2 inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
-			  Read More
-			</a>
-		  </p>
-		</div>
-	  </div>
-
-	  <div class="max-w-xs bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden relative flex-shrink-0">
-		<a href="#">
-		  <img class="rounded-t-lg w-auto object-cover h-80 inset-0" src="https://picsum.photos/300/200" alt="Card image" />
-		</a>
-		<div class="p-5">
-		  <p>
-			<span class="text-lg font-semibold block mb-2">
-				Al-Wahab Foundation’s London Charity Dinner – Highlights from 10-Years Celebration!
-			</span>
-			  The most anticipated Global Peace and Unity Festival returned to London 
-			  on the 19th and 20th of October, 2024 at		 
-			 </p>
-		  <p class="flex items-center justify-center mt-6">
-			<a href="#" class="px-4 py-2 inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
-			  Read More
-			</a>
-		  </p>
-		</div>
-	  </div>
-
-	  <div class="max-w-xs bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden relative flex-shrink-0">
-		<a href="#">
-		  <img class="rounded-t-lg w-auto object-cover h-80 inset-0" src="https://picsum.photos/300/200" alt="Card image" />
-		</a>
-		<div class="p-5">
-		  <p>
-			<span class="text-lg font-semibold block mb-2">
-				What is Serving Humanity and Why is it Important?
-			</span>
-			The term ‘Serving humanity’ is commonly used by the members of a society but less understood when it comes to...		 
-			 </p>
-		  <p class="flex items-center justify-center mt-6">
-			<a href="#" class="px-4 py-2 inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
-			  Read More
-			</a>
-		  </p>
-		</div>
-	  </div>
+<div class="mt-20 px-4">
+	<SeeOtherProjectCard SeeOtherProjects={OtherProject}/>
+</div>
 
 
-	  <div class="max-w-xs bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden relative flex-shrink-0">
-		<a href="#">
-		  <img class="rounded-t-lg w-auto object-cover h-80 inset-0" src="https://picsum.photos/300/200" alt="Card image" />
-		</a>
-		<div class="p-5">
-		  <p>
-			<span class="text-lg font-semibold block mb-2">
-				The Month of Rabi-ul-Awwal: Understanding The Significance of Reflection, Gratitude, and Charity
-			</span>
-			    The month of Rabi ul Awwal is a significant month in Islam, marking the birth 
-				of Prophet Muhammad (S.A.W.), celebrated			 
-			</p>
-		  <p class="flex items-center justify-center mt-6">
-			<a href="#" class="px-4 py-2 inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
-			  Read More
-			</a>
-		  </p>
-		</div>
-	  </div>
-
-	  <div class="max-w-xs bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden relative flex-shrink-0">
-		<a href="#">
-		  <img class="rounded-t-lg w-auto object-cover h-80 inset-0" src="https://picsum.photos/300/200" alt="Card image" />
-		</a>
-		<div class="p-5">
-		  <p>
-			<span class="text-lg font-semibold block mb-2">
-				Acts of Sadaqah Jariyah: A Charity That Keeps on Giving
-			</span>
-			  In Islam, charity is the cornerstone of the faith, deeply 
-			  embedded in the teachings of Quran and Sunnah. Among the...		 
-			 </p>
-		  <p class="flex items-center justify-center mt-6">
-			<a href="#" class="px-4 py-2 inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
-			  Read More
-			</a>
-		  </p>
-		</div>
-	  </div>
-
-	  <div class="max-w-xs bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden relative flex-shrink-0">
-		<a href="#">
-		  <img class="rounded-t-lg w-auto object-cover h-80 inset-0" src="https://picsum.photos/300/200" alt="Card image" />
-		</a>
-		<div class="p-5">
-		  <p>
-			<span class="text-lg font-semibold block mb-2">
-				What is Serving Humanity and Why is it Important?
-			</span>
-			The term ‘Serving humanity’ is commonly used by the members of a society but less understood when it comes to...		 
-			 </p>
-		  <p class="flex items-center justify-center mt-6">
-			<a href="#" class="px-4 py-2 inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
-			  Read More
-			</a>
-		  </p>
-		</div>
-	  </div>
-  
-	  <!-- Repeat for more cards -->
-	</div>
-  </div>
-  
   <div class="container mx-auto mt-20 mb-11">
     <div class="row flex justify-center">
         <!-- Wrapper for Responsive iframe -->
@@ -1065,7 +902,7 @@ import UmmahCharity from '../components/Ummah_Charity.astro';
 
 <!-- +++++++++++++++++++++++++++++++Ongoing Appeals+++++++++++++++++++++++++++++++ -->
 <!--  -->
-<div class="container mx-auto mt-24 ">
+<div class="container mx-auto mt-24 " data-aos="fade-up">
 	<p class="text-3xl text-grey font-bold text-center py-8">Ongoing appeals</p>
     <div class="row flex gap-3 overflow-x-auto overflow-y-hidden">
         <!-- Image 1 -->
@@ -1236,6 +1073,12 @@ import UmmahCharity from '../components/Ummah_Charity.astro';
                     <a class="text-center" href="">Sadaqah</a>
                 </p>
             </div>
+			<div
+          class="swiper-button-prev absolute top-1/2 -translate-y-1/2 left-[-20px] bg-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg cursor-pointer hover:bg-gray-200"
+        ></div>
+        <div
+          class="swiper-button-next absolute top-1/2 -translate-y-1/2 right-[-20px] bg-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg cursor-pointer hover:bg-gray-200"
+        ></div>
 		</div>
 
 		<div class="max-w-xs md:max-w-xs bg-white rounded-lg shadow-lg overflow-hidden relative flex-shrink-0">
@@ -1411,11 +1254,38 @@ import UmmahCharity from '../components/Ummah_Charity.astro';
 	</div>
   </div>
   
+  
 
+  <div class="main bg-black py-5">
+    <h1 class="ms-10 pt-5 font-semibold text-xl text-white">Some Movies Here.</h1>
+    <div class="slider flex">
+        <div class="button prev flex items-center justify-center cursor-pointer" id="prev-btn">
+            <i class="fa-solid fa-chevron-left text-white ms-5" ></i>
+        </div>
+        <div class="movie-container flex justify-between my-6 mx-6 overflow-auto">
+            <img class="h-80 w-48 rounded-md mx-2" src="https://m.media-amazon.com/images/M/MV5BNzQxNzQxNjk5NV5BMl5BanBnXkFtZTgwNTI4MTU0MzE@._V1_.jpg" alt="movie" />
+            <img class="h-80 w-48 rounded-md mx-2" src="https://m.media-amazon.com/images/M/MV5BNzQxNzQxNjk5NV5BMl5BanBnXkFtZTgwNTI4MTU0MzE@._V1_.jpg" alt="movie" />
+            <img class="h-80 w-48 rounded-md mx-2" src="https://m.media-amazon.com/images/M/MV5BNzQxNzQxNjk5NV5BMl5BanBnXkFtZTgwNTI4MTU0MzE@._V1_.jpg" alt="movie" />
+            <img class="h-80 w-48 rounded-md mx-2" src="https://m.media-amazon.com/images/M/MV5BNzQxNzQxNjk5NV5BMl5BanBnXkFtZTgwNTI4MTU0MzE@._V1_.jpg" alt="movie" />
+            <img class="h-80 w-48 rounded-md mx-2" src="https://m.media-amazon.com/images/M/MV5BNzQxNzQxNjk5NV5BMl5BanBnXkFtZTgwNTI4MTU0MzE@._V1_.jpg" alt="movie" />
+            <img class="h-80 w-48 rounded-md mx-2" src="https://m.media-amazon.com/images/M/MV5BNzQxNzQxNjk5NV5BMl5BanBnXkFtZTgwNTI4MTU0MzE@._V1_.jpg" alt="movie" />
+            <img class="h-80 w-48 rounded-md mx-2" src="https://m.media-amazon.com/images/M/MV5BNzQxNzQxNjk5NV5BMl5BanBnXkFtZTgwNTI4MTU0MzE@._V1_.jpg" alt="movie" />
+            <img class="h-80 w-48 rounded-md mx-2" src="https://m.media-amazon.com/images/M/MV5BNzQxNzQxNjk5NV5BMl5BanBnXkFtZTgwNTI4MTU0MzE@._V1_.jpg" alt="movie" />
+            <img class="h-80 w-48 rounded-md mx-2" src="https://m.media-amazon.com/images/M/MV5BNzQxNzQxNjk5NV5BMl5BanBnXkFtZTgwNTI4MTU0MzE@._V1_.jpg" alt="movie" />
+            <img class="h-80 w-48 rounded-md mx-2" src="https://m.media-amazon.com/images/M/MV5BNzQxNzQxNjk5NV5BMl5BanBnXkFtZTgwNTI4MTU0MzE@._V1_.jpg" alt="movie" />
+            <img class="h-80 w-48 rounded-md mx-2" src="https://m.media-amazon.com/images/M/MV5BNzQxNzQxNjk5NV5BMl5BanBnXkFtZTgwNTI4MTU0MzE@._V1_.jpg" alt="movie" />
+            <img class="h-80 w-48 rounded-md mx-2" src="https://m.media-amazon.com/images/M/MV5BNzQxNzQxNjk5NV5BMl5BanBnXkFtZTgwNTI4MTU0MzE@._V1_.jpg" alt="movie" />
+            <img class="h-80 w-48 rounded-md mx-2" src="https://m.media-amazon.com/images/M/MV5BNzQxNzQxNjk5NV5BMl5BanBnXkFtZTgwNTI4MTU0MzE@._V1_.jpg" alt="movie" />
+            <img class="h-80 w-48 rounded-md mx-2" src="https://m.media-amazon.com/images/M/MV5BNzQxNzQxNjk5NV5BMl5BanBnXkFtZTgwNTI4MTU0MzE@._V1_.jpg" alt="movie" />
+            <img class="h-80 w-48 rounded-md mx-2" src="https://m.media-amazon.com/images/M/MV5BNzQxNzQxNjk5NV5BMl5BanBnXkFtZTgwNTI4MTU0MzE@._V1_.jpg" alt="movie" />
+        </div>
 
-
-
-	  
+        <div class="button next flex items-center justify-center cursor-pointer"  id="next-btn">
+            <i class="fa-solid fa-chevron-right text-white me-5"></i>
+        </div>
+    </div>
+    
+</div>
 	
 </Layout>
 <script is:inline>
@@ -1425,5 +1295,19 @@ import UmmahCharity from '../components/Ummah_Charity.astro';
 		// Toggle the 'hidden' class on click
 		Program_dropdown.classList.toggle("hidden");
 	}
+
+	 document.getElementById('next-btn').addEventListener('click', () => {
+        document.querySelector('.movie-container').scrollBy({
+            left: 300,
+            behavior: 'smooth'
+        });
+    });
+
+    document.getElementById('prev-btn').addEventListener('click', () => {
+        document.querySelector('.movie-container').scrollBy({
+            left: -300,
+            behavior: 'smooth'
+        });
+    });
 </script>
 
