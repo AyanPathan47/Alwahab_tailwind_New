@@ -8,42 +8,84 @@ export interface Props{
 }
 const {SeeOtherProjects} = Astro.props
 ---
+<div class="container flex flex-col items-center justify-center">
+  <div class="slider flex items-center ml-auto relative w-full">
+    <!-- Previous Button -->
+    <div
+      class="button prev absolute flex items-center justify-center cursor-pointer z-10 w-10 h-10"
+      id="prev-btn"
+    >
+      <i class="fa-solid fa-chevron-left text-maroon text-5xl "></i>
+    </div>
 
-<div class="container mx-auto mt-20">
-    <div class="flex justify-center">
-      <!-- Scrollable Cards Wrapper -->
-      <div class="flex overflow-x-auto scroll-smooth gap-7 px-4 md:w-3/4">
-        {SeeOtherProjects.map((SeeOtherProject) => (
-          <!-- Individual Card -->
-          <div class="bg-white rounded-lg shadow-lg w-80 flex-shrink-0 overflow-hidden">
-            <a class="flex justify-center" href="#">
-              <img
-                class="rounded-t-lg w-full object-cover h-64"
-                src={SeeOtherProject.src}
-                alt="Card image"
-              />
+    <!-- Movie Container -->
+    <div
+      class="movie-container flex justify-between gap-7 mx-auto overflow-x-auto scroll-smooth px-11 space-x-4 w-full"
+    >
+      {SeeOtherProjects.map((SeeOtherProject) => (
+        <div
+          class="bg-white rounded-lg shadow-lg w-80 flex-shrink-0 overflow-hidden"
+        >
+          <!-- Card Image -->
+          <a class="flex justify-center" href="#">
+            <img
+              class="rounded-t-lg w-full object-cover h-64"
+              src={SeeOtherProject.src}
+              alt={SeeOtherProject.title}
+            />
+          </a>
+
+          <!-- Card Content -->
+          <div class="px-4 py-2">
+            <a href="#">
+              <h5 class="text-2xl font-semibold tracking-tight text-black text-center mt-2">
+                {SeeOtherProject.title}
+              </h5>
             </a>
-            <div class="px-4 py-2">
-              <a class="flex justify-center" href="#">
-                <h5 class="text-2xl font-bold tracking-tight text-maroon text-black text-center mt-2">
-                  {SeeOtherProject.title}
-                </h5>
+            <p class="py-4 text-sm text-black text-center sm:text-base md:text-lg">
+              {SeeOtherProject.description}
+            </p>
+            <div class="flex items-center justify-center">
+              <a
+                href="#"
+                class="px-6 py-3 inline-flex items-center sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300"
+              >
+                Read More
               </a>
-              <p class="py-6 text-sm text-black text-center font-light sm:text-base md:text-lg">
-                {SeeOtherProject.description || 'Any amount'}
-              </p>
-              <div class="flex items-center justify-center">
-                <a
-                  href="#"
-                  class="px-6 py-3 inline-flex items-center sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300"
-                >
-                  Read More
-                </a>
-              </div>
             </div>
           </div>
-        ))}
-      </div>
+        </div>
+      ))}
+    </div>
+
+    <!-- Next Button -->
+    <div
+      class="button next absolute right-0 flex items-center justify-center cursor-pointer z-10 w-10 h-10"
+      id="next-btn"
+    >
+      <i class="fa-solid fa-chevron-right text-maroon text-5xl"></i>
     </div>
   </div>
-  
+</div>
+
+<script is:inline>
+  const movieContainer = document.querySelector('.movie-container');
+  const prevBtn = document.getElementById('prev-btn');
+  const nextBtn = document.getElementById('next-btn');
+
+  // Scroll to the left
+  prevBtn.addEventListener('click', () => {
+    movieContainer.scrollBy({
+      left: -300,
+      behavior: 'smooth',
+    });
+  });
+
+  // Scroll to the right
+  nextBtn.addEventListener('click', () => {
+    movieContainer.scrollBy({
+      left: 300,
+      behavior: 'smooth',
+    });
+  });
+</script>
