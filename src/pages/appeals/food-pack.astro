@@ -6,325 +6,411 @@ import SupportBanners from "../../components/SupportBanner.astro";
 import RestoringLive from "../../components/RestoringLives.astro";
 import SeeOtherProjectCard from "../../components/SeeOtherProjectCard.astro";
 
-const OtherProject =[
-    {
-        title : "Where Most Needed",
-        description : "At Al-Wahab Foundation, we believe in the power of consistent generosity. Our Where Most Needed initiative empowers you to make",
-        src: "https://alwahabfoundation.org/wp-content/uploads/2023/10/IMG_1703-1024x384.jpg",
-    },
-    {
-        title : "Qurbani",
-        description : "Donate Qurbani this Dhul-Hijjah with AWF. Your donation can reach those in need this Eid Al-Adha.",
-        src: "https://alwahabfoundation.org/wp-content/uploads/2023/05/Camel-banner-1024x400.jpg",
-    },
-    {
-        title : "Hope For Uganda",
-        description : "At Al-Wahab Foundation, we believe in the power of consistent generosity. Our Where Most Needed initiative empowers you to make",
-        src: "",
-    },
-    {
-        title : "Serving Humanity in the UK",
-        description : "At Al-Wahab Foundation, we believe in the power of consistent generosity. Our Where Most Needed initiative empowers you to make",
-        src: "",
-    },
-    {
-        title : "Winter Survival Kit",
-        description : "At Al-Wahab Foundation, we believe in the power of consistent generosity. Our Where Most Needed initiative empowers you to make",
-        src: "",
-    },
-    {
-        title : "Build a Masjid",
-        description : "At Al-Wahab Foundation, we believe in the power of consistent generosity. Our Where Most Needed initiative empowers you to make",
-        src: "",
-    },
-    {
-        title : "Pay Zakat Online",
-        description : "At Al-Wahab Foundation, we believe in the power of consistent generosity. Our Where Most Needed initiative empowers you to make",
-        src: "",
-    },
-    {
-        title : "Women Empowerment",
-        description : "Empowering women involves providing them with opportunities to acquire essential skills, boost their confidence, and cultivate independence, enabling lasting benefits",
-        src: "",
-    },
-    {
-        title : "Give your Sadaqah",
-        description : "Your Sadaqah donation keeps hopes alive for those in need. Your act of charity can ease the suffering of people",
-        src: "",
-    },
-    {
-        title : "Support a Maktab",
-        description : "Over 280 million children around the world are deprived of education. These children are often forced into a life of",
-        src: "",
-    },
-
-]
+const OtherProject = [
+  {
+    title: "Where Most Needed",
+    description:
+      "At Al-Wahab Foundation, we believe in the power of consistent generosity. Our Where Most Needed initiative empowers you to make",
+    src: "https://alwahabfoundation.org/wp-content/uploads/2023/10/IMG_1703-1024x384.jpg",
+  },
+  {
+    title: "Qurbani",
+    description:
+      "Donate Qurbani this Dhul-Hijjah with AWF. Your donation can reach those in need this Eid Al-Adha.",
+    src: "https://alwahabfoundation.org/wp-content/uploads/2023/05/Camel-banner-1024x400.jpg",
+  },
+  {
+    title: "Hope For Uganda",
+    description:
+      "At Al-Wahab Foundation, we believe in the power of consistent generosity. Our Where Most Needed initiative empowers you to make",
+    src: "",
+  },
+  {
+    title: "Serving Humanity in the UK",
+    description:
+      "At Al-Wahab Foundation, we believe in the power of consistent generosity. Our Where Most Needed initiative empowers you to make",
+    src: "",
+  },
+  {
+    title: "Winter Survival Kit",
+    description:
+      "At Al-Wahab Foundation, we believe in the power of consistent generosity. Our Where Most Needed initiative empowers you to make",
+    src: "",
+  },
+  {
+    title: "Build a Masjid",
+    description:
+      "At Al-Wahab Foundation, we believe in the power of consistent generosity. Our Where Most Needed initiative empowers you to make",
+    src: "",
+  },
+  {
+    title: "Pay Zakat Online",
+    description:
+      "At Al-Wahab Foundation, we believe in the power of consistent generosity. Our Where Most Needed initiative empowers you to make",
+    src: "",
+  },
+  {
+    title: "Women Empowerment",
+    description:
+      "Empowering women involves providing them with opportunities to acquire essential skills, boost their confidence, and cultivate independence, enabling lasting benefits",
+    src: "",
+  },
+  {
+    title: "Give your Sadaqah",
+    description:
+      "Your Sadaqah donation keeps hopes alive for those in need. Your act of charity can ease the suffering of people",
+    src: "",
+  },
+  {
+    title: "Support a Maktab",
+    description:
+      "Over 280 million children around the world are deprived of education. These children are often forced into a life of",
+    src: "",
+  },
+];
 
 const RestoreData = [
-    {
-        title : "From Hunger to Hope: Al-Wahab Foundation's Food Packs Provide Sustenance to Iqbal & Family ",
-        description : "“My name is Iqbal, and I am a farmer, residing in Thar with my family of six. Life here is a constant struggle for survival. The scarcity of food is a persistent issue, and providing nourishment for my children is a daily challenge. We depend on occasional work opportunities, but they are not enough to ensure a stable supply of food. We often go to bed hungry, and my heart aches to see my children suffer. I am greatly thankful to Al-Wahab Foundation and Mufti Abdul Wahab for their understanding and compassion towards our difficulty. The food packs they provided have been a lifeline for my family. We now have enough to eat for the entire month as it includes every food staple ensuring nourishing meals for my family, and my children no longer go to bed hungry. I am truly humbled by this kindness from Al-Wahab Foundation and Mufti Abdul Wahab. We will pray for them every day.",
-        src: "https://alwahabfoundation.org/wp-content/uploads/2022/07/3L5A5064-1.jpg",
-        buttonTitle: "Read More",
-    }
-]
+  {
+    title:
+      "From Hunger to Hope: Al-Wahab Foundation's Food Packs Provide Sustenance to Iqbal & Family ",
+    description:
+      "“My name is Iqbal, and I am a farmer, residing in Thar with my family of six. Life here is a constant struggle for survival. The scarcity of food is a persistent issue, and providing nourishment for my children is a daily challenge. We depend on occasional work opportunities, but they are not enough to ensure a stable supply of food. We often go to bed hungry, and my heart aches to see my children suffer. I am greatly thankful to Al-Wahab Foundation and Mufti Abdul Wahab for their understanding and compassion towards our difficulty. The food packs they provided have been a lifeline for my family. We now have enough to eat for the entire month as it includes every food staple ensuring nourishing meals for my family, and my children no longer go to bed hungry. I am truly humbled by this kindness from Al-Wahab Foundation and Mufti Abdul Wahab. We will pray for them every day.",
+    src: "https://alwahabfoundation.org/wp-content/uploads/2022/07/3L5A5064-1.jpg",
+    buttonTitle: "Read More",
+  },
+];
 
 const SupportBannerData = [
-    {
-       leftDescription:'Help End Hunger',
-       rightDescription:'“He is not a believer when his stomach is filled but his neighbour is hungry.” (Bukhari) Feeding the hungry is a fundamental part of Islamic faith. Relieving hunger and helping those who are less fortunate brings immense reward.  Our food packs donation will sustain a whole family for one month with vital supplies to create filling meals, reducing hunger, food insecurity and providing vital nutrition. Donate food packs donation today and help those who are starving.',
-       src: '',
-    }
-]
-const HeaderBanned=[
-    {
-        src: "/assets/images/website-banner-masjid.jpg",
-        title:"FOOD PACKS DONATION" ,
-    }
-]
+  {
+    leftDescription: "Help End Hunger",
+    rightDescription:
+      "“He is not a believer when his stomach is filled but his neighbour is hungry.” (Bukhari) Feeding the hungry is a fundamental part of Islamic faith. Relieving hunger and helping those who are less fortunate brings immense reward.  Our food packs donation will sustain a whole family for one month with vital supplies to create filling meals, reducing hunger, food insecurity and providing vital nutrition. Donate food packs donation today and help those who are starving.",
+    src: "",
+  },
+];
+const HeaderBanned = [
+  {
+    src: "/assets/images/website-banner-masjid.jpg",
+    title: "FOOD PACKS DONATION",
+  },
+];
 ---
+
 <Layout>
-    <HeadersBanner HeadersBanners ={HeaderBanned} />
-    <UmmahCharity />
+  <HeadersBanner HeadersBanners={HeaderBanned} />
+  <UmmahCharity />
 
-    <div class="container">
-        <div class="row">
-            <p class="text-4xl text-maroon font-bold text-center pt-16">Feed a Family in Need</p>
-            <p class="text-center px-10 font-semibold">
-                Around the world, 828 million people suffer from food insecurity. Over 43 million are <br>
-                 on the brink of famine. These figures often rise due to ongoing natural disaster, <br>
-                  drought, conflict and abject poverty. Donations to our Feed the Hungry initiative can <br>
-                   help relieve hunger, fuel bodies, and provide hope. Donate today to fight the effects <br>
-                    of poverty.
-            </p>
-        </div>
+  <div class="container">
+    <div class="row">
+      <p class="text-4xl text-maroon font-bold text-center pt-16">
+        Feed a Family in Need
+      </p>
+      <p class="text-center px-10 font-semibold">
+        Around the world, 828 million people suffer from food insecurity. Over
+        43 million are <br />
+        on the brink of famine. These figures often rise due to ongoing natural disaster,
+        <br />
+        drought, conflict and abject poverty. Donations to our Feed the Hungry initiative
+        can <br />
+        help relieve hunger, fuel bodies, and provide hope. Donate today to fight
+        the effects <br />
+        of poverty.
+      </p>
     </div>
-    <SupportBanners BannerDetails={SupportBannerData} />
-    <div class="container ">
-        <div class="row flex mx-auto justify-center py-12 md:w-[1000px]">
-          <!-- First Column -->
-          <div class="w-1/2 bg-maroon  duration-300 border-2 py-20 px-4 border-customBeige flex flex-col items-center justify-center">
-              <svg xmlns="http://www.w3.org/2000/svg" class=" hover:stroke-customBeige duration-300 " 
-              width="80" height="80" viewBox="0 0 24 24" 
-              fill="none" stroke="white" stroke-width="2"
-               stroke-linecap="round" stroke-linejoin="round" 
-               class="lucide lucide-wheat">
-               <path d="M2 22 16 8"/>
-               <path d="M3.47 12.53 5 11l1.53 1.53a3.5 3.5 0 0 1 0 4.94L5 19l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z"/>
-               <path d="M7.47 8.53 9 7l1.53 1.53a3.5 3.5 0 0 1 0 4.94L9 15l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z"/>
-               <path d="M11.47 4.53 13 3l1.53 1.53a3.5 3.5 0 0 1 0 4.94L13 11l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z"/>
-               <path d="M20 2h2v2a4 4 0 0 1-4 4h-2V6a4 4 0 0 1 4-4Z"/>
-               <path d="M11.47 17.47 13 19l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L5 19l1.53-1.53a3.5 3.5 0 0 1 4.94 0Z"/>
-               <path d="M15.47 13.47 17 15l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L9 15l1.53-1.53a3.5 3.5 0 0 1 4.94 0Z"/>
-               <path d="M19.47 9.47 21 11l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L13 11l1.53-1.53a3.5 3.5 0 0 1 4.94 0Z"/>
-            </svg>
-            <p class="text-center font-bold text-white text-xl py-4"> 19,200 + <br>
-                Food Packs Donation 
-            </p>
+  </div>
+  <SupportBanners BannerDetails={SupportBannerData} />
+  <div class="container">
+    <div class="row flex mx-auto justify-center py-12 md:w-[1000px]">
+      <!-- First Column -->
+      <div
+        class="w-1/2 bg-maroon duration-300 border-2 py-20 px-4 border-customBeige flex flex-col items-center justify-center"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="hover:stroke-customBeige duration-300"
+          width="80"
+          height="80"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="white"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-wheat"
+        >
+          <path d="M2 22 16 8"></path>
+          <path
+            d="M3.47 12.53 5 11l1.53 1.53a3.5 3.5 0 0 1 0 4.94L5 19l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z"
+          ></path>
+          <path
+            d="M7.47 8.53 9 7l1.53 1.53a3.5 3.5 0 0 1 0 4.94L9 15l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z"
+          ></path>
+          <path
+            d="M11.47 4.53 13 3l1.53 1.53a3.5 3.5 0 0 1 0 4.94L13 11l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z"
+          ></path>
+          <path d="M20 2h2v2a4 4 0 0 1-4 4h-2V6a4 4 0 0 1 4-4Z"></path>
+          <path
+            d="M11.47 17.47 13 19l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L5 19l1.53-1.53a3.5 3.5 0 0 1 4.94 0Z"
+          ></path>
+          <path
+            d="M15.47 13.47 17 15l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L9 15l1.53-1.53a3.5 3.5 0 0 1 4.94 0Z"
+          ></path>
+          <path
+            d="M19.47 9.47 21 11l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L13 11l1.53-1.53a3.5 3.5 0 0 1 4.94 0Z"
+          ></path>
+        </svg>
+        <p class="text-center font-bold text-white text-xl py-4">
+          19,200 + <br />
+          Food Packs Donation
+        </p>
+      </div>
 
-          </div>
-      
-          <!-- Second Column -->
-          <div class="w-1/2 border-2 py-20 px-4 border-maroon  flex flex-col items-center justify-center text-center">
-            <div>
-              <!-- SVG Icon -->
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="fill-maroon hover:fill-customBeige w-20 mx-auto mb-4 duration-300"
-                viewBox="0 0 640 512"
-              >
-                <path
-                  d="M96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3zM609.3 512l-137.8 0c5.4-9.4 8.6-20.3 8.6-32l0-8c0-60.7-27.1-115.2-69.8-151.8c2.4-.1 4.7-.2 7.1-.2l61.4 0C567.8 320 640 392.2 640 481.3c0 17-13.8 30.7-30.7 30.7zM432 256c-31 0-59-12.6-79.3-32.9C372.4 196.5 384 163.6 384 128c0-26.8-6.6-52.1-18.3-74.3C384.3 40.1 407.2 32 432 32c61.9 0 112 50.1 112 112s-50.1 112-112 112z"
-                />
-              </svg>
-      
-              <!-- Text Below SVG -->
-              <p class="text-center font-bold text-xl py-4">
-                143,980+ <br />
-                Beneficiaries of Food Packs Donation
-              </p>
-            </div>
-          </div>
+      <!-- Second Column -->
+      <div
+        class="w-1/2 border-2 py-20 px-4 border-maroon flex flex-col items-center justify-center text-center"
+      >
+        <div>
+          <!-- SVG Icon -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="fill-maroon hover:fill-customBeige w-20 mx-auto mb-4 duration-300"
+            viewBox="0 0 640 512"
+          >
+            <path
+              d="M96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3zM609.3 512l-137.8 0c5.4-9.4 8.6-20.3 8.6-32l0-8c0-60.7-27.1-115.2-69.8-151.8c2.4-.1 4.7-.2 7.1-.2l61.4 0C567.8 320 640 392.2 640 481.3c0 17-13.8 30.7-30.7 30.7zM432 256c-31 0-59-12.6-79.3-32.9C372.4 196.5 384 163.6 384 128c0-26.8-6.6-52.1-18.3-74.3C384.3 40.1 407.2 32 432 32c61.9 0 112 50.1 112 112s-50.1 112-112 112z"
+            ></path>
+          </svg>
+
+          <!-- Text Below SVG -->
+          <p class="text-center font-bold text-xl py-4">
+            143,980+ <br />
+            Beneficiaries of Food Packs Donation
+          </p>
         </div>
       </div>
+    </div>
+  </div>
 
-      <div class="container mx-auto">
-        <div class="row flex justify-center">
-          <div class="relative w-full max-w-[100%] md:max-w-[88%] pb-[45.25%]">
-            <iframe
-              class="absolute top-0 left-0 w-full h-full"
-              src="https://www.youtube.com/embed/x1npUyPEmx4?si=87DHoJHBDYxIRLDD"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </div>
+  <div class="container mx-auto">
+    <div class="row flex justify-center">
+      <div class="relative w-full max-w-[100%] md:max-w-[88%] pb-[45.25%]">
+        <iframe
+          class="absolute top-0 left-0 w-full h-full"
+          src="https://www.youtube.com/embed/x1npUyPEmx4?si=87DHoJHBDYxIRLDD"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen></iframe>
       </div>
-      <div class="container">
-        <div class="row">
-            <p class="text-2xl font-bold text-maroon px-20 py-8">Why donate a food pack?</p>
-            <p class="text-lg px-24">
-                Your donation towards our <a class="text-maroon font-bold hover:text-customBeige duration-300" href="">food packs donation</a> can save impoverished families from continuing hunger. <br>
-                Without food supply or reliable income, many people are forced to beg, suffering humiliation and <br>
-                exploitation. Parents often go without food, giving the little they have to their children to try and combat <br>
-                the devasting effects of malnutrition on growing bodies. <br> <br>
-                Your <a class="text-maroon hover:text-customBeige duration-300 font-bold" href="">Zakat</a> or <a class="text-maroon hover:text-customBeige hover:duration-300 font-bold" href="">Sadaqah donation</a> can pay for a one month’s supply of food staples for a family in need. Our <br>
-                packs include flour, rice, sugar, lentils, powdered milk plus other essential food items to enable families to <br>
-                have nutritious and fulfilling meals. With your generosity we can ensure people who have lost everything <br>
-                due to natural disaster, flooding and long-term poverty are sustained and energised without the worry of <br>
-                how to find their next meal from our food packs donation project.
-            </p>
-            </div> 
-      </div>
-      <RestoringLive ReStroingLives={RestoreData} />
-      <div class="container">
-        <div class="row">
-            <p class="text-2xl font-bold text-maroon px-16 pt-10">Feeding families with Al-Wahab Foundation</p>
-            <p class="text-grey text-xl font-bold px-16 pt-5">′And they give food, in spite of love for it, to the needy, the orphan, and the captive. (Holy Qur’an: 76:8)</p>
-            <p class="  px-16 py-5 text-xl">
-                Since 2014, we provided food packs to 143,980 people in desperate need of help. We are committed to <br>
-                easing the suffering of people across Pakistan where food poverty remains an alarming problem. Over 40% <br>
-                of the population do not have enough food each day and more than 20% suffer malnutrition. Donate Al- <br>
-                Wahab Foundation’s food packs donation project today to help the needy. <br> <br>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <p class="text-2xl font-bold text-maroon px-20 py-8">
+        Why donate a food pack?
+      </p>
+      <p class="text-lg px-24">
+        Your donation towards our <a
+          class="text-maroon font-bold hover:text-customBeige duration-300"
+          href="">food packs donation</a
+        > can save impoverished families from continuing hunger. <br />
+        Without food supply or reliable income, many people are forced to beg, suffering
+        humiliation and <br />
+        exploitation. Parents often go without food, giving the little they have
+        to their children to try and combat <br />
+        the devasting effects of malnutrition on growing bodies. <br />
+        <br />
+        Your <a
+          class="text-maroon hover:text-customBeige duration-300 font-bold"
+          href="">Zakat</a
+        > or <a
+          class="text-maroon hover:text-customBeige hover:duration-300 font-bold"
+          href="">Sadaqah donation</a
+        > can pay for a one month’s supply of food staples for a family in need.
+        Our <br />
+        packs include flour, rice, sugar, lentils, powdered milk plus other essential
+        food items to enable families to <br />
+        have nutritious and fulfilling meals. With your generosity we can ensure
+        people who have lost everything <br />
+        due to natural disaster, flooding and long-term poverty are sustained and
+        energised without the worry of <br />
+        how to find their next meal from our food packs donation project.
+      </p>
+    </div>
+  </div>
+  <RestoringLive ReStroingLives={RestoreData} />
+  <div class="container">
+    <div class="row">
+      <p class="text-2xl font-bold text-maroon px-16 pt-10">
+        Feeding families with Al-Wahab Foundation
+      </p>
+      <p class="text-grey text-xl font-bold px-16 pt-5">
+        ′And they give food, in spite of love for it, to the needy, the orphan,
+        and the captive. (Holy Qur’an: 76:8)
+      </p>
+      <p class="px-16 py-5 text-xl">
+        Since 2014, we provided food packs to 143,980 people in desperate need
+        of help. We are committed to <br />
+        easing the suffering of people across Pakistan where food poverty remains
+        an alarming problem. Over 40% <br />
+        of the population do not have enough food each day and more than 20% suffer
+        malnutrition. Donate Al- <br />
+        Wahab Foundation’s food packs donation project today to help the needy. <br
+        />
+        <br />
 
-                Our established network is growing and with your continued support we can reach more people in need. <br>
-                Recent flooding in the region has destroyed crops and livestock disrupting agriculture and food supply, <br>
-                leaving even more people starving and at risk. Our local knowledge means we are on the ground, reaching <br>
-                people and bringing hope. <br> <br>
-                Donate today and your support of Sadaqah or Zakat will help to feed hungry children, sustain weakened <br>
-                 adults and save lives.
-            </p>
-             <p class="flex justify-center my-7">
-               <a href="" class="px-4 font-bold py-1 bg-maroon  text-white hover:bg-customBeige rounded-full" >SUPPORT NOW</a>
-             </p>
-        </div>
+        Our established network is growing and with your continued support we
+        can reach more people in need. <br />
+        Recent flooding in the region has destroyed crops and livestock disrupting
+        agriculture and food supply, <br />
+        leaving even more people starving and at risk. Our local knowledge means
+        we are on the ground, reaching <br />
+        people and bringing hope. <br />
+        <br />
+        Donate today and your support of Sadaqah or Zakat will help to feed hungry
+        children, sustain weakened <br />
+        adults and save lives.
+      </p>
+      <p class="flex justify-center my-7">
+        <a
+          href=""
+          class="px-4 font-bold py-1 bg-maroon text-white hover:bg-customBeige rounded-full"
+          >SUPPORT NOW</a
+        >
+      </p>
+    </div>
+  </div>
+  <!--  -->
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-1">
+      <!-- Step 1 -->
+      <div
+        class="bg-maroon flex flex-col items-center justify-center px-6 pb-6 text-white rounded-lg shadow-lg"
+      >
+        <svg
+          class="-mt-4"
+          xmlns="http://www.w3.org/2000/svg"
+          width="60"
+          height="60"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-pound-sterling mb-4"
+        >
+          <path d="M18 7c0-5.333-8-5.333-8 0"></path>
+          <path d="M10 7v14"></path>
+          <path d="M6 21h12"></path>
+          <path d="M6 13h10"></path>
+        </svg>
+        <p class="text-lg font-semibold py-2 mt-3">Step 1</p>
+        <p class="text-center font-semibold text-base">
+          You select food packs donation <br />
+          and make a donation on our <br />
+          website.
+        </p>
       </div>
-      <!--  -->
-      <div class="container mx-auto px-4">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-1">
-          <!-- Step 1 -->
-          <div class="bg-maroon flex flex-col items-center justify-center px-6 pb-6 text-white rounded-lg shadow-lg">
-            <svg
-            class="-mt-4"
-              xmlns="http://www.w3.org/2000/svg"
-              width="60"
-              height="60"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-pound-sterling mb-4"
-            >
-              <path d="M18 7c0-5.333-8-5.333-8 0" />
-              <path d="M10 7v14" />
-              <path d="M6 21h12" />
-              <path d="M6 13h10" />
-            </svg>
-            <p class="text-lg font-semibold py-2 mt-3 ">Step 1</p>
-            <p class="text-center font-semibold text-base">
-              You select food packs donation <br />
-              and make a donation on our <br />
-              website.
-            </p>
-          </div>
-      
-          <!-- Step 2 -->
-          <div class="bg-customBeige flex flex-col items-center justify-center p-6 text-dark rounded-lg shadow-lg">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="60"
-              height="60"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-arrow-right-left mb-4"
-            >
-              <path d="m16 3 4 4-4 4" />
-              <path d="M20 7H4" />
-              <path d="m8 21-4-4 4-4" />
-              <path d="M4 17h16" />
-            </svg>
-            <p class="text-lg font-semibold mb-2">Step 2</p>
-            <p class="text-center font-semibold text-base">
-              Once enough food pack donations <br />
-              are collected, our team identifies <br />
-              high-risk areas in Pakistan.
-            </p>
-          </div>
-      
-          <!-- Step 3 -->
-          <div class="bg-maroon flex flex-col items-center justify-center p-6 text-white rounded-lg shadow-lg">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="60"
-              height="60"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-wrench mb-4"
-            >
-              <path
-                d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"
-              />
-            </svg>
-            <p class="text-lg font-semibold mb-2">Step 3</p>
-            <p class="text-center font-semibold text-base">
-              With your donation, our team arranges <br />
-              food packs and handles logistics <br />
-              for their distribution.
-            </p>
-          </div>
-      
-          <!-- Step 4 -->
-          <div class="bg-customBeige flex flex-col items-center justify-center px-6 pb-6 text-dark rounded-lg shadow-lg">
-            <svg class=" duration-300 hover:stroke-maroon -mt-3"
-              xmlns="http://www.w3.org/2000/svg"
-              width="60"
-              height="60"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-notepad-text mb-4"
-            >
-              <path d="M8 2v4" />
-              <path d="M12 2v4" />
-              <path d="M16 2v4" />
-              <rect width="16" height="18" x="4" y="4" rx="2" />
-              <path d="M8 10h6" />
-              <path d="M8 14h8" />
-              <path d="M8 18h5" />
-            </svg>
-            <p class="text-lg font-semibold mb-2 mt-4">Step 4</p>
-            <p class="text-center font-semibold text-base">
-              Members of the community are invited <br />
-              to collect their food packs.
-            </p>
-          </div>
-        </div>
+
+      <!-- Step 2 -->
+      <div
+        class="bg-customBeige flex flex-col items-center justify-center p-6 text-dark rounded-lg shadow-lg"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="60"
+          height="60"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-arrow-right-left mb-4"
+        >
+          <path d="m16 3 4 4-4 4"></path>
+          <path d="M20 7H4"></path>
+          <path d="m8 21-4-4 4-4"></path>
+          <path d="M4 17h16"></path>
+        </svg>
+        <p class="text-lg font-semibold mb-2">Step 2</p>
+        <p class="text-center font-semibold text-base">
+          Once enough food pack donations <br />
+          are collected, our team identifies <br />
+          high-risk areas in Pakistan.
+        </p>
       </div>
-      
 
-
-      <div class="container">
-        <div class="row">
-            <p class="text-grey font-bold text-3xl text-center py-4">See other Project</p>
-        </div>
+      <!-- Step 3 -->
+      <div
+        class="bg-maroon flex flex-col items-center justify-center p-6 text-white rounded-lg shadow-lg"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="60"
+          height="60"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-wrench mb-4"
+        >
+          <path
+            d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"
+          ></path>
+        </svg>
+        <p class="text-lg font-semibold mb-2">Step 3</p>
+        <p class="text-center font-semibold text-base">
+          With your donation, our team arranges <br />
+          food packs and handles logistics <br />
+          for their distribution.
+        </p>
       </div>
-      <SeeOtherProjectCard SeeOtherProjects={OtherProject} />
-      
 
+      <!-- Step 4 -->
+      <div
+        class="bg-customBeige flex flex-col items-center justify-center px-6 pb-6 text-dark rounded-lg shadow-lg"
+      >
+        <svg
+          class="duration-300 hover:stroke-maroon -mt-3"
+          xmlns="http://www.w3.org/2000/svg"
+          width="60"
+          height="60"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-notepad-text mb-4"
+        >
+          <path d="M8 2v4"></path>
+          <path d="M12 2v4"></path>
+          <path d="M16 2v4"></path>
+          <rect width="16" height="18" x="4" y="4" rx="2"></rect>
+          <path d="M8 10h6"></path>
+          <path d="M8 14h8"></path>
+          <path d="M8 18h5"></path>
+        </svg>
+        <p class="text-lg font-semibold mb-2 mt-4">Step 4</p>
+        <p class="text-center font-semibold text-base">
+          Members of the community are invited <br />
+          to collect their food packs.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <p class="text-grey font-bold text-3xl text-center py-4">
+        See other Project
+      </p>
+    </div>
+  </div>
+  <SeeOtherProjectCard SeeOtherProjects={OtherProject} />
 </Layout>
