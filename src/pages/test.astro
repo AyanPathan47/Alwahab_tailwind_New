@@ -1,6 +1,56 @@
 ---
 import SingelRegulars from "../components/singel-regular.astro";
 import OngoingAppeals from "../components/OngoingAppeals.astro";
+import ImageCarousel from "../components/ImageCarousel.astro";
+
+
+const Images = [
+    {
+        src : "https://picsum.photos/200",
+        alt:" images"
+    },
+    {
+        src : "https://picsum.photos/200",
+        alt:" images"
+    },
+    {
+        src : "https://picsum.photos/200",
+        alt:" images"
+    },
+    {
+        src : "https://picsum.photos/200",
+        alt:" images"
+    },
+    {
+        src : "https://picsum.photos/200",
+        alt:" images"
+    },
+    {
+        src : "https://picsum.photos/200",
+        alt:" images"
+    },
+    {
+        src : "https://picsum.photos/200",
+        alt:" images"
+    },
+    {
+        src : "https://picsum.photos/200",
+        alt:" images"
+    },
+    {
+        src : "https://picsum.photos/200",
+        alt:" images"
+    },
+    {
+        src : "https://picsum.photos/200",
+        alt:" images"
+    },
+    {
+        src : "https://picsum.photos/200",
+        alt:" images"
+    },
+    
+]
 
 const OngoingAppeal = [
     {
@@ -61,3 +111,5 @@ const SingelRegular =[
 <SingelRegulars SingleRegulars={SingelRegular}/>
 
 <OngoingAppeals goingAppeals={OngoingAppeal} />
+
+<ImageCarousel imageCarousel={Images}/>
