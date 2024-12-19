@@ -1,0 +1,195 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import HeadersBanner from "../../components/HeadersBanner.astro";
+import UmmahCharity from '../../components/Ummah_Charity.astro';
+import CardforCountry from "../../components/CardforCountry.astro";
+import SupportBanner from "../../components/SupportBanner.astro";
+
+import SeeOtherProjectCards from "../../components/SeeOtherProjectCard.astro";
+
+const OtherProject =[
+    {
+        title : "Where Most Needed",
+        description : "At Al-Wahab Foundation, we believe in the power of consistent generosity. Our Where Most Needed initiative empowers you to make",
+        src: "https://alwahabfoundation.org/wp-content/uploads/2023/10/IMG_1703-1024x384.jpg",
+    },
+    {
+        title : "Serving Humanity in the UK",
+        description : "In the UK, many people face daily challenges due to rising costs and unemployment. This includes those living below the",
+        src: "https://alwahabfoundation.org/wp-content/uploads/2023/01/IMG_1267-e1673433888939-1024x768.jpg",
+    },
+    {
+        title : "Winter Survival Kit",
+        description : "As climate change intensifies worldwide, a relentless sequence of natural disasters in various countries has aggravated the difficulties faced by",
+        src: "https://alwahabfoundation.org/wp-content/uploads/2022/09/winter-banner3-1024x427.jpg",
+    }, 
+    {
+        title : "Build a Masjid",
+        description : "A mosque is the heart of the community, a place full of peace that brings the community together. In rural",
+        src: "https://alwahabfoundation.org/wp-content/uploads/2022/07/SAK04290-1024x576.jpg",
+    }, 
+    {
+        title : "Pay Zakat Online",
+        description : "The economic situation in Pakistan has caused devastation, leaving many people in desperation. Approximately 36% of the population now lives",
+        src: "https://alwahabfoundation.org/wp-content/uploads/2023/10/IMG_1703-1024x384.jpg",
+    },
+    {
+        title : "Give your Sadaqah",
+        description : "Your Sadaqah donation keeps hopes alive for those in need. Your act of charity can ease the suffering of people",
+        src: "https://alwahabfoundation.org/wp-content/uploads/2023/10/IMG_1703-1024x384.jpg",
+    },
+    {
+        title : "Support a Maktab",
+        description : "Over 280 million children around the world are deprived of education. These children are often forced into a life of",
+        src: "https://alwahabfoundation.org/wp-content/uploads/2023/10/IMG_1703-1024x384.jpg",
+    },
+    {
+        title : "Water for Life",
+        description : "Water is necessity in life. More than 1.1 billion people worldwide continue to face the challenge of lacking regular access",
+        src: "https://alwahabfoundation.org/wp-content/uploads/2023/10/IMG_1703-1024x384.jpg",
+    },
+    {
+        title : "Cooked Food",
+        description : "At Al-Wahab Foundation, we believe in the power of consistent generosity. Our Where Most Needed initiative empowers you to make",
+        src: "https://alwahabfoundation.org/wp-content/uploads/2023/10/IMG_1703-1024x384.jpg",
+    },
+]
+
+
+const BannerDatail =[
+    {
+        leftDescription:"Donate Now to Serve Humanity in the UK ",
+        rightDescription:"Imagine for a moment living without having a nourishing meal in the bitter cold when the freezing wind intensifies the situation. Hunger and homelessness are two major challenges when you have to face unemployment, making one endure a state of helplessness and isolation. We want you to believe that your contribution, no matter how big or small, can make a lasting impact. With your support, we can bring comfort to those who need it most, providing them relief from the unforgiving temperatures and with a reminder that compassion still exists in this world. Your humanitarian aid can help AWF alleviate their suffering in these darkest hours. Donate to help the needy and provide warmth and comfort.    ",
+         src: "https://alwahabfoundation.org/wp-content/uploads/2023/03/little-african-schoolgirl-collects-water-in-the-bo-2022-12-06-01-17-53-utc-1.jpg",
+    }
+]
+const CountryCard =[
+    {
+        name: "UGANDA",
+        title: "Food Pack" ,
+        amount : "50.00",
+        src:"https://picsum.photos/200/300",
+        
+    },
+    {
+        name: "UGANDA",
+        title: "Cooked Food" ,
+        amount :"200.00" ,
+        src:"https://picsum.photos/200/300",
+    },
+    {
+        name: "UGANDA",
+        title: "Water Well" ,
+        amount : "2000.00",
+        src:"https://picsum.photos/200/300",
+    },
+    {
+        name: "UGANDA",
+        title: "Build A Masjid" ,
+        amount : "12000.00",
+        src:"https://picsum.photos/200/300",
+    }
+]
+
+const BannerData =[
+    {
+        src: "https://alwahabfoundation.org/wp-content/uploads/2023/01/UK-wesbite-banner.jpg",
+        title: "Serving Humanity Appeal"
+    }
+]
+---
+<Layout>
+    <HeadersBanner HeadersBanners={BannerData} />
+    <UmmahCharity />
+
+    <div class="container px-4 py-8">
+        <div class="row">
+            <p class="text-maroon font-bold text-3xl text-center">Serving the UK's Diverse Communities</p>
+            <p class="text-grey font-normal text-xl text-center py-8">
+                In the UK, many people face daily challenges due to rising costs and unemployment.<br> This includes those living below the poverty line and experiencing homelessness,<br>especially in London. As food prices continue to rise, it becomes increasingly difficult <br>for them to afford nourishment.<br> <br>
+                As winter approaches, cold, hunger, and homelessness become harsh realities. Al-<br>Wahab Foundation is here to help through Serving Humanity Appeal serve humanity<br> by providing hot meals and winter survival kits to those in need in the UK. Your<br> support can make a difference!
+            </p>
+    </div>
+
+    <CardforCountry CountryCardDetails={CountryCard} />
+    <SupportBanner BannerDetails={BannerDatail}/>
+    <div class="container">
+        <div class="row px-5 py-8">
+           
+            <p class="text-maroon font-bold text-2xl py-4">Proving Sustenance to Uplift Communities Through Serving Humanity </p>
+            <p class="text-maroon font-bold text-2xl py-4">Appeal</p>
+            <p class="text-lg"> At Al-Wahab Foundation, we believe providing sustenance is essential for better health and resilience. We are among the top food poverty charities <span class="font-bold text-grey">serving humanity in the UK</span>, alleviating food insecurity for adults and children in need. It’s not just about filling stomachs; it’s about nurturing spirits and building resilience. Your support for our UK welfare projects uplifts communities.
+            </p>
+            
+        </div>
+    </div>
+
+  
+    
+
+    <div class="container">
+        <div class="row px-5 py-8">
+            <p class="text-maroon font-bold text-2xl">Together Serving Humanity Appeal: Collaboration with My Yard Charity</p>
+            <p class="text-grey font-normal text-lg pt-4">
+                AWF collaborates with My Yard Charity to reduce food waste and respond to food deprivation to serve <span class="font-bold text-grey">humanity in the UK</span>. Every Tuesday, AWF delivers freshly prepared hot meals to My Yard Charity, which are then distributed to those in need. We have also supplied food and essentials packages, making a meaningful impact on those struggling for food in the UK. <span class="font-bold text-grey">Donate to help the needy</span> through Serving Humanity Appeal today.
+            </p>
+            <p class="text-maroon font-bold text-2xl py-4">Winter Aid: Providing Survival Kits to Help the Homeless in the UK</p>
+            <p class="text-lg"> Rising inflation and approaching winter pose challenges for low-income individuals in the UK. Many face debt and homelessness. Your support is crucial during this time. Donate to Al-Wahab Foundation’s Winter Appeal to provide protection and comfort, including warm blankets, clothes, caps, socks, and gloves
+            </p>
+            <p class="text-maroon font-bold text-2xl py-4">Serving Humanity Appeal: What Can My Donation Do to Help People in Need?</p>
+            <p class="text-lg">Your donation to our <span class="text-grey font-bold">humanity appeal</span> can make a significant impact. It supports hot meal distribution in collaboration with My Yard Charity and provides winter kits, including gloves, socks, warm clothes, and blankets, helping those in need stay warm.<br><br><span class="font-bold text-grey">Past Collaboration with London Community Kitchen</span><br><br>Our commitment extends beyond current initiatives. We partnered with London Community Kitchen, distributing food packs to feed the needy. Your donations fed 250 families for a week and provided hot meals. We successfully delivered 4,187 food boxes through this collaboration from 2021 to <span class="font-bold text-grey">2023</span>.<br><br><span class="font-bold text-grey">Winter Drive with Hope for Homeless in Southall</span><br><br>In December 2022, we collaborated with Hope for Homeless in Southall for a winter drive, providing winter kits and cooked food to the homeless in London. We aim to continue such initiatives in the future.
+            </p>
+        </div>
+    </div>
+
+    <div class="container mx-auto px-4">
+        <div class="relative w-full max-w-6xl mx-auto"> <!-- Larger max-width: 6xl -->
+            <!-- Responsive Wrapper with Aspect Ratio 16:9 -->
+            <div class="relative w-full" style="padding-bottom: 56.25%;"> <!-- 16:9 aspect ratio -->
+                <iframe
+                    class="absolute top-0 left-0 w-full h-full"
+                    src="https://www.youtube.com/embed/hEtTdN9oElY?si=Ku8EbIsAV8f1W7j2"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+   
+      
+
+    <!-- image section is remanning to add make shure to make an component -->
+
+    <div class="container">
+        <div class="row px-6 py-8">
+            <p class="text-maroon font-bold text-2xl py-4">Ways to Get Involved</p>
+            <p class=" text-lg "><span class="font-bold text-grey">You can make a difference:</span><br><br><span class="text-grey font-bold">Online Donation: </span>Contribute securely through our online donation portal.<br><br><span class="text-grey font-bold">Donation Hotline:  </span>Call us at 020 8903 8944 to donate.<br><br>Join the Al-Wahab Foundation in serving humanity across the UK and helping those in desperate need.
+            </p>
+            <p class=" flex justify-center pt-4">
+               <a class="px-4 py-1 bg-maroon text-white text-lg font-bold rounded-full hover:bg-customBeige duration-300" href=""> Donate Now</a>
+            </p>
+
+            
+        </div>
+    </div>
+<!-- Remanning See other componenet -->
+<div class="container">
+    <div class="row">
+        <p class="text-grey font-bold text-3xl text-center py-4">See other Project</p>
+    </div>
+  </div>
+    <SeeOtherProjectCards SeeOtherProjects={OtherProject}/>
+<div class="container">
+    <div class="row">
+
+    </div>
+
+</div>
+
+    
+    
+</Layout>
