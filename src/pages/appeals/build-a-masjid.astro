@@ -1,0 +1,397 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import HeadersBanner from "../../components/HeadersBanner.astro";
+import UmmahCharity from "../../components/Ummah_Charity.astro";
+import SupportBanners from "../../components/SupportBanner.astro";
+import RestoringLive from "../../components/RestoringLives.astro";
+import SeeOtherProjectCard from "../../components/SeeOtherProjectCard.astro";
+
+const OtherProject = [
+    {
+        title: "Where Most Needed",
+        description:
+            "At Al-Wahab Foundation, we believe in the power of consistent generosity. Our Where Most Needed initiative empowers you to make",
+        src: "https://alwahabfoundation.org/wp-content/uploads/2023/10/IMG_1703-1024x384.jpg",
+    },
+    {
+        title: "Qurbani",
+        description:
+            "Donate Qurbani this Dhul-Hijjah with AWF. Your donation can reach those in need this Eid Al-Adha.",
+        src: "https://alwahabfoundation.org/wp-content/uploads/2023/05/Camel-banner-1024x400.jpg",
+    },
+    {
+        title: "Hope For Uganda",
+        description:
+            "At Al-Wahab Foundation, we believe in the power of consistent generosity. Our Where Most Needed initiative empowers you to make",
+        src: "",
+    },
+    {
+        title: "Serving Humanity in the UK",
+        description:
+            "At Al-Wahab Foundation, we believe in the power of consistent generosity. Our Where Most Needed initiative empowers you to make",
+        src: "",
+    },
+    {
+        title: "Winter Survival Kit",
+        description:
+            "At Al-Wahab Foundation, we believe in the power of consistent generosity. Our Where Most Needed initiative empowers you to make",
+        src: "",
+    },
+    {
+        title: "Build a Masjid",
+        description:
+            "At Al-Wahab Foundation, we believe in the power of consistent generosity. Our Where Most Needed initiative empowers you to make",
+        src: "",
+    },
+    {
+        title: "Pay Zakat Online",
+        description:
+            "At Al-Wahab Foundation, we believe in the power of consistent generosity. Our Where Most Needed initiative empowers you to make",
+        src: "",
+    },
+    {
+        title: "Women Empowerment",
+        description:
+            "Empowering women involves providing them with opportunities to acquire essential skills, boost their confidence, and cultivate independence, enabling lasting benefits",
+        src: "",
+    },
+    {
+        title: "Give your Sadaqah",
+        description:
+            "Your Sadaqah donation keeps hopes alive for those in need. Your act of charity can ease the suffering of people",
+        src: "",
+    },
+    {
+        title: "Support a Maktab",
+        description:
+            "Over 280 million children around the world are deprived of education. These children are often forced into a life of",
+        src: "",
+    },
+];
+
+const RestoreData = [
+    {
+        title: "Janib Ali's Village Thanks You for Your Generosity",
+        description:
+            "“My name is Janib Ali and I live in Ghoas Buksh, Sindh. Most of the people in our community are short on financial means and we barely make ends meet. Sometimes it gets difficult to provide even the most basic necessities for our families so when it comes to building a proper mosque, it is so unfortunate that we cannot make up for it. However, Al-Wahab Foundation built this beautiful and spacious mosque in our village. It’s like a gift from Allah (SWT) for all of us as we don’t have to go far off, outside the village to pray in a Jamaat (congregation). We cannot thank Muti Abdul Wahab and Al-Wahab Foundation for this gift",
+        src: "https://alwahabfoundation.org/wp-content/uploads/2022/07/3L5A5064-1.jpg",
+        buttonTitle: "Build a Masjid",
+    },
+];
+
+const SupportBannerData = [
+    {
+        leftDescription: "Earn Countless Blessings for Life",
+        rightDescription:
+            "“Whoever builds a Masjid for the sake of Allah, Allah will build for him a house in Paradise.(Bukhari)When you donate to help rebuild mosque damaged by natural disaster, you donate more than just vital funds. Your donation will count as sadaqah jariyah, meaning it can continue to benefit you and your loved ones for years ahead. Help to create a sanctuary for those who are struggling and build a masjid for the people of Pakistan today.",
+        src: "https://alwahabfoundation.org/wp-content/uploads/2022/07/IMS03167.jpg",
+    },
+];
+const HeaderBanned = [
+    {
+        src: "/assets/images/website-banner-masjid.jpg",
+        title: "Build a Masjid: Your Generosity, The Best Sadaqah",
+    },
+];
+---
+
+<Layout>
+    <HeadersBanner HeadersBanners={HeaderBanned} />
+    <UmmahCharity />
+
+    <div class="container">
+        <div class="row">
+            <p class="text-4xl text-maroon font-bold text-center pt-16">
+                Donate Today to Build a Mosque for <br />Those in Need
+            </p>
+            <p class="text-center px-10 font-semibold">
+                A mosque is the heart of the community, a place full of peace
+                that brings the <br />
+                community together. In rural areas, where mosques are damaged and
+                unsafe due to
+                <br />
+                floods, storm or earthquake, having a suitable place to pray again
+                can feel out of <br />
+                reach. Finding the funds or resources to rebuild a masjid is impossible
+                in the daily <br />
+                battle for survival. You can help. Give them a place to worship once
+                again.
+            </p>
+        </div>
+    </div>
+    <SupportBanners BannerDetails={SupportBannerData} />
+    <div class="container">
+        <div class="row flex mx-auto justify-center py-12 md:w-[1000px]">
+            <!-- First Column -->
+            <div
+                class="w-1/2 bg-maroon duration-300 border-2 py-20 px-4 border-customBeige flex flex-col items-center justify-center"
+            >
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="hover:stroke-customBeige duration-300"
+                    width="80"
+                    height="80"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-wheat"
+                >
+                    <path d="M2 22 16 8"></path>
+                    <path
+                        d="M3.47 12.53 5 11l1.53 1.53a3.5 3.5 0 0 1 0 4.94L5 19l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z"
+                    ></path>
+                    <path
+                        d="M7.47 8.53 9 7l1.53 1.53a3.5 3.5 0 0 1 0 4.94L9 15l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z"
+                    ></path>
+                    <path
+                        d="M11.47 4.53 13 3l1.53 1.53a3.5 3.5 0 0 1 0 4.94L13 11l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z"
+                    ></path>
+                    <path d="M20 2h2v2a4 4 0 0 1-4 4h-2V6a4 4 0 0 1 4-4Z"
+                    ></path>
+                    <path
+                        d="M11.47 17.47 13 19l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L5 19l1.53-1.53a3.5 3.5 0 0 1 4.94 0Z"
+                    ></path>
+                    <path
+                        d="M15.47 13.47 17 15l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L9 15l1.53-1.53a3.5 3.5 0 0 1 4.94 0Z"
+                    ></path>
+                    <path
+                        d="M19.47 9.47 21 11l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L13 11l1.53-1.53a3.5 3.5 0 0 1 4.94 0Z"
+                    ></path>
+                </svg>
+                <p class="text-center font-bold text-white text-xl py-4">
+                    76 + <br />
+                    Mosques
+                </p>
+            </div>
+
+            <!-- Second Column -->
+            <div
+                class="w-1/2 border-2 py-20 px-4 border-maroon flex flex-col items-center justify-center text-center"
+            >
+                <div>
+                    <!-- SVG Icon -->
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="fill-maroon hover:fill-customBeige w-20 mx-auto mb-4 duration-300"
+                        viewBox="0 0 640 512"
+                    >
+                        <path
+                            d="M96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3zM609.3 512l-137.8 0c5.4-9.4 8.6-20.3 8.6-32l0-8c0-60.7-27.1-115.2-69.8-151.8c2.4-.1 4.7-.2 7.1-.2l61.4 0C567.8 320 640 392.2 640 481.3c0 17-13.8 30.7-30.7 30.7zM432 256c-31 0-59-12.6-79.3-32.9C372.4 196.5 384 163.6 384 128c0-26.8-6.6-52.1-18.3-74.3C384.3 40.1 407.2 32 432 32c61.9 0 112 50.1 112 112s-50.1 112-112 112z"
+                        ></path>
+                    </svg>
+
+                    <!-- Text Below SVG -->
+                    <p class="text-center font-bold text-xl py-4">
+                        15000+ <br />
+                        Beneficiaries
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mx-auto">
+        <div class="row flex justify-center">
+            <div
+                class="relative w-full max-w-[100%] md:max-w-[88%] pb-[45.25%]"
+            >
+                <iframe
+                    class="absolute top-0 left-0 w-full h-full"
+                    src="https://www.youtube.com/embed/x1npUyPEmx4?si=87DHoJHBDYxIRLDD"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <p class="text-2xl font-bold text-maroon px-20 py-8">
+                Caring for a house of Allah – One of the greatest virtues
+            </p>
+            <p class="text-lg px-24">
+                <span class="font-bold"
+                    >“We aim to work in those villages where Mosques have been
+                    completely demolished and reshape the religious identities
+                    of individuals in those areas.”</span
+                > – <a
+                    href="#"
+                    class="text-maroon hover:text-customBeige font-bold"
+                    >Mufti Abdul Wahab, Chairman AWF.</a
+                ><br />
+                <br />
+                Plunged into chaos, people struggle in severe poverty when disaster
+                hits. You can ease their hardship. Earn endless blessings and donate
+                today to help reconstruct or repair masjids that unite communities
+                together in times of crisis.<br /><br />Your donation will count
+                as sadaqah jariyah, meaning it can continue to benefit you and
+                your loved ones for years ahead. Help to create a sanctuary for
+                those who are struggling and build a masjid for the people of
+                Pakistan today.
+            </p>
+        </div>
+    </div>
+    <RestoringLive ReStroingLives={RestoreData} />
+    <div class="container">
+        <div class="row">
+            <p class="text-2xl font-bold text-maroon px-16 pt-10">
+                Restore A Masjid With Us
+            </p>
+           
+            <p class="px-16 py-5 text-xl">
+                Thanks to you and thousands like you, we have been able to rebuild more than 50 mosques across Pakistan so far, benefitting more than 14,000 people who have lost access to a suitable place for prayer.<br />
+                <br />
+
+                These masjids provide not just a beautiful place for worship; they also bring people together in the toughest of times, providing a safe haven and uplifting the spirits of those who are struggling. By working in some of the more impoverished areas, your support in repairing local masjids can bring hope and community strength. From daily congregational prayers to educational activities, essential service, support and advice, the mosques you help rebuild are a beacon of a brighter future.
+            </p>
+            <p class="text-grey text-xl font-bold px-16 pt-5">
+                If you would like to rebuild a Masjid with AWF, please call our donation hotline on 0208 903 8944.  
+            </p>
+            <p class="text-grey text-xl font-bold px-16 pt-5">
+                Our team will then send you a contract agreement to sign and send back. Once this is complete, our specialist team will commence rebuilding of the masjid and keep you informed of progress in the restoring a place of worship for those in need.   
+            </p>
+            <p class="text-grey text-xl font-bold px-16 pt-5">
+                Join us and donate today.
+            </p>
+
+            <!--slider -->
+            <p class="flex justify-center my-7">
+                <a
+                    href=""
+                    class="px-4 font-bold py-1 bg-maroon text-white hover:bg-customBeige rounded-full"
+                    >DONATE NOW</a
+                >
+            </p>
+        </div>
+    </div>
+    <!--  -->
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-1">
+            <!-- Step 1 -->
+            <div
+                class="bg-maroon flex flex-col items-center justify-center px-6 pb-6 text-white rounded-lg shadow-lg"
+            >
+                <svg
+                    class="-mt-4"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="60"
+                    height="60"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-pound-sterling mb-4"
+                >
+                    <path d="M18 7c0-5.333-8-5.333-8 0"></path>
+                    <path d="M10 7v14"></path>
+                    <path d="M6 21h12"></path>
+                    <path d="M6 13h10"></path>
+                </svg>
+                <p class="text-lg font-semibold py-2 mt-3">Step 1</p>
+                <p class="text-center font-semibold text-base">
+                    We receive your donation of a Masjid.
+                </p>
+            </div>
+
+            <!-- Step 2 -->
+            <div
+                class="bg-customBeige flex flex-col items-center justify-center p-6 text-dark rounded-lg shadow-lg"
+            >
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="60"
+                    height="60"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-arrow-right-left mb-4"
+                >
+                    <path d="m16 3 4 4-4 4"></path>
+                    <path d="M20 7H4"></path>
+                    <path d="m8 21-4-4 4-4"></path>
+                    <path d="M4 17h16"></path>
+                </svg>
+                <p class="text-lg font-semibold mb-2">Step 2</p>
+                <p class="text-center font-semibold text-base">
+                    We will send you the agreement for approval.
+                </p>
+            </div>
+
+            <!-- Step 3 -->
+            <div
+                class="bg-maroon flex flex-col items-center justify-center p-6 text-white rounded-lg shadow-lg"
+            >
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="60"
+                    height="60"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-wrench mb-4"
+                >
+                    <path
+                        d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"
+                    ></path>
+                </svg>
+                <p class="text-lg font-semibold mb-2">Step 3</p>
+                <p class="text-center font-semibold text-base">
+                    After we receive your approval, our team start the rebuilding work of Masjid, which usually takes around 11 months to completes.
+                </p>
+            </div>
+
+            <!-- Step 4 -->
+            <div
+                class="bg-customBeige flex flex-col items-center justify-center px-6 pb-6 text-dark rounded-lg shadow-lg"
+            >
+                <svg
+                    class="duration-300 hover:stroke-maroon -mt-3"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="60"
+                    height="60"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-notepad-text mb-4"
+                >
+                    <path d="M8 2v4"></path>
+                    <path d="M12 2v4"></path>
+                    <path d="M16 2v4"></path>
+                    <rect width="16" height="18" x="4" y="4" rx="2"></rect>
+                    <path d="M8 10h6"></path>
+                    <path d="M8 14h8"></path>
+                    <path d="M8 18h5"></path>
+                </svg>
+                <p class="text-lg font-semibold mb-2 mt-4">Step 4</p>
+                <p class="text-center font-semibold text-base">
+                    After the completion, you will receive a detailed report with pictures, location & number of beneficiaries. 
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <p class="text-grey font-bold text-3xl text-center py-4">
+                See other Project
+            </p>
+        </div>
+    </div>
+    <SeeOtherProjectCard SeeOtherProjects={OtherProject} />
+</Layout>
