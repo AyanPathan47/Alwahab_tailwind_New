@@ -1253,40 +1253,7 @@ const OtherProject =[
 	  </div>
 	</div>
   </div>
-  
-  
-
-  <div class="main bg-black py-5">
-    <h1 class="ms-10 pt-5 font-semibold text-xl text-white">Some Movies Here.</h1>
-    <div class="slider flex">
-        <div class="button prev flex items-center justify-center cursor-pointer" id="prev-btn">
-            <i class="fa-solid fa-chevron-left text-white ms-5" ></i>
-        </div>
-        <div class="movie-container flex justify-between my-6 mx-6 overflow-auto">
-            <img class="h-80 w-48 rounded-md mx-2" src="https://m.media-amazon.com/images/M/MV5BNzQxNzQxNjk5NV5BMl5BanBnXkFtZTgwNTI4MTU0MzE@._V1_.jpg" alt="movie" />
-            <img class="h-80 w-48 rounded-md mx-2" src="https://m.media-amazon.com/images/M/MV5BNzQxNzQxNjk5NV5BMl5BanBnXkFtZTgwNTI4MTU0MzE@._V1_.jpg" alt="movie" />
-            <img class="h-80 w-48 rounded-md mx-2" src="https://m.media-amazon.com/images/M/MV5BNzQxNzQxNjk5NV5BMl5BanBnXkFtZTgwNTI4MTU0MzE@._V1_.jpg" alt="movie" />
-            <img class="h-80 w-48 rounded-md mx-2" src="https://m.media-amazon.com/images/M/MV5BNzQxNzQxNjk5NV5BMl5BanBnXkFtZTgwNTI4MTU0MzE@._V1_.jpg" alt="movie" />
-            <img class="h-80 w-48 rounded-md mx-2" src="https://m.media-amazon.com/images/M/MV5BNzQxNzQxNjk5NV5BMl5BanBnXkFtZTgwNTI4MTU0MzE@._V1_.jpg" alt="movie" />
-            <img class="h-80 w-48 rounded-md mx-2" src="https://m.media-amazon.com/images/M/MV5BNzQxNzQxNjk5NV5BMl5BanBnXkFtZTgwNTI4MTU0MzE@._V1_.jpg" alt="movie" />
-            <img class="h-80 w-48 rounded-md mx-2" src="https://m.media-amazon.com/images/M/MV5BNzQxNzQxNjk5NV5BMl5BanBnXkFtZTgwNTI4MTU0MzE@._V1_.jpg" alt="movie" />
-            <img class="h-80 w-48 rounded-md mx-2" src="https://m.media-amazon.com/images/M/MV5BNzQxNzQxNjk5NV5BMl5BanBnXkFtZTgwNTI4MTU0MzE@._V1_.jpg" alt="movie" />
-            <img class="h-80 w-48 rounded-md mx-2" src="https://m.media-amazon.com/images/M/MV5BNzQxNzQxNjk5NV5BMl5BanBnXkFtZTgwNTI4MTU0MzE@._V1_.jpg" alt="movie" />
-            <img class="h-80 w-48 rounded-md mx-2" src="https://m.media-amazon.com/images/M/MV5BNzQxNzQxNjk5NV5BMl5BanBnXkFtZTgwNTI4MTU0MzE@._V1_.jpg" alt="movie" />
-            <img class="h-80 w-48 rounded-md mx-2" src="https://m.media-amazon.com/images/M/MV5BNzQxNzQxNjk5NV5BMl5BanBnXkFtZTgwNTI4MTU0MzE@._V1_.jpg" alt="movie" />
-            <img class="h-80 w-48 rounded-md mx-2" src="https://m.media-amazon.com/images/M/MV5BNzQxNzQxNjk5NV5BMl5BanBnXkFtZTgwNTI4MTU0MzE@._V1_.jpg" alt="movie" />
-            <img class="h-80 w-48 rounded-md mx-2" src="https://m.media-amazon.com/images/M/MV5BNzQxNzQxNjk5NV5BMl5BanBnXkFtZTgwNTI4MTU0MzE@._V1_.jpg" alt="movie" />
-            <img class="h-80 w-48 rounded-md mx-2" src="https://m.media-amazon.com/images/M/MV5BNzQxNzQxNjk5NV5BMl5BanBnXkFtZTgwNTI4MTU0MzE@._V1_.jpg" alt="movie" />
-            <img class="h-80 w-48 rounded-md mx-2" src="https://m.media-amazon.com/images/M/MV5BNzQxNzQxNjk5NV5BMl5BanBnXkFtZTgwNTI4MTU0MzE@._V1_.jpg" alt="movie" />
-        </div>
-
-        <div class="button next flex items-center justify-center cursor-pointer"  id="next-btn">
-            <i class="fa-solid fa-chevron-right text-white me-5"></i>
-        </div>
-    </div>
-    
-</div>
-	
+  	
 </Layout>
 <script is:inline>
 	const Program_dropdown = document.getElementById("Program_dropdown");
@@ -1296,18 +1263,18 @@ const OtherProject =[
 		Program_dropdown.classList.toggle("hidden");
 	}
 
-	 document.getElementById('next-btn').addEventListener('click', () => {
-        document.querySelector('.movie-container').scrollBy({
-            left: 300,
-            behavior: 'smooth'
-        });
-    });
+	//  document.getElementById('next-btn').addEventListener('click', () => {
+    //     document.querySelector('.movie-container').scrollBy({
+    //         left: 300,
+    //         behavior: 'smooth'
+    //     });
+    // });
 
-    document.getElementById('prev-btn').addEventListener('click', () => {
-        document.querySelector('.movie-container').scrollBy({
-            left: -300,
-            behavior: 'smooth'
-        });
-    });
+    // document.getElementById('prev-btn').addEventListener('click', () => {
+    //     document.querySelector('.movie-container').scrollBy({
+    //         left: -300,
+    //         behavior: 'smooth'
+    //     });
+    // });
 </script>
 
