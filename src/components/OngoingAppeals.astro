@@ -1,0 +1,78 @@
+---
+export interface Props {
+    goingAppeals: {
+        src: string;
+        buttonData: string;
+        title: string;
+        link: string;
+        alt: string;
+    }[];
+}
+const { goingAppeals } = Astro.props;
+---
+<div class="container mx-auto flex flex-col items-center justify-center py-8">
+    <!-- Main Slider Container with padding for buttons -->
+    <div class="relative w-full max-w-7xl px-8 md:px-16">
+        <!-- Previous Button -->
+        <button
+            id="prev-btn1"
+            class="absolute left-0 top-1/2 -translate-y-1/2 flex h-10 w-10 items-center justify-center rounded-full border border-gray-300 bg-white shadow transition-all hover:bg-gray-100 focus:outline-none md:left-0 md:h-12 md:w-12"
+        >
+            <i class="fa-solid fa-chevron-left text-maroon text-2xl md:text-3xl"></i>
+        </button>
+
+        <!-- Card Container with Tailwind scrollbar hiding -->
+        <div class="card-container flex gap-7 overflow-x-auto scroll-smooth md:gap-10">
+            {goingAppeals.map((item) => (
+                <div class="w-72 flex-shrink-0 overflow-hidden rounded-lg bg-white shadow-md transition-transform duration-300 md:w-80">
+                    <!-- Card Image -->
+                    <a href={item.link} class="flex justify-center">
+                        <img
+                            class="h-96 w-80 rounded-t-lg object-cover md:h-80"
+                            src={item.src}
+                            alt={item.alt || 'Card Image'}
+                        />
+                    </a>
+
+                    <!-- Card Content -->
+                    <div class="px-4 py-3 flex justify-center items-center">
+                        <a href={item.link} class="mt-2 py-1 px-4 bg-customBeige hover:bg-maroon rounded-full text-center text-lgrounded-full  md:text-xl font-semibold text-white">
+                            {item.buttonData}
+                        </a>
+                    </div>
+                    <p class="mt-1 text-center text-base md:text-lg font-semibold pb-5 ">
+                            {item.title}
+                        </p>
+                </div>
+            ))}
+        </div>
+
+        <!-- Next Button -->
+        <button
+            id="next-btn1"
+            class="absolute right-0 top-1/2 -translate-y-1/2 flex h-10 w-10 items-center justify-center rounded-full border border-gray-300 bg-white shadow transition-all hover:bg-gray-100 focus:outline-none md:right-0 md:h-12 md:w-12"
+        >
+            <i class="fa-solid fa-chevron-right text-maroon text-2xl md:text-3xl"></i>
+        </button>
+    </div>
+</div>
+
+
+
+<script is:inline>
+    document.addEventListener("DOMContentLoaded", () => {
+        const cardContainer = document.querySelector(".card-container");
+        const prevBtn1 = document.getElementById("prev-btn1");
+        const nextBtn1 = document.getElementById("next-btn1");
+
+        // Scroll left when previous button is clicked
+        prevBtn1.addEventListener("click", () => {
+            cardContainer.scrollLeft -= 300; // Adjust scroll distance as needed
+        });
+
+        // Scroll right when next button is clicked
+        nextBtn1.addEventListener("click", () => {
+            cardContainer.scrollLeft += 300; // Adjust scroll distance as needed
+        });
+    });
+</script>

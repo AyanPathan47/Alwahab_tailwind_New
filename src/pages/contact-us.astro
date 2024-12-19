@@ -309,13 +309,13 @@ const HeaderBannerData = [
     </section>
 
     <!-- comment form section -->
-    <section class="bg-[#e5d4c7] md:px-28">
-        <div class="container bg-white pb-100px">
+    <section class="bg-[#e5d4c7] md:px-28 pb-20">
+        <div class="container bg-white pb-[50px]">
             <form
                 id="contact-form"
                 action="mail.php"
                 method="post"
-                class="contact-form p-5 md:p-70px md:pt-90px"
+                class="contact-form p-5 md:p-70px md:pt-90px md:px-16"
                 data-aos="fade-up"
             >
                 <!-- heading -->
@@ -324,24 +324,23 @@ const HeaderBannerData = [
                         class="text-3xl md:text-5xl text-center text-grey font-semibold leading-10 md:leading-70px my-4"
                         data-aos="fade-up"
                     >
-                    Send us an email
+                        Send us an email
                     </h4>
-                    <!-- <p
-                        data-aos="fade-up"
-                        class="text-size-13 md:text-base leading-5 md:leading-30px text-contentColor dark:text-contentColor-dark"
-                    >
-                        Your email address will not be published. Required
-                        fields are marked *
-                    </p> -->
                 </div>
-                <div class="grid grid-cols-1 xl:grid-cols-2 mb-30px gap-30px">
-                    <div data-aos="fade-up" class="relative">
+                <div class="grid grid-cols-1 xl:grid-cols-1 mb-30px gap-30px">
+                    <div data-aos="fade-up" class="relative flex items-center">
+                        <label
+                            for="con_name"
+                            class="text-base md:text-lg font-medium text-grey mr-2"
+                            >First Name <span class="text-maroon">*</span
+                            ></label
+                        >
                         <input
                             name="con_name"
                             id="con_name"
                             type="text"
-                            placeholder="Enter your name*"
-                            class="w-full pl-26px bg-transparent focus:outline-none text-contentColor dark:text-contentColor-dark border border-borderColor2 dark:border-borderColor2-dark placeholder:text-placeholder placeholder:opacity-80 h-15 leading-15 font-medium rounded"
+                            placeholder="Type Your First Name Here"
+                            class="w-[88%] pl-26px pr-16 bg-transparent focus:outline-none text-contentColor border border-borderColor2 placeholder:text-placeholder placeholder:opacity-80 h-15 leading-15 font-medium rounded"
                         />
 
                         <div
@@ -350,28 +349,18 @@ const HeaderBannerData = [
                             <i class="icofont-businessman"></i>
                         </div>
                     </div>
-                    <div data-aos="fade-up" class="relative">
-                        <input
-                            name="con_email"
-                            id="con_email"
-                            type="email"
-                            placeholder="Enter Email Address*"
-                            class="w-full pl-26px bg-transparent focus:outline-none text-contentColor dark:text-contentColor-dark border border-borderColor2 dark:border-borderColor2-dark placeholder:text-placeholder placeholder:opacity-80 h-15 leading-15 font-medium rounded"
-                        />
-
-                        <div
-                            class="text-xl leading-23px text-primaryColor absolute right-6 top-1/2 -translate-y-1/2"
+                    <div data-aos="fade-up" class="relative flex items-center">
+                        <label
+                            for="con_name"
+                            class="text-base md:text-lg font-medium text-grey mr-2"
+                            >Last Name <span class="text-maroon">*</span></label
                         >
-                            <i class="icofont-envelope"></i>
-                        </div>
-                    </div>
-                    <div data-aos="fade-up" class="relative">
                         <input
                             name="con_name"
                             id="con_name"
                             type="text"
-                            placeholder="Enter your name*"
-                            class="w-full pl-26px bg-transparent focus:outline-none text-contentColor dark:text-contentColor-dark border border-borderColor2 dark:border-borderColor2-dark placeholder:text-placeholder placeholder:opacity-80 h-15 leading-15 font-medium rounded"
+                            placeholder="Type Your Last Name Here"
+                            class="w-[88%] pl-26px pr-16 bg-transparent focus:outline-none text-contentColor dark:text-contentColor-dark border border-borderColor2 dark:border-borderColor2-dark placeholder:text-placeholder placeholder:opacity-80 h-15 leading-15 font-medium rounded"
                         />
 
                         <div
@@ -380,12 +369,18 @@ const HeaderBannerData = [
                             <i class="icofont-businessman"></i>
                         </div>
                     </div>
-                    <div data-aos="fade-up" class="relative">
+                    <div data-aos="fade-up" class="relative flex items-center">
+                        <label
+                            for="con_name"
+                            class="text-base md:text-lg font-medium text-grey mr-2"
+                            >Your Email <span class="text-maroon">*</span
+                            ></label
+                        >
                         <input
                             name="phone"
                             type="text"
-                            placeholder="Enter Your Phone"
-                            class="w-full pl-26px bg-transparent focus:outline-none text-contentColor dark:text-contentColor-dark border border-borderColor2 dark:border-borderColor2-dark placeholder:text-placeholder placeholder:opacity-80 h-15 leading-15 font-medium rounded"
+                            placeholder="Type Your Email Address Here"
+                            class="w-[88%] pl-26px pr-16 bg-transparent focus:outline-none text-contentColor dark:text-contentColor-dark border border-borderColor2 dark:border-borderColor2-dark placeholder:text-placeholder placeholder:opacity-80 h-15 leading-15 font-medium rounded"
                         />
 
                         <div
@@ -394,14 +389,39 @@ const HeaderBannerData = [
                             <i class="icofont-ui-call"></i>
                         </div>
                     </div>
+                    <div data-aos="fade-up" class="relative flex items-center">
+                        <label
+                            for="con_name"
+                            class="text-base md:text-lg font-medium text-grey mr-2"
+                            >Phone No. <span class="text-maroon">*</span></label
+                        >
+                        <input
+                            name="con_email"
+                            id="con_email"
+                            type="email"
+                            placeholder="Type Your Phone Number Here"
+                            class="w-[88%] pl-26px pr-16 bg-transparent focus:outline-none text-contentColor dark:text-contentColor-dark border border-borderColor2 dark:border-borderColor2-dark placeholder:text-placeholder placeholder:opacity-80 h-15 leading-15 font-medium rounded"
+                        />
+
+                        <div
+                            class="text-xl leading-23px text-primaryColor absolute right-6 top-1/2 -translate-y-1/2"
+                        >
+                            <i class="icofont-envelope"></i>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="relative" data-aos="fade-up">
+                <div class="relative flex" data-aos="fade-up">
+                    <label
+                        for="con_name"
+                        class="text-base md:text-lg font-medium text-grey mr-2"
+                        >Message <span class="text-maroon">*</span></label
+                    >
                     <textarea
                         name="con_message"
                         id="con_message"
-                        placeholder="Enter your Massage here"
-                        class="w-full pl-26px bg-transparent text-contentColor dark:text-contentColor-dark border border-borderColor2 dark:border-borderColor2-dark placeholder:text-placeholder placeholder:opacity-80 rounded"
+                        placeholder="Type your Massage here"
+                        class="w-[88%] pl-26px pt-5 ml-3 bg-transparent text-contentColor dark:text-contentColor-dark border border-borderColor2 dark:border-borderColor2-dark placeholder:text-placeholder placeholder:opacity-80 rounded"
                         cols="30"
                         rows="10"></textarea>
                     <div
@@ -411,13 +431,27 @@ const HeaderBannerData = [
                     </div>
                 </div>
 
-                <div class="mt-30px" data-aos="fade-up">
+                <div class="relative flex my-10" data-aos="fade-up">
+                    <input
+                        type="checkbox"
+                        name="con_message"
+                        id="con_message"
+                        class="w-5 h-5 mr-2 cursor-pointer"
+                    />
+                    <label
+                        for="con_name"
+                        class="text-base md:text-lg font-medium text-grey mr-2"
+                        >I agree that my submitted data is being collected and
+                        stored.</label
+                    >
+                </div>
+                <div class="mt-30px flex justify-center" data-aos="fade-up">
                     <button
                         value="submit"
                         name="submit"
-                        class="text-size-15 text-whiteColor bg-primaryColor px-25px py-10px border border-primaryColor hover:text-primaryColor hover:bg-whiteColor inline-block rounded group dark:hover:text-whiteColor dark:hover:bg-whiteColor-dark"
+                        class="text-size-15 text-whiteColor bg-maroon px-25px py-10px inline-block rounded-full group "
                     >
-                        Post a Comment
+                       Submit
                     </button>
 
                     <p class="form-messege"></p>
