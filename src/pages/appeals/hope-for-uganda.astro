@@ -6,6 +6,14 @@ import CardforCountry from "../../components/CardforCountry.astro";
 import SupportBanner from "../../components/SupportBanner.astro";
 import RestoringLive from "../../components/RestoringLives.astro";
 import SeeOtherProjectCards from "../../components/SeeOtherProjectCard.astro";
+import ImageCarousel from "../../components/ImageCarousel.astro";
+
+const ImagesCarousel =[
+    {
+       src:"",
+       alt:"", 
+    }
+]
 
 const OtherProject =[
     {
@@ -127,10 +135,10 @@ const BannerData =[
     <CardforCountry CountryCardDetails={CountryCard} />
     <SupportBanner BannerDetails={BannerDatail}/>
     
-    <div class="container">
-        <div class="row grid px-4 py-8 justify-center gap-8 grid-cols-1 md:grid-cols-3">
+    <div class="container flex justify-center items-center gap-10 py-12">
+        <div class="row grid px-4 grid-cols-1 md:grid-cols-3">
             <!-- Reusable block for stats -->
-            <div class="stat-item flex flex-col items-center text-center">
+            <div class="stat-item flex flex-col items-center py-4 text-center">
                 <svg xmlns="http://www.w3.org/2000/svg"
                     class="stroke-maroon hover:stroke-customBeige duration-300 mb-4"
                     width="99" height="99" viewBox="0 0 24 24"
@@ -146,7 +154,7 @@ const BannerData =[
                 </p>
             </div>
     
-            <div class="stat-item flex flex-col items-center text-center">
+            <div class="stat-item flex flex-col items-center py-4 text-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="99" height="99"
                 class="stroke-maroon hover:stroke-customBeige duration-300 mb-4"
                  viewBox="0 0 24 24" fill="none" stroke="currentColor" 
@@ -167,7 +175,7 @@ const BannerData =[
                 </p>
             </div>
     
-            <div class="stat-item flex flex-col items-center text-center">
+            <div class="stat-item flex flex-col items-center py-4 text-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="99" height="99"
                 class="stroke-maroon hover:stroke-customBeige duration-300 mb-4" 
                 viewBox="0 0 24 24" fill="none" stroke="currentColor" 
@@ -253,6 +261,7 @@ const BannerData =[
     </div>
       
 
+    <ImageCarousel imageCarousel={ImagesCarousel} />
     <!-- image section is remanning to add make shure to make an component -->
 
     <div class="container">
