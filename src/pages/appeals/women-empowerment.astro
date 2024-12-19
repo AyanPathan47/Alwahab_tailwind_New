@@ -1,0 +1,450 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import HeadersBanner from "../../components/HeadersBanner.astro";
+import UmmahCharity from "../../components/Ummah_Charity.astro";
+import SupportBanners from "../../components/SupportBanner.astro";
+import RestoringLive from "../../components/RestoringLives.astro";
+import CardforCountry from "../../components/CardforCountry.astro";
+import SeeOtherProjectCard from "../../components/SeeOtherProjectCard.astro";
+
+const OtherProject = [
+    {
+        title: "Where Most Needed",
+        description:
+            "At Al-Wahab Foundation, we believe in the power of consistent generosity. Our Where Most Needed initiative empowers you to make",
+        src: "https://alwahabfoundation.org/wp-content/uploads/2023/10/IMG_1703-1024x384.jpg",
+    },
+    {
+        title: "Qurbani",
+        description:
+            "Donate Qurbani this Dhul-Hijjah with AWF. Your donation can reach those in need this Eid Al-Adha.",
+        src: "https://alwahabfoundation.org/wp-content/uploads/2023/05/Camel-banner-1024x400.jpg",
+    },
+    {
+        title: "Hope For Uganda",
+        description:
+            "At Al-Wahab Foundation, we believe in the power of consistent generosity. Our Where Most Needed initiative empowers you to make",
+        src: "",
+    },
+    {
+        title: "Serving Humanity in the UK",
+        description:
+            "At Al-Wahab Foundation, we believe in the power of consistent generosity. Our Where Most Needed initiative empowers you to make",
+        src: "",
+    },
+    {
+        title: "Winter Survival Kit",
+        description:
+            "At Al-Wahab Foundation, we believe in the power of consistent generosity. Our Where Most Needed initiative empowers you to make",
+        src: "",
+    },
+    {
+        title: "Build a Masjid",
+        description:
+            "At Al-Wahab Foundation, we believe in the power of consistent generosity. Our Where Most Needed initiative empowers you to make",
+        src: "",
+    },
+    {
+        title: "Pay Zakat Online",
+        description:
+            "At Al-Wahab Foundation, we believe in the power of consistent generosity. Our Where Most Needed initiative empowers you to make",
+        src: "",
+    },
+    {
+        title: "Women Empowerment",
+        description:
+            "Empowering women involves providing them with opportunities to acquire essential skills, boost their confidence, and cultivate independence, enabling lasting benefits",
+        src: "",
+    },
+    {
+        title: "Give your Sadaqah",
+        description:
+            "Your Sadaqah donation keeps hopes alive for those in need. Your act of charity can ease the suffering of people",
+        src: "",
+    },
+    {
+        title: "Support a Maktab",
+        description:
+            "Over 280 million children around the world are deprived of education. These children are often forced into a life of",
+        src: "",
+    },
+];
+const card = [
+    {
+        name: "PAKISTAN",
+        title: "Sewing Machine",
+        amount: "75.00",
+        src: "https://icharms.alwahabfoundation.org/storage/program/qdYFTqD1TDap2M4SMuqcNHPZx4k7aR50ASGem5Zw.jpg",
+    },
+    {
+        name: "PAKISTAN",
+        title: "Two Sewing Machine",
+        amount: "150.00",
+        src: "https://icharms.alwahabfoundation.org/storage/program/deHvVM8X0EhiPP2W31ps4nXpfMSVeT3hlxwkqczT.jpg",
+    },
+    {
+        name: "PAKISTAN",
+        title: "Zakat",
+        amount: "ANY AMOUNT",
+        src: "https://icharms.alwahabfoundation.org/storage/program/PLEHSlkkZSN0dSbtwkqloOlMu7Mc6y5TwU2mSGUN.jpg    ",
+    },
+];
+
+const RestoreData = [
+    {
+        title: "Shakeela Bibi Extends Warm Thanks Towards AWF for Sewing Machine",
+        description:
+            "“My name is Shakeela Bibi, and I reside in Mithi with my children. After the loss of my husband, life has been incredibly challenging for us. Providing for my family and ensuring their well-being has been a constant struggle. As a widow, I face societal hurdles in finding work, and we rely heavily on financial aid for our survival. I am greatly thankful to Al-Wahab Foundation and Mufti Abdul Wahab for providing assistance during this difficult time in my life. The sewing machine they provided has been a lifeline for my family as now I can stitch the clothes of the people living around and make accessories to sell in the local market that will ultimately give me a good outcome in the form of respectable income to fulfil my family’s needs. With this opportunity, I can now earn a respectable income and provide for my children. I literally have no words to express my gratitude for this kind-heartedness shown to help me by giving me this opportunity to earn for my family. Jazak Allah for this support to Mufti Abdul Wahab and Al-Wahab Foundation team.",
+        src: "https://alwahabfoundation.org/wp-content/uploads/2022/07/3L5A5064-1.jpg",
+        buttonTitle: "Read More",
+    },
+];
+
+const SupportBannerData = [
+    {
+        leftDescription: "EMPOWER WOMEN FOR A BRIGHTER FUTURE",
+        rightDescription:
+            "Our women empowerment project extends a lifeline to impoverished women, affording them the chance to secure a steady income, uphold their dignity, and embrace independence. By backing these vulnerable women on their journey towards self-sufficiency, your generous donation guarantees not just their own livelihood but shields their entire families.Empowering them to become significant contributors to their households while acquiring new skills to enhance their well-being, our initiatives pave the way for a brighter tomorrow for those in need.",
+        src: "https://alwahabfoundation.org/wp-content/uploads/2022/07/IMG_6187.jpg",
+    },
+];
+const HeaderBanned = [
+    {
+        src: "https://alwahabfoundation.org/wp-content/uploads/2022/07/3L5A6155.jpg",
+        title: "WOMEN EMPOWERMENT",
+    },
+];
+---
+
+<Layout>
+    <HeadersBanner HeadersBanners={HeaderBanned} />
+    <UmmahCharity />
+
+    <div class="container">
+        <div class="row">
+            <p class="text-4xl text-maroon font-bold text-center pt-16">
+                Empower Women for Life
+            </p>
+            <p class="text-center px-10 font-semibold">
+                Empowering women involves providing them with opportunities to
+                acquire essential <br />skills, boost their confidence, and
+                cultivate independence, enabling lasting benefits<br /> throughout
+                their lives. Through our women empowerment initiative, we enable
+                <br />women hailing from disadvantaged backgrounds to earn a
+                sustainable income, <br />which not only uplifts their families
+                but also leads to transformative changes in entire<br /> communities.
+                By supporting us today, you contribute to building brighter and more
+                <br />promising futures.
+            </p>
+        </div>
+    </div>
+    <CardforCountry CountryCardDetails={card} />
+    <SupportBanners BannerDetails={SupportBannerData} />
+    <div class="container">
+        <div class="row flex mx-auto justify-center py-12 md:w-[1000px]">
+            <!-- First Column -->
+            <div
+                class="w-1/2 bg-maroon duration-300 border-2 py-20 px-4 border-customBeige flex flex-col items-center justify-center"
+            >
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="hover:stroke-customBeige duration-300"
+                    width="80"
+                    height="80"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-wheat"
+                >
+                    <path d="M2 22 16 8"></path>
+                    <path
+                        d="M3.47 12.53 5 11l1.53 1.53a3.5 3.5 0 0 1 0 4.94L5 19l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z"
+                    ></path>
+                    <path
+                        d="M7.47 8.53 9 7l1.53 1.53a3.5 3.5 0 0 1 0 4.94L9 15l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z"
+                    ></path>
+                    <path
+                        d="M11.47 4.53 13 3l1.53 1.53a3.5 3.5 0 0 1 0 4.94L13 11l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z"
+                    ></path>
+                    <path d="M20 2h2v2a4 4 0 0 1-4 4h-2V6a4 4 0 0 1 4-4Z"
+                    ></path>
+                    <path
+                        d="M11.47 17.47 13 19l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L5 19l1.53-1.53a3.5 3.5 0 0 1 4.94 0Z"
+                    ></path>
+                    <path
+                        d="M15.47 13.47 17 15l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L9 15l1.53-1.53a3.5 3.5 0 0 1 4.94 0Z"
+                    ></path>
+                    <path
+                        d="M19.47 9.47 21 11l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L13 11l1.53-1.53a3.5 3.5 0 0 1 4.94 0Z"
+                    ></path>
+                </svg>
+                <p class="text-center font-bold text-white text-xl py-4">
+                    470+ <br />
+                    Sewing Machines
+                </p>
+            </div>
+
+            <!-- Second Column -->
+            <div
+                class="w-1/2 border-2 py-20 px-4 border-maroon flex flex-col items-center justify-center text-center"
+            >
+                <div>
+                    <!-- SVG Icon -->
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="fill-maroon hover:fill-customBeige w-20 mx-auto mb-4 duration-300"
+                        viewBox="0 0 640 512"
+                    >
+                        <path
+                            d="M96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3zM609.3 512l-137.8 0c5.4-9.4 8.6-20.3 8.6-32l0-8c0-60.7-27.1-115.2-69.8-151.8c2.4-.1 4.7-.2 7.1-.2l61.4 0C567.8 320 640 392.2 640 481.3c0 17-13.8 30.7-30.7 30.7zM432 256c-31 0-59-12.6-79.3-32.9C372.4 196.5 384 163.6 384 128c0-26.8-6.6-52.1-18.3-74.3C384.3 40.1 407.2 32 432 32c61.9 0 112 50.1 112 112s-50.1 112-112 112z"
+                        ></path>
+                    </svg>
+
+                    <!-- Text Below SVG -->
+                    <p class="text-center font-bold text-xl py-4">
+                        7400+ <br />
+                        Beneficiaries
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mx-auto">
+        <div class="row flex justify-center">
+            <div
+                class="relative w-full max-w-[100%] md:max-w-[88%] pb-[45.25%]"
+            >
+                <iframe
+                    class="absolute top-0 left-0 w-full h-full"
+                    src="https://www.youtube.com/embed/x1npUyPEmx4?si=87DHoJHBDYxIRLDD"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <p class="text-2xl font-bold text-maroon px-20 py-8">
+                When you invest in women, you invest in a nation.
+            </p>
+            <p class="text-lg px-24">
+                In Pakistan, the pressing issue of gender inequality is
+                reflected in its alarming ranking as the second lowest
+                worldwide. Countless women in the country are unjustly deprived
+                of fundamental rights such as education, training, and
+                employment. Consequently, they find themselves trapped in
+                challenging circumstances, burdened by financial dependency, and
+                exposed to the dangers of gender-based violence and domestic
+                abuse. However, Islamic principles promote <span
+                    class="font-bold text-grey">women empowerment</span
+                >, the right of women to work and live with dignity and respect.<br
+                />
+                <br />
+                To honour these principles and bring about positive change, our <span
+                    class="text-grey font-bold">Women Empowerment</span
+                > Project takes action by equipping women with the essential skills
+                and resources they need to forge independent and secure livelihoods.
+                By providing sewing machines to impoverished women, we create opportunities
+                for them to earn a stable income and even establish their own businesses.
+                Through such endeavours, we strive to empower women, granting them
+                not only financial protection but also the freedom to shape their
+                own destinies with confidence and self-sufficiency.
+            </p>
+        </div>
+    </div>
+    <RestoringLive ReStroingLives={RestoreData} />
+    <div class="container">
+        <div class="row">
+            <p class="text-2xl font-bold text-maroon px-16 pt-10">
+                What impact will my donation have?
+            </p>
+
+            <p class="px-16 py-5 text-xl">
+                Your contribution to our projects directly facilitates the
+                <span class="text-grey font-bold">empowerment of women </span> who find themselves stuck in poverty,
+                promoting greater equality and opportunities for them. By
+                enabling women to acquire valuable skills and sustainable
+                income, the entire society becomes more resilient and vibrant.
+                Moreover, households, where women are skilled and engaged in
+                work, witness improved prospects for their children, shielding
+                them from adversity and fostering greater achievements. This, in
+                turn, leads to a reduction in poverty and social disparities. <br
+                />
+                <br />
+
+                The additional income generated by these projects like women
+                empowerment enhances families’ security, enabling them to meet
+                household needs and navigate through crises more effectively.
+                Our focus lies in prioritizing widowed mothers and vulnerable
+                households, offering them the support needed to elevate their
+                incomes and shield them from the brink of hardship and
+                exploitation. Through our <span class="text-grey font-bold">Women Empowerment Project</span>, each woman
+                is equipped with the necessary skills and tools to excel in
+                sewing, manufacturing, and promoting her own business while also
+                creating opportunities for others in her community.<br />
+                <br />
+                As our initiative gains momentum, it has already taken root in various
+                areas of Pakistan, including Jamhoria, Surjani Town, and Mangopir,
+                with plans to extend its reach to even more impoverished regions.
+                Your involvement makes a significant difference in breaking the cycle
+                of poverty and fostering a brighter, more promising future for these
+                women and their communities. Donate your <a href="#" class="font-bold text-maroon hover:text-customBeige">Sadaqah</a> and <a href="" class="font-bold text-maroon  hover:text-customBeige">Zakat</a> to Al-Wahab
+                Foundation to support as many deprived women as possible through
+                our women empowerment initiative.
+            </p>
+            <p class="text-2xl font-bold text-maroon px-16 pt-10">
+                Donate for Women Empowerment: Make a Difference
+            </p>
+
+            <p class="px-16 py-5 text-xl">
+                When you donate for <span class="font-bold text-grey">women empowerment</span>, you are helping us create a sustainable impact, and every contribution matters. Together, we can build a world where women are recognized for their potential and provided with the opportunities they truly deserve.
+            </p>
+            <p class="text-2xl font-bold text-maroon px-16 pt-10">
+                Our Noteworthy Accomplishments
+            </p>
+
+            <p class="px-16 py-5 text-xl">
+                <a href="#" class="font-bold text-maroon hover:text-customBeige ">Al-Wahab Foundation</a> has been diligently empowering women and developing positive change in their lives by providing 925 machines to date, thanks to the constant support of our generous donors. Through this initiative, we are dedicated to equipping women with the necessary tools and resources to enhance their livelihoods and create a more promising future for themselves and their families. Our commitment to <span class="text-grey font-bold">women empowerment</span> remains steadfast, and we are grateful for the continued support that makes this transformative work possible.
+            </p>
+            <p class="flex justify-center my-7">
+                <a
+                    href=""
+                    class="px-4 font-bold py-1 bg-maroon text-white hover:bg-customBeige rounded-full"
+                    >DONATE NOW</a
+                >
+            </p>
+        </div>
+    </div>
+    <!--  -->
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-1">
+            <!-- Step 1 -->
+            <div
+                class="bg-maroon flex flex-col items-center justify-center px-6 pb-6 text-white rounded-lg shadow-lg"
+            >
+                <svg
+                    class="-mt-4"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="60"
+                    height="60"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-pound-sterling mb-4"
+                >
+                    <path d="M18 7c0-5.333-8-5.333-8 0"></path>
+                    <path d="M10 7v14"></path>
+                    <path d="M6 21h12"></path>
+                    <path d="M6 13h10"></path>
+                </svg>
+                <p class="text-lg font-semibold py-2 mt-3">Step 1</p>
+                <p class="text-center font-semibold text-base">
+                    You select women empowerment project and make a donation on our website 
+                </p>
+            </div>
+
+            <!-- Step 2 -->
+            <div
+                class="bg-customBeige flex flex-col items-center justify-center p-6 text-dark rounded-lg shadow-lg"
+            >
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="60"
+                    height="60"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-arrow-right-left mb-4"
+                >
+                    <path d="m16 3 4 4-4 4"></path>
+                    <path d="M20 7H4"></path>
+                    <path d="m8 21-4-4 4-4"></path>
+                    <path d="M4 17h16"></path>
+                </svg>
+                <p class="text-lg font-semibold mb-2">Step 2</p>
+                <p class="text-center font-semibold text-base">
+                    We process the donation and send it over to our implementation partners. The most vulnerable women are selected as beneficiaries for the project based upon criteria
+                </p>
+            </div>
+
+            <!-- Step 3 -->
+            <div
+                class="bg-maroon flex flex-col items-center justify-center p-6 text-white rounded-lg shadow-lg"
+            >
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="60"
+                    height="60"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-wrench mb-4"
+                >
+                    <path
+                        d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"
+                    ></path>
+                </svg>
+                <p class="text-lg font-semibold mb-2">Step 3</p>
+                <p class="text-center font-semibold text-base">
+                    A ceremony is held at the culmination of the project, where free sewing machines and certificates of achievement are distributed
+                </p>
+            </div>
+
+            <!-- Step 4 -->
+            <div
+                class="bg-customBeige flex flex-col items-center justify-center px-6 pb-6 text-dark rounded-lg shadow-lg"
+            >
+                <svg
+                    class="duration-300 hover:stroke-maroon -mt-3"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="60"
+                    height="60"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-notepad-text mb-4"
+                >
+                    <path d="M8 2v4"></path>
+                    <path d="M12 2v4"></path>
+                    <path d="M16 2v4"></path>
+                    <rect width="16" height="18" x="4" y="4" rx="2"></rect>
+                    <path d="M8 10h6"></path>
+                    <path d="M8 14h8"></path>
+                    <path d="M8 18h5"></path>
+                </svg>
+                <p class="text-lg font-semibold mb-2 mt-4">Step 4</p>
+                <p class="text-center font-semibold text-base">
+                    Our team also conducts follow-up checks with the beneficiaries
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <p class="text-grey font-bold text-3xl text-center py-4">
+                See other Project
+            </p>
+        </div>
+    </div>
+    <SeeOtherProjectCard SeeOtherProjects={OtherProject} />
+</Layout>
