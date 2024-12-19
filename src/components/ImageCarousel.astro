@@ -1,0 +1,32 @@
+---
+export interface Props{
+    imageCarousel:{
+        src: string,
+    }[];
+}
+const {imageCarousel} = Astro.props;
+---
+
+<div class="">
+    {imageCarousel.map((item) =>(
+    <div class="image-container ">
+    <img class= src={item.src} alt="">
+    <img src="https://picsum.photos/200" alt="">
+    <img src="https://picsum.photos/200" alt="">
+    <img src="https://picsum.photos/200" alt="">
+    <img src="https://picsum.photos/200" alt="">
+    <img src="https://picsum.photos/200" alt="">
+    <img src="https://picsum.photos/200" alt="">
+    <img src="https://picsum.photos/200" alt="">
+    <img src="https://picsum.photos/200" alt="">
+    <img src="https://picsum.photos/200" alt="">
+    <img src="https://picsum.photos/200" alt="">
+    <img src="https://picsum.photos/200" alt="">
+    <img src="https://picsum.photos/200" alt="">
+    <img src="https://picsum.photos/200" alt="">
+    <img src="https://picsum.photos/200" alt="">
+    <img src="https://picsum.photos/200" alt="">
+    <img src="https://picsum.photos/200" alt="">
+    </div>
+    ))}
+</div>

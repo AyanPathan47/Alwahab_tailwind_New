@@ -2,6 +2,109 @@
 import Layout from '../layouts/Layout.astro';
 import UmmahCharity from '../components/Ummah_Charity.astro';
 import SeeOtherProjectCard from '../components/SeeOtherProjectCard.astro';
+import OngoingAppeals from '../components/OngoingAppeals.astro';
+
+const goingAppeals = [
+	{
+		src: "https://icharms.alwahabfoundation.org/storage/program/eJSEZYRaZYqsZjYygSWhl5nYV2m1aoDcHtYlK8mD.jpg",
+        buttonData: "Donate Now",
+        title: "Where Most Needed",
+        link: "https://icharms.alwahabfoundation.org/storage/program/eJSEZYRaZYqsZjYygSWhl5nYV2m1aoDcHtYlK8mD.jpg",
+        alt: "Where Most Needed",
+	},
+	{
+		src: "https://icharms.alwahabfoundation.org/storage/program/4yoKufWEbMKVjRi7oqiDmaQyUjlPsEFNNPQbV9nj.jpg",
+        buttonData: "Donate Now",
+        title: "Water Hand Pump",
+        link: "https://icharms.alwahabfoundation.org/storage/program/eJSEZYRaZYqsZjYygSWhl5nYV2m1aoDcHtYlK8mD.jpg",
+        alt: "Water Hand Pump",
+	},
+	{
+		src: "https://icharms.alwahabfoundation.org/storage/program_rate/IDuREBJ6Qcu1DkFQcin5zk0Q4RbSQ7BMS8MMHGz5.jpg",
+        buttonData: "Donate Now",
+        title: "Water Well",
+        link: "https://icharms.alwahabfoundation.org/storage/program/eJSEZYRaZYqsZjYygSWhl5nYV2m1aoDcHtYlK8mD.jpg",
+        alt: " Water Well ",
+	},
+	{
+		src: "https://icharms.alwahabfoundation.org/storage/program/lBBv8zeSeTZJQATAxsJvgXEjKCFBIoRh5ab2fNW9.jpg",
+        buttonData: "Donate Now",
+        title: " Riskshaw",
+        link: "https://icharms.alwahabfoundation.org/storage/program/eJSEZYRaZYqsZjYygSWhl5nYV2m1aoDcHtYlK8mD.jpg",
+        alt: " Riskshaw ",
+	},
+	{
+		src: "https://icharms.alwahabfoundation.org/storage/program/qdYFTqD1TDap2M4SMuqcNHPZx4k7aR50ASGem5Zw.jpg",
+        buttonData: "Donate Now",
+        title: "Sewing Machine ",
+        link: "https://icharms.alwahabfoundation.org/storage/program/qdYFTqD1TDap2M4SMuqcNHPZx4k7aR50ASGem5Zw.jpg",
+        alt: "Sewing Machine",
+	},
+	{
+		src: "https://icharms.alwahabfoundation.org/storage/program/E1f5Gyd4MIUANNg8Pvfdr0ITe69b4eBHAcLM1Wt4.jpg",
+        buttonData: "Donate Now",
+        title: "Eye Camp",
+        link: "https://icharms.alwahabfoundation.org/storage/program/E1f5Gyd4MIUANNg8Pvfdr0ITe69b4eBHAcLM1Wt4.jpg",
+        alt: "Eye Camp",
+	},
+	{
+		src: "https://icharms.alwahabfoundation.org/storage/program/ctw0fhWZ2O0k8bYgJOzd5GfUgHNTmhWkQn3HHNGk.jpg",
+        buttonData: "Donate Now",
+        title: "Eye Surgery",
+        link: "https://icharms.alwahabfoundation.org/storage/program/ctw0fhWZ2O0k8bYgJOzd5GfUgHNTmhWkQn3HHNGk.jpg",
+        alt: "Eye Surgery",
+	},
+	{
+		src: "https://icharms.alwahabfoundation.org/storage/program_rate/vL1BkFdQmC9ru0F9CyKpyAzQQPidKLZSg3RtsOU2.jpg",
+        buttonData: "Donate Now",
+        title: "Food Pack",
+        link: "https://icharms.alwahabfoundation.org/storage/program_rate/vL1BkFdQmC9ru0F9CyKpyAzQQPidKLZSg3RtsOU2.jpg",
+        alt: "Food Pack",
+	},
+	{
+		src: "https://icharms.alwahabfoundation.org/storage/program_rate/fLp6DBCdbq80EYbuq0PaioBt0NMiNNB93AaXnYhY.jpg",
+        buttonData: "Donate Now",
+        title: "Cooked Food",
+        link: "https://icharms.alwahabfoundation.org/storage/program_rate/fLp6DBCdbq80EYbuq0PaioBt0NMiNNB93AaXnYhY.jpg",
+        alt: "Cooked Food",
+	},
+	{
+		src: "https://icharms.alwahabfoundation.org/storage/program/7HSdTR6tt4KRncdncQ5MFH6lxSZzbqgQuFMQVD4y.jpg",
+        buttonData: "Donate Now",
+        title: "Support A Maktab Monthly",
+        link: "https://icharms.alwahabfoundation.org/storage/program/7HSdTR6tt4KRncdncQ5MFH6lxSZzbqgQuFMQVD4y.jpg",
+        alt: "Support A Maktab Monthly ",
+	},
+	{
+		src: "https://icharms.alwahabfoundation.org/storage/program_rate/aGsVJEJPa9QxRk4r47jUFgrraO6r9xRs5flDlawq.jpg",
+        buttonData: "Donate Now",
+        title: "Build A Masjid",
+        link: "https://icharms.alwahabfoundation.org/storage/program_rate/aGsVJEJPa9QxRk4r47jUFgrraO6r9xRs5flDlawq.jpg",
+        alt: "Build A Masjid",
+	},
+	{
+		src: "https://icharms.alwahabfoundation.org/storage/program_rate/o5Fbf3CpTST0JwisB7WDs1HBj4gtQlt0AvLOuumQ.jpg",
+        buttonData: "Donate Now",
+        title: "Musallah",
+        link: "https://icharms.alwahabfoundation.org/storage/program_rate/o5Fbf3CpTST0JwisB7WDs1HBj4gtQlt0AvLOuumQ.jpg",
+        alt: "Musallah",
+	},
+	{
+		src: "https://icharms.alwahabfoundation.org/storage/program/P3T55aPnYAeRz682q1niNZGch5LxLtDQyNWdlG8K.jpg",
+        buttonData: "Donate Now",
+        title: "Sadaqah",
+        link: "https://icharms.alwahabfoundation.org/storage/program/P3T55aPnYAeRz682q1niNZGch5LxLtDQyNWdlG8K.jpg",
+        alt: "Sadaqah",
+	},
+	{
+		src: "https://icharms.alwahabfoundation.org/storage/program/PLEHSlkkZSN0dSbtwkqloOlMu7Mc6y5TwU2mSGUN.jpg",
+        buttonData: "Donate Now",
+        title: "Zakat",
+        link: "https://icharms.alwahabfoundation.org/storage/program/PLEHSlkkZSN0dSbtwkqloOlMu7Mc6y5TwU2mSGUN.jpg",
+        alt: "Zakat",
+	}
+
+]
 
 const OtherProject =[
 	{
@@ -32,32 +135,32 @@ const OtherProject =[
 	{
 		title: "Celebrating Al-Wahab Foundation’s 10-Years – Manchester Charity Dinner Highlights! ",
 		description : "Al-Wahab Foundation’s 10-years celebration Charity Dinner at Manzil Banqueting Hall, Manchester marks its success with an overwhelming response from esteemed..",
-        src: "https://picsum.photos/300/200",
+        src: "https://alwahabfoundation.org/wp-content/uploads/2024/10/AWF-Manchester-Event-1024x658.jpg.webp",
 	},
 	{
 		title: "Al-Wahab Foundation’s London Charity Dinner – Highlights from 10-Years Celebration! ",
 		description : "The most anticipated Global Peace and Unity Festival returned to London on the 19th and 20th of October, 2024 at",
-        src: "https://picsum.photos/300/200",
+        src: "https://alwahabfoundation.org/wp-content/uploads/2024/09/Al-Wahab-Foundation-10-Years-Celebration-1024x384.jpg.webp",
 	},
 	{
 		title: "What is Serving Humanity and Why is it Important?",
 		description : "The term ‘Serving humanity’ is commonly used by the members of a society but less understood when it comes to... ",
-        src: "https://picsum.photos/300/200",
+        src: "https://alwahabfoundation.org/wp-content/uploads/2024/09/crescent-moon-is-visible-mosque-Medium-1024x683.jpg.webp",
 	},
 	{
 		title: "The Month of Rabi-ul-Awwal: Understanding The Significance of Reflection, Gratitude, and Charity ",
 		description : "The month of Rabi ul Awwal is a significant month in Islam, marking the birth of Prophet Muhammad (S.A.W.), celebrated ",
-        src: "https://picsum.photos/300/200",
+        src: "https://alwahabfoundation.org/wp-content/uploads/2024/09/3L5A4727-Medium-1024x683.jpg.webp",
 	},
 	{
 		title: "Acts of Sadaqah Jariyah: A Charity That Keeps on Giving ",
 		description : "In Islam, charity is the cornerstone of the faith, deeply embedded in the teachings of Quran and Sunnah. Among the... ",
-        src: "https://picsum.photos/300/200",
+        src: "https://alwahabfoundation.org/wp-content/uploads/2024/09/3L5A4727-Medium-1024x683.jpg.webp",
 	},
 	{
 		title: "What is Serving Humanity and Why is it Important?",
 		description : "The term ‘Serving humanity’ is commonly used by the members of a society but less understood when it comes to...",
-        src: "https://picsum.photos/300/200",
+        src: "https://alwahabfoundation.org/wp-content/uploads/2024/10/food-distribution-uk-1024x609.jpg.webp",
 	},
 ]
 ---
@@ -711,7 +814,7 @@ const OtherProject =[
   
 <!-- +++++++++++++++++++++++++++++++YOUR SUPPORT CAN TRANSFORM LIVES++++++++++++++++++++++++++++++++ -->
 
-<div class="relative container mx-auto px-4 sm:px-6 lg:px-8 h-screen bg-cover bg-center bg-no-repeat" style="background-image: url('https://alwahabfoundation.org/wp-content/uploads/2022/07/3L5A6312-Edit.jpg');">
+<div class="relative container mx-auto max-w-screen-2xl  sm:px-6 lg:px-8 h-screen bg-cover bg-center bg-no-repeat" style="background-image: url('https://alwahabfoundation.org/wp-content/uploads/2022/07/3L5A6312-Edit.jpg' );">
     <!-- Color Overlay -->
     <div class="absolute inset-0 bg-[#740B2E] opacity-70"></div>
 
@@ -904,247 +1007,8 @@ const OtherProject =[
 <!--  -->
 <div class="container mx-auto mt-24 " data-aos="fade-up">
 	<p class="text-3xl text-grey font-bold text-center py-8">Ongoing appeals</p>
-    <div class="row flex gap-3 overflow-x-auto overflow-y-hidden">
-        <!-- Image 1 -->
-        <div class="max-w-xs md:max-w-xs bg-white rounded-lg shadow-lg overflow-hidden relative flex-shrink-0">
-            <a href="#">
-                <img class="rounded-t-lg w-full object-cover h-80 inset-0" src="https://icharms.alwahabfoundation.org/storage/program/lBBv8zeSeTZJQATAxsJvgXEjKCFBIoRh5ab2fNW9.jpg" alt="Card image" />
-            </a>
-            <div class="p-5">
-                <p class="flex items-center justify-center mt-6">
-                    <a href="#" class="px-4 py-2 inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
-                        DONATE NOW
-                    </a>
-                </p>
-                <p class="text-center">
-                    <a class="text-center" href="">Rickshaw</a>
-                </p>
-            </div>
-        </div>
-
-        <!-- Image 2 -->
-		<div class="max-w-xs md:max-w-xs bg-white rounded-lg shadow-lg overflow-hidden relative flex-shrink-0">
-            <a href="#">
-                <img class="rounded-t-lg w-full object-cover h-80 inset-0" src="https://icharms.alwahabfoundation.org/storage/program/qdYFTqD1TDap2M4SMuqcNHPZx4k7aR50ASGem5Zw.jpg" alt="Card image" />
-            </a>
-            <div class="p-5">
-                <p class="flex items-center justify-center mt-6">
-                    <a href="#" class="px-4 py-2 inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
-                        DONATE NOW
-                    </a>
-                </p>
-                <p class="text-center">
-                    <a class="text-center" href="">Sewing Machine</a>
-                </p>
-            </div>
-        </div>
-
-        <!-- Image 3 -->
-       <div class="max-w-xs md:max-w-xs bg-white rounded-lg shadow-lg overflow-hidden relative flex-shrink-0">
-            <a href="#">
-                <img class="rounded-t-lg w-full object-cover h-80 inset-0" src="https://icharms.alwahabfoundation.org/storage/program/E1f5Gyd4MIUANNg8Pvfdr0ITe69b4eBHAcLM1Wt4.jpg" alt="Card image" />
-            </a>
-            <div class="p-5">
-                <p class="flex items-center justify-center mt-6">
-                    <a href="#" class="px-4 py-2 inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
-                        DONATE NOW
-                    </a>
-                </p>
-                <p class="text-center">
-                    <a class="text-center" href="">Eye Camp</a>
-                </p>
-            </div>
-        </div>
-
-        <!-- Image 4 -->
-        <div class="max-w-xs md:max-w-xs bg-white rounded-lg shadow-lg overflow-hidden relative flex-shrink-0">
-            <a href="#">
-                <img class="rounded-t-lg w-full object-cover h-80 inset-0" src="https://icharms.alwahabfoundation.org/storage/program/ctw0fhWZ2O0k8bYgJOzd5GfUgHNTmhWkQn3HHNGk.jpg" alt="Card image" />
-            </a>
-            <div class="p-5">
-                <p class="flex items-center justify-center mt-6">
-                    <a href="#" class="px-4 py-2 inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
-                        DONATE NOW
-                    </a>
-                </p>
-                <p class="text-center">
-                    <a class="text-center" href="">Eye Surgery</a>
-                </p>
-            </div>
-        </div>
-
-        <!-- Image 5 -->
-		<div class="max-w-xs md:max-w-xs bg-white rounded-lg shadow-lg overflow-hidden relative flex-shrink-0">
-            <a href="#">
-                <img class="rounded-t-lg w-full object-cover h-80 inset-0" src="https://icharms.alwahabfoundation.org/storage/program_rate/vL1BkFdQmC9ru0F9CyKpyAzQQPidKLZSg3RtsOU2.jpg" alt="Card image" />
-            </a>
-            <div class="p-5">
-                <p class="flex items-center justify-center mt-6">
-                    <a href="#" class="px-4 py-2 inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
-                        DONATE NOW
-                    </a>
-                </p>
-                <p class="text-center">
-                    <a class="text-center" href="">Food Pack</a>
-                </p>
-            </div>
-        </div>
-
-        <!-- Image 6 -->
-        <div class="max-w-xs md:max-w-xs bg-white rounded-lg shadow-lg overflow-hidden relative flex-shrink-0">
-            <a href="#">
-                <img class="rounded-t-lg w-full object-cover h-80 inset-0" src="https://icharms.alwahabfoundation.org/storage/program_rate/fLp6DBCdbq80EYbuq0PaioBt0NMiNNB93AaXnYhY.jpg" alt="Card image" />
-            </a>
-            <div class="p-5">
-                <p class="flex items-center justify-center mt-6">
-                    <a href="#" class="px-4 py-2 inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
-                        DONATE NOW
-                    </a>
-                </p>
-                <p class="text-center">
-                    <a class="text-center" href="">Cooked Food</a>
-                </p>
-            </div>
-        </div>
-
-        <!-- Image 7 -->
-        <div class="max-w-xs md:max-w-xs bg-white rounded-lg shadow-lg overflow-hidden relative flex-shrink-0">
-            <a href="#">
-                <img class="rounded-t-lg w-full object-cover h-80 inset-0" src="https://icharms.alwahabfoundation.org/storage/program/7HSdTR6tt4KRncdncQ5MFH6lxSZzbqgQuFMQVD4y.jpg" alt="Card image" />
-            </a>
-            <div class="p-5">
-                <p class="flex items-center justify-center mt-6">
-                    <a href="#" class="px-4 py-2 inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
-                        DONATE NOW
-                    </a>
-                </p>
-                <p class="text-center">
-                    <a class="text-center" href="">Support A Maktab Monthly</a>
-                </p>
-            </div>
-        </div>
-
-        <!-- Image 8 -->
-		<div class="max-w-xs md:max-w-xs bg-white rounded-lg shadow-lg overflow-hidden relative flex-shrink-0">
-            <a href="#">
-                <img class="rounded-t-lg w-full object-cover h-80 inset-0" src="https://icharms.alwahabfoundation.org/storage/program_rate/aGsVJEJPa9QxRk4r47jUFgrraO6r9xRs5flDlawq.jpg" alt="Card image" />
-            </a>
-            <div class="p-5">
-                <p class="flex items-center justify-center mt-6">
-                    <a href="#" class="px-4 py-2 inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
-                        DONATE NOW
-                    </a>
-                </p>
-                <p class="text-center">
-                    <a class="text-center" href="">Build a Musjid</a>
-                </p>
-            </div>
-        </div>
-
-        <!-- Image 9 -->
-		<div class="max-w-xs md:max-w-xs bg-white rounded-lg shadow-lg overflow-hidden relative flex-shrink-0">
-            <a href="#">
-                <img class="rounded-t-lg w-full object-cover h-80 inset-0" src="https://icharms.alwahabfoundation.org/storage/program_rate/o5Fbf3CpTST0JwisB7WDs1HBj4gtQlt0AvLOuumQ.jpg" alt="Card image" />
-            </a>
-            <div class="p-5">
-                <p class="flex items-center justify-center mt-6">
-                    <a href="#" class="px-4 py-2 inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
-                        DONATE NOW
-                    </a>
-                </p>
-                <p class="text-center">
-                    <a class="text-center" href="">Musallah</a>
-                </p>
-            </div>
-        </div>
-
-        <!-- Image 10 -->
-        <div class="max-w-xs md:max-w-xs bg-white rounded-lg shadow-lg overflow-hidden relative flex-shrink-0">
-            <a href="#">
-                <img class="rounded-t-lg w-full object-cover h-80 inset-0" src="https://icharms.alwahabfoundation.org/storage/program/P3T55aPnYAeRz682q1niNZGch5LxLtDQyNWdlG8K.jpg" alt="Card image" />
-            </a>
-            <div class="p-5">
-                <p class="flex items-center justify-center mt-6">
-                    <a href="#" class="px-4 py-2 inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
-                        DONATE NOW
-                    </a>
-                </p>
-                <p class="text-center">
-                    <a class="text-center" href="">Sadaqah</a>
-                </p>
-            </div>
-			<div
-          class="swiper-button-prev absolute top-1/2 -translate-y-1/2 left-[-20px] bg-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg cursor-pointer hover:bg-gray-200"
-        ></div>
-        <div
-          class="swiper-button-next absolute top-1/2 -translate-y-1/2 right-[-20px] bg-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg cursor-pointer hover:bg-gray-200"
-        ></div>
-		</div>
-
-		<div class="max-w-xs md:max-w-xs bg-white rounded-lg shadow-lg overflow-hidden relative flex-shrink-0">
-            <a href="#">
-                <img class="rounded-t-lg w-full object-cover h-80 inset-0" src="https://icharms.alwahabfoundation.org/storage/program/PLEHSlkkZSN0dSbtwkqloOlMu7Mc6y5TwU2mSGUN.jpg" alt="Card image" />
-            </a>
-            <div class="p-5">
-                <p class="flex items-center justify-center mt-6">
-                    <a href="#" class="px-4 py-2 inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
-                        DONATE NOW
-                    </a>
-                </p>
-                <p class="text-center">
-                    <a class="text-center" href="">Zakat</a>
-                </p>
-            </div>
-		</div>
-
-		<div class="max-w-xs md:max-w-xs bg-white rounded-lg shadow-lg overflow-hidden relative flex-shrink-0">
-            <a href="#">
-                <img class="rounded-t-lg w-full object-cover h-80 inset-0" src="https://icharms.alwahabfoundation.org/storage/program/eJSEZYRaZYqsZjYygSWhl5nYV2m1aoDcHtYlK8mD.jpg" alt="Card image" />
-            </a>
-            <div class="p-5">
-                <p class="flex items-center justify-center mt-6">
-                    <a href="#" class="px-4 py-2 inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
-                        DONATE NOW
-                    </a>
-                </p>
-                <p class="text-center">
-                    <a class="text-center" href="">Where Most Needed</a>
-                </p>
-            </div>
-		</div>
-		<div class="max-w-xs md:max-w-xs bg-white rounded-lg shadow-lg overflow-hidden relative flex-shrink-0">
-            <a href="#">
-                <img class="rounded-t-lg w-full object-cover h-80 inset-0" src="https://icharms.alwahabfoundation.org/storage/program/4yoKufWEbMKVjRi7oqiDmaQyUjlPsEFNNPQbV9nj.jpg" alt="Card image" />
-            </a>
-            <div class="p-5">
-                <p class="flex items-center justify-center mt-6">
-                    <a href="#" class="px-4 py-2 inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
-                        DONATE NOW
-                    </a>
-                </p>
-                <p class="text-center">
-                    <a class="text-center" href="">Water Hand Pump</a>
-                </p>
-            </div>
-		</div>
-		<div class="max-w-xs md:max-w-xs bg-white rounded-lg shadow-lg overflow-hidden relative flex-shrink-0">
-            <a href="#">
-                <img class="rounded-t-lg w-full object-cover h-80 inset-0" src="https://icharms.alwahabfoundation.org/storage/program_rate/IDuREBJ6Qcu1DkFQcin5zk0Q4RbSQ7BMS8MMHGz5.jpg" alt="Card image" />
-            </a>
-            <div class="p-5">
-                <p class="flex items-center justify-center mt-6">
-                    <a href="#" class="px-4 py-2 inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
-                        DONATE NOW
-                    </a>
-                </p>
-                <p class="text-center">
-                    <a class="text-center" href="">Water Well</a>
-                </p>
-            </div>
-		</div>
-		
-	</div>
-  </div>
+    <OngoingAppeals goingAppeals= {goingAppeals}/>
+  
 </div>
 
 <div class="container">
