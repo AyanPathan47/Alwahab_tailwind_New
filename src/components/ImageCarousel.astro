@@ -1,0 +1,47 @@
+---
+export interface Props{
+    imageCarousel:{
+        src: string,
+        alt: string,
+    }[];
+}
+const {imageCarousel} = Astro.props;
+---
+
+<div class="container flex flex-col mx-auto items-center justify-center px-20 py-8 relative">
+
+    <!-- Previous Button -->
+    <button
+        id="prev-btn2"
+        class="absolute left-8 top-1/2  -ml-4 -translate-y-1/2 flex h-10 w-10 items-center justify-center rounded-full border border-gray-300 bg-white shadow transition-all hover:bg-gray-100 focus:outline-none md:left-8 md:h-12 md:w-12">
+        <i class="fa-solid fa-chevron-left text-maroon text-2xl md:text-3xl"></i>
+    </button>
+   
+    <!-- Image Container -->
+    <div class="image-container flex justify-between gap-2 overflow-x-auto scroll-smooth space-x-4 w-full pb-4">
+        {imageCarousel.map((item) => (
+            <img class="your-class-name w-80 h-60" src={item.src} alt={item.alt || 'Image'} />
+        ))}
+    </div>
+    
+    <!-- Next Button -->
+    <button
+        id="next-btn2"
+        class="absolute right-1  -mr-3 top-1/2  -translate-y-1/2 flex h-10 w-10 items-center justify-center rounded-full border border-gray-300 bg-white shadow transition-all hover:bg-gray-100 focus:outline-none md:right-8 md:h-12 md:w-12">
+        <i class="fa-solid fa-chevron-right text-maroon text-2xl md:text-3xl"></i>
+    </button>
+</div>
+
+<script is:inline>
+    const imageContainer  = document.querySelector('.image-container');
+    const prevButton = document.getElementById('prev-btn2');
+    const nextButton = document.getElementById('next-btn2');
+
+    prevButton.addEventListener('click', ()=>{
+        imageContainer.scrollLeft -= 300;
+    })
+
+    nextButton.addEventListener('click', ()=>{
+        imageContainer.scrollLeft += 300;
+    })
+</script>
