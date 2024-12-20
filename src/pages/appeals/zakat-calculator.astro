@@ -1,0 +1,54 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import HeadersBanner from "../../components/HeadersBanner.astro";
+
+const HeaderBannerDetails = [
+    {
+      src: "https://alwahabfoundation.org/wp-content/uploads/2024/03/Zakat-cover-2024-01.jpg",
+      title: "Zakat Calculator"
+    }
+]
+---
+
+<Layout>
+    <HeadersBanner HeadersBanners={HeaderBannerDetails} />
+
+    <div class="container py-8 px-4">
+        <div class="row">
+            <p class="text-center text-maroon font-bold text-2xl md:text-4xl">Simplify Your Zakat Calculation</p>
+            <p class="py-4 text-center text-grey text-base md:text-xl font-medium">
+                Determining your Zakat seems to be a difficult task. However, it isn’t as challenging <br>
+                as you might think of it. All you need to do is categorise your assets and liabilities in a <br>
+                way that makes it convenient for you to <span class="font-bold">calculate Zakat</span>. To make it even more <br>
+                convenient and quick, use our Zakat Calculator to find out how much you need <br>
+                to pay.
+            </p>
+            <p class="py-3 text-center text-grey text-base md:text-xl font-medium">
+                AWF Zakat Calculator has simplified the calculation by dividing assets into items to <br>
+                be considered to pay Zakat for (such as gold, silver, cash, savings, and business <br>
+                assets) and deductible liabilities (including debts and other outgoing payments). <br>
+                Using this breakdown, you can easily calculate Zakat. 
+            </p>
+            <p class="py-3 text-center text-grey text-base md:text-xl font-medium">
+                Once you assess the value of your net assets, you can determine the amount of Zakat <br>
+                 owed. It’s crucial to compare your net assets to the nisab threshold to find out <br>
+                  whether Zakat is obligatory.
+            </p>
+            <div class="py-4 px-10 flex justify-center">
+                <!-- First Button Container -->
+                <div class="w-1/2 flex justify-center">
+                    <a class="bg-maroon rounded-full px-4 py-2 text-xl font-bold hover:bg-customBeige text-white" href="">
+                        GIve Zakat
+                    </a>
+                </div>
+                <!-- Second Button Container -->
+                <div class="w-1/2 flex justify-center">
+                    <a class="bg-maroon rounded-full px-4 py-2 text-xl font-bold hover:bg-customBeige text-white" href="">
+                        Calculate Your Zakat
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</Layout>
