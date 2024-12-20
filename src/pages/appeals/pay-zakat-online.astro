@@ -1,0 +1,304 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import HeadersBanner from "../../components/HeadersBanner.astro";
+import UmmahCharity from "../../components/Ummah_Charity.astro";
+import SupportBanners from "../../components/SupportBanner.astro";
+import RestoringLive from "../../components/RestoringLives.astro";
+import SeeOtherProjectCard from "../../components/SeeOtherProjectCard.astro";
+
+const OtherProject = [
+    {
+        title: "Where Most Needed",
+        description:
+            "At Al-Wahab Foundation, we believe in the power of consistent generosity. Our Where Most Needed initiative empowers you to make",
+        src: "https://alwahabfoundation.org/wp-content/uploads/2023/10/IMG_1703-1024x384.jpg",
+    },
+    {
+        title: "Qurbani",
+        description:
+            "Donate Qurbani this Dhul-Hijjah with AWF. Your donation can reach those in need this Eid Al-Adha.",
+        src: "https://alwahabfoundation.org/wp-content/uploads/2023/05/Camel-banner-1024x400.jpg",
+    },
+    {
+        title: "Hope For Uganda",
+        description:
+            "At Al-Wahab Foundation, we believe in the power of consistent generosity. Our Where Most Needed initiative empowers you to make",
+        src: "",
+    },
+    {
+        title: "Serving Humanity in the UK",
+        description:
+            "At Al-Wahab Foundation, we believe in the power of consistent generosity. Our Where Most Needed initiative empowers you to make",
+        src: "",
+    },
+    {
+        title: "Winter Survival Kit",
+        description:
+            "At Al-Wahab Foundation, we believe in the power of consistent generosity. Our Where Most Needed initiative empowers you to make",
+        src: "",
+    },
+    {
+        title: "Build a Masjid",
+        description:
+            "At Al-Wahab Foundation, we believe in the power of consistent generosity. Our Where Most Needed initiative empowers you to make",
+        src: "",
+    },
+    {
+        title: "Pay Zakat Online",
+        description:
+            "At Al-Wahab Foundation, we believe in the power of consistent generosity. Our Where Most Needed initiative empowers you to make",
+        src: "",
+    },
+    {
+        title: "Women Empowerment",
+        description:
+            "Empowering women involves providing them with opportunities to acquire essential skills, boost their confidence, and cultivate independence, enabling lasting benefits",
+        src: "",
+    },
+    {
+        title: "Give your Sadaqah",
+        description:
+            "Your Sadaqah donation keeps hopes alive for those in need. Your act of charity can ease the suffering of people",
+        src: "",
+    },
+    {
+        title: "Support a Maktab",
+        description:
+            "Over 280 million children around the world are deprived of education. These children are often forced into a life of",
+        src: "",
+    },
+];
+
+const RestoreData = [
+    {
+        title: "Janib Ali's Village Thanks You for Your Generosity",
+        description:
+            '“My name is Janib Ali and I live in Ghoas Buksh, Sindh. Most of the people in our community are short on financial means and we barely make ends meet. Sometimes it gets difficult to provide even the most basic necessities for our families so when it comes to building a proper mosque, it is so unfortunate that we cannot make up for it. However, Al-Wahab Foundation built this beautiful and spacious mosque in our village. It’s like a gift from Allah (SWT) for all of us as we don’t have to go far off, outside the village to pray in a Jamaat (congregation). We cannot thank Muti Abdul Wahab and Al-Wahab Foundation for this gift"',
+        src: "https://alwahabfoundation.org/wp-content/uploads/2022/07/SAK05816-1536x864.jpg",
+        buttonTitle: "Give Your Zakat",
+    },
+];
+
+const SupportBannerData = [
+    {
+        leftDescription: "Your Zakat can change their lives",
+        rightDescription:
+            "Giving Zakat is one of the five pillars of Islam and a redistribution of wealth to those in the world who are less fortunate. The donation brings immense reward to the believer as an obligation for those who can afford it. It is one of the most efficient tools in tackling social inequality and fighting poverty – Your donation can help us to provide food, water, education, and much more to help those in need. Pay Zakat Online with ease at Al-Wahab Foundation and join us in keeping hopes alive.",
+        src: "https://alwahabfoundation.org/wp-content/uploads/2022/07/IMS03167.jpg",
+    },
+];
+const HeaderBanned = [
+    {
+        src: "https://alwahabfoundation.org/wp-content/uploads/2022/01/Zakat-banner.jpg",
+        title: "Pay Zakat Online",
+    },
+];
+---
+
+<Layout>
+    <HeadersBanner HeadersBanners={HeaderBanned} />
+    <UmmahCharity />
+
+    <div class="container">
+        <div class="row">
+            <p class="text-4xl text-maroon font-bold text-center pt-16">
+                Pay Zakat Online with Al-Wahab <br />Foundation
+            </p><br />
+            <p class="text-center px-10 font-semibold">
+                The economic situation in Pakistan has caused devastation,
+                leaving many people in <br /> desperation. Approximately 36% of the
+                population now lives in severe poverty. Your <br />zakat
+                donation can make a difference as Al-Wahab Foundation provides
+                essentials<br />
+                like <a
+                    class="text-maroon hover:text-customBeige duration-300 cursor-pointer"
+                    >food</a
+                > and <a
+                    class="text-maroon hover:text-customBeige duration-300 cursor-pointer"
+                    >water</a
+                > to support communities all over Pakistan. Consider donating <br
+                /> your Zakat today and helping those in need.
+            </p>
+        </div>
+    </div>
+    <SupportBanners BannerDetails={SupportBannerData} />
+    <div class="container mx-auto mt-10">
+        <div class="row flex justify-center">
+            <div
+                class="relative w-full max-w-[100%] md:max-w-[88%] pb-[45.25%]"
+            >
+                <iframe
+                    class="absolute top-0 left-0 w-full h-full"
+                    src="https://www.youtube.com/embed/x1npUyPEmx4?si=87DHoJHBDYxIRLDD"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <p class="text-2xl font-bold text-maroon px-20 py-8">
+                Zakat & Eligibility Criteria
+            </p>
+            <p class="text-lg px-24">
+                Zakat is the third pillar of our faith. It ensures our wealth is
+                used to support the poorest and most marginalised in our
+                community, who have a right over it. This is Fard (an
+                obligation) for every Muslim adult, who is mentally sane and has
+                a certain amount of wealth (Nisab) at 2.5% of their savings—once
+                a year.<br /><br />
+                “The Believers, men, and women are protectors one of another: they
+                enjoy what is just and forbid what is evil: they observe regular
+                prayers, pay and obey Allah and His Messenger.” (Holy Qur’an 9:71)<br
+                /><br />
+                There are eight categories of people eligible to receive Zakat: the
+                poor who are in financial distress, the needy who are in financial
+                need, the administrators of Zakat or Zakat Collectors appointed by
+                the State, those who have recently converted to Islam and need help,
+                Zakat given to end slavery, those in debt, given in the name of God,
+                and tour travellers, including refugees.
+            </p>
+        </div>
+    </div>
+    <RestoringLive ReStroingLives={RestoreData} />
+    <div class="container">
+        <div class="row">
+            <p class="text-2xl font-bold text-maroon px-16 pt-10">
+                Your Zakat Donation with Al-Wahab Foundation
+            </p>
+
+            <p class="px-16 py-5 text-xl font-medium">
+                With your Zakat donation, Al-Wahab Foundation can reach those in
+                greatest of need, providing lifesaving and life-changing aid. So
+                far, it has delivered <a
+                    class="text-maroon font-semibold hover:text-customBeige duration-300 cursor-pointer"
+                    >clean drinking water where it was a crisis</a
+                >
+                to over 200,000 people and fed over 100,000 people through our Iftar
+                and <a
+                    class="text-maroon font-semibold hover:text-customBeige duration-300 cursor-pointer"
+                    >cooked meals
+                </a> programme across rural Pakistan. Our donors can pay Zakat online
+                to <a
+                    class="text-maroon font-semibold hover:text-customBeige duration-300 cursor-pointer"
+                    >serve humanity
+                </a> our initiatives in wide-spread regions.<br />
+                <br />
+
+                Since our beginning, Al-Wahab Foundation has always considered
+                an Amanah in the sight of Allah (SWT). We strive to run
+                long-lasting, impactful projects with your <strong>Zakat</strong
+                > donations, helping communities to break the poverty cycle and maximising
+                your blessings..<br /><br />
+
+                You can pay Zakat online for:<br />
+                <ul class="list-disc pl-24">
+                    <li>
+                        Access to safe, clean water to improve health and
+                        sanitation
+                    </li>
+                    <li>
+                        Food packs and cooked food to feed those in <a
+                            class="text-maroon font-semibold hover:text-customBeige duration-300 cursor-pointer"
+                            >emergency need</a
+                        >
+                    </li>
+                    <li>
+                        Healthcare such as free <a
+                            class="text-maroon font-semibold hover:text-customBeige duration-300 cursor-pointer"
+                        >
+                            eye surgery
+                        </a> to help people back into work.
+                    </li>
+                    <li>
+                        Access to education with a Maktab for disadvantaged
+                        children by keeping them off the streets
+                    </li>
+                    <li>
+                        <a
+                            class="text-maroon font-semibold hover:text-customBeige duration-300 cursor-pointer"
+                            >Women empowerment
+                        </a> that help widows learn skills and earn stable income
+                    </li>
+                </ul><br />
+            </p>
+            <p class="px-16 py-5 text-xl font-medium">
+                Use our simple calculator below to work out how much Zakat you
+                need to pay. The nisab is the equivalent value of 87.48 grams of
+                gold; 612.36 grams of silver. Every Sahib-e-Nisaab should give
+                2.5 % of their unencumbered wealth every year, to help those who
+                are in need.
+            </p>
+            <p class="text-2xl font-bold text-maroon px-16 pt-10">
+                Zakat Applicable Initiatives
+            </p>
+            <p class="px-16 py-5 text-xl font-medium">
+                At Al-Wahab Foundation, we carefully allocate Zakat
+                contributions to impactful initiatives that uphold the
+                principles of Islamic charity. Your Zakat is channelled towards
+                projects that benefit the less fortunate, including the
+                following:
+            </p>
+            <ul class="list-disc pl-24">
+                <li>
+                    <a
+                        class="text-maroon font-semibold hover:text-customBeige duration-300 cursor-pointer"
+                        >Rozgar Project
+                    </a>
+                </li>
+                <li>Women Empowerment</li>
+                <li>Eye Surgery</li>
+                <li>
+                    <a
+                        class="text-maroon font-semibold hover:text-customBeige duration-300 cursor-pointer"
+                        >Support a Maktab (Yearly)</a
+                    >
+                </li>
+                <li>Food Packs</li>
+                <li>Emergency Relief</li>
+            </ul>
+            <p class="px-16 py-5 text-xl font-medium">
+                Donate today and help us in the mission of transforming lives.
+                You can calculate your Zakat by using our <a
+                    class="text-maroon font-semibold hover:text-customBeige duration-300 cursor-pointer"
+                    >Zakat calculator.
+                </a>
+                Together we can make a significant difference!
+            </p>
+            <p class="text-2xl font-bold text-maroon px-16 pt-10">
+                Pay Zakat Online Securely and Conveniently
+            </p>
+            <p class="px-16 py-5 text-xl font-medium">
+                At <a
+                class="text-maroon font-semibold hover:text-customBeige duration-300 cursor-pointer"
+                >Al-Wahab Foundation</a> ,we make it simple to pay zakat online
+                securely and conveniently. Your zakat donations can make a
+                significant impact on the lives of countless individuals.
+                Whether you choose to give zakat as an individual or a group,
+                your contribution can bring positive change to communities in
+                need. Support now and donate zakat online to make an everlasting
+                impact.
+            </p>
+            <!--slider -->
+            <p class="flex justify-center my-7">
+                <a
+                    href=""
+                    class="px-4 font-bold py-1 bg-maroon text-white hover:bg-customBeige rounded-full uppercase"
+                    >DONATE your zakat now</a
+                >
+            </p>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <p class="text-grey font-bold text-3xl text-center py-4">
+                See other Project
+            </p>
+        </div>
+    </div>
+    <SeeOtherProjectCard SeeOtherProjects={OtherProject} />
+</Layout>

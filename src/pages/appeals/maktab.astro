@@ -2,10 +2,42 @@
 import Layout from "../../layouts/Layout.astro";
 import HeadersBanner from "../../components/HeadersBanner.astro";
 import UmmahCharity from "../../components/Ummah_Charity.astro";
-import CardforCountry from "../../components/CardforCountry.astro";
+
 import RestoringLives from "../../components/RestoringLives.astro";
 import Otherproject from "../../components/SeeOtherProjectCard.astro";
 import SupportBanner from "../../components/SupportBanner.astro";
+import Singleregular from "../../components/singel-regular.astro";
+const single =[
+  
+    {
+        name : "PAKISTAN",
+        title:"Support A Maktab",
+        amount:"ANY AMOUNT",
+        single: "SINGLE",
+        regular: "REGULAR",
+        src: "https://icharms.alwahabfoundation.org/storage/program/Z0p0CqKwxaTyPOpyo01M9T7875URckMZ5pcSgD14.jpg",
+
+    },
+      {
+        name : "PAKISTAN",
+        title:"Support A Maktab Monthly",
+        amount:"30.00 ",
+        single: "SINGLE",
+        regular: "REGULAR",
+        src: "https://icharms.alwahabfoundation.org/storage/program_rate/rr1uwuW3lYke4ZKwty5b12oBMZwa60T9DN8qR84c.png",
+
+    },
+    {
+        name : "PAKISTAN",
+        title:"Support A Disable Child",
+        amount:"100.00",
+        single: "SINGLE",
+        regular: "REGULAR",
+        src: "https://icharms.alwahabfoundation.org/storage/program_rate/YGgUqz9K8jvpWkOwIdTXBsJV6HQY3SX1Pf7iSbqL.jpg",
+
+    },
+
+]
 const otherproject = [
     {
         title: "Build a Masjid",
@@ -73,30 +105,11 @@ const Restoring = [
         title: "Hope for Tomorrow: Al-Wahab Foundation's Support for Abdullah's Education",
         description:
             "My name is Abdullah, and I live in Sindh with my family. I have always dreamed of going to school and learning new things. But our financial situation makes it impossible for me to attend school like other children in our neighbourhood. It feels like I am left behind, and it's disheartening to see my dreams being shattered. I am incredibly thankful to the Al-Wahab Foundation and Mufti Abdul Wahab for giving me this opportunity to study through Maktab initiative. Now, I can pursue my dreams and learn like other children. I am eager to learn and grow, and I promise to work hard to make my family proud. I thank to Mufti Abdul Wahab and Al-Wahab Foundation for supporting me so that I can have a brighter future.",
-        src: "/assets/images/2022/09/87a3d0c13ff6307c6d26df055dcc2866-1024x682.jpg",
+        src: "https://alwahabfoundation.org/wp-content/uploads/2023/08/IMG_7251-1024x682.jpg",
         buttonTitle: "Read More",
     },
 ];
-const card = [
-    {
-        name: "PAKISTAN",
-        title: "Winter Survival Kit",
-        amount: "50.00",
-        src: "https://picsum.photos/200",
-    },
-    {
-        name: "AFGHANISTAN",
-        title: "Winter Survival Kit",
-        amount: "50.00",
-        src: "https://picsum.photos/200",
-    },
-    {
-        name: "UNITED KINGDOM",
-        title: "Winter Survival Kit",
-        amount: "50.00",
-        src: "https://picsum.photos/200",
-    },
-];
+
 const BannerDatas = [
     {
         src: "/assets/images/website-banner-UK-winter-1.jpg",
@@ -114,7 +127,7 @@ const SupportBannerDetails = [
 ];
 const HeaderBannerData = [
     {
-        src: "/assets/images/2022/06/IMG_8999.jpg",
+        src: "https://alwahabfoundation.org/wp-content/uploads/2022/07/IMG_0867.jpg",
         title: "SUPPORT A MAKTAB",
     },
 ];
@@ -134,7 +147,9 @@ const HeaderBannerData = [
     </div>
 
     <!--card -->
-    <CardforCountry CountryCardDetails={card} />
+    <Singleregular SingleRegulars={single}/>
+
+    
 
     <!--support banner -->
     <SupportBanner BannerDetails={SupportBannerDetails} />
@@ -271,7 +286,7 @@ const HeaderBannerData = [
             <p
                 class="mt-5 sm:mt-7 text-grey text-base sm:text-lg font-semibold text-justify"
             >
-            We believe that education is the key to breaking the cycle of poverty. Your donations can count as Sadaqah Jariyah for the long-term benefit they will bring to each child and their family.<br><br>We believe that education is the key to breaking the cycle of poverty. Your donations can count as Sadaqah Jariyah for the long-term benefit they will bring to each child and their family.<br><br>We use your donation to enrol students in our Maktabs who would otherwise remain deprived of any Islamic education due to their families’ circumstances. We give these children the tools they need to build a positive future for themselves and to become advocates for Islamic education in their communities. <br><br>From hot meals to achievement awards, visits from <a href="#" class="text-maroon hover:text-customBeige font-bold ">Mufti Abdul Wahab</a> and Eid gifts, your donation helps to care for each student. Thanks to your Maktab support, we have been able to help 1,600 pupils so far due to your generous donations.
+            We believe that education is the key to breaking the cycle of poverty. Your donations can count as Sadaqah Jariyah for the long-term benefit they will bring to each child and their family.<br><br>We use your donation to enrol students in our Maktabs who would otherwise remain deprived of any Islamic education due to their families’ circumstances. We give these children the tools they need to build a positive future for themselves and to become advocates for Islamic education in their communities. <br><br>From hot meals to achievement awards, visits from <a href="#" class="text-maroon hover:text-customBeige font-bold ">Mufti Abdul Wahab</a> and Eid gifts, your donation helps to care for each student. Thanks to your Maktab support, we have been able to help 1,600 pupils so far due to your generous donations.<br><br>Donate today and your generosity will provide essential teaching resources, books, equipment and qualified staff, creating a stable, nurturing Islamic environment for children living in disadvantaged communities.
 
             </p>
             
