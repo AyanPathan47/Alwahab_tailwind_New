@@ -4,8 +4,88 @@ import HeadersBanner from "../../components/HeadersBanner.astro";
 import UmmahCharity from "../../components/Ummah_Charity.astro";
 import SupportBanners from "../../components/SupportBanner.astro";
 import RestoringLive from "../../components/RestoringLives.astro";
+import Singleregular from "../../components/singel-regular.astro";
 import SeeOtherProjectCard from "../../components/SeeOtherProjectCard.astro";
+import ImageCarousel from "../../components/ImageCarousel.astro";
 
+const ImagesCarousel =[
+    {
+       src:"https://alwahabfoundation.org/wp-content/uploads/2023/07/DSC07649.jpg",
+       alt:"", 
+    },
+    {
+       src:"https://alwahabfoundation.org/wp-content/uploads/2023/07/DSC07726.jpg",
+       alt:"", 
+    },
+    {
+       src:"https://alwahabfoundation.org/wp-content/uploads/2023/07/DSC07686.jpg",
+       alt:"", 
+    },  
+    {
+       src:"https://alwahabfoundation.org/wp-content/uploads/2023/07/DSC07705.jpg",
+       alt:"", 
+    },   
+    {
+       src:"https://alwahabfoundation.org/wp-content/uploads/2023/07/DSC07636.jpg",
+       alt:"", 
+    },   
+    {
+       src:"https://alwahabfoundation.org/wp-content/uploads/2023/07/DSC07649.jpg",
+       alt:"", 
+    },
+    {
+       src:"https://alwahabfoundation.org/wp-content/uploads/2023/07/DSC07726.jpg",
+       alt:"", 
+    },
+    {
+       src:"https://alwahabfoundation.org/wp-content/uploads/2023/07/DSC07705.jpg",
+       alt:"", 
+    }, 
+    {
+       src:"https://alwahabfoundation.org/wp-content/uploads/2023/07/DSC07636.jpg",
+       alt:"", 
+    }, 
+    
+]
+const single =[
+  
+    {
+        name : "UGANDA",
+        title:"Build A Masjid",
+        amount:"12000.00 ",
+        single: "SINGLE",
+        regular: "REGULAR",
+        src: "https://icharms.alwahabfoundation.org/storage/program_rate/aGsVJEJPa9QxRk4r47jUFgrraO6r9xRs5flDlawq.jpg",
+
+    },
+      {
+        name : "PAKISTAN",
+        title:"Build A Masjid",
+        amount:"7000.00 ",
+        single: "SINGLE",
+        regular: "REGULAR",
+        src: "https://icharms.alwahabfoundation.org/storage/program_rate/5PwWI2AVBNjUn7dIHYanPzyqMmPoabJ673tBvpvM.jpg",
+
+    },
+    {
+        name : "PAKISTAN",
+        title:"Musallah",
+        amount:"100.00",
+        single: "SINGLE",
+        regular: "REGULAR",
+        src: "https://icharms.alwahabfoundation.org/storage/program_rate/o5Fbf3CpTST0JwisB7WDs1HBj4gtQlt0AvLOuumQ.jpg",
+
+    },
+    {
+        name : "PAKISTAN",
+        title:"Large Masjid",
+        amount:"15000.00 ",
+        single: "SINGLE",
+        regular: "REGULAR",
+        src: "https://icharms.alwahabfoundation.org/storage/program/A9goDGk7ySdT50k4D0nxQPN6t7EMzv5aktuGPgwZ.jpg",
+
+    }
+]
 const OtherProject = [
     {
         title: "Where Most Needed",
@@ -89,7 +169,7 @@ const SupportBannerData = [
 ];
 const HeaderBanned = [
     {
-        src: "/assets/images/website-banner-masjid.jpg",
+        src: "https://alwahabfoundation.org/wp-content/uploads/2022/07/SAK04290.jpg",
         title: "Build a Masjid: Your Generosity, The Best Sadaqah",
     },
 ];
@@ -104,7 +184,7 @@ const HeaderBanned = [
             <p class="text-4xl text-maroon font-bold text-center pt-16">
                 Donate Today to Build a Mosque for <br />Those in Need
             </p>
-            <p class="text-center px-10 font-semibold">
+            <p class="text-center px-10 font-semibold py-4">
                 A mosque is the heart of the community, a place full of peace
                 that brings the <br />
                 community together. In rural areas, where mosques are damaged and
@@ -119,6 +199,7 @@ const HeaderBanned = [
             </p>
         </div>
     </div>
+    <Singleregular SingleRegulars={single}/>
     <SupportBanners BannerDetails={SupportBannerData} />
     <div class="container">
         <div class="row flex mx-auto justify-center py-12 md:w-[1000px]">
@@ -211,7 +292,7 @@ const HeaderBanned = [
     </div>
     <div class="container">
         <div class="row">
-            <p class="text-2xl font-bold text-maroon px-20 py-8">
+            <p class="text-2xl font-bold text-maroon px-24 py-8">
                 Caring for a house of Allah – One of the greatest virtues
             </p>
             <p class="text-lg px-24">
@@ -258,7 +339,7 @@ const HeaderBanned = [
             <p class="text-grey text-xl font-bold px-16 pt-5">
                 Join us and donate today.
             </p>
-
+            <ImageCarousel imageCarousel = {ImagesCarousel} />
             <!--slider -->
             <p class="flex justify-center my-7">
                 <a

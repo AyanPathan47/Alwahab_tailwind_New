@@ -4,8 +4,47 @@ import HeadersBanner from "../../components/HeadersBanner.astro";
 import UmmahCharity from "../../components/Ummah_Charity.astro";
 import SupportBanners from "../../components/SupportBanner.astro";
 import RestoringLive from "../../components/RestoringLives.astro";
+import Singleregular from "../../components/singel-regular.astro";
 import SeeOtherProjectCard from "../../components/SeeOtherProjectCard.astro";
+const single =[
+  
+    {
+        name : "PAKISTAN",
+        title:"Food Pack",
+        amount:"50.00 ",
+        single: "SINGLE",
+        regular: "REGULAR",
+        src: "https://icharms.alwahabfoundation.org/storage/program_rate/SgQtvXLa4eeu7HwgWKLtydQMHlnE5npUdsZeTxyf.jpg",
 
+    },
+      {
+        name : "UGANDA",
+        title:"Food Pack",
+        amount:"50.00 ",
+        single: "SINGLE",
+        regular: "REGULAR",
+        src: "https://icharms.alwahabfoundation.org/storage/program_rate/rr1uwuW3lYke4ZKwty5b12oBMZwa60T9DN8qR84c.png",
+
+    },
+    {
+        name : "UNITED KINGDOM",
+        title:"Food Pack",
+        amount:"50.00",
+        single: "SINGLE",
+        regular: "REGULAR",
+        src: "https://icharms.alwahabfoundation.org/storage/program_rate/XLCCxDHxCJUeZBL2uRD9QFOGWfNQYOVJMcdf2aEK.jpg",
+
+    },
+    {
+        name : "AFGANISTAN",
+        title:"Food Pack",
+        amount:"50.00 ",
+        single: "SINGLE",
+        regular: "REGULAR",
+        src: "https://icharms.alwahabfoundation.org/storage/program_rate/t8RrFbTM6DfPhJ005u2u2xVw1d6goXvvF1UP48JG.jpg",
+
+    }
+]
 const OtherProject = [
   {
     title: "Where Most Needed",
@@ -85,12 +124,12 @@ const SupportBannerData = [
     leftDescription: "Help End Hunger",
     rightDescription:
       "“He is not a believer when his stomach is filled but his neighbour is hungry.” (Bukhari) Feeding the hungry is a fundamental part of Islamic faith. Relieving hunger and helping those who are less fortunate brings immense reward.  Our food packs donation will sustain a whole family for one month with vital supplies to create filling meals, reducing hunger, food insecurity and providing vital nutrition. Donate food packs donation today and help those who are starving.",
-    src: "",
+    src: "https://alwahabfoundation.org/wp-content/uploads/2022/07/3L5A6368.jpg",
   },
 ];
 const HeaderBanned = [
   {
-    src: "/assets/images/website-banner-masjid.jpg",
+    src: "https://alwahabfoundation.org/wp-content/uploads/2022/07/DSC03488a.jpg",
     title: "FOOD PACKS DONATION",
   },
 ];
@@ -105,7 +144,7 @@ const HeaderBanned = [
       <p class="text-4xl text-maroon font-bold text-center pt-16">
         Feed a Family in Need
       </p>
-      <p class="text-center px-10 font-semibold">
+      <p class="text-center px-10 font-semibold py-4 text-grey">
         Around the world, 828 million people suffer from food insecurity. Over
         43 million are <br />
         on the brink of famine. These figures often rise due to ongoing natural disaster,
@@ -118,6 +157,9 @@ const HeaderBanned = [
       </p>
     </div>
   </div>
+     <!--card -->
+
+     <Singleregular SingleRegulars={single}/>
   <SupportBanners BannerDetails={SupportBannerData} />
   <div class="container">
     <div class="row flex mx-auto justify-center py-12 md:w-[1000px]">
@@ -282,7 +324,7 @@ const HeaderBanned = [
     </div>
   </div>
   <!--  -->
-  <div class="container mx-auto px-4">
+  <div class="container mx-auto px-4 py-8">
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-1">
       <!-- Step 1 -->
       <div
@@ -405,7 +447,7 @@ const HeaderBanned = [
     </div>
   </div>
 
-  <div class="container">
+  <div class="container py-4">
     <div class="row">
       <p class="text-grey font-bold text-3xl text-center py-4">
         See other Project
