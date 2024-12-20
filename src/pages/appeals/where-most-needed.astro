@@ -1,0 +1,56 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import HeadersBanner from "../../components/HeadersBanner.astro";
+import UmmahCharity from "../../components/Ummah_Charity.astro";
+import CardforCountry from "../../components/CardforCountry.astro";
+
+const CardOfCountry =[
+    {
+        name: "PAKISTAN",
+        title: "Support A Maktab Monthly" ,
+        amount : "30.00",
+        src: "https://icharms.alwahabfoundation.org/storage/program/7HSdTR6tt4KRncdncQ5MFH6lxSZzbqgQuFMQVD4y.jpg",
+    },
+    {
+        name: "PAKISTAN",
+        title: "Food Pack" ,
+        amount : "50.00",
+        src: "https://icharms.alwahabfoundation.org/storage/program_rate/SgQtvXLa4eeu7HwgWKLtydQMHlnE5npUdsZeTxyf.jpg",
+    },
+    {
+        name: "UGANDA",
+        title: "Clean Drinking Water" ,
+        amount : "50.00",
+        src: "https://icharms.alwahabfoundation.org/storage/program/FKKCyfboMZNYHjzG05sZZUhOisMYcVVTKEKCzIgi.jpg",
+    },
+
+]
+ const HeaderBannerDetails = [
+    {
+        src:"https://alwahabfoundation.org/wp-content/uploads/2023/10/IMG_1703.jpg",
+        title:"Where Most Needed",
+    }
+ ]
+
+---
+<Layout>
+  <HeadersBanner HeadersBanners ={HeaderBannerDetails}/>
+  <UmmahCharity />
+
+  <div class="container">
+    <div class="row">
+        <div>
+            <p class=" text-center text-xl text-maroon  pt-12 font-bold md:text-3xl ">Bring Lasting Change through Regular <br> Giving</p>
+            <p class="py-4 px-96 text-center font-medium md:text-lg text-base ">
+                At Al-Wahab Foundation, we believe in the power of consistent generosity. Our <br>
+                <span class="text-grey font-bold">Where Most Needed</span> initiative empowers you to make a meaningful impact through <br>
+                <span class="text-grey font-bold">regular giving</span> and <span class="text-grey font-bold">monthly charity donations</span>. By making a <span class="text-grey font-bold">regular donation </span>to <br>
+                AWF, you join a community of compassionate individuals dedicated to creating  <br>
+                positive change in the lives of those who need it most.
+            </p>
+        </div>
+    </div>
+  </div>
+
+  <CardforCountry CountryCardDetails={CardOfCountry} />
+</Layout>

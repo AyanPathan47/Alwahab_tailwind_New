@@ -11,11 +11,11 @@ export interface Props {
 const {CountryCardDetails} = Astro.props;
 ---
 
-<div class="container mx-auto mt-20">
+<div class="container mx-auto pt-20 pb-5">
     <div class="flex justify-center">
-        <div class="grid grid-cols-1 gap-6 md:grid-cols-3 w-full px-4">
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-3 w-full px-4 ">
             {CountryCardDetails.map((CountryCardDetail) => (
-                <div class="bg-white rounded-lg shadow-lg w-full sm:w-80 mx-auto overflow-hidden relative">
+                <div class="bg-white rounded-lg drop-shadow-2xl  w-full sm:w-80 mx-auto overflow-hidden relative ">
                     <a class="flex justify-center" href="#">
                         <img
                             class="rounded-t-lg w-full object-cover h-80"
