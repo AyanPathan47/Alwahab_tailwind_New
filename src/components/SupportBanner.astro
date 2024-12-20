@@ -14,7 +14,7 @@ const { BannerDetails } = Astro.props;
 
 {BannerDetails.map((BannerDetail) => (
   <div
-    class="relative w-full px-4 mt-20 sm:px-6 max-w-screen-2xl  lg:px-8 bg-cover bg-center bg-no-repeat"
+    class="relative w-full px-4 mt-20 sm:px-6 max-w-screen-2xl  lg:px-8 bg-cover bg-fixed bg-center bg-no-repeat"
     style={{ backgroundImage: `url(${BannerDetail.src})` }} 
   >
     {/* Color Overlay */}
