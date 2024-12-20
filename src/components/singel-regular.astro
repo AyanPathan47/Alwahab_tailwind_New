@@ -4,7 +4,7 @@ export interface Props{
         name : string,
         title:string,
         amount: number | string ,
-        singel: string,
+        single: string,
         regular: string,
         src: string,
     }[];
@@ -61,10 +61,10 @@ const {SingleRegulars} = Astro.props;
                             {SingleRegular.amount}
                         </p>
                         <p class="flex items-center justify-center mb-7 mt-2 relative">
-                            <a href="#" class="px-6 py-2 items-center inline-flex sm:text-sm md:text-base font-semibold text-white bg-maroon rounded-l-full hover:bg-customBeige duration-300">
-                                {SingleRegular.singel}
+                            <a href="#" class="px-6 py-2 items-center inline-flex sm:text-sm md:text-base font-semibold text-white bg-customBeige rounded-l-full duration-300">
+                                {SingleRegular.single}
                             </a>
-                            <a href="#" class="px-6 py-2 items-center inline-flex sm:text-sm md:text-base font-semibold text-white bg-maroon rounded-r-full hover:bg-customBeige duration-300">
+                            <a href="#" class="px-6 py-2 items-center inline-flex sm:text-sm md:text-base font-semibold text-white bg-maroon rounded-r-full  duration-300">
                                 {SingleRegular.regular}
                             </a>
                         </p>
