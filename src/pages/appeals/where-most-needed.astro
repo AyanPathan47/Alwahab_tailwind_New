@@ -3,6 +3,15 @@ import Layout from "../../layouts/Layout.astro";
 import HeadersBanner from "../../components/HeadersBanner.astro";
 import UmmahCharity from "../../components/Ummah_Charity.astro";
 import CardforCountry from "../../components/CardforCountry.astro";
+import SupportBanners from "../../components/SupportBanner.astro";
+
+ const SuppportBanner = [
+    {
+        leftDescription: "SMALL ACTS, BIG IIMPACT – GIVES REGULAR DONATION",
+        rightDescription: " ",
+        src: " ",
+    }
+ ]
 
 const CardOfCountry =[
     {
@@ -53,4 +62,6 @@ const CardOfCountry =[
   </div>
 
   <CardforCountry CountryCardDetails={CardOfCountry} />
+
+  <SupportBanners BannerDetails = {SuppportBanner}/>
 </Layout>
