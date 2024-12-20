@@ -2,11 +2,31 @@
 import Layout from "../../layouts/Layout.astro";
 import HeadersBanner from "../../components/HeadersBanner.astro";
 import UmmahCharity from '../../components/Ummah_Charity.astro';
-import CardforCountry from "../../components/CardforCountry.astro";
+
 import SupportBanner from "../../components/SupportBanner.astro";
+import Singleregular from "../../components/singel-regular.astro";
 
 import SeeOtherProjectCards from "../../components/SeeOtherProjectCard.astro";
+const single =[
+    {
+        name : "PAKISTAN",
+        title:"Food Pack",
+        amount:"50.00 ",
+        single: "SINGLE",
+        regular: "REGULAR",
+        src: "https://icharms.alwahabfoundation.org/storage/program_rate/SgQtvXLa4eeu7HwgWKLtydQMHlnE5npUdsZeTxyf.jpg",
 
+    },
+    {
+        name : "UNITED KINGDOM",
+        title:"Cooked Food",
+        amount:"100.00 ",
+        single: "SINGLE",
+        regular: "REGULAR",
+        src: "https://icharms.alwahabfoundation.org/storage/program_rate/QCi1TxXdkU1z2cYC9QsMuMoAr2ZHcJ3VaKuQ8iGV.jpg",
+
+    }
+]
 const OtherProject =[
     {
         title : "Where Most Needed",
@@ -63,33 +83,7 @@ const BannerDatail =[
          src: "https://alwahabfoundation.org/wp-content/uploads/2023/03/little-african-schoolgirl-collects-water-in-the-bo-2022-12-06-01-17-53-utc-1.jpg",
     }
 ]
-const CountryCard =[
-    {
-        name: "UGANDA",
-        title: "Food Pack" ,
-        amount : "50.00",
-        src:"https://picsum.photos/200/300",
-        
-    },
-    {
-        name: "UGANDA",
-        title: "Cooked Food" ,
-        amount :"200.00" ,
-        src:"https://picsum.photos/200/300",
-    },
-    {
-        name: "UGANDA",
-        title: "Water Well" ,
-        amount : "2000.00",
-        src:"https://picsum.photos/200/300",
-    },
-    {
-        name: "UGANDA",
-        title: "Build A Masjid" ,
-        amount : "12000.00",
-        src:"https://picsum.photos/200/300",
-    }
-]
+
 
 const BannerData =[
     {
@@ -111,7 +105,9 @@ const BannerData =[
             </p>
     </div>
 
-    <CardforCountry CountryCardDetails={CountryCard} />
+   
+    <Singleregular SingleRegulars={single}/>
+
     <SupportBanner BannerDetails={BannerDatail}/>
     <div class="container">
         <div class="row px-5 py-8">
