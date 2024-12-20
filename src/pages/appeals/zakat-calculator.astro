@@ -34,121 +34,113 @@ const HeaderBannerDetails = [
                  owed. It’s crucial to compare your net assets to the nisab threshold to find out <br>
                   whether Zakat is obligatory.
             </p>
-            <div class="py-4 px-10 flex justify-center">
+            <div class="py-4 px-4 md:px-10 flex flex-wrap md:flex-nowrap justify-center space-y-4 md:space-y-0 md:space-x-6">
                 <!-- First Button Container -->
-                <div class="w-1/2 flex justify-center">
-                    <a class="bg-maroon rounded-full px-4 py-2 text-xl font-bold hover:bg-customBeige text-white" href="">
-                        GIve Zakat
+                <div class="w-full md:w-1/2 flex items-center justify-center">
+                    <a class="bg-maroon rounded-full px-4 py-2 text-base md:text-xl font-bold hover:bg-customBeige text-white text-center" href="">
+                        Give Zakat
                     </a>
                 </div>
                 <!-- Second Button Container -->
-                <div class="w-1/2 flex justify-center">
-                    <a class="bg-maroon rounded-full px-4 py-2 text-xl font-bold hover:bg-customBeige text-white" href="">
+                <div class="w-full md:w-1/2 flex items-center justify-center">
+                    <a class="bg-maroon rounded-full px-4 py-2 text-base md:text-xl font-bold hover:bg-customBeige text-white text-center" href="">
                         Calculate Your Zakat
                     </a>
                 </div>
             </div>
+            
         </div>
     </div>
 
     <div class="container bg-[#AA71454D] mx-auto max-w-screen-2xl">
         <div class="row">
-            <div class="flex justify-between">
-                <div class="w-3/5 ">
-                    <div class="bg-maroon md:w-[780px] my-12">
-                        <p class="text-center text-white font-bold md:text-4xl pt-10 ">Zakat Calculator</p>
-                        <div class=" ">
-                            <div class="flex justify-between items-center space-x-7 px-14 pt-7">
-                                <label class="items-start justify-start mr-auto text-lg font-bold  text-white" for="amount">Cash at Home/Bank</label>
-                                <input type="text" class="text-base md:text-lg font-medium text-start rounded-md px-2 py-2 md:w-96" placeholder="£">
+            <div class="flex flex-wrap md:flex-nowrap">
+                <!-- Left Section -->
+                <div class="w-full md:w-3/5 px-4">
+                    <div class="bg-maroon my-6 mx-auto rounded-md shadow-lg">
+                        <p class="text-center text-white font-bold text-2xl md:text-4xl pt-10">Zakat Calculator</p>
+                        <div class="px-4 md:px-10">
+                            <!-- Inputs Section -->
+                            <div class="space-y-6 pt-6">
+                                <!-- Cash at Home/Bank -->
+                                <div class="flex justify-between items-center">
+                                    <label class="text-base md:text-lg font-medium text-white w-2/5">Cash at Home/Bank</label>
+                                    <input type="text" class="w-3/5 text-base font-medium rounded-md px-3 py-2" placeholder="£">
+                                </div>
+                                <!-- Gold & Silver -->
+                                <div class="flex justify-between items-center">
+                                    <label class="text-base md:text-lg font-medium text-white w-2/5">Gold & Silver</label>
+                                    <input type="text" class="w-3/5 text-base font-medium rounded-md px-3 py-2" placeholder="£">
+                                </div>
+                                <!-- Property -->
+                                <div class="flex justify-between items-center">
+                                    <label class="text-base md:text-lg font-medium text-white w-2/5">Property (Other Than Home)</label>
+                                    <input type="text" class="w-3/5 text-base font-medium rounded-md px-3 py-2" placeholder="£">
+                                </div>
+                                <!-- Pensions -->
+                                <div class="flex justify-between items-center">
+                                    <label class="text-base md:text-lg font-medium text-white w-2/5">Pensions</label>
+                                    <input type="text" class="w-3/5 text-base font-medium rounded-md px-3 py-2" placeholder="£">
+                                </div>
+                                <!-- Shares -->
+                                <div class="flex justify-between items-center">
+                                    <label class="text-base md:text-lg font-medium text-white w-2/5">Shares</label>
+                                    <input type="text" class="w-3/5 text-base font-medium rounded-md px-3 py-2" placeholder="£">
+                                </div>
+                                <!-- Other Investments -->
+                                <div class="flex justify-between items-center">
+                                    <label class=" text-base md:text-lg font-medium text-white w-2/5">Other Investments</label>
+                                    <input type="text" class="w-3/5 text-base font-medium rounded-md md:-mx-4 px-3 py-2" placeholder="£">
+                                </div>
+                                <!-- Money Owed To You -->
+                                <div class="flex justify-between items-center">
+                                    <label class="text-base md:text-lg font-medium text-white md:whitespace-pre-line w-2/5">Money Owed To You</label>
+                                    <input type="text" class="w-3/5 text-base font-medium rounded-md px-3 py-2" placeholder="£">
+                                </div>
+                                <!-- Business Value -->
+                                <div class="flex justify-between items-center">
+                                    <label class="text-base md:text-lg font-medium text-white w-2/5">Business Value</label>
+                                    <input type="text" class="w-3/5 text-base font-medium rounded-md px-3 py-2" placeholder="£">
+                                </div>
+                                <!-- Business Debts -->
+                                <div class="flex justify-between items-center">
+                                    <label class="text-base md:text-lg font-medium text-white w-2/5">Business Debts</label>
+                                    <input type="text" class="w-3/5 text-base font-medium rounded-md px-3 py-2" placeholder="£">
+                                </div>
+                                <!-- Unpaid Debts -->
+                                <div class="flex justify-between items-center">
+                                    <label class="text-base md:text-lg font-medium text-white w-2/5">Unpaid Debts</label>
+                                    <input type="text" class="w-3/5 text-base font-medium rounded-md px-3 py-2" placeholder="£">
+                                </div>
+                                <!-- Total Assets -->
+                                <div class="flex justify-between items-center">
+                                    <p class="text-base md:text-lg font-medium text-white w-2/5">Total Assets</p>
+                                    <p class="w-3/5 text-base font-medium text-white">£0.00</p>
+                                </div>
+                                <!-- Zakat Payable -->
+                                <div class="flex justify-between items-center">
+                                    <p class="text-base md:text-lg font-medium text-white w-2/5">Zakat Payable</p>
+                                    <p class="w-3/5 text-base font-medium text-white">£0.00</p>
+                                </div>
+                                <!-- Pay Zakat Button -->
+                                <div class="flex justify-center items-center py-5 pb-10">
+                                    <a class="text-base md:text-lg font-medium text-white bg-customBeige hover:text-maroon hover:bg-white duration-300 px-10 py-3 rounded-full" href="">Pay Your Zakat</a>
+                                </div>
                             </div>
-
-                            <!-- Gold & Silver -->
-                            <div class="flex justify-between items-center space-x-7 px-14 pt-7">
-                                <label class="items-start justify-start mr-auto text-lg font-bold  text-white" for="amount">Gold & Silver</label>
-                                <input type="text" class="text-base md:text-lg font-medium text-start rounded-md px-2 py-2 md:w-96" placeholder="£">
-                            </div>
-
-                            <!-- Property -->
-                            <div class="flex justify-between items-center space-x-7 px-14 pt-7">
-                                <label class="items-start justify-start mr-auto text-lg font-bold  text-white" for="amount">Property (Other Than Home)</label>
-                                <input type="text" class="text-base md:text-lg font-medium text-start rounded-md px-2 py-2 md:w-96" placeholder="£">
-                            </div>
-
-                            <!-- Pensions -->
-
-                            <div class="flex justify-between items-center space-x-7 px-14 pt-7">
-                                <label class="items-start justify-start mr-auto text-lg font-bold  text-white" for="amount">Pensions</label>
-                                <input type="text" class="text-base md:text-lg font-medium text-start rounded-md px-2 py-2 md:w-96" placeholder="£">
-                            </div>
-
-                            <!-- shares -->
-
-                            <div class="flex justify-between items-center space-x-7 px-14 pt-7">
-                                <label class="items-start justify-start mr-auto text-lg font-bold  text-white" for="amount">Shares</label>
-                                <input type="text" class="text-base md:text-lg font-medium text-start rounded-md px-2 py-2 md:w-96" placeholder="£">
-                            </div>
-
-                            <!-- Other inc=vestments -->
-                            <div class="flex justify-between items-center space-x-7 px-14 pt-7">
-                                <label class="items-start justify-start mr-auto text-lg font-bold  text-white" for="amount">Other Investments</label>
-                                <input type="text" class="text-base md:text-lg font-medium text-start rounded-md px-2 py-2 md:w-96" placeholder="£">
-                            </div>
-                            <!-- Money Owed To You -->
-                            <div class="flex justify-between items-center space-x-7 px-14 pt-7">
-                                <label class="items-start justify-start mr-auto text-lg font-bold  text-white" for="amount">Money Owed To You</label>
-                                <input type="text" class="text-base md:text-lg font-medium text-start rounded-md px-2 py-2 md:w-96" placeholder="£">
-                            </div>
-
-                            <!-- Business Value -->
-
-                            <div class="flex justify-between items-center space-x-7 px-14 pt-7">
-                                <label class="items-start justify-start mr-auto text-lg font-bold  text-white" for="amount">Business Value</label>
-                                <input type="text" class="text-base md:text-lg font-medium text-start rounded-md px-2 py-2 md:w-96" placeholder="£">
-                            </div>
-
-                             <!-- Business Debts -->
-
-                             <div class="flex justify-between items-center space-x-7 px-14 pt-7">
-                                <label class="items-start justify-start mr-auto text-lg font-bold  text-white" for="amount">Business Debts</label>
-                                <input type="text" class="text-base md:text-lg font-medium text-start rounded-md px-2 py-2 md:w-96" placeholder="£">
-                            </div>
-
-                             <!-- Unpaid Debts -->
-
-                             <div class="flex justify-between items-center space-x-7 px-14 pt-7">
-                                <label class="items-start justify-start mr-auto text-lg font-bold  text-white" for="amount">Unpaid Debts</label>
-                                <input type="text" class="text-lg font-medium text-start rounded-md px-2 py-2 md:w-96" placeholder="£">
-                            </div>
-
-                              <!-- Total Assets -->
-                              <div class="flex justify-between items-center space-x-7 px-14 pt-7">
-                                <p  class="text-lg font-bold  text-white">Total Assets</p>
-                              </div>
-                              <!-- Zakat Payable -->
-                              <div class="flex justify-between items-center space-x-7 px-14 pt-7">
-                                <p class="text-lg font-bold  text-white">Zakat Payable</p>
-                              </div>
-
-                              <div class="flex justify-center items-center py-5 pb-10">
-                                <a class="md:text-lg text-lg font-bold text-white bg-customBeige hover:text-maroon hover:bg-white duration-300 px-14 py-5 rounded-full  " href="">Pay Your Zakat</a>
-                              </div>
-                              
-
                         </div>
                     </div>
-                    
                 </div>
-                <div class="w-2/5 ">
-                    <div class="my-12 mx-auto px-9">
-                        <img class="md:w-[360px] md:h-[500px]" src="https://alwahabfoundation.org/wp-content/uploads/2024/03/Ramadan-Food-Packs-Queue-1024x683.jpg" alt="">
-                        <div class="bg-white w-80">
-
-                            <p class="">How to Calculate Zakat Using Zakat Calculator?</p>
+                <!-- Right Section -->
+                <div class="w-full md:w-2/5 px-4">
+                    <div class="my-6 mx-auto px-6">
+                        <img class="w-full md:w-[360px] md:h-[500px] rounded-md" src="https://alwahabfoundation.org/wp-content/uploads/2024/03/Ramadan-Food-Packs-Queue-1024x683.jpg" alt="">
+                        <div class="bg-white w-full mt-4 p-4 rounded-md shadow-lg">
+                            <p class="text-center text-maroon font-bold text-lg">How to Calculate Zakat Using Zakat Calculator?</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    
 </Layout>
