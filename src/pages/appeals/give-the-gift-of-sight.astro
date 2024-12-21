@@ -6,6 +6,29 @@ import CardforCountry from "../../components/CardforCountry.astro";
 import RestoringLives from "../../components/RestoringLives.astro";
 import Otherproject from "../../components/SeeOtherProjectCard.astro";
 import SupportBanner from "../../components/SupportBanner.astro";
+import ImageCarousel from "../../components/ImageCarousel.astro";
+const ImagesCarousel =[
+    {
+       src:"https://alwahabfoundation.org/wp-content/uploads/2022/07/IMG_5268-1024x683.jpg",
+       alt:"", 
+    },
+    {
+       src:"https://alwahabfoundation.org/wp-content/uploads/2022/07/SAK03937-1024x683.jpg",
+       alt:"", 
+    },
+     
+    {
+       src:"https://alwahabfoundation.org/wp-content/uploads/2022/07/IMG_5268-1024x683.jpg",
+       alt:"", 
+    },   
+    {
+       src:"https://alwahabfoundation.org/wp-content/uploads/2022/07/SAK03937-1024x683.jpg",
+       alt:"", 
+    }, 
+    
+    
+    
+]
 const otherproject = [
     {
         title: "Build a Masjid",
@@ -73,7 +96,7 @@ const Restoring = [
         title: "Your Donations Saved Zafar’s Eyesight!",
         description:
             "“My name is Zafar and I am a father to five children. With ageing, I started to face serious eyesight issues to an extent that I had to leave my wok as a rickshaw driver. I was already struggling with fulfilling the expenses of looking after my family and so I could give no thought to how I may get my eyes checked or treated. A neighbour of mine told me about Al-Wahab Foundation’s free eye camps in our area. I went and was prescribed cataract surgery. With the generosity of donors, my eyesight recovered, and I am so thankful to Mufti Abdul Wahab and Al-Wahab Foundation for this amazing support.” ",
-        src: "/assets/images/2022/09/87a3d0c13ff6307c6d26df055dcc2866-1024x682.jpg",
+        src: "https://alwahabfoundation.org/wp-content/uploads/2022/09/SAK01428-1024x576.jpg",
         buttonTitle: "Sponsor an Eye Surgey ",
     },
 ];
@@ -222,7 +245,7 @@ const HeaderBannerData = [
     <!--section 2 -->
 
     <!--section video -->
-    <div class="container mx-auto px-4 mt-16">
+    <div class="container mx-auto py-8 px-4 mt-16">
         <div class="relative overflow-hidden pb-[40%]">
             <iframe
                 class="absolute top-0 left-0 w-full h-full"
@@ -238,7 +261,7 @@ const HeaderBannerData = [
     </div>
 
     <!-- -->
-    
+    <ImageCarousel imageCarousel = {ImagesCarousel} />
 
    
     <!--section 3 -->
@@ -275,6 +298,14 @@ const HeaderBannerData = [
             </p>
             
         </div>
+        <div class="flex justify-center mt-10 sm:mt-12">
+            <a
+                href="#"
+                class="bg-maroon hover:bg-customBeige text-white font-bold py-2 px-6 sm:px-8 rounded-full uppercase text-sm sm:text-base"
+            >
+                DONATE   NOW
+            </a>
+        </div>
         <div class="row">
             <p
                 class="text-2xl sm:text-3xl text-maroon font-bold mt-8"
@@ -306,14 +337,7 @@ const HeaderBannerData = [
 
     <!--section 4 -->
    
-        <div class="flex justify-center mt-10 sm:mt-12">
-            <a
-                href="#"
-                class="bg-maroon hover:bg-customBeige text-white font-bold py-2 px-6 sm:px-8 rounded-full uppercase text-sm sm:text-base"
-            >
-                SUPPORT NOW
-            </a>
-        </div>
+       
     </div>
     <!--section step -->
     <div class="container mx-auto px-4 py-8">
