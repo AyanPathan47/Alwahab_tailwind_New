@@ -1,6 +1,15 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import HeadersBanner from "../../components/HeadersBanner.astro";
+import SeeOtherProjectCards from "../../components/SeeOtherProjectCard.astro";
+
+const SeeOtherProject = [
+    {
+        title : "Where Most Needed",
+        description : "At Al-Wahab Foundation, we believe in the power of consistent generosity. Our Where Most Needed initiative empowers you to make",
+        src: "",
+    }
+]
 
 const HeaderBannerDetails = [
     {
@@ -34,117 +43,371 @@ const HeaderBannerDetails = [
                  owed. It’s crucial to compare your net assets to the nisab threshold to find out <br>
                   whether Zakat is obligatory.
             </p>
-            <div class="py-4 px-10 flex justify-center">
+            <div class="py-4 px-4 md:px-10 flex flex-wrap md:flex-nowrap justify-center space-y-4 md:space-y-0 md:space-x-6">
                 <!-- First Button Container -->
-                <div class="w-1/2 flex justify-center">
-                    <a class="bg-maroon rounded-full px-4 py-2 text-xl font-bold hover:bg-customBeige text-white" href="">
-                        GIve Zakat
+                <div class="w-full md:w-1/2 flex items-center justify-center">
+                    <a class="bg-maroon rounded-full px-4 py-2 text-base md:text-xl font-bold hover:bg-customBeige text-white text-center" href="">
+                        Give Zakat
                     </a>
                 </div>
                 <!-- Second Button Container -->
-                <div class="w-1/2 flex justify-center">
-                    <a class="bg-maroon rounded-full px-4 py-2 text-xl font-bold hover:bg-customBeige text-white" href="">
+                <div class="w-full md:w-1/2 flex items-center justify-center">
+                    <a class="bg-maroon rounded-full px-4 py-2 text-base md:text-xl font-bold hover:bg-customBeige text-white text-center" href="">
                         Calculate Your Zakat
                     </a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- +++++++++++++++Zakat Calculator++++++++++++++++++++++++  -->
+     
+    <div class="container bg-[#AA71454D] mx-auto max-w-screen-2xl">
+        <div class="row">
+            <div class="flex flex-wrap md:flex-nowrap">
+                <!-- Left Section -->
+                <div class="w-full md:w-3/5 px-4">
+                    <div class="bg-maroon my-14 mx-auto rounded-md shadow-lg">
+                        <p class="text-center text-white font-bold text-2xl md:text-4xl pt-10">Zakat Calculator</p>
+                        <div class="px-4 md:px-10">
+                            <!-- Inputs Section -->
+                            <div class="space-y-6 pt-6">
+                                <!-- Cash at Home/Bank -->
+                                <div class="flex justify-between items-center">
+                                    <label class="text-base md:text-lg font-medium text-white w-2/5">Cash at Home/Bank</label>
+                                    <input type="text" class="w-3/5 text-base font-medium rounded-md px-3 py-2" placeholder="£">
+                                </div>
+                                <!-- Gold & Silver -->
+                                <div class="flex justify-between items-center">
+                                    <label class="text-base md:text-lg font-medium text-white w-2/5">Gold & Silver</label>
+                                    <input type="text" class="w-3/5 text-base font-medium rounded-md px-3 py-2" placeholder="£">
+                                </div>
+                                <!-- Property -->
+                                <div class="flex justify-between items-center">
+                                    <label class="text-base md:text-lg font-medium text-white w-2/5">Property (Other Than Home)</label>
+                                    <input type="text" class="w-3/5 text-base font-medium rounded-md px-3 py-2" placeholder="£">
+                                </div>
+                                <!-- Pensions -->
+                                <div class="flex justify-between items-center">
+                                    <label class="text-base md:text-lg font-medium text-white w-2/5">Pensions</label>
+                                    <input type="text" class="w-3/5 text-base font-medium rounded-md px-3 py-2" placeholder="£">
+                                </div>
+                                <!-- Shares -->
+                                <div class="flex justify-between items-center">
+                                    <label class="text-base md:text-lg font-medium text-white w-2/5">Shares</label>
+                                    <input type="text" class="w-3/5 text-base font-medium rounded-md px-3 py-2" placeholder="£">
+                                </div>
+                                <!-- Other Investments -->
+                                <div class="flex justify-between items-center">
+                                    <label class=" text-base md:text-lg font-medium text-white w-2/5 whitespace-break-spaces ">Other Investments</label>
+                                    <input type="text" class="w-3/5 text-base font-medium rounded-md px-3 py-2" placeholder="£">
+                                </div>
+                                <!-- Money Owed To You -->
+                                <div class="flex justify-between items-center">
+                                    <label class="text-base md:text-lg font-medium text-white md:whitespace-pre-line w-2/5">Money Owed To You</label>
+                                    <input type="text" class="w-3/5 text-base font-medium rounded-md px-3 py-2" placeholder="£">
+                                </div>
+                                <!-- Business Value -->
+                                <div class="flex justify-between items-center">
+                                    <label class="text-base md:text-lg font-medium text-white w-2/5">Business Value</label>
+                                    <input type="text" class="w-3/5 text-base font-medium rounded-md px-3 py-2" placeholder="£">
+                                </div>
+                                <!-- Business Debts -->
+                                <div class="flex justify-between items-center">
+                                    <label class="text-base md:text-lg font-medium text-white w-2/5">Business Debts</label>
+                                    <input type="text" class="w-3/5 text-base font-medium rounded-md px-3 py-2" placeholder="£">
+                                </div>
+                                <!-- Unpaid Debts -->
+                                <div class="flex justify-between items-center">
+                                    <label class="text-base md:text-lg font-medium text-white w-2/5">Unpaid Debts</label>
+                                    <input type="text" class="w-3/5 text-base font-medium rounded-md px-3 py-2" placeholder="£">
+                                </div>
+                                <!-- Total Assets -->
+                                <div class="flex justify-between items-center">
+                                    <p class="text-base md:text-lg font-medium text-white w-2/5">Total Assets</p>
+                                    <p class="w-3/5 text-base font-medium text-white">£0.00</p>
+                                </div>
+                                <!-- Zakat Payable -->
+                                <div class="flex justify-between items-center">
+                                    <p class="text-base md:text-lg font-medium text-white w-2/5">Zakat Payable</p>
+                                    <p class="w-3/5 text-base font-medium text-white">£0.00</p>
+                                </div>
+                                <!-- Pay Zakat Button -->
+                                <div class="flex justify-center items-center py-5 pb-10">
+                                    <a class="text-base md:text-lg font-medium text-white bg-customBeige hover:text-maroon hover:bg-white duration-300 px-10 py-3 rounded-full" href="">Pay Your Zakat</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right Section -->
+                <div class="w-full md:w-2/5 px-4">
+                    <div class="md:my-14 mx-auto md:px-6">
+                        <!-- Image Section -->
+                        <img class="w-full md:w-[360px] md:h-[500px] rounded-t-md" src="https://alwahabfoundation.org/wp-content/uploads/2024/03/Ramadan-Food-Packs-Queue-1024x683.jpg" alt="">
+                
+                        <!-- Content Section -->
+                        <div class="bg-white w-full md:w-[360px] p-4 rounded-b-md shadow-lg">
+                            <p class="text-center text-maroon font-bold text-xl md:text-3xl py-5 px-5">How to Calculate Zakat Using Zakat Calculator?</p>
+                            <p class="text-sm font-medium text-grey px-4">
+                                It’s simple! All you need to do is enter the details of your assets under your
+                                possession over a year into our <span class="font-bold">AWF Zakat Calculator</span>. If you are living in 
+                                the UK, use our <span class="font-bold">Zakat Calculator UK</span> which will <span class="font-bold">calculate Zakat</span> accordingly.
+                                Follow these easy steps:
+                            </p>
+                            <div class="py-4 px-4">
+                                <p class="text-sm font-medium text-grey"> <span class="text-2xl text-grey">•</span>Enter your assets in the Zakat Calculator</p>
+                                <p class="text-sm font-medium text-grey"><span class="text-2xl text-grey">•</span>Our Zakat Calculator 2024 automatically determines the total and the amount of Zakat you owe to pay</p>
+                
+                                <p class="px-8 text-sm text-grey font-bold mt-3">Proceed to pay your Zakat.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container mx-auto px-4 ">
+        <div class="flex flex-col md:flex-row">
+            <div class="md:w-1/2 w-full">
+                <p class="text-center text-maroon font-bold pt-14 text-xl md:text-3xl">Nisab of Zakat</p>
+                <p class="px-6 md:px-24 text-center py-4 text-grey">
+                    The Nisab of Zakat is the minimum amount of wealth a Muslim possesses.
+                    These assets must be in the possession for over one lunar year to be
+                    eligible to <span class="font-bold text-grey">pay Zakat</span>.
+                    The sum is commonly known as the nisab threshold.
+                </p>
+                <p class="px-6 md:px-24 py-5 text-center md:text-left">
+                    The nisab of Zakat is calculated on the values of Gold and Silver. In 2024, 
+                    the determined value of nisab is <span class="text-maroon font-bold">87.48 grams of gold</span>
+                    and <span class="text-maroon font-bold">612.36 grams of silver.</span>
+                </p>
+    
+                <div>
+                    <p class="text-maroon font-bold text-lg pt-9 px-6 md:px-24 text-center md:text-left">
+                        <span class="text-grey font-bold">CURRENT NISAB VALUE</span><span class="text-grey font-bold">(</span> 18 November 2024 <span class="text-grey font-bold">)</span>
+                    </p>
+                    <div class="flex flex-col md:flex-row justify-center md:justify-start gap-4 py-4 px-6 md:px-24">
+                        <div class="border-2 border-maroon p-4">
+                            <p class="text-xl font-bold text-maroon text-center"> Gold Nisaab*</p>
+                            <p class="text-center text-maroon">&pound; 5,859.15</p>
+                            <p class="text-center text-customBeige font-bold">
+                                <span class="text-maroon font-normal">(</span>87.48g<span class="text-maroon font-normal">)</span>
+                            </p>
+                        </div>
+                        <div class="border-2 border-maroon p-4">
+                            <p class="text-xl font-bold text-maroon text-center">Silver Nisaab*</p>
+                            <p class="text-center text-maroon">&pound; 473.00</p>
+                            <p class="text-center text-maroon">
+                                (<span class="text-customBeige font-bold">612.36g</span>)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <p class="py-2 pb-5 text-center text-maroon font-medium">
+                    <i>*Nisaab values are updated regularly</i>
+                </p>
+                <p class="py-4 px-6 md:px-24 text-center text-sm text-grey font-medium">
+                    Utilise our <span class="font-bold text-sm">Zakat Calculator 2024</span> to determine how much you need to pay.
+                </p>
+    
+                <div class="flex justify-center py-7">
+                    <a class="py-2 px-5 bg-maroon hover:bg-customBeige text-white font-bold rounded-full" href="">CALCULATE YOUR ZAKAT</a>
+                </div>
+            </div>
+    
+            <div class="md:w-1/2 w-full">
+                <div class="my-12 flex justify-center items-center">
+                    <img class="w-full md:w-[480px]" src="https://alwahabfoundation.org/wp-content/uploads/2024/03/AWF-Ramadan-Banner.jpg" alt="Ramadan Banner">
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container bg-[#AA71454D] mx-auto max-w-screen-2xl">
+    <!-- Zakat Explained -->
+
+    <div class="container py-8 px-28">
         <div class="row">
-            <div class="flex justify-between">
-                <div class="w-3/5 ">
-                    <div class="bg-maroon w-[780px] my-12">
-                        <p class="text-center text-white font-bold md:text-4xl pt-10 ">Zakat Calculator</p>
-                        <div class=" ">
-                            <div class="flex justify-between items-center space-x-7 px-14 pt-7">
-                                <label class="items-start justify-start mr-auto text-lg font-bold  text-white" for="amount">Cash at Home/Bank</label>
-                                <input type="text" class="text-lg font-medium text-start rounded-md px-2 py-2 w-96" placeholder="£">
-                            </div>
+            <div>
+                <p class="text-maroon font-bold text-3xl ">Zakat Explained: Frequently Asked Questions</p>
+                <!-- accordions -->
 
-                            <!-- Gold & Silver -->
-                            <div class="flex justify-between items-center space-x-7 px-14 pt-7">
-                                <label class="items-start justify-start mr-auto text-lg font-bold  text-white" for="amount">Gold & Silver</label>
-                                <input type="text" class="text-lg font-medium text-start rounded-md px-2 py-2 w-96" placeholder="£">
-                            </div>
-
-                            <!-- Property -->
-                            <div class="flex justify-between items-center space-x-7 px-14 pt-7">
-                                <label class="items-start justify-start mr-auto text-lg font-bold  text-white" for="amount">Property (Other Than Home)</label>
-                                <input type="text" class="text-lg font-medium text-start rounded-md px-2 py-2 w-96" placeholder="£">
-                            </div>
-
-                            <!-- Pensions -->
-
-                            <div class="flex justify-between items-center space-x-7 px-14 pt-7">
-                                <label class="items-start justify-start mr-auto text-lg font-bold  text-white" for="amount">Pensions</label>
-                                <input type="text" class="text-lg font-medium text-start rounded-md px-2 py-2 w-96" placeholder="£">
-                            </div>
-
-                            <!-- shares -->
-
-                            <div class="flex justify-between items-center space-x-7 px-14 pt-7">
-                                <label class="items-start justify-start mr-auto text-lg font-bold  text-white" for="amount">Shares</label>
-                                <input type="text" class="text-lg font-medium text-start rounded-md px-2 py-2 w-96" placeholder="£">
-                            </div>
-
-                            <!-- Other inc=vestments -->
-                            <div class="flex justify-between items-center space-x-7 px-14 pt-7">
-                                <label class="items-start justify-start mr-auto text-lg font-bold  text-white" for="amount">Other Investments</label>
-                                <input type="text" class="text-lg font-medium text-start rounded-md px-2 py-2 w-96" placeholder="£">
-                            </div>
-                            <!-- Money Owed To You -->
-                            <div class="flex justify-between items-center space-x-7 px-14 pt-7">
-                                <label class="items-start justify-start mr-auto text-lg font-bold  text-white" for="amount">Money Owed To You</label>
-                                <input type="text" class="text-lg font-medium text-start rounded-md px-2 py-2 w-96" placeholder="£">
-                            </div>
-
-                            <!-- Business Value -->
-
-                            <div class="flex justify-between items-center space-x-7 px-14 pt-7">
-                                <label class="items-start justify-start mr-auto text-lg font-bold  text-white" for="amount">Business Value</label>
-                                <input type="text" class="text-lg font-medium text-start rounded-md px-2 py-2 w-96" placeholder="£">
-                            </div>
-
-                             <!-- Business Debts -->
-
-                             <div class="flex justify-between items-center space-x-7 px-14 pt-7">
-                                <label class="items-start justify-start mr-auto text-lg font-bold  text-white" for="amount">Business Debts</label>
-                                <input type="text" class="text-lg font-medium text-start rounded-md px-2 py-2 w-96" placeholder="£">
-                            </div>
-
-                             <!-- Unpaid Debts -->
-
-                             <div class="flex justify-between items-center space-x-7 px-14 pt-7">
-                                <label class="items-start justify-start mr-auto text-lg font-bold  text-white" for="amount">Unpaid Debts</label>
-                                <input type="text" class="text-lg font-medium text-start rounded-md px-2 py-2 w-96" placeholder="£">
-                            </div>
-
-                              <!-- Total Assets -->
-                              <div class="flex justify-between items-center space-x-7 px-14 pt-7">
-                                <p  class="text-lg font-bold  text-white">Total Assets</p>
-                              </div>
-                              <!-- Zakat Payable -->
-                              <div class="flex justify-between items-center space-x-7 px-14 pt-7">
-                                <p class="text-lg font-bold  text-white">Zakat Payable</p>
-                              </div>
-
-                              <div class="flex justify-center items-center py-5 pb-10">
-                                <a class="md:text-lg text-lg font-bold text-white bg-customBeige hover:text-maroon hover:bg-white duration-300 px-14 py-5 rounded-full  " href="">Pay Your Zakat</a>
-                              </div>
-                              
-
+            <div class="lg:col-start-4 lg:col-span-9 py-8" data-aos="fade-up">
+                <ul class="accordion-container rounded-md">
+                  <!-- accordion -->
+                  <li class="accordion active">
+                    <div class="bg-whiteColor border border-grey dark:bg-whiteColor-dark dark:border-borderColor-dark" >
+                      <!-- controller -->
+                      <div>
+                        <button
+                          class="accordion-controller flex justify-between items-center text-xl text-headingColor font-bold w-full px-10px pt-14px pb-15px md:px-25px md:pt-6 md:pb-25px dark:text-headingColor-dark font-hind leading-[20px] outline-4 outline-transparent transition-none border-b border-transparent">
+                          <span class="text-maroon">Who needs to pay Zakat?</span>
+                          <svg
+                            class="transition-all duration-500 rotate-0"
+                            width="20"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 16 16"
+                            fill="#212529">
+                            <path
+                              fill-rule="evenodd"
+                              d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z">
+                        </path>
+                          </svg>
+                        </button>
+                      </div>
+                      <!-- content -->
+                      <div class="accordion-content transition-all duration-500 overflow-hidden">
+                        <div class="content-wrapper py-4 px-5">
+                          <p class="leading-7 text-grey dark:text-contentColor-dark mb-15px">
+                            All Muslim adults who possess assets for over one lunar year are required to pay Zakat.
+                         </p>
                         </div>
+  
+                      </div> 
+                    </div> 
+                  </li>
+                  <li class="accordion">
+  
+                    <div class="bg-whiteColor border border-grey border-t-0 dark:bg-whiteColor-dark dark:border-borderColor-dark">
+                      <!-- controller -->
+                      <div>
+                        <button
+                          class="accordion-controller flex justify-between items-center text-xl text-headingColor font-bold w-full px-10px pt-14px pb-15px md:px-25px md:pt-6 md:pb-25px dark:text-headingColor-dark font-hind leading-[20px] outline-4 outline-transparent transition-none border-b border-transparent">
+                          <span class="text-maroon">What is the percentage of Zakat?</span>
+  
+                          <svg
+                            class="transition-all duration-500 rotate-0"
+                            width="20"
+                          xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 16 16"
+                            fill="#212529">
+                            <path
+                              fill-rule="evenodd"
+                              d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z">
+                        </path>
+                          </svg>
+                        </button>
+                      </div>
+                      <!-- content -->
+                      <div class="h-0 accordion-content transition-all duration-500 overflow-hidden">
+                        <div class="content-wrapper py-4 px-5">
+                            <p class="leading-7 text-grey dark:text-contentColor-dark mb-15px">
+                                The Zakat percentage is 2.5% of your total wealth and assets. You can use our Zakat Calculator to determine how much you need to pay.
+                          </p>
+                        </div>  
+                      </div>  
+                    </div>  
+                  </li>  
+                 <li class="accordion">
+                    <div class="bg-whiteColor border border-grey border-t-0 dark:bg-whiteColor-dark dark:border-borderColor-dark">
+                      <!-- controller --> 
+                      <div>
+                        <button class="accordion-controller flex justify-between items-center text-xl text-headingColor font-bold w-full px-10px pt-14px pb-15px md:px-25px md:pt-6 md:pb-25px dark:text-headingColor-dark font-hind leading-[20px] outline-4 outline-transparent transition-none border-b border-transparent">
+                          <span class="text-maroon">When to pay Zakat?</span>
+                          <svg class="transition-all duration-500 rotate-0" width="20"
+                           xmlns="http://www.w3.org/2000/svg"
+                           viewBox="0 0 16 16"
+                            fill="#212529">
+                            <path
+                              fill-rule="evenodd"  
+                              d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z">
+                            </path>
+                          </svg>
+                        </button>
+                      </div>
+                      <!-- content -->
+                      <div class="h-0 accordion-content transition-all duration-500 overflow-hidden">
+                        <div class="content-wrapper py-4 px-5">
+                          <p class="leading-7 text-grey mb-15px">
+                            Zakat is due once your wealth exceeds the Nisab threshold for a complete Islamic lunar
+                             year. However, Muslims often opt to pay Zakat during Ramadan to reap countless rewards
+                          </p>
+                        </div>
+                      </div>
                     </div>
-                    
-                </div>
-                <div class="w-2/5 ">
-                    <div class="">
-                        <img class="w-96" src="https://alwahabfoundation.org/wp-content/uploads/2024/03/Ramadan-Food-Packs-Queue-1024x683.jpg" alt="">
+                  </li>
+
+                  <li class="accordion">
+                    <div class="bg-whiteColor border border-grey border-t-0 dark:bg-whiteColor-dark dark:border-borderColor-dark" >
+                      <!-- controller -->
+                      <div>
+                        <button class="accordion-controller flex justify-between items-center text-xl text-headingColor font-bold w-full px-10px pt-14px pb-15px md:px-25px md:pt-6 md:pb-25px dark:text-headingColor-dark font-hind leading-[20px] outline-4 outline-transparent transition-none border-b border-transparent">
+                          <span class="text-maroon">How to pay your Zakat?</span>
+                          <svg
+                            class="transition-all duration-500 rotate-0"
+                            width="20"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 16 16"
+                            fill="#212529">
+                            <path
+                              fill-rule="evenodd"
+                              d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z">
+                            </path>
+                          </svg>
+                        </button>
+                      </div>
+                      <!-- content -->
+                      <div class="h-0 accordion-content transition-all duration-500 overflow-hidden">
+                        <div class="content-wrapper py-4 px-5">
+                          <p class="leading-7 text-grey dark:text-contentColor-dark mb-15px">
+                            You can pay your Zakat to humanitarian causes like various initiatives Al-Wahab 
+                            Foundation has been working on to provide relief to those in need. All you need 
+                            to do is use the <strong>AWF Zakat Calculator</strong>, determine the amount you
+                             owe to pay, and proceed by choosing the cause to help the well-deserving.
+                          </p> 
+                        </div>
+                      </div>
                     </div>
-                </div>
+                  </li>
+
+                  <li class="accordion">
+                    <div class="bg-whiteColor border border-grey border-t-0 dark:bg-whiteColor-dark dark:border-borderColor-dark" >
+                      <!-- controller -->
+                      <div>
+                        <button class="accordion-controller flex justify-between items-center text-xl text-headingColor font-bold w-full px-10px pt-14px pb-15px md:px-25px md:pt-6 md:pb-25px dark:text-headingColor-dark font-hind leading-[20px] outline-4 outline-transparent transition-none border-b border-transparent">
+                          <span class="text-maroon">Do I owe zakat if I have outstanding debts?</span>
+                          <svg
+                            class="transition-all duration-500 rotate-0"
+                            width="20"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 16 16"
+                            fill="#212529">
+                            <path
+                              fill-rule="evenodd"
+                              d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z">
+                            </path>
+                          </svg>
+                        </button>
+                      </div>
+                      <!-- content -->
+                      <div class="h-0 accordion-content transition-all duration-500 overflow-hidden">
+                        <div class="content-wrapper py-4 px-5">
+                          <p class="leading-7 text-grey dark:text-contentColor-dark mb-15px font-medium">
+                            The general rule is that debts are subtracted from one’s total wealth, and if
+                             the remaining amount still exceeds the nisab threshold, zakat is obligatory;
+                              otherwise, it is not.
+                          </p> 
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
         </div>
+    </div>
+    <div class="flex justify-start px-28">
+      <p class="py-3 px-2 border-2 text-lg hover:border-maroon duration-300 border-customBeige font-bold text-maroon">Read Now → 10 Rewards of Feeding Hungry People in Ramadan</p>
+    </div>
+    
+    <div class="py-10">
+        <p class=" py-4  text-grey font-bold text-center text-xl md:text-4xl">See Other Projects</p>
+        <div class="py-8">
+        <SeeOtherProjectCards SeeOtherProjects={SeeOtherProject}/>
+       </div>
     </div>
 </Layout>

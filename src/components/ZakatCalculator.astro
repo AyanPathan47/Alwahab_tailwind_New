@@ -1,0 +1,152 @@
+<div class="container bg-[#AA71454D] mx-auto max-w-screen-2xl">
+    <div class="row">
+        <div class="flex flex-wrap md:flex-nowrap">
+            <!-- Left Section -->
+            <div class="w-full md:w-3/5 px-4">
+                <div class="bg-maroon my-14 mx-auto rounded-md shadow-lg">
+                    <p class="text-center text-white font-bold text-2xl md:text-4xl pt-10">Zakat Calculator</p>
+                    <div class="px-4 md:px-10">
+                        <!-- Inputs Section -->
+                        <div class="space-y-6 pt-6">
+                            <!-- Cash at Home/Bank -->
+                            <div class="flex justify-between items-center">
+                                <label class="text-base md:text-lg font-medium text-white w-2/5">Cash at Home/Bank</label>
+                                <input type="text" class="w-3/5 text-base font-medium rounded-md px-3 py-2" placeholder="£" id="cashAtHomeBank">
+                            </div>
+                            <!-- Gold & Silver -->
+                            <div class="flex justify-between items-center">
+                                <label class="text-base md:text-lg font-medium text-white w-2/5">Gold & Silver</label>
+                                <input type="text" class="w-3/5 text-base font-medium rounded-md px-3 py-2" placeholder="£" id="goldSilver">
+                            </div>
+                            <!-- Property -->
+                            <div class="flex justify-between items-center">
+                                <label class="text-base md:text-lg font-medium text-white w-2/5">Property (Other Than Home)</label>
+                                <input type="text" class="w-3/5 text-base font-medium rounded-md px-3 py-2" placeholder="£" id="property">
+                            </div>
+                            <!-- Pensions -->
+                            <div class="flex justify-between items-center">
+                                <label class="text-base md:text-lg font-medium text-white w-2/5">Pensions</label>
+                                <input type="text" class="w-3/5 text-base font-medium rounded-md px-3 py-2" placeholder="£" id="pensions">
+                            </div>
+                            <!-- Shares -->
+                            <div class="flex justify-between items-center">
+                                <label class="text-base md:text-lg font-medium text-white w-2/5">Shares</label>
+                                <input type="text" class="w-3/5 text-base font-medium rounded-md px-3 py-2" placeholder="£" id="shares">
+                            </div>
+                            <!-- Other Investments -->
+                            <div class="flex justify-between items-center">
+                                <label class=" text-base md:text-lg font-medium text-white w-2/5 whitespace-break-spaces ">Other Investments</label>
+                                <input type="text" class="w-3/5 text-base font-medium rounded-md px-3 py-2" placeholder="£" id="otherInvestments">
+                            </div>
+                            <!-- Money Owed To You -->
+                            <div class="flex justify-between items-center">
+                                <label class="text-base md:text-lg font-medium text-white md:whitespace-pre-line w-2/5">Money Owed To You</label>
+                                <input type="text" class="w-3/5 text-base font-medium rounded-md px-3 py-2" placeholder="£" id="moneyOwedToYou">
+                            </div>
+                            <!-- Business Value -->
+                            <div class="flex justify-between items-center">
+                                <label class="text-base md:text-lg font-medium text-white w-2/5">Business Value</label>
+                                <input type="text" class="w-3/5 text-base font-medium rounded-md px-3 py-2" placeholder="£" id="businessValue">
+                            </div>
+                            <!-- Business Debts -->
+                            <div class="flex justify-between items-center">
+                                <label class="text-base md:text-lg font-medium text-white w-2/5">Business Debts</label>
+                                <input type="text" class="w-3/5 text-base font-medium rounded-md px-3 py-2" placeholder="£" id="businessDebts">
+                            </div>
+                            <!-- Unpaid Debts -->
+                            <div class="flex justify-between items-center">
+                                <label class="text-base md:text-lg font-medium text-white w-2/5">Unpaid Debts</label>
+                                <input type="text" class="w-3/5 text-base font-medium rounded-md px-3 py-2" placeholder="£" id="unpaidDebts">
+                            </div>
+                            <!-- Total Assets -->
+                            <div class="flex justify-between items-center">
+                                <p class="text-base md:text-lg font-medium text-white w-2/5">Total Assets</p>
+                                <p class="w-3/5 text-base font-medium text-white" id="totalAssets">£0.00</p>
+                            </div>
+                            <!-- Zakat Payable -->
+                            <div class="flex justify-between items-center">
+                                <p class="text-base md:text-lg font-medium text-white w-2/5">Zakat Payable</p>
+                                <p class="w-3/5 text-base font-medium text-white" id="zakatPayable">£0.00</p>
+                            </div>
+                            <div class="flex justify-center gap-10 items-center py-5 pb-10">
+                                <!-- Calculate Button -->
+                            <div class="flex justify-center items-center py-5 pb-10" onclick="ZakatCalculator()">
+                                <a class="text-base md:text-lg font-medium text-white bg-customBeige hover:text-maroon hover:bg-white duration-300 px-10 py-3 rounded-full" >Calculate Zakat</a>
+                            </div>
+                            <!-- Pay Zakat Button -->
+                            <div class="flex justify-center items-center py-5 pb-10">
+                                <a class="text-base md:text-lg font-medium text-white bg-customBeige hover:text-maroon hover:bg-white duration-300 px-10 py-3 rounded-full" href="">Pay Your Zakat</a>
+                            </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Right Section -->
+            <div class="w-full md:w-2/5 px-4">
+                <div class="md:my-14 mx-auto md:px-6">
+                    <!-- Image Section -->
+                    <img class="w-full md:w-[360px] md:h-[500px] rounded-t-md" src="https://alwahabfoundation.org/wp-content/uploads/2024/03/Ramadan-Food-Packs-Queue-1024x683.jpg" alt="">
+            
+                    <!-- Content Section -->
+                    <div class="bg-white w-full md:w-[360px] p-4 rounded-b-md shadow-lg">
+                        <p class="text-center text-maroon font-bold text-xl md:text-3xl py-5 px-5">How to Calculate Zakat Using Zakat Calculator?</p>
+                        <p class="text-sm font-medium text-grey px-4">
+                            It’s simple! All you need to do is enter the details of your assets under your
+                            possession over a year into our <span class="font-bold">AWF Zakat Calculator</span>. If you are living in 
+                            the UK, use our <span class="font-bold">Zakat Calculator UK</span> which will <span class="font-bold">calculate Zakat</span> accordingly.
+                            Follow these easy steps:
+                        </p>
+                        <div class="py-4 px-4">
+                            <p class="text-sm font-medium text-grey"> <span class="text-2xl text-grey">•</span>Enter your assets in the Zakat Calculator</p>
+                            <p class="text-sm font-medium text-grey"><span class="text-2xl text-grey">•</span>Our Zakat Calculator 2024 automatically determines the total and the amount of Zakat you owe to pay</p>
+            
+                            <p class="px-8 text-sm text-grey font-bold mt-3">Proceed to pay your Zakat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>
+
+<script is:inline>
+    
+    let cashAtHomeBank = document.getElementById('cashAtHomeBank');
+    let goldSilver = document.getElementById('goldSilver');
+    let property = document.getElementById('property');
+    let pensions = document.getElementById('pensions');
+    let shares = document.getElementById('shares');
+    let otherInvestments = document.getElementById('otherInvestments');
+    let moneyOwedToYou = document.getElementById('moneyOwedToYou');
+    let businessValue = document.getElementById('businessValue');
+    let businessDebts = document.getElementById('businessDebts');
+    let unpaidDebts = document.getElementById('unpaidDebts');
+    let totalAssets = document.getElementById('totalAssets');
+    let zakatPayable = document.getElementById('zakatPayable');
+
+    let totalAmount = cashAtHomeBank.value + goldSilver.value + property.value + pensions.value + shares.value + otherInvestments.value + moneyOwedToYou.value + businessValue.value;
+    let totalDebts = businessDebts.value + unpaidDebts.value;
+    
+    function ZakatCalculator(){
+        console.log('Zakat Calculator');
+        if (totalAmount =>486) {
+        totalAssets.innerText = `£${totalAmount}`;
+        zakatPayable.innerText = `£${totalAmount - totalDebts * 2.5}`;
+    } else {
+        totalAssets.innerHTML = `£${totalAmount}`;
+        zakatPayable.innerHTML = `£0.00`;
+    }
+    }
+    cashAtHomeBank.addEventListener('input', ZakatCalculator());
+    goldSilver.addEventListener('input', ZakatCalculator());
+    property.addEventListener('input', ZakatCalculator());
+    pensions.addEventListener('input', ZakatCalculator());
+    shares.addEventListener('input', ZakatCalculator());
+    otherInvestments.addEventListener('input', ZakatCalculator());
+    moneyOwedToYou.addEventListener('input', ZakatCalculator());
+    businessValue.addEventListener('input', ZakatCalculator());
+    businessDebts.addEventListener('input', ZakatCalculator());
+    unpaidDebts.addEventListener('input', ZakatCalculator());
+    
+</script>
