@@ -4,8 +4,7 @@ import HeadersBanner from "../components/HeadersBanner.astro";
 import UmmahCharity from "../components/Ummah_Charity.astro";
 import SupportBanners from "../components/SupportBanner.astro";
 import ImageCarousel from "../components/ImageCarousel.astro";
-import RestoringLive from "../components/RestoringLives.astro";
-import SeeOtherProjectCard from "../components/SeeOtherProjectCard.astro";
+import ZakatCalculator from "../components/ZakatCalculator.astro";
 
 const HeaderBanned = [
     {
@@ -92,7 +91,7 @@ const ImagesCarousel = [
             <p class="text-2xl text-center font-bold text-maroon px-20 py-8">
                 AWF Vision & Mission
             </p>
-            <p class="text-lg px-24">
+            <p class="text-lg md:px-24">
                 <span class="text-maroon font-semibold">Our vision</span><br
                 /><br />
                 At Al-Wahab Foundation our vision is to address the root causes of
@@ -159,13 +158,11 @@ const ImagesCarousel = [
                 <div>
                     <a
                         href="#"
-                        class="text-size-22 sm:text-size-17 md:text-size-22 lg:text-size-17 2xl:text-size-22 leading-29px sm:leading-15px md:leading-29px lg:leading-15px 2xl:leading-29px font-semibold mb-5px text-maroon "
+                        class="text-size-22 sm:text-size-17 md:text-size-22 lg:text-size-17 2xl:text-size-22 leading-29px sm:leading-15px md:leading-29px lg:leading-15px 2xl:leading-29px font-semibold mb-5px text-maroon"
                     >
                         COMPASSION
                     </a>
-                    <p
-                        class="text-contentColor leading-29px"
-                    >
+                    <p class="text-contentColor leading-29px">
                         Inspired by the teaching of our faith, we believe in
                         kindness and compassion to all humanity, not only to
                         those who are in immediate need and who struggle in
@@ -211,9 +208,7 @@ const ImagesCarousel = [
                     >
                         EQUALITY
                     </a>
-                    <p
-                        class="text-contentColor leading-29px"
-                    >
+                    <p class="text-contentColor leading-29px">
                         Islam teaches equality, irrespective of colour, class,
                         race, gender, age, disability, ethnicity, and religion.
                         This is our foundation and reflected across our work
@@ -261,9 +256,7 @@ const ImagesCarousel = [
                     >
                         TRANSPARENCY
                     </a>
-                    <p
-                        class="text-contentColor leading-29px"
-                    >
+                    <p class="text-contentColor leading-29px">
                         We have a policy of honesty and openness as we believe
                         we are answerable to Allah (SWT). We believe we owe our
                         donors transparency, which is why we keep you informed
@@ -311,9 +304,7 @@ const ImagesCarousel = [
                     >
                         INTEGRITY
                     </a>
-                    <p
-                        class="text-contentColor leading-29px"
-                    >
+                    <p class="text-contentColor leading-29px">
                         Integrity is our priority. We take your Zakat and
                         Sadaqah donations seriously, treating your generosity
                         with respect. We maintain transparent processes and
@@ -358,9 +349,7 @@ const ImagesCarousel = [
                     >
                         EXCELLENCE
                     </a>
-                    <p
-                        class="text-contentColor leading-29px"
-                    >
+                    <p class="text-contentColor leading-29px">
                         Our goal is to achieve excellence in providing
                         humanitarian aid in times of crisis, underpinned by
                         long-term solutions that address inequalities, empower
@@ -373,7 +362,7 @@ const ImagesCarousel = [
         <!-- card 6 -->
         <div data-aos="fade-up">
             <div
-                class="p-30px group bg-whiteColor rounded-xl transition-all duration-300 hover:-translate-y-5px shadow-dropdown-secodary "
+                class="p-30px group bg-whiteColor rounded-xl transition-all duration-300 hover:-translate-y-5px shadow-dropdown-secodary"
             >
                 <!-- card svg -->
                 <div
@@ -407,9 +396,7 @@ const ImagesCarousel = [
                     >
                         PARTNERSHIP
                     </a>
-                    <p
-                        class="text-contentColor leading-29px"
-                    >
+                    <p class="text-contentColor leading-29px">
                         We work together with our local and international
                         partners to effectively serve people across communities.
                         We use our local knowledge to help those who are hardest
@@ -420,4 +407,322 @@ const ImagesCarousel = [
             </div>
         </div>
     </div>
+
+    <div class="max-w-5xl mx-auto">
+        <p class="text-2xl text-center font-bold text-maroon px-20 py-8">
+            Our Journey So Far...
+        </p>
+        <div class="relative">
+            <!-- Vertical line -->
+            <div
+                class="absolute left-1/2 transform -translate-x-1/2 w-1 h-[90.5%] mt-[15.5rem] bg-maroon"
+            >
+            </div>
+            <!-- Timeline items -->
+            <div class="space-y-12">
+                <div class="timeline-item flex items-center justify-between">
+                    <div class="w-5/12 bg-white rounded-lg shadow-md">
+                        <img
+                            src="https://alwahabfoundation.org/wp-content/uploads/2022/09/IMG_9556.jpg"
+                            alt="AWF"
+                            class="w-full rounded-t-lg shadow-md"
+                        />
+                        <div class="p-4">
+                            <h3 class="font-semibold text-4xl text-maroon">
+                                2014
+                            </h3>
+                            <p class="text-sm font-normal w-full">
+                                In 2014, AWF was formed, under the name of Ummah
+                                Charity International, as a UK-registered
+                                charity. Our first major project was our Ramadan
+                                appeal, under which we distributed thousands of
+                                Suhoor and iftar meals to families in need. We
+                                also began our Eid Gift Distribution, making Eid
+                                brighter for underprivileged children.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-2/12 flex justify-center">
+                        <div class="w-4 h-4 bg-customBeige rounded-full"></div>
+                    </div>
+                    <div class="w-5/12"></div>
+                </div>
+
+                <div class="timeline-item flex items-center justify-between">
+                    <div class="w-5/12"></div>
+                    <div class="w-2/12 flex justify-center">
+                        <div class="w-4 h-4 bg-customBeige rounded-full"></div>
+                    </div>
+                    <div class="w-5/12 bg-white rounded-lg shadow-md">
+                        <img
+                            src="https://alwahabfoundation.org/wp-content/uploads/2022/10/3L5A6167-1.jpg"
+                            alt="AWF"
+                            class="w-full rounded-t-lg shadow-md"
+                        />
+                        <div class="p-4">
+                            <h3 class="font-semibold text-4xl text-maroon">
+                                2015
+                            </h3>
+                            <p class="text-sm font-normal">
+                                We created our first Maktab in Karachi, where we
+                                enrolled 250 children for our Hafiz-e-Quran
+                                project. We launched our first eye camp in Sindh
+                                in which we treated a total of 250 patients. Our
+                                first Women Empowerment Project distributed 40
+                                sewing machines, benefiting a total of 320
+                                women, including struggling widows.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item flex items-center justify-between">
+                    <div class="w-5/12 bg-white rounded-lg shadow-md">
+                        <img
+                            src="https://alwahabfoundation.org/wp-content/uploads/2022/07/IMG_0867.jpg"
+                            alt="AWF"
+                            class="w-full rounded-t-lg shadow-md"
+                        />
+                        <div class="p-4">
+                            <h3 class="font-semibold text-4xl text-maroon">
+                                2016
+                            </h3>
+                            <p class="text-sm font-normal">
+                                Our Sadaqah project was launched, giving aid
+                                across many vulnerable districts of Pakistan. We
+                                established our new school where we enrolled
+                                children from highly impoverished families,
+                                providing them with free quality education in
+                                both Islamic and secular subjects. We also
+                                developed our Maktab, Eyecare support and Cooked
+                                Food projects and reached more people.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-2/12 flex justify-center">
+                        <div class="w-4 h-4 bg-customBeige rounded-full"></div>
+                    </div>
+                    <div class="w-5/12"></div>
+                </div>
+
+                <div class="timeline-item flex items-center justify-between">
+                    <div class="w-5/12"></div>
+                    <div class="w-2/12 flex justify-center">
+                        <div class="w-4 h-4 bg-customBeige rounded-full"></div>
+                    </div>
+                    <div class="w-5/12 bg-white rounded-lg shadow-md">
+                        <img
+                            src="https://alwahabfoundation.org/wp-content/uploads/2022/07/IMG_2972.jpg"
+                            alt="AWF"
+                            class="w-full rounded-t-lg shadow-md"
+                        />
+                        <div class="p-4">
+                            <h3 class="font-semibold text-4xl text-maroon">
+                                2017
+                            </h3>
+                            <p class="text-sm font-normal">
+                                Our team of dedicated volunteers delivered
+                                freshly cooked meals to a UK-based homeless
+                                shelter in Hayes. We responded to the Grenfell
+                                Tower tragedy in London by donating warm meals
+                                and clothing for all the affected.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item flex items-center justify-between">
+                    <div class="w-5/12 bg-white rounded-lg shadow-md">
+                        <img
+                            src="https://alwahabfoundation.org/wp-content/uploads/2022/07/Womens-Day-2019-Banner.jpg"
+                            alt="AWF"
+                            class="w-full rounded-t-lg shadow-md"
+                        />
+                        <div class="p-4">
+                            <h3 class="font-semibold text-4xl text-maroon">
+                                2018
+                            </h3>
+                            <p class="text-sm font-normal">
+                                We built our first house for a family in need
+                                and began to support Fukouka School for children
+                                with special needs. In the UK, we provided fresh
+                                drinking water in parks during a severe heat
+                                wave. The launch of our Street Children School
+                                saw 60 children enrolled and given safety, care
+                                and access to learning.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-2/12 flex justify-center">
+                        <div class="w-4 h-4 bg-customBeige rounded-full"></div>
+                    </div>
+                    <div class="w-5/12"></div>
+                </div>
+
+                <div class="timeline-item flex items-center justify-between">
+                    <div class="w-5/12"></div>
+                    <div class="w-2/12 flex justify-center">
+                        <div class="w-4 h-4 bg-customBeige rounded-full"></div>
+                    </div>
+                    <div class="w-5/12 bg-white rounded-lg shadow-md">
+                        <img
+                            src="https://alwahabfoundation.org/wp-content/uploads/2022/09/IMG_1876.jpg"
+                            alt="AWF"
+                            class="w-full rounded-t-lg shadow-md"
+                        />
+                        <div class="p-4">
+                            <h3 class="font-semibold text-4xl text-maroon">
+                                2019
+                            </h3>
+                            <p class="text-sm font-normal">
+                                Our ‘Himmat Karo Aage Baro’ campaign saw the
+                                distribution of 50 food-delivery motorbikes to
+                                Pakistan’s troubled youth. The earthquakes in
+                                Kashmir led to our Pakistan Earthquake Appeal,
+                                providing aid to 3460 victims. Our on-site team
+                                delivered aid to 500 victims who had lost
+                                everything in the Karachi cyclone. We also held
+                                our first International Girls’ Day to celebrate
+                                and encourage young girls in Karachi, Pakistan
+                                through education and achievement. Our ‘Walk for
+                                Children’s Education’ garnered the support of
+                                hundreds, raising further funds to support our
+                                schools.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item flex items-center justify-between">
+                    <div class="w-5/12 bg-white rounded-lg shadow-md">
+                        <img
+                            src="https://alwahabfoundation.org/wp-content/uploads/2022/09/IMG_2398.jpg"
+                            alt="AWF"
+                            class="w-full rounded-t-lg shadow-md"
+                        />
+                        <div class="p-4">
+                            <h3 class="font-semibold text-4xl text-maroon">
+                                2020
+                            </h3>
+                            <p class="text-sm font-normal">
+                                The Covid19 pandemic struck. We responded by
+                                starting our Feed the Homeless project in
+                                London, distributing over 100 food bags to the
+                                most vulnerable and those who were isolating. We
+                                also provided urgent relief to families in
+                                Pakistan in the form of food bags and sanitation
+                                equipment to combat the spread of the virus.
+                                Despite the struggles worldwide, our Ramadan
+                                campaign raised the highest funds yet, helping
+                                us to reach and support more people.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-2/12 flex justify-center">
+                        <div class="w-4 h-4 bg-customBeige rounded-full"></div>
+                    </div>
+                    <div class="w-5/12"></div>
+                </div>
+
+                <div class="timeline-item flex items-center justify-between">
+                    <div class="w-5/12"></div>
+                    <div class="w-2/12 flex justify-center">
+                        <div class="w-4 h-4 bg-customBeige rounded-full"></div>
+                    </div>
+                    <div class="w-5/12 bg-white rounded-lg shadow-md">
+                        <img
+                            src="https://alwahabfoundation.org/wp-content/uploads/2023/01/IMG_1267-e1673433888939.jpg"
+                            alt="AWF"
+                            class="w-full rounded-t-lg shadow-md"
+                        />
+                        <div class="p-4">
+                            <h3 class="font-semibold text-4xl text-maroon">
+                                2021
+                            </h3>
+                            <p class="text-sm font-normal">
+                                We started our collaboration with London’s
+                                Community Kitchen to provide fresh weekly halal
+                                meals to families struggling to feed themselves
+                                in London. Our team of staff and volunteers also
+                                visited LCK’s office to create food bags for
+                                homeless and low-income families. Our chair
+                                Mufti Abdul Wahab visited Pakistan to oversee
+                                the implementation of our Masjid, Water, Rozgar,
+                                Eye Care and Cooked Food Projects which now
+                                reach thousands of people across Pakistan.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item flex items-center justify-between">
+                    <div class="w-5/12 bg-white rounded-lg shadow-md">
+                        <img
+                            src="https://alwahabfoundation.org/wp-content/uploads/2022/10/3L5A1575-2.jpg"
+                            alt="AWF"
+                            class="w-full rounded-t-lg shadow-md"
+                        />
+                        <div class="p-4">
+                            <h3 class="font-semibold text-4xl text-maroon">
+                                2022
+                            </h3>
+                            <p class="text-sm font-normal">
+                                We continued the expansion of our emergency and
+                                developmental programmes, reaching people in new
+                                areas of Pakistan and responding to the crisis
+                                of the severe floods from June to October. We
+                                also rebranded to Al-Wahab Foundation, reaching
+                                more donors and delivering further support
+                                through innovative livelihood programmes to
+                                fight against poverty.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-2/12 flex justify-center">
+                        <div class="w-4 h-4 bg-customBeige rounded-full"></div>
+                    </div>
+                    <div class="w-5/12"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        .timeline-item {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.5s ease-out;
+        }
+        .timeline-item.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+
+    <script is:inline>
+        function isElementInViewport(el) {
+            const rect = el.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <=
+                    (window.innerHeight ||
+                        document.documentElement.clientHeight) &&
+                rect.right <=
+                    (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+        function handleScroll() {
+            const timelineItems = document.querySelectorAll(".timeline-item");
+            timelineItems.forEach((item) => {
+                if (isElementInViewport(item)) {
+                    item.classList.add("show");
+                }
+            });
+        }
+
+        window.addEventListener("load", handleScroll);
+        window.addEventListener("scroll", handleScroll);
+        window.addEventListener("resize", handleScroll);
+    </script>
 </Layout>

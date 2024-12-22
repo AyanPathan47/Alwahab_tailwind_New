@@ -36,9 +36,6 @@ videoModal();
 // theme mode controller
 theme();
 
-//preloader
-preloader();
-
 // scroll up
 scrollUp();
 
