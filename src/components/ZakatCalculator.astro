@@ -309,7 +309,7 @@
             zakatPayable.innerText = `£${(totalAmount * 0.025).toFixed(2)}`;
         } else {
             totalAssets.innerHTML = `£${totalAmount}`;
-            zakatPayable.innerHTML = `£0.00`;
+            zakatPayable.innerHTML = `£${totalAmount}`;
         }
     }
 </script>
