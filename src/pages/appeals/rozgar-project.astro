@@ -104,24 +104,19 @@ const card = [
         src: "https://icharms.alwahabfoundation.org/storage/program/9ACsmpggT5NCJGtKMVAsOXb2gNSwAzmQocPmRClB.jpg",
     },
 ];
-const BannerDatas = [
-    {
-        src: "/assets/images/website-banner-UK-winter-1.jpg",
-        title: " Rohingya Appeal in Action",
-    },
-];
+
 
 const SupportBannerDetails = [
     {
         leftDescription: "YOUR SUPPORT CAN TRANSFORM LIVES!",
         rightDescription:
             "In Islam, relieving others’ hardships is a fundamental principle. Our founder, Mufti Abdul Wahab, firmly believes that empowering individuals to attain a sustainable income is the most effective way to combat poverty and bring about lasting change. By contributing to our Rozgar project with your Zakat or Sadaqah donation, you not only help create this income but also give independence and dignity to those in need, breaking the cycle of poverty for generations to come. Your donation today can be the catalyst that transforms their futures. Donate now and make a difference in their lives.",
-        src: "/assets/images/Help-The-Homeless-in-UK.jpg",
+        src: "/assets/images/appeals/maktab/Rozgar2.jpg",
     },
 ];
 const HeaderBannerData = [
     {
-        src: "https://alwahabfoundation.org/wp-content/uploads/2022/07/3L5A6312-Edit.jpg",
+        src: "/assets/images/appeals/maktab/Rozgar1.jpg",
         title: "ROZGAR PROJECT - LIVELIHOOD",
     },
 ];
@@ -131,10 +126,10 @@ const HeaderBannerData = [
     <HeadersBanner HeadersBanners={HeaderBannerData} />
     <UmmahCharity />
     <div class="mt-12">
-        <p class="text-maroon md:text-3xl font-bold text-center text-6xl">
+        <p class="text-maroon md:text-3xl font-bold text-center text-xl">
             Help Create Livelihood Opportunities
         </p>
-        <p class="text-grey text-lg font-semibold md:text-xl text-center mt-5">
+        <p class="text-grey text-base font-semibold md:text-lg text-center mt-5">
             The economic statistics in Pakistan sound alarming, with approximately 24% <br>of the population living below the poverty line, a figure aggravated by the<br> impact of the economic crisis and inflation. Compounded by insufficient<br> infrastructure and limited employment prospects, the daily struggles <br>of people in remote regions present a disheartening image. <br><br>However, at Al-Wahab Foundation, we are committed to creating solutions <br>that bring hope and stability to struggling families, liberating them from<br> the poverty cycle. By offering means for a stable livelihood, we are touching <br>the lives of countless people across Pakistan. Together, we can work<br> towards a brighter and more prosperous future for those in need.
         </p>
      
@@ -229,28 +224,27 @@ const HeaderBannerData = [
     <!--section 2 -->
 
     <!--section video -->
-    <div class="container mx-auto px-4 mt-16">
-        <div class="relative overflow-hidden pb-[40%]">
-            <iframe
-                class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/rKE-aUoKWhE?si=Hix0Wt-am77ezPpB"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-            >
-            </iframe>
+    <div class="container mx-auto md:px-14 md:py-8 mt-16">
+        <div class="relative overflow-hidden" style="padding-top: 56.25%;">
+          <iframe 
+            class="absolute top-0 left-0 w-full h-full"
+            src="https://www.youtube.com/embed/8fJOx1fwCo4?si=vN6dJyb0LGbAhVda" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+          </iframe>
         </div>
-    </div>
-
+      </div>
+      
     <!-- -->
     
 
    
     <!--section 3 -->
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="row">
+        <div class="row px-4 md:px-24">
             <p
                 class="text-2xl sm:text-3xl text-maroon font-bold mt-10 sm:mt-20"
             >
@@ -259,22 +253,41 @@ const HeaderBannerData = [
             <p
                 class="mt-5 sm:mt-7 text-grey text-base sm:text-lg font-semibold text-justify"
             >
-            Breaking the poverty cycle in deprived communities requires innovative and sustainable change. Every individual should have the opportunity to work and earn a stable income, living with dignity alongside their families and within their communities. <br><br>However, in many parts of Pakistan, this right is difficult to attain. Rural areas, dependent on agriculture, face significant challenges when disasters strike, while social inequalities hinder access to proper education and training.<br><br>At <a href="#" class="text-maroon hover:text-customBeige font-bold">Al-Wahab Foundation</a>, our visionary founder, Mufti Abdul Wahab, leads the way in providing support to establish empowering businesses and work opportunities that build resilience against future crises. Your donation plays a vital role in creating lasting change and independence. From offering transportation that generates income to providing skills training, essential tools, and halal business loans, your contribution fosters positive, long-term impacts. Together, we can pave the path towards a brighter future for these communities.
+            Breaking the poverty cycle in deprived communities requires innovative and sustainable change.
+             Every individual should have the opportunity to work and earn a stable income, living with dignity
+              alongside their families and within their communities. <br><br>However, in many parts of Pakistan,
+               this right is difficult to attain. Rural areas, dependent on agriculture, face significant challenges
+                when disasters strike, while social inequalities hinder access to proper education and training.
+                <br><br>
+                At <a href="#" class="text-maroon hover:text-customBeige font-bold">Al-Wahab Foundation</a>,
+                our visionary founder, Mufti Abdul Wahab, leads the way in providing support to establish empowering
+                businesses and work opportunities that build resilience against future crises. Your donation plays
+                a vital role in creating lasting change and independence. From offering transportation that generates
+                income to providing skills training, essential tools, and halal business loans, your contribution 
+                fosters positive, long-term impacts. Together, we can pave the path towards a brighter future for
+                these communities.
             </p>
             
         </div>
     </div>
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="row">
+        <div class="row px-4 md:px-24">
             <p
-                class="text-2xl sm:text-3xl text-maroon font-bold mt-10 sm:mt-20"
+                class="md:text-2xl text-lg text-maroon font-bold mt-10 "
             >
             Mufti Abdul Wahab in Pakistan: Rozgar Project Distribution Event
             </p>
             <p
-                class="mt-5 sm:mt-7 text-grey text-base sm:text-lg font-semibold text-justify"
+                class="mt-5  text-grey text-base sm:text-lg font-semibold text-justify"
             >
-            Chairman Al-Wahab Foundation, Mufti Abdul Wahab recently visited Pakistan to lead a significant distribution event for the Rozgar Project. AWF’s efforts were focused on providing rickshaws and delivery motorbikes to those in need, offering them a dignified income source through the Rozgar Project. <br><br>During this visit, <a href="#" class="text-maroon hover:text-customBeige font-bold">Mufti Abdul Wahab </a> provided 24 rickshaws and 50 motorbikes, to well-deserving individuals. The chairman’s visit underscored AWF’s dedication to transforming lives and fostering sustainable empowerment within the communities it serves.
+            Chairman Al-Wahab Foundation, Mufti Abdul Wahab recently visited Pakistan to lead a significant 
+            distribution event for the Rozgar Project. AWF’s efforts were focused on providing rickshaws and 
+            delivery motorbikes to those in need, offering them a dignified income source through the Rozgar 
+            Project. 
+            During this visit, <a href="#" class="text-maroon hover:text-customBeige font-bold">Mufti Abdul Wahab </a>
+             provided 24 rickshaws and 50 motorbikes, to well-deserving individuals. The chairman’s visit 
+             underscored AWF’s dedication to transforming lives and fostering sustainable empowerment within 
+             the communities it serves.
             </p>
             
         </div>
@@ -284,16 +297,28 @@ const HeaderBannerData = [
     
     <!--section 5  -->
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="row">
+        <div class="row px-4 md:px-24">
             <p
                 class="text-2xl sm:text-3xl text-maroon font-bold mt-10 sm:mt-20"
             >
-            How is Al-Wahab Foundation Creating Livelihoods?            </p>
+            How is Al-Wahab Foundation Creating Livelihoods?</p>
             <p
                 class="mt-5 sm:mt-7 text-grey text-base sm:text-lg font-semibold text-justify"
             >
-            At Al-Wahab Foundation, we strongly believe in creating stable incomes for impoverished families to secure brighter futures that positively impact entire communities.<br><br>Your generous donations enable us to offer tools and opportunities that establish new livelihoods for those living in disadvantaged areas. A fair and steady income not only empowers individuals but also supports entire households, promoting safety, better health, and protection from exploitation.<br><br>Our <span class="font-bold text-grey">Rozgar Project</span> focuses on providing vulnerable families with employment-related tools, such as rickshaws and delivery motorbikes, empowering them to work independently and generate a halal income. Your support makes a significant difference in transforming lives and uplifting communities.<br><br><span class="font-bold text-grey">The Messenger of Allah (swt) said, “It is better for any one of you to carry a bundle of wood on his back and sell it than to beg of someone whether he gives him or refuses.”- Al-Bukhari and Muslim</span><br><br>Your <a href="#" class="text-maroon hover:text-customBeige font-bold">donation of Zakat</a>  or <a href="#" class="text-maroon hover:text-customBeige font-bold">Sadaqah</a> has the power to change their lives with our innovative, long-term solutions to tackling poverty. When you give with AWF, you can be sure your donation will make a real difference to those in desperate need.
-
+            At Al-Wahab Foundation, we strongly believe in creating stable incomes for impoverished families to
+            secure brighter futures that positively impact entire communities.Your generous donations enable us
+             to offer tools and opportunities that establish new livelihoods for those living in disadvantaged 
+             areas. A fair and steady income not only empowers individuals but also supports entire households, 
+             promoting safety, better health, and protection from exploitation.<br><br>Our <span class="font-bold text-grey">
+            Rozgar Project</span> focuses on providing vulnerable families with employment-related tools, such as
+            rickshaws and delivery motorbikes, empowering them to work independently and generate a halal income.
+            Your support makes a significant difference in transforming lives and uplifting communities.
+            <br><br><span class="font-bold text-grey">The Messenger of Allah (swt) said, “It is better for any one
+            of you to carry a bundle of wood on his back and sell it than to beg of someone whether he gives him or
+            refuses.”- Al-Bukhari and Muslim</span><br><br> Your <a href="#" class="text-maroon hover:text-customBeige font-bold">donation of Zakat</a> 
+            or <a href="#" class="text-maroon hover:text-customBeige font-bold">Sadaqah</a> has the power to change their 
+            lives with our innovative, long-term solutions to tackling poverty. When you give with AWF, you can be sure your 
+            donation will make a real difference to those in desperate need.
             </p>
             
         </div>
@@ -307,7 +332,12 @@ const HeaderBannerData = [
             <p
                 class="mt-5 sm:mt-7 text-grey text-base sm:text-lg font-semibold text-justify"
             >
-            Motorbikes have proven to be an excellent means of empowering people with employment opportunities. The <span class="text-grey font-bold">Rozgar Project</span> identifies individuals who are eager to work and possess the necessary skills but lack access to transportation to kick-start their careers. Through <a href="#" class="text-maroon hover:text-customBeige font-bold">generous donations</a> and community support, the project provides motorbikes to these individuals, enabling them to venture into delivery services for local businesses.
+            Motorbikes have proven to be an excellent means of empowering people with employment opportunities. The 
+            <span class="text-grey font-bold">Rozgar Project</span> identifies individuals who are eager to work 
+            and possess the necessary skills but lack access to transportation to kick-start their careers. Through
+            <a href="#" class="text-maroon hover:text-customBeige font-bold">generous donations</a> and community 
+            support, the project provides motorbikes to these individuals, enabling them to venture into delivery services
+             for local businesses.
             </p>
             
         </div>
