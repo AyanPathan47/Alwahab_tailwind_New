@@ -13,7 +13,7 @@ const single = [
         amount: "150.00",
         single: "SINGLE",
         regular: "REGULAR",
-        src: "https://icharms.alwahabfoundation.org/storage/program/4yoKufWEbMKVjRi7oqiDmaQyUjlPsEFNNPQbV9nj.jpg",
+        src: "/assets/images/appeals/water/WaterCardImage1.jpg",
     },
     {
         name: "UGANDA",
@@ -21,7 +21,7 @@ const single = [
         amount: "2000.00 ",
         single: "SINGLE",
         regular: "REGULAR",
-        src: "https://icharms.alwahabfoundation.org/storage/program_rate/IDuREBJ6Qcu1DkFQcin5zk0Q4RbSQ7BMS8MMHGz5.jpg",
+        src: "/assets/images/appeals/water/WaterCardImage2.jpg",
     },
     {
         name: "PAKISTAN",
@@ -29,7 +29,7 @@ const single = [
         amount: "700.00 ",
         single: "SINGLE",
         regular: "REGULAR",
-        src: "https://icharms.alwahabfoundation.org/storage/program_rate/LDWUtjecZvTXVi2bBpypnc2hPrI9kwtvQ6kqgrjR.jpg",
+        src: "/assets/images/appeals/water/WaterCardImage3.jpg",
     },
     {
         name: "PAKISTAN",
@@ -37,7 +37,7 @@ const single = [
         amount: "50.00 ",
         single: "SINGLE",
         regular: "REGULAR",
-        src: "https://icharms.alwahabfoundation.org/storage/program/FKKCyfboMZNYHjzG05sZZUhOisMYcVVTKEKCzIgi.jpg",
+        src: "/assets/images/appeals/water/WaterCardImage4.jpg",
     },
 ];
 const otherproject = [
@@ -106,8 +106,8 @@ const Restoring = [
     {
         title: "Al-Wahab Foundation's Gift of Clean Drinking Water to Akbar's Village ",
         description:
-            "My name is Akbar, and I reside in Mithi with my family. Our village has been facing numerous issues, but the most persistent one was the lack of access to clean drinking water. We used to walk long distances to fetch water from a dirty pond, which took up a significant portion of our time and energy. Moreover, the water we collected wasn't safe for consumption, and we often fell sick. This situation made it even more challenging for us to make ends meet, and the health of our family members was always at risk. We are immensely grateful to Al-Wahab Foundation and Mufti Abdul Wahab for understanding our struggles and installing this water hand pump. It has been a tremendous help, providing us with safe and clean drinking water right at our doorstep. May Allah reward them for this generosity.",
-        src: "https://alwahabfoundation.org/wp-content/uploads/2022/06/IMG_2926.jpg",
+            "  '' My name is Akbar, and I reside in Mithi with my family. Our village has been facing numerous issues, but the most persistent one was the lack of access to clean drinking water. We used to walk long distances to fetch water from a dirty pond, which took up a significant portion of our time and energy. Moreover, the water we collected wasn't safe for consumption, and we often fell sick. This situation made it even more challenging for us to make ends meet, and the health of our family members was always at risk. We are immensely grateful to Al-Wahab Foundation and Mufti Abdul Wahab for understanding our struggles and installing this water hand pump. It has been a tremendous help, providing us with safe and clean drinking water right at our doorstep. May Allah reward them for this generosity.'' ",
+        src: "/assets/images/appeals/.jpg",
         buttonTitle: "Read More",
     },
 ];
@@ -124,12 +124,12 @@ const SupportBannerDetails = [
         leftDescription: "WHEN YOU GIVE WATER, YOU GIVE LIFE",
         rightDescription:
             "The best charity is giving water to drink(Ahmad)By contributing to providing water, your donation becomes a blessed act known as Sadaqah Jariyah, bringing you countless blessings as your gift continues to bring relief. With your water pump donation, a single Hand Pump can offer easy water access to multiple families, while our Water Wells can supply clean water to entire communities. Join our Water Appeal and make a donation for water well or water pump now to help people gain access to clean water, ultimately saving lives in the process.",
-        src: "/assets/images/Help-The-Homeless-in-UK.jpg",
+        src: "/assets/images/appeals/water/WaterBGIMage.jpg",
     },
 ];
 const HeaderBannerData = [
     {
-        src: "https://alwahabfoundation.org/wp-content/uploads/2022/06/IMG_8999.jpg",
+        src: "/assets/images/appeals/water/HeaderBanner.jpg",
         title: "WATER FOR LIFE",
     },
 ];
@@ -139,24 +139,20 @@ const HeaderBannerData = [
     <HeadersBanner HeadersBanners={HeaderBannerData} />
     <UmmahCharity />
     <div class="mt-12">
-        <p class="text-maroon md:text-3xl font-bold text-center text-6xl">
+        <p class="text-maroon md:text-4xl font-bold text-center text-xl">
             Clean Water Saves Lives
         </p>
-        <p class="text-grey text-lg font-semibold md:text-xl text-center mt-5">
+        <p class="text-grey text-base font-semibold md:text-lg text-center mt-5 px-10  md:px-56">
             Water is necessity in life. More than 1.1 billion people worldwide
-            continue to<br /> face the challenge of lacking regular <a
-                href="#"
-                class="text-maroon hover:text-customBeige font-bold"
-                >access to clean water</a
-            >. This dire situation<br /> forces them to consume unsafe water and
-            live without basic sanitation, resulting <br />in a devastating toll
-            of over 2000 children losing their lives each day due to <br
-            />contaminated water.
+            continue to face the challenge of lacking regular <a href="#" class="text-maroon hover:text-customBeige font-bold">access to clean water</a>
+            . This dire situation forces them to consume unsafe water and
+            live without basic sanitation, resulting in a devastating toll
+            of over 2000 children losing their lives each day due to contaminated water.
         </p>
-        <p class="text-grey text-lg font-semibold md:text-xl text-center mt-5">
+        <p class="text-grey text-base font-semibold md:text-lg text-center mt-5 px-10 md:px-56">
             You can make a difference – donate water well or water pump today to
-            support <br />our efforts in providing clean water sources to
-            vulnerable families and protecting<br /> them from deadly diseases.
+            support our efforts in providing clean water sources to
+            vulnerable families and protecting them from deadly diseases.
         </p>
     </div>
 
@@ -168,7 +164,7 @@ const HeaderBannerData = [
     <SupportBanner BannerDetails={SupportBannerDetails} />
     <!--section n -->
     <div
-        class="counter flex justify-center items-center flex-nowrap gap-6 pt-20 overflow-auto"
+        class="counter grid grid-cols-2 md:grid-cols-7 px-4 md:px-7 gap-6 pt-20"
     >
         <!-- Item 1 -->
         <div class="flex flex-col items-center text-center" data-aos="fade-up">
@@ -181,16 +177,16 @@ const HeaderBannerData = [
             </div>
             <div>
                 <p
-                    class="text-2xl font-bold font-hind text-blackColor dark:text-blackColor-dark"
+                    class="md:text-lg text-base font-bold font-hind text-blackColor dark:text-blackColor-dark"
                 >
                     <span data-countup-number="238,950">238,950</span><span
                         >+</span
                     >
-                </p>
+                </p>    
                 <p
-                    class="uppercase text-blackColor font-medium dark:text-blackColor-dark"
+                    class="uppercase text-blackColor md:text-lg text-base  font-semibold dark:text-blackColor-dark"
                 >
-                    Beneficiaries<br /> of clean <br />drinking water
+                    Beneficiaries of <br> clean drinking water
                 </p>
             </div>
         </div>
@@ -206,14 +202,15 @@ const HeaderBannerData = [
             </div>
             <div>
                 <p
-                    class="text-2xl font-bold font-hind text-blackColor dark:text-blackColor-dark"
+                    class="md:text-lg text-base font-bold font-hind text-blackColor dark:text-blackColor-dark"
                 >
                     <span data-countup-number="433">433</span><span>+</span>
                 </p>
                 <p
-                    class="uppercase text-blackColor font-medium dark:text-blackColor-dark"
+                    class="uppercase md:text-lg text-base text-blackColor font-semibold dark:text-blackColor-dark"
                 >
-                    Water Well
+                    Water <br/>
+                     Well
                 </p>
             </div>
         </div>
@@ -228,14 +225,14 @@ const HeaderBannerData = [
             </div>
             <div>
                 <p
-                    class="text-2xl font-bold font-hind text-blackColor dark:text-blackColor-dark"
+                    class="md:text-lg text-base font-bold font-hind text-blackColor dark:text-blackColor-dark"
                 >
                     <span data-countup-number="110,750 ">110,750 </span><span
                         >+</span
                     >
                 </p>
                 <p
-                    class="uppercase text-blackColor font-medium dark:text-blackColor-dark"
+                    class="uppercase md:text-lg text-base text-blackColor font-semibold dark:text-blackColor-dark"
                 >
                     Beneficiaries <br />of Water Well
                 </p>
@@ -252,14 +249,14 @@ const HeaderBannerData = [
             </div>
             <div>
                 <p
-                    class="text-2xl font-bold font-hind text-blackColor dark:text-blackColor-dark"
+                    class="md:text-lg text-base font-bold font-hind text-blackColor dark:text-blackColor-dark"
                 >
                     <span data-countup-number="4,872 ">4,872 </span><span
                         >+</span
                     >
                 </p>
                 <p
-                    class="uppercase text-blackColor font-medium dark:text-blackColor-dark"
+                    class="uppercase text-blackColor md:text-lg text-base font-semibold dark:text-blackColor-dark"
                 >
                     Water <br />Hand-Pumps
                 </p>
@@ -276,16 +273,17 @@ const HeaderBannerData = [
             </div>
             <div>
                 <p
-                    class="text-2xl font-bold font-hind text-blackColor dark:text-blackColor-dark"
+                    class="md:text-lg  text-base font-bold font-hind text-blackColor dark:text-blackColor-dark"
                 >
                     <span data-countup-number="121,800">121,800</span><span
                         >+</span
                     >
                 </p>
                 <p
-                    class="uppercase text-blackColor font-medium dark:text-blackColor-dark"
+                    class="uppercase md:text-lg text-base text-blackColor font-semibold dark:text-blackColor-dark"
                 >
-                    Beneficiaries<br /> of Water<br /> hand-pumps
+                    Beneficiaries of <br>
+                     Water hand-pumps
                 </p>
             </div>
         </div>
@@ -300,12 +298,12 @@ const HeaderBannerData = [
             </div>
             <div>
                 <p
-                    class="text-2xl font-bold font-hind text-blackColor dark:text-blackColor-dark"
+                    class="md:text-lg text-base font-bold font-hind text-blackColor dark:text-blackColor-dark"
                 >
                     <span data-countup-number="1">1</span><span>+</span>
                 </p>
                 <p
-                    class="uppercase text-blackColor font-medium dark:text-blackColor-dark"
+                    class="uppercase md:text-lg text-base text-blackColor font-semibold dark:text-blackColor-dark"
                 >
                     Water Tanker<br /> in Uganda
                 </p>
@@ -317,17 +315,17 @@ const HeaderBannerData = [
                 <img
                     src="https://via.placeholder.com/50"
                     alt="icon"
-                    class="mx-auto"
+                    class="mx-auto "
                 />
             </div>
             <div>
                 <p
-                    class="text-2xl font-bold font-hind text-blackColor dark:text-blackColor-dark"
+                    class="md:text-lg text-base font-bold font-hind text-blackColor dark:text-blackColor-dark"
                 >
                     <span data-countup-number="6400">6400</span><span>+</span>
                 </p>
                 <p
-                    class="uppercase text-blackColor font-medium dark:text-blackColor-dark"
+                    class="uppercase md:text-lg text-base text-blackColor font-semibold dark:text-blackColor-dark"
                 >
                     Beneficiaries
                 </p>
@@ -340,32 +338,28 @@ const HeaderBannerData = [
     <!--section 2 -->
 
     <!--section video -->
-    <div class="container mx-auto px-4 mt-16">
-        <div class="relative overflow-hidden pb-[40%]">
-            <iframe
-                class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/rKE-aUoKWhE?si=Hix0Wt-am77ezPpB"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-            >
+    <div class="container mx-auto px-20 mt-16">
+        <div class="relative overflow-hidden" style="padding-top: 56.25%; /* Aspect ratio 16:9 */">
+            <iframe class="absolute top-0 left-0 w-full h-full" 
+                src="https://www.youtube.com/embed/SXTjcbDTL5w?si=m5KIl8XbzGIR3MZD" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
             </iframe>
         </div>
     </div>
+    
 
     <!-- -->
-    <div class="container mx-auto p-6">
+    <div class="container mx-auto px-20  py-12">
         <!-- Main Container -->
         <div class="flex flex-col md:flex-row">
             <!-- Text Section -->
-            <div class="p-6 md:w-2/3">
-                <h2 class="text-2xl sm:text-3xl text-maroon font-bold">
+            <div class=" md:w-2/3">
+                <h2 class="md:text-2xl text-lg  text-maroon font-bold">
                     Pakistan’s Water Crisis
                 </h2>
                 <p
-                    class="mt-2 text-grey text-base sm:text-lg font-semibold text-justify"
+                    class="mt-2 text-grey text-base md:text-lg  font-semibold text-justify"
                 >
                     Despite <a
                         href="#"
@@ -378,7 +372,7 @@ const HeaderBannerData = [
                     crisis.
                 </p>
                 <p
-                    class="mt-2 text-grey text-base sm:text-lg font-semibold text-justify"
+                    class="mt-2 text-grey text-base md:text-lg font-semibold text-justify"
                 >
                     Children and the elderly are the most at risk from
                     water-borne illness and poor sanitation. Almost half of
@@ -394,9 +388,9 @@ const HeaderBannerData = [
             </div>
 
             <!-- Image Section -->
-            <div class="md:w-1/3 flex-shrink-0">
+            <div class="md:w-1/3 mx-8  flex-shrink-0 justify-center items-center">
                 <img
-                    src="https://alwahabfoundation.org/wp-content/uploads/2022/06/IMG_0123-847x1024.jpg"
+                    src="/assets/images/appeals/water/image1.jpg"
                     alt="Water Crisis Image"
                     class="w-96 h-96 object-cover"
                 />
@@ -404,24 +398,24 @@ const HeaderBannerData = [
         </div>
     </div>
 
-    <div class="container mx-auto p-6">
+    <div class="container px-20 mx-auto ">
         <!-- Main Container -->
         <div class="flex flex-col md:flex-row">
             <!-- Image Section -->
-            <div class="md:w-1/3 flex-shrink-0">
+            <div class="md:w-1/3 my-auto mx-8 flex-shrink-0">
                 <img
-                    src="https://alwahabfoundation.org/wp-content/uploads/2022/06/IMG_18441a.jpg"
+                    src="/assets/images/appeals/water/image2.jpg"
                     alt="Water Crisis Image"
                     class="w-96 h-96 object-cover"
                 />
             </div>
             <!-- Text Section -->
             <div class="p-6 md:w-2/3">
-                <h2 class="text-2xl sm:text-3xl text-maroon font-bold">
+                <h2 class=" text-lg md:text-2xl text-maroon font-bold">
                     Water Crisis in Uganda
                 </h2>
                 <p
-                    class="mt-2 text-grey text-base sm:text-lg font-semibold text-justify"
+                    class="mt-2 text-grey text-base md:text-lg font-semibold text-justify"
                 >
                     Africa faces a severe water crisis, with a significant
                     portion of its population lacking access to clean and safe
@@ -437,7 +431,7 @@ const HeaderBannerData = [
                     sustainable water solutions to those in need.
                 </p>
                 <p
-                    class="mt-2 text-grey text-base sm:text-lg font-semibold text-justify"
+                    class="mt-2 text-grey text-base md:text-lg font-semibold text-justify"
                 >
                     By donating to <span class="font-bold">
                         Al-Wahab Foundation’s water project
