@@ -10,7 +10,7 @@
     class="bg-[#740B2E] px-4 py-4 flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 justify-center items-center md:items-start"
 >
     <!-- Donate Label -->
-    <p class="text-white text-base md:text-xl mt-1">DONATE :</p>
+    <p class="text-white text-base md:text-xl mt-1 whitespace-nowrap">DONATE :</p>
 
     <!-- Program Selection -->
     <div class="w-full md:w-auto">
@@ -32,9 +32,9 @@
     <!-- Amount Input -->
     <div class="w-full md:w-auto">
         <div class="flex items-center">
-            <p class="text-white mr-4 text-base md:text-xl ">For :</p>
+            <p class="text-white mr-4 text-base md:text-xl  whitespace-nowrap">For :</p>
             <p
-                class="py-2 px-3 text-lg font-semibold sm:text-base text-white rounded-l-md bg-[#c9945a]"
+                class="py-[6px] px-3 text-lg font-semibold sm:text-base text-white rounded-l-md bg-[#c9945a]"
             >
                 £
             </p>
@@ -49,14 +49,14 @@
     <!-- AS Selection -->
     <div class="w-full md:w-auto">
         <div class="flex items-center">
-            <p class="text-white mr-4 md:text-xl text-base ">AS :</p>
+            <p class="text-white mr-4 md:text-xl text-base  whitespace-nowrap">AS :</p>
             <select
                 class="px-8 py-2  rounded-md text-[#740B2E] focus:ring-[#740B2E] w-full md:w-auto"
                 id="program"
                 name="program"
                 required
             >
-                <option class="text-[#740B2E]" value="" disabled selected
+                <option class="text-[#740B2E] duration-300" value="" disabled selected
                     >Select Program</option
                 >
                 <option value="program1">Program 1</option>
