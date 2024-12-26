@@ -4,12 +4,76 @@ import HeadersBanner from "../../components/HeadersBanner.astro";
 import UmmahCharity from "../../components/Ummah_Charity.astro";
 import CardforCountry from "../../components/CardforCountry.astro";
 import SupportBanners from "../../components/SupportBanner.astro";
+import SeeOtherProjectCard from "../../components/SeeOtherProjectCard.astro";
+  
+ const OtherProject = [
+ {
+        title: "Where Most Needed",
+        description:
+            "At Al-Wahab Foundation, we believe in the power of consistent generosity. Our Where Most Needed initiative empowers you to make",
+        src: "https://alwahabfoundation.org/wp-content/uploads/2023/10/IMG_1703-1024x384.jpg",
+    },
+    {
+        title: "Qurbani",
+        description:
+            "Donate Qurbani this Dhul-Hijjah with AWF. Your donation can reach those in need this Eid Al-Adha.",
+        src: "https://alwahabfoundation.org/wp-content/uploads/2023/05/Camel-banner-1024x400.jpg",
+    },
+    {
+        title: "Hope For Uganda",
+        description:
+            "At Al-Wahab Foundation, we believe in the power of consistent generosity. Our Where Most Needed initiative empowers you to make",
+        src: "",
+    },
+    {
+        title: "Serving Humanity in the UK",
+        description:
+            "At Al-Wahab Foundation, we believe in the power of consistent generosity. Our Where Most Needed initiative empowers you to make",
+        src: "",
+    },
+    {
+        title: "Winter Survival Kit",
+        description:
+            "At Al-Wahab Foundation, we believe in the power of consistent generosity. Our Where Most Needed initiative empowers you to make",
+        src: "",
+    },
+    {
+        title: "Build a Masjid",
+        description:
+            "At Al-Wahab Foundation, we believe in the power of consistent generosity. Our Where Most Needed initiative empowers you to make",
+        src: "",
+    },
+    {
+        title: "Pay Zakat Online",
+        description:
+            "At Al-Wahab Foundation, we believe in the power of consistent generosity. Our Where Most Needed initiative empowers you to make",
+        src: "",
+    },
+    {
+        title: "Women Empowerment",
+        description:
+            "Empowering women involves providing them with opportunities to acquire essential skills, boost their confidence, and cultivate independence, enabling lasting benefits",
+        src: "",
+    },
+    {
+        title: "Give your Sadaqah",
+        description:
+            "Your Sadaqah donation keeps hopes alive for those in need. Your act of charity can ease the suffering of people",
+        src: "",
+    },
+    {
+        title: "Support a Maktab",
+        description:
+            "Over 280 million children around the world are deprived of education. These children are often forced into a life of",
+        src: "",
+    },
+ ]
 
  const SuppportBanner = [
     {
         leftDescription: "SMALL ACTS, BIG IIMPACT – GIVES REGULAR DONATION",
         rightDescription: " “The Prophet Muhammad (SAW) said: ‘The most beloved of deeds to Allah are those that are most consistent, even if they are small.’” (Bukhari) With our Where Most Needed initiative, you can contribute to a variety of projects and causes that require immediate attention. Your commitment to regular giving allows us to plan ahead, respond swiftly to urgent needs, and sustainably uplift communities for the long term.  Similarly, setting up a monthly Direct Debit (DD) helps you to plan your budget and is convenient too – you’ll effortlessly make regular contributions to your favourite cause and earn rewards month after month. Whether it’s providing access to clean water, delivering essential eye care treatment, ensuring quality education, or providing food to those in need – your monthly donations will play a pivotal role in addressing these pressing needs.  ",
-        src: " ",
+        src: "/assets/images/appeals/uganda-appeal/Uganda-image1.jpg",
     }
  ]
 
@@ -49,13 +113,11 @@ const CardOfCountry =[
   <div class="container">
     <div class="row">
         <div>
-            <p class=" text-center text-xl text-maroon  pt-12 font-bold md:text-3xl ">Bring Lasting Change through Regular <br> Giving</p>
-            <p class="py-4 px-96 text-center font-medium md:text-lg text-base ">
-                At Al-Wahab Foundation, we believe in the power of consistent generosity. Our <br>
-                <span class="text-grey font-bold">Where Most Needed</span> initiative empowers you to make a meaningful impact through <br>
-                <span class="text-grey font-bold">regular giving</span> and <span class="text-grey font-bold">monthly charity donations</span>. By making a <span class="text-grey font-bold">regular donation </span>to <br>
-                AWF, you join a community of compassionate individuals dedicated to creating  <br>
-                positive change in the lives of those who need it most.
+            <p class=" text-center text-xl text-maroon px-4 pt-12 font-bold md:text-4xl md:px-64 ">Bring Lasting Change through Regular Giving</p>
+            <p class="py-4  md:px-44 text-center font-medium md:text-lg text-base ">
+                At Al-Wahab Foundation, we believe in the power of consistent generosity. Our <span class="text-grey font-bold">Where Most Needed</span> initiative empowers you to make a meaningful impact through 
+                <span class="text-grey font-bold">regular giving</span> and <span class="text-grey font-bold">monthly charity donations</span>. By making a <span class="text-grey font-bold">regular donation </span>to 
+                AWF, you join a community of compassionate individuals dedicated to creating positive change in the lives of those who need it most.
             </p>
         </div>
     </div>
@@ -64,4 +126,60 @@ const CardOfCountry =[
   <CardforCountry CountryCardDetails={CardOfCountry} />
 
   <SupportBanners BannerDetails = {SuppportBanner}/>
+
+  <div class="container mx-auto px-4 py-10">
+    <div class="relative w-full h-full max-w-6xl mx-auto"> <!-- Larger max-width: 6xl -->
+        <!-- Responsive Wrapper with Aspect Ratio 16:9 -->
+        <div class="relative w-full" style="padding-bottom: 56.25%; position: relative;"> <!-- 16:9 aspect ratio -->
+            <iframe 
+                src="https://www.youtube.com/embed/iYsIfXd4XHY?si=coNUMI5-Sr-2dRYK" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen 
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+            </iframe>
+        </div>
+    </div>
+</div>
+
+
+<div class="container py-10 px-4 md:px-24">
+    <div class="row">
+       <p class="text-maroon font-bold text-xl md:text-3xl">Impact of Regular Giving – Create a Wave of Positive Change</p>
+       <p class="text-grey font-medium md:text-lg py-3">
+        The impact of your <span class="font-bold">monthly charity donations</span> through our <span class="font-bold">Where Most Needed</span> initiative is everlasting. Imagine 
+        being part of a transformative journey where your consistent support helps provide food to those in desperate 
+        need, offers <a class="text-maroon font-bold hover:text-customBeige duration-300" href="">livelihood opportunities</a>, and provides vital resources like <a class="text-maroon font-bold hover:text-customBeige duration-300" href="">water</a> to vulnerable populations. It’s not
+         just about the amount you give regularly; it’s about the cumulative effect of your generosity creating a wave of
+          positive change.
+       </p>
+
+       <p class="text-maroon font-bold pt-4 text-xl md:text-3xl">Empowering Change Together</p>
+       <p class="text-grey font-medium md:text-lg py-3">
+        Join hands with Al-Wahab Foundation under our Chairman, <a class="text-maroon hover:text-customBeige font-bold" href="">Mufti Abdul Wahab</a> and contribute to our mission to
+        bring about positive and lasting change. Your commitment to donating to the <span class="text-grey font-bold"> Where Most Needed </span> initiative
+        demonstrates your dedication to making a real difference; and inspires others to show generosity towards
+        humanity. Through our collective efforts, we can ensure that our donations reach those who are often left behind,
+        marginalised, or forgotten.
+
+       </p>
+       <p class="text-maroon font-bold pt-4 text-xl md:text-2xl">Donate to AWF’s Where Most Needed Initiative</p>
+       <p class="text-grey font-medium md:text-lg py-3">
+        Ready to take the step toward creating a lasting impact? Become part of our <span class="text-grey font-bold">Where Most Needed</span> initiative 
+        through <span class="text-grey font-bold">regular giving</span> and <span class="text-grey font-bold">monthly donations..</span>
+       </p>
+       <p class="text-grey text-xl py-2 font-bold">
+        <i>“The Prophet Muhammad (SAW) said: ‘The believer’s shade on the Day of Resurrection will be his charity.'” (Ibn Majah)</i>
+       </p>
+       <p>
+        Your commitment to donate regularly will not only earn you manifold rewards but also give you an opportunity to
+         touch lives, uplift communities, and contribute to a brighter future. Together, we can transform challenges 
+         into opportunities and make the world a better place to live for all.
+       </p>
+    </div>
+</div>
+
+<SeeOtherProjectCard SeeOtherProjects={OtherProject} />
 </Layout>
