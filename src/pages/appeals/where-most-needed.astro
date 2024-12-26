@@ -4,6 +4,70 @@ import HeadersBanner from "../../components/HeadersBanner.astro";
 import UmmahCharity from "../../components/Ummah_Charity.astro";
 import CardforCountry from "../../components/CardforCountry.astro";
 import SupportBanners from "../../components/SupportBanner.astro";
+import SeeOtherProjectCard from "../../components/SeeOtherProjectCard.astro";
+  
+ const OtherProject = [
+ {
+        title: "Where Most Needed",
+        description:
+            "At Al-Wahab Foundation, we believe in the power of consistent generosity. Our Where Most Needed initiative empowers you to make",
+        src: "https://alwahabfoundation.org/wp-content/uploads/2023/10/IMG_1703-1024x384.jpg",
+    },
+    {
+        title: "Qurbani",
+        description:
+            "Donate Qurbani this Dhul-Hijjah with AWF. Your donation can reach those in need this Eid Al-Adha.",
+        src: "https://alwahabfoundation.org/wp-content/uploads/2023/05/Camel-banner-1024x400.jpg",
+    },
+    {
+        title: "Hope For Uganda",
+        description:
+            "At Al-Wahab Foundation, we believe in the power of consistent generosity. Our Where Most Needed initiative empowers you to make",
+        src: "",
+    },
+    {
+        title: "Serving Humanity in the UK",
+        description:
+            "At Al-Wahab Foundation, we believe in the power of consistent generosity. Our Where Most Needed initiative empowers you to make",
+        src: "",
+    },
+    {
+        title: "Winter Survival Kit",
+        description:
+            "At Al-Wahab Foundation, we believe in the power of consistent generosity. Our Where Most Needed initiative empowers you to make",
+        src: "",
+    },
+    {
+        title: "Build a Masjid",
+        description:
+            "At Al-Wahab Foundation, we believe in the power of consistent generosity. Our Where Most Needed initiative empowers you to make",
+        src: "",
+    },
+    {
+        title: "Pay Zakat Online",
+        description:
+            "At Al-Wahab Foundation, we believe in the power of consistent generosity. Our Where Most Needed initiative empowers you to make",
+        src: "",
+    },
+    {
+        title: "Women Empowerment",
+        description:
+            "Empowering women involves providing them with opportunities to acquire essential skills, boost their confidence, and cultivate independence, enabling lasting benefits",
+        src: "",
+    },
+    {
+        title: "Give your Sadaqah",
+        description:
+            "Your Sadaqah donation keeps hopes alive for those in need. Your act of charity can ease the suffering of people",
+        src: "",
+    },
+    {
+        title: "Support a Maktab",
+        description:
+            "Over 280 million children around the world are deprived of education. These children are often forced into a life of",
+        src: "",
+    },
+ ]
 
  const SuppportBanner = [
     {
@@ -116,4 +180,6 @@ const CardOfCountry =[
        </p>
     </div>
 </div>
+
+<SeeOtherProjectCard SeeOtherProjects={OtherProject} />
 </Layout>
