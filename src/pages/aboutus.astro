@@ -88,11 +88,11 @@ const ImagesCarousel = [
 
     <div class="container">
         <div class="row">
-            <p class="text-2xl text-center font-bold text-maroon px-20 py-8">
+            <p class=" md:text-4xl text-lg text-center font-bold text-maroon px-20 py-8">
                 AWF Vision & Mission
             </p>
-            <p class="text-lg md:px-24">
-                <span class="text-maroon font-semibold">Our vision</span><br
+            <p class=" md:text-lg text-base text-grey font-semibold md:px-24">
+                <span class="text-maroon textlg md:text-xl  font-semibold">Our vision</span><br
                 /><br />
                 At Al-Wahab Foundation our vision is to address the root causes of
                 poverty by ensuring that every individual in our society can earn
@@ -103,9 +103,8 @@ const ImagesCarousel = [
                 programmes help people by providing business support, finance, training,
                 tools and resources so they can learn, achieve and earn.<br
                 /><br />
-                <span class="text-maroon font-semibold">Our vision</span><br
-                /><br />
-                Our mission, inspired by our founder Mufti Abdul Wahab, is to provide
+                <span class="text-maroon textlg md:text-xl font-semibold">Our Mission</span><br/>
+                Our mission, inspired by our founder <a class="font-bold text-maroon hover:text-customBeige" href="">Mufti Abdul Wahab</a>, is to provide
                 sustainable solutions to people in poverty, empowering them to earn
                 a stable living without the need for humanitarian support. Our programmes
                 focus on providing access to economic stability that combats and
@@ -115,7 +114,7 @@ const ImagesCarousel = [
     </div>
     <ImageCarousel imageCarousel={ImagesCarousel} />
 
-    <p class="text-2xl text-center font-bold text-maroon px-20 py-8">
+    <p class="md:text-4xl text-lg text-center font-bold text-maroon px-20 py-12">
         Our Values
     </p>
     <div
@@ -409,10 +408,10 @@ const ImagesCarousel = [
     </div>
 
     <div class="max-w-5xl mx-auto">
-        <p class="text-2xl text-center font-bold text-maroon px-20 py-8">
+        <p class="md:text-4xl text-lg text-center font-bold text-maroon px-20 py-8 pt-24">
             Our Journey So Far...
         </p>
-        <div class="relative">
+        <div class="relative ">
             <!-- Vertical line -->
             <div
                 class="absolute left-1/2 transform -translate-x-1/2 w-1 h-[90.5%] mt-[15.5rem] bg-maroon"
@@ -685,7 +684,38 @@ const ImagesCarousel = [
                 </div>
             </div>
         </div>
+ 
+        <div class="flex justify-center items-center py-8 mt-6 ">
+            <a class="bg-maroon hover:bg-customBeige text-2xl text-white px-4 py-2 rounded-full font-bold " href="">DONATE NOW</a>
+        </div>
+
     </div>
+
+    <div class=" container max-w-screen-2xl bg-[#aa71454D] ">
+        <div class="flex justify-center mt-9 pt-20">
+            <div class="bg-maroon px-10 py-8 mb-12 rounded-xl w-full max-w-2xl">
+              <p class="text-center text-white text-2xl font-semibold">Sign up to our Newsletter</p>
+      
+              <form action="#" method="post" class="mt-6">
+                <!-- Form Group -->
+                <div class="flex flex-col ">
+                  <label for="email" class="block text-white text-sm font-medium mb-2">Email Address 
+                    <span class="text-[#e04562] text-lg">*</span>
+                  </label>
+                  <input id="email" name="email" type="email" placeholder="Type your email address here"
+                    class="w-full px-4 py-1 border bg-[#ededed] rounded-xl border-maroon shadow-sm placeholder:text-maroon text-maroon focus:ring focus:ring-customBeige focus:border-customBeige"
+                  />
+                  <a href="" class="mt-5 rounded-md w-36 py-2 text-maroon hover:text-white hover:bg-customBeige font-semibold text-center bg-white">Send Message</a>
+                </div>
+              </form>
+            </div>
+          </div>
+    </div>
+
+
+
+
+
     <style>
         .timeline-item {
             opacity: 0;

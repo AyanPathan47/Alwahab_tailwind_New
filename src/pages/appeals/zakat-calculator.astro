@@ -1,7 +1,7 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import HeadersBanner from "../../components/HeadersBanner.astro";
-import ZakatCalculator from "../../components/ZakatCalculator.astro";
+import ZakatCalculators from "../../components/ZakatCalculator.astro";
 import SeeOtherProjectCards from "../../components/SeeOtherProjectCard.astro";
 
 const SeeOtherProject = [
@@ -9,7 +9,61 @@ const SeeOtherProject = [
     title: "Where Most Needed",
     description:
       "At Al-Wahab Foundation, we believe in the power of consistent generosity. Our Where Most Needed initiative empowers you to make",
-    src: "",
+    src: "/assets/images/appeals/water/Water1.jpg",
+  },
+  {
+    title: "Hope For Uganda",
+    description:
+      "Poverty in Africa has been a longstanding challenge, casting a shadow over the aspirations and dreams of millions. Within this",
+    src: "/assets/images/appeals/water/Water2.jpg",
+  },
+  {
+    title: "Serving Humanity in the UK",
+    description:
+      "In the UK, many people face daily challenges due to rising costs and unemployment. This includes those living below the",
+    src: "/assets/images/appeals/water/Water3.jpg",
+  },
+  {
+    title: "Winter Survival Kit",
+    description:
+      "As climate change intensifies worldwide, a relentless sequence of natural disasters in various countries has aggravated the difficulties faced by",
+    src: "/assets/images/appeals/water/Water4.jpg",
+  },
+  {
+    title: "Build a Masjid",
+    description:
+      "A mosque is the heart of the community, a place full of peace that brings the community together. In rural",
+    src: "/assets/images/appeals/water/Water5.jpg",
+  },
+  {
+    title: "Pay Zakat Online",
+    description:
+      "The economic situation in Pakistan has caused devastation, leaving many people in desperation. Approximately 36% of the population now lives",
+    src: "/assets/images/appeals/water/Water6.jpg",
+  },
+  {
+    title: "Women Empowerment",
+    description:
+      "Empowering women involves providing them with opportunities to acquire essential skills, boost their confidence, and cultivate independence, enabling lasting benefits",
+    src: "/assets/images/appeals/water/Water7.jpg",
+  },
+  {
+    title: "Give your Sadaqah",
+    description:
+      "Your Sadaqah donation keeps hopes alive for those in need. Your act of charity can ease the suffering of people",
+    src: "/assets/images/appeals/water/Water8.jpg",
+  },
+  {
+    title: "Support a Maktab",
+    description:
+      "Over 280 million children around the world are deprived of education. These children are often forced into a life of",
+    src: "/assets/images/appeals/water/Water9.jpg",
+  },
+  {
+    title: "Water for Life",
+    description:
+      "Water is necessity in life. More than 1.1 billion people worldwide continue to face the challenge of lacking regular access",
+    src: "/assets/images/appeals/water/Water10.jpg",
   },
 ];
 
@@ -82,7 +136,7 @@ const HeaderBannerDetails = [
     </div>
   </div>
 
-  <ZakatCalculator />
+  <ZakatCalculators />
 
   <div class="container mx-auto px-4">
     <div class="flex flex-col md:flex-row">
@@ -169,7 +223,7 @@ const HeaderBannerDetails = [
 
   <!-- Zakat Explained -->
 
-  <div class="container py-8 px-28">
+  <div class="container py-8 md:px-28">
     <div class="row">
       <div>
         <p class="text-maroon font-bold text-3xl">
@@ -189,7 +243,9 @@ const HeaderBannerDetails = [
                   <button
                     class="accordion-controller flex justify-between items-center text-xl text-headingColor font-bold w-full px-10px pt-14px pb-15px md:px-25px md:pt-6 md:pb-25px dark:text-headingColor-dark font-hind leading-[20px] outline-4 outline-transparent transition-none border-b border-transparent"
                   >
-                    <span class="text-maroon">Who needs to pay Zakat?</span>
+                    <span class="text-maroon text-lg md:text-xl"
+                      >Who needs to pay Zakat?</span
+                    >
                     <svg
                       class="transition-all duration-500 rotate-0"
                       width="20"
@@ -229,7 +285,7 @@ const HeaderBannerDetails = [
                   <button
                     class="accordion-controller flex justify-between items-center text-xl text-headingColor font-bold w-full px-10px pt-14px pb-15px md:px-25px md:pt-6 md:pb-25px dark:text-headingColor-dark font-hind leading-[20px] outline-4 outline-transparent transition-none border-b border-transparent"
                   >
-                    <span class="text-maroon"
+                    <span class="text-maroon text-start text-lg md:text-xl"
                       >What is the percentage of Zakat?</span
                     >
 
@@ -273,7 +329,9 @@ const HeaderBannerDetails = [
                   <button
                     class="accordion-controller flex justify-between items-center text-xl text-headingColor font-bold w-full px-10px pt-14px pb-15px md:px-25px md:pt-6 md:pb-25px dark:text-headingColor-dark font-hind leading-[20px] outline-4 outline-transparent transition-none border-b border-transparent"
                   >
-                    <span class="text-maroon">When to pay Zakat?</span>
+                    <span class="text-maroon text-lg md:text-xl"
+                      >When to pay Zakat?</span
+                    >
                     <svg
                       class="transition-all duration-500 rotate-0"
                       width="20"
@@ -313,7 +371,9 @@ const HeaderBannerDetails = [
                   <button
                     class="accordion-controller flex justify-between items-center text-xl text-headingColor font-bold w-full px-10px pt-14px pb-15px md:px-25px md:pt-6 md:pb-25px dark:text-headingColor-dark font-hind leading-[20px] outline-4 outline-transparent transition-none border-b border-transparent"
                   >
-                    <span class="text-maroon">How to pay your Zakat?</span>
+                    <span class="text-maroon text-lg md:text-xl"
+                      >How to pay your Zakat?</span
+                    >
                     <svg
                       class="transition-all duration-500 rotate-0"
                       width="20"
@@ -358,7 +418,7 @@ const HeaderBannerDetails = [
                   <button
                     class="accordion-controller flex justify-between items-center text-xl text-headingColor font-bold w-full px-10px pt-14px pb-15px md:px-25px md:pt-6 md:pb-25px dark:text-headingColor-dark font-hind leading-[20px] outline-4 outline-transparent transition-none border-b border-transparent"
                   >
-                    <span class="text-maroon"
+                    <span class="text-maroon text-start text-lg md:text-xl"
                       >Do I owe zakat if I have outstanding debts?</span
                     >
                     <svg
@@ -398,9 +458,9 @@ const HeaderBannerDetails = [
       </div>
     </div>
   </div>
-  <div class="flex justify-start px-28">
+  <div class="flex justify-start px-4 md:px-40">
     <p
-      class="py-3 px-2 border-2 text-lg hover:border-maroon duration-300 border-customBeige font-bold text-maroon"
+      class="py-3 px-2 border-2 text-base md:text-lg hover:border-maroon duration-300 border-customBeige font-bold text-maroon"
     >
       Read Now → 10 Rewards of Feeding Hungry People in Ramadan
     </p>
