@@ -3,8 +3,18 @@ import { fetchPrograms } from "./api.js";
 
 // Define the program type
 type program = {
-    program_id: number;
+    program_id: number,
+    program_name: string,
     image: string,
+    program_rate_id: number,
+    program_rate:string,
+    country_id: number,
+    country_name: string,
+    any_amount: string,
+    program_is_animal: string,
+    other_amount: string | null,
+    donation_url: string,
+    direct_debit_url: string,      
 };
 
 // Fetch the data from the API
@@ -15,10 +25,16 @@ console.log(responseData);
 
 <div>
   {responseData.map((item) => (
-    <div class="py-2">
+    <div class="py-2 flex justify-center">
       <div class="border-2 border-customBeige">
-        <img src={item.image} alt="Program Image" />
+        <img src={item.image} class="w-full" alt="Program Image" />
+        <p>{item.country_id}</p>
+        <p>{item.program_id}</p>
+        <p>{item.other_amount}</p>
+        <p>{item.program_name}</p>
+        <p>{item.program_rate}</p>
       </div>
+
     </div>
   ))}
 </div>
