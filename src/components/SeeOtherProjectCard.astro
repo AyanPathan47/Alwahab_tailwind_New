@@ -24,7 +24,7 @@ const {SeeOtherProjects} = Astro.props
     >
       {SeeOtherProjects.map((SeeOtherProject) => (
         <div
-          class="bg-white rounded-lg shadow-grey shadow-lg scroll-smooth no w-80 flex-shrink-0 overflow-hidden"
+          class="relative bg-white rounded-lg shadow-grey shadow-md scroll-smooth h-[600px] w-96 flex-shrink-0 overflow-hidden"
         >
           <!-- Card Image -->
           <a class="flex justify-center" href="#">
@@ -34,19 +34,17 @@ const {SeeOtherProjects} = Astro.props
               alt={SeeOtherProject.title}
             />
           </a>
-
           <!-- Card Content -->
           <div class="px-4 py-2">
-          
-              <a class="flex justify-center" href="#">
-                <h5 class="text-2xl font-semibold tracking-tight text-black text-center mt-2">
-                 {SeeOtherProject.title}
-               </h5>
-              </a>
+            <a class="flex justify-center" href="#">
+              <h5 class="text-2xl font-semibold tracking-tight text-black text-center mt-2">
+               {SeeOtherProject.title}
+             </h5>
+            </a>
             <p class="py-4  text-black text-center text-base md:text-lg">
               {SeeOtherProject.description}
             </p>
-            <div class="flex items-center justify-center">
+            <div class="absolute bottom-8 translate-x-28 flex items-center justify-center">
               <a
                 href="#"
                 class="px-6 py-3 inline-flex items-center sm:text-sm  md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300"
@@ -71,7 +69,8 @@ const {SeeOtherProjects} = Astro.props
 
 <script is:inline>
   const movieContainer = document.querySelector('.movie-container');
-  const prevBtn = document.getElementById('prev-btn');
+  const prevBtn = document.getElementById
+  });('prev-btn');
   const nextBtn = document.getElementById('next-btn');
 
   // Scroll to the left
@@ -80,7 +79,6 @@ const {SeeOtherProjects} = Astro.props
       left: -300,
       behavior: 'smooth',
     });
-  });
 
   // Scroll to the right
   nextBtn.addEventListener('click', () => {
