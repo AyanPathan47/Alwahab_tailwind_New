@@ -68,23 +68,24 @@ const {SeeOtherProjects} = Astro.props
 </div>
 
 <script is:inline>
-  const movieContainer = document.querySelector('.movie-container');
-  const prevBtn = document.getElementById
-  });('prev-btn');
-  const nextBtn = document.getElementById('next-btn');
+ const movieContainer = document.querySelector('.movie-container');
+const prevBtn = document.getElementById('prev-btn');
+const nextBtn = document.getElementById('next-btn');
 
-  // Scroll to the left
-  prevBtn.addEventListener('click', () => {
-    movieContainer.scrollBy({
-      left: -300,
-      behavior: 'smooth',
-    });
-
-  // Scroll to the right
-  nextBtn.addEventListener('click', () => {
-    movieContainer.scrollBy({
-      left: 300,
-      behavior: 'smooth',
-    });
+// Scroll to the left
+prevBtn.addEventListener('click', () => {
+  movieContainer.scrollBy({
+    left: -300,
+    behavior: 'smooth',
   });
+});
+
+// Scroll to the right
+nextBtn.addEventListener('click', () => {
+  movieContainer.scrollBy({
+    left: 300,
+    behavior: 'smooth',
+  });
+});
+
 </script>
