@@ -3,6 +3,9 @@ import Layout from '../layouts/Layout.astro';
 import UmmahCharity from '../components/Ummah_Charity.astro';
 import SeeOtherProjectCard from '../components/SeeOtherProjectCard.astro';
 import OngoingAppeals from '../components/OngoingAppeals.astro';
+import Test from '../components/Test.astro';
+import Donationcard from '../components/Donationcard.astro';
+import { Debug } from 'astro:components';
 
 const goingAppeals = [
 	{
@@ -1106,7 +1109,11 @@ const OtherProject =[
 	  </div>
 	</div>
   </div>
-  	
+  	<Donationcard programId={[1, 4, 13]} />
+	 <Test programId={[1,4,]} />
+
+
+
 </Layout>
 <script is:inline>
 	const Program_dropdown = document.getElementById("Program_dropdown");

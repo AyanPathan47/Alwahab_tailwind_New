@@ -1,0 +1,24 @@
+---
+import { fetchPrograms } from "./api.js";
+
+// Define the program type
+type program = {
+    program_id: number;
+    image: string,
+};
+
+// Fetch the data from the API
+const data = await fetchPrograms();
+const responseData: program[] = data;
+---
+
+<div>
+  {responseData.map((item) => (
+    <div class="py-2">
+      <div class="border-2 border-customBeige">
+        <img src={item.image} alt="Program Image" />
+      </div>
+    </div>
+  ))}
+</div>
+
