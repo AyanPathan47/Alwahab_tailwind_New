@@ -1,15 +1,4 @@
 ---
-import { env } from 'astro';
-const apiUrl = env.PUBLIC_API_URL; // Accessible on client & server
-const secret = env.PUBLIC_API_KEY;
-console.log(apiUrl, secret);
-// let data = await fetch(`${Api_Url}/category`, {
-//   headers: {
-//     'Authorization': `Bearer ${Api_Key}`,
-//     'content-type': 'application/json'
-//   }
-// });
-
 export interface Props{
     SeeOtherProjects:{
         title : string,
