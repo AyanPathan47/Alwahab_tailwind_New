@@ -1,114 +1,114 @@
 ---
+import Layout from "../layouts/Layout.astro";
 import SingelRegulars from "../components/singel-regular.astro";
 import OngoingAppeals from "../components/OngoingAppeals.astro";
 import ImageCarousel from "../components/ImageCarousel.astro";
 
-
 const Images = [
     {
-        src : "https://picsum.photos/200",
-        alt:" images"
+        src: "https://picsum.photos/200",
+        alt: " images",
     },
     {
-        src : "https://picsum.photos/200",
-        alt:" images"
+        src: "https://picsum.photos/200",
+        alt: " images",
     },
     {
-        src : "https://picsum.photos/200",
-        alt:" images"
+        src: "https://picsum.photos/200",
+        alt: " images",
     },
     {
-        src : "https://picsum.photos/200",
-        alt:" images"
+        src: "https://picsum.photos/200",
+        alt: " images",
     },
     {
-        src : "https://picsum.photos/200",
-        alt:" images"
+        src: "https://picsum.photos/200",
+        alt: " images",
     },
     {
-        src : "https://picsum.photos/200",
-        alt:" images"
+        src: "https://picsum.photos/200",
+        alt: " images",
     },
     {
-        src : "https://picsum.photos/200",
-        alt:" images"
+        src: "https://picsum.photos/200",
+        alt: " images",
     },
     {
-        src : "https://picsum.photos/200",
-        alt:" images"
+        src: "https://picsum.photos/200",
+        alt: " images",
     },
     {
-        src : "https://picsum.photos/200",
-        alt:" images"
+        src: "https://picsum.photos/200",
+        alt: " images",
     },
     {
-        src : "https://picsum.photos/200",
-        alt:" images"
+        src: "https://picsum.photos/200",
+        alt: " images",
     },
     {
-        src : "https://picsum.photos/200",
-        alt:" images"
+        src: "https://picsum.photos/200",
+        alt: " images",
     },
-    
-]
+];
 
 const OngoingAppeal = [
     {
-        src:"https://icharms.alwahabfoundation.org/storage/program/eJSEZYRaZYqsZjYygSWhl5nYV2m1aoDcHtYlK8mD.jpg",
+        src: "https://icharms.alwahabfoundation.org/storage/program/eJSEZYRaZYqsZjYygSWhl5nYV2m1aoDcHtYlK8mD.jpg",
         buttonData: "Donate Now",
         title: "Where Most Needed",
         link: "https://icharms.alwahabfoundation.org/storage/program/eJSEZYRaZYqsZjYygSWhl5nYV2m1aoDcHtYlK8mD.jpg",
         alt: "Where Most needed",
     },
     {
-        src:"https://icharms.alwahabfoundation.org/storage/program/eJSEZYRaZYqsZjYygSWhl5nYV2m1aoDcHtYlK8mD.jpg",
+        src: "https://icharms.alwahabfoundation.org/storage/program/eJSEZYRaZYqsZjYygSWhl5nYV2m1aoDcHtYlK8mD.jpg",
         buttonData: "Donate Now",
         title: "Where Most Needed",
         link: "https://icharms.alwahabfoundation.org/storage/program/eJSEZYRaZYqsZjYygSWhl5nYV2m1aoDcHtYlK8mD.jpg",
         alt: "Where Most needed",
     },
     {
-        src:"https://icharms.alwahabfoundation.org/storage/program/eJSEZYRaZYqsZjYygSWhl5nYV2m1aoDcHtYlK8mD.jpg",
+        src: "https://icharms.alwahabfoundation.org/storage/program/eJSEZYRaZYqsZjYygSWhl5nYV2m1aoDcHtYlK8mD.jpg",
         buttonData: "Donate Now",
         title: "Where Most Needed",
         link: "https://icharms.alwahabfoundation.org/storage/program/eJSEZYRaZYqsZjYygSWhl5nYV2m1aoDcHtYlK8mD.jpg",
         alt: "Where Most needed",
     },
     {
-        src:"https://icharms.alwahabfoundation.org/storage/program/eJSEZYRaZYqsZjYygSWhl5nYV2m1aoDcHtYlK8mD.jpg",
-        buttonData: "Donate Now",
-        title: "Where Most Needed",
-        link: "https://icharms.alwahabfoundation.org/storage/program/eJSEZYRaZYqsZjYygSWhl5nYV2m1aoDcHtYlK8mD.jpg",
-        alt: "Where Most needed",
-    },{
-        src:"https://icharms.alwahabfoundation.org/storage/program/eJSEZYRaZYqsZjYygSWhl5nYV2m1aoDcHtYlK8mD.jpg",
+        src: "https://icharms.alwahabfoundation.org/storage/program/eJSEZYRaZYqsZjYygSWhl5nYV2m1aoDcHtYlK8mD.jpg",
         buttonData: "Donate Now",
         title: "Where Most Needed",
         link: "https://icharms.alwahabfoundation.org/storage/program/eJSEZYRaZYqsZjYygSWhl5nYV2m1aoDcHtYlK8mD.jpg",
         alt: "Where Most needed",
     },
     {
-        src:"https://icharms.alwahabfoundation.org/storage/program/eJSEZYRaZYqsZjYygSWhl5nYV2m1aoDcHtYlK8mD.jpg",
+        src: "https://icharms.alwahabfoundation.org/storage/program/eJSEZYRaZYqsZjYygSWhl5nYV2m1aoDcHtYlK8mD.jpg",
         buttonData: "Donate Now",
         title: "Where Most Needed",
         link: "https://icharms.alwahabfoundation.org/storage/program/eJSEZYRaZYqsZjYygSWhl5nYV2m1aoDcHtYlK8mD.jpg",
         alt: "Where Most needed",
-    }
-]
+    },
+    {
+        src: "https://icharms.alwahabfoundation.org/storage/program/eJSEZYRaZYqsZjYygSWhl5nYV2m1aoDcHtYlK8mD.jpg",
+        buttonData: "Donate Now",
+        title: "Where Most Needed",
+        link: "https://icharms.alwahabfoundation.org/storage/program/eJSEZYRaZYqsZjYygSWhl5nYV2m1aoDcHtYlK8mD.jpg",
+        alt: "Where Most needed",
+    },
+];
 
-const SingelRegular =[
+const SingelRegular = [
     {
-        name : "UGANDA",
-        title:"Build A Masjid",
+        name: "UGANDA",
+        title: "Build A Masjid",
         amount: "12000.00",
         single: "single",
         regular: "Regular",
         src: "https://icharms.alwahabfoundation.org/storage/program_rate/aGsVJEJPa9QxRk4r47jUFgrraO6r9xRs5flDlawq.jpg",
-    }
-]
+    },
+];
 ---
-
-<SingelRegulars SingleRegulars={SingelRegular}/>
+<Layout>
+<SingelRegulars SingleRegulars={SingelRegular} />
 
 <OngoingAppeals goingAppeals={OngoingAppeal} />
 
