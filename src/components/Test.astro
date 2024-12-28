@@ -25,14 +25,15 @@ console.log(responseData);
 
 <div>
   {responseData.map((item) => (
-    <div class="py-2 flex justify-center">
-      <div class="border-2 border-customBeige">
+    <div class="py-2  flex justify-center">
+      <div class="border-2 px-4 border-customBeige">
         <img src={item.image} class="w-full" alt="Program Image" />
-        <p>{item.country_id}</p>
+        <p>{item.country_name}</p>
         <p>{item.program_id}</p>
         <p>{item.other_amount}</p>
         <p>{item.program_name}</p>
         <p>{item.program_rate}</p>
+        <p>{item.donation_url}</p>
       </div>
 
     </div>
