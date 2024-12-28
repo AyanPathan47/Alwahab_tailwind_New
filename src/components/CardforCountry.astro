@@ -10,75 +10,79 @@ export interface Props {
 }    
 const {CountryCardDetails} = Astro.props;
 ---
-
 <div class="container mx-auto pt-20 pb-5">
     <div class="flex justify-center">
-        <div class="grid grid-cols-1 gap-10 md:grid-cols-3 w-full px-1 md:px-20 ">
-            {CountryCardDetails.map((CountryCardDetail) => (
-                <div class="bg-white rounded-3xl shadow-lg shadow-grey w-full md::w-[450px] mx-auto overflow-hidden relative ">
-                    <a class="flex justify-center" href="#">
-                        <img
-                            class="rounded-3xl w-full object-cover h-80"
-                            src={CountryCardDetail.src}
-                            alt="Card image"
-                        />
-                    </a>
-                    <div class="absolute inset-0 flex items-center justify-center">
-                        <button class="absolute text-lg font-semibold bg-white text-black hover:bg-[#c9945a] hover:text-white duration-300 inline-flex items-center justify-center w-56 top-60 left-1/2 transform -translate-x-1/2 h-8 rounded-md shadow-md ">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="lucide lucide-earth mr-2"
-                            >
-                                <path d="M21.54 15H17a2 2 0 0 0-2 2v4.54" />
-                                <path d="M7 3.34V5a3 3 0 0 0 3 3a2 2 0 0 1 2 2c0 1.1.9 2 2 2a2 2 0 0 0 2-2c0-1.1.9-2 2-2h3.17" />
-                                <path d="M11 21.95V18a2 2 0 0 0-2-2a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05" />
-                                <circle cx="12" cy="12" r="10" />
-                            </svg>
-                            {CountryCardDetail.name}
-                        </button>
-                    </div>
-                    <div class="p-5">
-                        <a class="flex justify-center" href="" >
-                            <h5 class="text-xl font-semibold tracking-tight text-black text-center mt-2">
-                                {CountryCardDetail.title}
-                            </h5>
-                        </a>
-                        <p class="mb-5 mt-5 text-sm text-black flex items-center justify-center font-semibold sm:text-base md:text-xl">
-                            
-                            <span class="text-2xl px-4">£</span>
-                            {CountryCardDetail.amount || "Any amount"}
-                        </p>
-                        <p class="flex items-center justify-center mb-7 mt-2 relative">
-                            <a
-                                href="#"
-                                class="px-6 py-3 items-center inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300"
-                            >
-                                DONATE NOW
-                                <svg
-                                    class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 14 10"
-                                    stroke="currentColor"
-                                    stroke-width="2"
-                                >
-                                    <path d="M1 5h12m0 0L9 1m4 4L9 9" />
-                                </svg>
-                            </a>
-                        </p>
-                    </div>
-                </div>
-            ))}
-        </div>
+      <div class="grid grid-cols-1 gap-10 md:grid-cols-3 w-full px-4 md:px-16">
+        {CountryCardDetails.map((CountryCardDetail) => (
+          <div class="bg-white rounded-3xl shadow-lg shadow-grey w-full md:w-[350px] mx-auto overflow-hidden relative">
+            <!-- Card Image -->
+            <a class="flex justify-center" href="#">
+              <img
+                class="rounded-3xl w-full object-cover h-80"
+                src={CountryCardDetail.src}
+                alt="Card image"
+              />
+            </a>
+            <!-- Button Overlay -->
+            <div class="absolute inset-0 flex items-center justify-center">
+              <button
+                class="absolute text-lg font-semibold bg-white text-black hover:bg-[#c9945a] hover:text-white duration-300 inline-flex items-center justify-center w-56 top-3/4 left-1/2 transform -translate-x-1/2 h-10 rounded-md shadow-md"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-earth mr-2"
+                >
+                  <path d="M21.54 15H17a2 2 0 0 0-2 2v4.54" />
+                  <path d="M7 3.34V5a3 3 0 0 0 3 3a2 2 0 0 1 2 2c0 1.1.9 2 2 2a2 2 0 0 0 2-2c0-1.1.9-2 2-2h3.17" />
+                  <path d="M11 21.95V18a2 2 0 0 0-2-2a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05" />
+                  <circle cx="12" cy="12" r="10" />
+                </svg>
+                {CountryCardDetail.name}
+              </button>
+            </div>
+            <!-- Card Content -->
+            <div class="p-6">
+              <a class="flex justify-center" href="#">
+                <h5 class="text-xl font-semibold tracking-tight text-black text-center mt-2">
+                  {CountryCardDetail.title}
+                </h5>
+              </a>
+              <p class="mb-5 mt-5 text-sm text-black flex items-center justify-center font-semibold sm:text-base md:text-xl">
+                <span class="text-2xl px-2">£</span>
+                {CountryCardDetail.amount || "Any amount"}
+              </p>
+              <p class="flex items-center justify-center mb-5 mt-2">
+                <a
+                  href="#"
+                  class="px-6 py-3 items-center inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300"
+                >
+                  DONATE NOW
+                  <svg
+                    class="rtl:rotate-180 w-4 h-4 ms-2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 14 10"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M1 5h12m0 0L9 1m4 4L9 9" />
+                  </svg>
+                </a>
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
-</div>
+  </div>
+  
 
 
