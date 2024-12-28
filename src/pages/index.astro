@@ -4,7 +4,7 @@ import UmmahCharity from '../components/Ummah_Charity.astro';
 import SeeOtherProjectCard from '../components/SeeOtherProjectCard.astro';
 import OngoingAppeals from '../components/OngoingAppeals.astro';
 import Test from '../components/Test.astro';
-import Donationcard from '../components/Donationcard.astro';
+// import Donationcard from '../components/Donationcard.astro';
 import { Debug } from 'astro:components';
 
 const goingAppeals = [
@@ -520,9 +520,9 @@ const OtherProject =[
 	<div class="grid grid-cols-1  md:grid-cols-3 gap-6 ">
 	
 	  <!-- Card 1 -->
-	  <div class="max-w-80 bg-white  rounded-lg shadow-2xl overflow-hidden relative ">
+	  <div class="w-full md:w-[350px] bg-white  rounded-3xl shadow-lg shadow-grey overflow-hidden relative ">
 		<a href="#">
-		  <img class="rounded-t-lg w-full object-cover h-80 inset-0" src="https://icharms.alwahabfoundation.org/storage/program/PLEHSlkkZSN0dSbtwkqloOlMu7Mc6y5TwU2mSGUN.jpg" alt="Card image" />
+		  <img class="rounded-3xl w-full md:w-[350px] object-cover h-auto inset-0" src="https://icharms.alwahabfoundation.org/storage/program/PLEHSlkkZSN0dSbtwkqloOlMu7Mc6y5TwU2mSGUN.jpg" alt="Card image" />
 		</a>
 		<div class="absolute inset-0 flex items-center justify-center">
 			<button class="inset-0 absolute bg-white text-black text-base inline-flex hover:bg-[#c9945a] hover:text-white duration-300 items-center justify-center font-semibold w-44 top-60 left-20 h-8 rounded-md shadow-md">
@@ -538,22 +538,12 @@ const OtherProject =[
 				PAKISTAN
 			</button>
 		  </div>
-		<div class="p-5">
+		<div class="py-4">
 		  <a class=" flex justify-center " href="#">
-			<h5 class="mb-2 text-2xl font-bold tracking-tight text-black text-center mt-6">Zakat</h5>
+			<h5 class="text-lg md:text-xl font-semibold tracking-tight text-black text-center my-2">Zakat</h5>
 		  </a>
-		  <p class="mb-5 mt-5 text-sm text-black flex items-center justify-center font-semibold sm:text-base md:text-xl">
-			<svg xmlns="http://www.w3.org/2000/svg" 
-			     width="37" height="37" viewBox="0 0 24 24"
-			     fill="none" stroke="currentColor" stroke-width="2"
-			     stroke-linecap="round" stroke-linejoin="round"
-			     class="lucide lucide-receipt-pound-sterling">
-			    <path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"/>
-			    <path d="M8 13h5"/>
-			    <path d="M10 17V9.5a2.5 2.5 0 0 1 5 0"/>
-			    <path d="M8 17h7"/>
-		     </svg> 
-			ANY AMOUNT			
+		  <p class=" my-2 text-lg text-black flex items-center justify-center font-bold md:text-2xl">
+			£ ANY AMOUNT			
 		  </p>
 		  <p class="flex items-center justify-center py-4 relative">
 		    <a href="#" class="px-6 py-3 items-center inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
@@ -567,9 +557,9 @@ const OtherProject =[
 	  </div>
   
 	  <!-- Card 2 -->
-	  <div class="max-w-80 bg-white  rounded-lg shadow-2xl overflow-hidden relative ">
+	  <div class="w-full md:w-[350px] bg-white  rounded-3xl shadow-lg shadow-grey overflow-hidden relative ">
 		<a href="#">
-		  <img class="rounded-t-lg w-full object-cover h-80 inset-0" src="https://icharms.alwahabfoundation.org/storage/program/5KCTOoyC6NyoDKd4uXZwpXt7BF24ap21ofVSrmhV.jpg" alt="Card image" />
+		  <img class="rounded-3xl w-full md:w-[350px] object-cover h-auto inset-0" src="https://icharms.alwahabfoundation.org/storage/program/5KCTOoyC6NyoDKd4uXZwpXt7BF24ap21ofVSrmhV.jpg" alt="Card image" />
 		</a>
 		<div class="absolute inset-0 flex items-center justify-center">
 			<button class="inset-0 absolute bg-white text-black text-base inline-flex hover:bg-[#c9945a] hover:text-white duration-300 items-center justify-center font-semibold w-44 top-60 left-20 h-8 rounded-md shadow-md">
@@ -585,22 +575,12 @@ const OtherProject =[
 				PAKISTAN
 			</button>
 		  </div>
-		<div class="p-5">
+		<div class="py-4">
 		  <a class=" flex justify-center " href="#">
-			<h5 class="mb-2 text-2xl font-bold tracking-tight text-black text-center mt-6">Rozgar</h5>
+			<h5 class="my-2 text-lg md:text-xl font-semibold tracking-tight text-black text-center">Rozgar</h5>
 		  </a>
-		  <p class="mb-5 mt-5 text-sm text-black flex items-center justify-center font-semibold sm:text-base md:text-xl">
-			<svg xmlns="http://www.w3.org/2000/svg" 
-			     width="37" height="37" viewBox="0 0 24 24"
-			     fill="none" stroke="currentColor" stroke-width="2"
-			     stroke-linecap="round" stroke-linejoin="round"
-			     class="lucide lucide-receipt-pound-sterling">
-			    <path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"/>
-			    <path d="M8 13h5"/>
-			    <path d="M10 17V9.5a2.5 2.5 0 0 1 5 0"/>
-			    <path d="M8 17h7"/>
-		     </svg> 
-			ANY AMOUNT			
+		  <p class="my-2  text-black flex items-center justify-center font-bold text-xl md:text-2xl">
+			£ ANY AMOUNT			
 		  </p>
 		  <p class="flex items-center justify-center py-4 relative">
 		    <a href="#" class="px-6 py-3 items-center inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
@@ -613,9 +593,9 @@ const OtherProject =[
 		</div>
 	  </div>
 	  <!-- Card 3 -->
-	  <div class="max-w-80 bg-white  rounded-lg shadow-2xl overflow-hidden relative">
+	  <div class="w-full md:w-[350px] bg-white  rounded-3xl shadow-lg shadow-grey overflow-hidden relative">
 		<a class="flex justify-center" href="#">
-		  <img class="rounded-t-lg w-full object-cover h-80 inset-0" src="https://icharms.alwahabfoundation.org/storage/program_rate/5PwWI2AVBNjUn7dIHYanPzyqMmPoabJ673tBvpvM.jpg" alt="Card image" />
+		  <img class="rounded-3xl w-full md:w-[350px] object-cover h-auto inset-0" src="https://icharms.alwahabfoundation.org/storage/program_rate/5PwWI2AVBNjUn7dIHYanPzyqMmPoabJ673tBvpvM.jpg" alt="Card image" />
 		</a>
 		<div class="absolute inset-0 flex items-center justify-center">
 			<button class="inset-0 absolute bg-white text-black hover:bg-[#c9945a] hover:text-white duration-300 text-base inline-flex items-center justify-center font-semibold w-44 top-60 left-20 h-8 rounded-md shadow-md">
@@ -631,84 +611,56 @@ const OtherProject =[
 				PAKISTAN
 			</button>
 		  </div>
-		<div class="p-5">
-		  <a class="flex justify-center" href="#">
-			<h5 class="mb-2 text-2xl font-bold tracking-tight text-black text-center mt-6">Build A Masjid</h5>
-		  </a>
-		  <p class="mb-5 mt-5 text-sm text-black flex items-center justify-center font-semibold sm:text-base md:text-xl">
-			<svg xmlns="http://www.w3.org/2000/svg" 
-			     width="37" height="37" viewBox="0 0 24 24"
-			     fill="none" stroke="currentColor" stroke-width="2"
-			     stroke-linecap="round" stroke-linejoin="round"
-			     class="lucide lucide-receipt-pound-sterling">
-			    <path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"/>
-			    <path d="M8 13h5"/>
-			    <path d="M10 17V9.5a2.5 2.5 0 0 1 5 0"/>
-			    <path d="M8 17h7"/>
-		     </svg> 
-			  7000.00
-		  </p>
-		  <p class="flex items-center justify-center py-4 relative">
-		    <a href="#" class="px-6 py-3 items-center inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
-				DONATE NOW
-			  <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10" stroke="currentColor" stroke-width="2">
-			     <path d="M1 5h12m0 0L9 1m4 4L9 9" />
-			  </svg>
-		    </a>
-		  </p>
-		</div>
+		  <div class="py-4">
+			<a class=" flex justify-center " href="#">
+			  <h5 class="my-2 text-lg md:text-xl font-semibold tracking-tight text-black text-center mt-2">Build A Masjid</h5>
+			</a>
+			<p class="my-2  text-black flex items-center justify-center font-bold text-xl md:text-2xl">
+			  £ 7000.00			
+			</p>
+			<p class="flex items-center justify-center py-4 relative">
+			  <a href="#" class="px-6 py-3 items-center inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
+				  DONATE NOW
+				<svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10" stroke="currentColor" stroke-width="2">
+				   <path d="M1 5h12m0 0L9 1m4 4L9 9" />
+				</svg>
+			  </a>
+			</p>
+		  </div>
 	  </div>
   
 	  <!-- Repeat Cards for Row 2 -->
-	  <div class="max-w-80 bg-white  rounded-lg shadow-2xl overflow-hidden relative">
+	  <div class="w-full md:w-[350px] bg-white  rounded-3xl shadow-lg shadow-grey overflow-hidden relative">
 		<a class="flex justify-center" href="#">
-		  <img class="rounded-t-lg w-full object-cover h-80 inset-0" src="https://icharms.alwahabfoundation.org/storage/program/ctw0fhWZ2O0k8bYgJOzd5GfUgHNTmhWkQn3HHNGk.jpg" alt="Card image" />
+		  <img class="rounded-3xl w-full md:w-[350px] object-cover h-auto inset-0" src="https://icharms.alwahabfoundation.org/storage/program/ctw0fhWZ2O0k8bYgJOzd5GfUgHNTmhWkQn3HHNGk.jpg" alt="Card image" />
 		</a>
 		<div class="absolute inset-0 flex items-center justify-center">
 			<button class="inset-0 absolute bg-white text-black hover:bg-[#c9945a] hover:text-white duration-300 text-base inline-flex items-center justify-center font-semibold w-44 top-60 left-20 h-8 rounded-md shadow-md">
-				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-				     viewBox="0 0 24 24" fill="none" stroke="currentColor" 
-					 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
-					 class="lucide lucide-earth mr-2">
-					 <path d="M21.54 15H17a2 2 0 0 0-2 2v4.54"/>
-					 <path d="M7 3.34V5a3 3 0 0 0 3 3a2 2 0 0 1 2 2c0 1.1.9 2 2 2a2 2 0 0 0 2-2c0-1.1.9-2 2-2h3.17"/>
-					<path d="M11 21.95V18a2 2 0 0 0-2-2a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05"/>
-					<circle cx="12" cy="12" r="10"/>
-				</svg> 
+				
 				PAKISTAN
 			</button>
 		  </div>
-		<div class="p-5">
-		  <a class="flex justify-center" href="#">
-			<h5 class="mb-2 text-2xl font-bold tracking-tight text-black text-center mt-6">Eye Surgery</h5>
-		  </a>
-		  <p class="mb-5 mt-5 text-sm text-black flex items-center justify-center font-semibold sm:text-base md:text-xl">
-			<svg xmlns="http://www.w3.org/2000/svg" 
-			     width="37" height="37" viewBox="0 0 24 24"
-			     fill="none" stroke="currentColor" stroke-width="2"
-			     stroke-linecap="round" stroke-linejoin="round"
-			     class="lucide lucide-receipt-pound-sterling">
-			    <path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"/>
-			    <path d="M8 13h5"/>
-			    <path d="M10 17V9.5a2.5 2.5 0 0 1 5 0"/>
-			    <path d="M8 17h7"/>
-		     </svg> 
-			75.00
-		  </p>
-		  <p class="flex items-center justify-center py-4 relative">
-		    <a href="#" class="px-6 py-3 items-center inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
-				DONATE NOW
-			  <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10" stroke="currentColor" stroke-width="2">
-			     <path d="M1 5h12m0 0L9 1m4 4L9 9" />
-			  </svg>
-		    </a>
-		  </p>
-		</div>
+		  <div class="py-4">
+			<a class=" flex justify-center " href="#">
+			  <h5 class="my-2 text-lg md:text-xl font-bold tracking-tight text-black text-center">Rozgar</h5>
+			</a>
+			<p class="my-2  text-black flex items-center justify-center font-bold text-xl md:text-2xl">
+			  £ 75.00			
+			</p>
+			<p class="flex items-center justify-center py-4 relative">
+			  <a href="#" class="px-6 py-3 items-center inline-flex  md:text-base font-bold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
+				  DONATE NOW
+				<svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10" stroke="currentColor" stroke-width="2">
+				   <path d="M1 5h12m0 0L9 1m4 4L9 9" />
+				</svg>
+			  </a>
+			</p>
+		  </div>
 	  </div>
   
-	  <div class="max-w-80 bg-white rounded-lg shadow-2xl overflow-hidden relative">
+	  <div class="w-full md:w-[350px]  bg-white rounded-3xl shadow-lg shadow-grey overflow-hidden relative">
 		<a class="flex justify-center" href="#">
-		  <img class="rounded-t-lg w-full object-cover h-80 inset-0" src="https://icharms.alwahabfoundation.org/storage/program/qdYFTqD1TDap2M4SMuqcNHPZx4k7aR50ASGem5Zw.jpg" alt="Card image" />
+		  <img class="rounded-3xl w-full md:w-[350px] object-cover h-auto inset-0" src="https://icharms.alwahabfoundation.org/storage/program/qdYFTqD1TDap2M4SMuqcNHPZx4k7aR50ASGem5Zw.jpg" alt="Card image" />
 		</a>
 		<div class="absolute inset-0 flex items-center justify-center">
 			<button class="inset-0 absolute bg-white text-black hover:bg-[#c9945a] hover:text-white duration-300 text-base inline-flex items-center justify-center font-semibold w-44 top-60 left-20 h-8 rounded-md shadow-md">
@@ -724,22 +676,12 @@ const OtherProject =[
 				PAKISTAN
 			</button>
 		  </div>
-		<div class="p-5">
+		<div class="py-4">
 		  <a class="flex justify-center" href="#">
-			<h5 class="mb-2 text-2xl font-bold tracking-tight text-black text-center mt-6">Sewing Machine</h5>
+			<h5 class=" my-2 text-lg md:text-xl font-bold tracking-tight text-black text-center">Sewing Machine</h5>
 		  </a>
-		  <p class="mb-5 mt-5 text-sm text-black flex items-center justify-center font-semibold sm:text-base md:text-xl">
-			<svg xmlns="http://www.w3.org/2000/svg" 
-			     width="37" height="37" viewBox="0 0 24 24"
-			     fill="none" stroke="currentColor" stroke-width="2"
-			     stroke-linecap="round" stroke-linejoin="round"
-			     class="lucide lucide-receipt-pound-sterling">
-			    <path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"/>
-			    <path d="M8 13h5"/>
-			    <path d="M10 17V9.5a2.5 2.5 0 0 1 5 0"/>
-			    <path d="M8 17h7"/>
-		     </svg> 
-			75.00
+		  <p class="my-2 text-black flex items-center justify-center font-bold text-lg  md:text-2xl">
+			£ 75.00
 		  </p>
 		  <p class="flex items-center justify-center py-4 relative">
 		    <a href="#" class="px-6 py-3 items-center inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
@@ -752,9 +694,9 @@ const OtherProject =[
 		</div>
 	  </div>
 	  
-	  <div class="max-w-80 bg-white rounded-lg shadow-2xl overflow-hidden relative">
+	  <div class="w-full md:w-[350px]  bg-white rounded-3xl shadow-lg shadow-grey overflow-hidden relative">
 		<a class="" href="#">
-		  <img class="rounded-t-lg w-full object-cover h-80 inset-0" src="https://icharms.alwahabfoundation.org/storage/program_rate/IDuREBJ6Qcu1DkFQcin5zk0Q4RbSQ7BMS8MMHGz5.jpg" alt="Card image" />
+		  <img class="rounded-3xl w-full md:w-[350px]  object-cover h-auto inset-0" src="https://icharms.alwahabfoundation.org/storage/program_rate/IDuREBJ6Qcu1DkFQcin5zk0Q4RbSQ7BMS8MMHGz5.jpg" alt="Card image" />
 		</a>
 		<div class="absolute inset-0 flex items-center justify-center">
 			<button class="inset-0 absolute bg-white text-black hover:bg-[#c9945a] hover:text-white duration-300 text-base inline-flex items-center justify-center font-semibold w-44 top-60 left-20 h-8 rounded-md shadow-md">
@@ -770,22 +712,12 @@ const OtherProject =[
 				UGANDA
 			</button>
 		  </div>
-		<div class="p-5">
+		<div class="py-4">
 		  <a class="flex justify-center" href="#">
-			<h5 class="mb-2 text-2xl font-bold tracking-tight text-black text-center mt-6">Water Well</h5>
+			<h5 class="my-2 text-xl font-bold tracking-tight text-black text-center">Water Well</h5>
 		  </a>
-		  <p class="mb-5 mt-5 text-sm text-black flex items-center justify-center font-semibold sm:text-base md:text-xl">
-			<svg xmlns="http://www.w3.org/2000/svg" 
-			     width="37" height="37" viewBox="0 0 24 24"
-			     fill="none" stroke="currentColor" stroke-width="2"
-			     stroke-linecap="round" stroke-linejoin="round"
-			     class="lucide lucide-receipt-pound-sterling">
-			    <path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"/>
-			    <path d="M8 13h5"/>
-			    <path d="M10 17V9.5a2.5 2.5 0 0 1 5 0"/>
-			    <path d="M8 17h7"/>
-		     </svg> 
-			2000.00
+		  <p class="my-2 text-black flex items-center justify-center font-bold text-lg md:text-2xl">
+			£ 2000.00
 		  </p>
 		  <p class="flex items-center justify-center py-4 relative">
 		    <a href="#" class="px-6 py-3 items-center inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
@@ -804,7 +736,7 @@ const OtherProject =[
   
 <!-- +++++++++++++++++++++++++++++++YOUR SUPPORT CAN TRANSFORM LIVES++++++++++++++++++++++++++++++++ -->
 
-<div class="relative container mx-auto max-w-screen-2xl  sm:px-6 lg:px-8 h-[900px] md:h-screen bg-cover bg-fixed bg-center bg-no-repeat" style="background-image: url('https://alwahabfoundation.org/wp-content/uploads/2022/07/3L5A6312-Edit.jpg' );">
+<div class="relative container my-20 mx-auto max-w-screen-2xl  sm:px-6 lg:px-8 h-[900px] md:h-screen bg-cover bg-fixed bg-center bg-no-repeat" style="background-image: url('https://alwahabfoundation.org/wp-content/uploads/2022/07/3L5A6312-Edit.jpg' );">
     <!-- Color Overlay -->
     <div class="absolute inset-0 bg-[#740B2E] opacity-70"></div>
 
@@ -843,8 +775,8 @@ const OtherProject =[
   
 	  <!-- Card 1 -->
 	  <div class="relative">
-		<img class=" w-80 h-48  object-cover mx-auto top-6 relative  rounded-t-md" src="https://alwahabfoundation.org/wp-content/uploads/2022/10/IMG_8942-1.jpg" alt="">
-		<p class="bg-[#740B2E] w-full pt-9 pb-4 pr-4 pl-4 text-white text-center">
+		<img class=" w-[360px] h-64  object-cover mx-auto top-6 relative  rounded-t-md" src="https://alwahabfoundation.org/wp-content/uploads/2022/10/IMG_8942-1.jpg" alt="">
+		<p class="bg-[#740B2E] w-full pt-9 pb-4 pr-4 pl-4 text-white">
 		  <span class="text-lg font-semibold">GIVE ZAKAT →</span><br>
 		  Under our 100% transparent Zakat policy, we ensure that every single donation reaches the right destination in compliance with Shariah Law!
 		</p>
@@ -852,7 +784,7 @@ const OtherProject =[
 	  
 	  <!-- Card 2 -->
 	  <div class="relative">
-		<img class=" w-80 h-48  object-cover mx-auto top-6 relative  rounded-t-md" src="https://alwahabfoundation.org/wp-content/uploads/2022/07/3L5A5064-1.jpg" alt="">
+		<img class="w-[360px] h-64  object-cover mx-auto top-6 relative  rounded-t-md" src="https://alwahabfoundation.org/wp-content/uploads/2022/07/3L5A5064-1.jpg" alt="">
 		<p class="bg-[#740B2E] w-full pt-9 pb-4 pr-4 pl-4 text-white text-center">
 		  <span class="text-lg font-semibold">GIVE ZAKAT →</span><br>
 		  Under our 100% transparent Zakat policy, we ensure that every single donation reaches the right destination in compliance with Shariah Law!
@@ -861,7 +793,7 @@ const OtherProject =[
   
 	  <!-- Card 3 -->
 	  <div class="relative">
-		<img class=" w-80 h-48  object-cover mx-auto top-6 relative  rounded-t-md" src="https://alwahabfoundation.org/wp-content/uploads/2023/09/IMG_4085-61-1536x1329.jpg" alt="">
+		<img class=" w-[360px] h-64  object-cover mx-auto top-6 relative  rounded-t-md" src="https://alwahabfoundation.org/wp-content/uploads/2023/09/IMG_4085-61-1536x1329.jpg" alt="">
 		<p class="bg-[#740B2E] w-full pt-9 pb-4 pr-4 pl-4 text-white text-center">
 		  <span class="text-lg font-semibold">GIVE ZAKAT →</span><br>
 		  Under our 100% transparent Zakat policy, we ensure that every single donation reaches the right destination in compliance with Shariah Law!
@@ -870,10 +802,10 @@ const OtherProject =[
 	</div>
   </div>
 
-  <div class="container mt-20 mx-auto px-4">
+  <div class="container my-16 w-full">
 	<div class="row flex flex-col lg:flex-row bg-maroon relative text-white items-center">
 	  <!-- Text Content -->
-	  <div class="lg:w-1/2 w-full text-center lg:text-left p-6">
+	  <div class="lg:w-1/2 w-full text-center lg:text-left px-6">
 		<p>
 		  <span class="text-lg lg:text-xl font-semibold block mb-4">AWF ANNUAL REPORT 2022-23</span>
 		  Please review our <span class="font-semibold">2022-23 report</span> to see the remarkable projects made possible by 
@@ -887,7 +819,7 @@ const OtherProject =[
   
 	  <!-- Image Section -->
 	  <div class="lg:w-1/2 w-full flex justify-center lg:justify-center relative">
-		<img class="w-3/4 md:w-1/2  h-auto sm:-bottom-16 md:-mt-20 mr-7 " src="https://alwahabfoundation.org/wp-content/uploads/2024/08/AWF-Annual-Report-Mockup-1573x2048.png" alt="">
+		<img class="w-3/4 md:w-1/2 h-auto sm:-bottom-32 md:-mt-20 lg:-mr-7" src="https://alwahabfoundation.org/wp-content/uploads/2024/08/AWF-Annual-Report-Mockup-1573x2048.png" alt="">
 	  </div>
 	</div>
   </div>
@@ -1109,7 +1041,7 @@ const OtherProject =[
 	  </div>
 	</div>
   </div>
-  	<Donationcard programId={[1, 4, 13]} />
+  	<!-- <Donationcard programId={[1, 4, 13]} /> -->
 	 <Test />
 
 

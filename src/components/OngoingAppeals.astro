@@ -22,9 +22,9 @@ const { goingAppeals } = Astro.props;
         </button>
 
         <!-- Card Container with Tailwind scrollbar hiding -->
-        <div class="card-container flex gap-7 overflow-x-auto scroll-smooth md:gap-10">
+        <div class="card-container flex gap-7 overflow-x-auto py-10 scroll-smooth md:gap-10">
             {goingAppeals.map((item) => (
-                <div class="w-72 flex-shrink-0 overflow-hidden rounded-lg bg-white shadow-2xl transition-transform duration-300 md:w-80">
+                <div class="w-72 flex-shrink-0 overflow-hidden rounded-lg bg-white shadow-lg shadow-grey transition-transform duration-300 md:w-80">
                     <!-- Card Image -->
                     <a href={item.link} class="flex justify-center">
                         <img
