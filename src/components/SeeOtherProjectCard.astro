@@ -20,16 +20,16 @@ const {SeeOtherProjects} = Astro.props
 
     <!-- Movie Container -->
     <div
-      class="movie-container flex justify-between gap-7 mx-auto md:py-5 overflow-x-auto scroll-smooth space-x-4 w-full"
+      class="movie-container flex justify-between gap-5 mx-auto md:py-5 overflow-x-auto scroll-smooth space-x-4 w-full"
     >
       {SeeOtherProjects.map((SeeOtherProject) => (
         <div
-          class="relative bg-white rounded-lg shadow-grey shadow-lg scroll-smooth h-[620px] w-80 flex-shrink-0 overflow-hidden"
+          class="relative bg-white rounded-3xl shadow-grey shadow-lg scroll-smooth h-[590px] md:w-[340px] flex-shrink-0 overflow-hidden"
         >
           <!-- Card Image -->
           <a class="flex justify-center" href="#">
             <img
-              class="rounded-t-lg w-full object-cover h-64"
+              class="rounded-3xl w-full object-cover h-56"
               src={SeeOtherProject.src}
               alt={SeeOtherProject.title}
             />
@@ -37,11 +37,11 @@ const {SeeOtherProjects} = Astro.props
           <!-- Card Content -->
           <div class="px-4 py-2">
             <a class="flex justify-center" href="#">
-              <h5 class="md:text-2xl text-lg font-semibold tracking-tight text-grey text-center mt-2">
+              <h5 class="md:text-2xl text-lg font-medium tracking-tight text-grey text-center mt-4 md:px-3">
                {SeeOtherProject.title}
              </h5>
             </a>
-            <p class="py-4 text-black text-center font-medium text-base md:text-lg">
+            <p class="text-black text-center font-medium my-3 text-base">
               {SeeOtherProject.description}
             </p>
             <div class="absolute bottom-8 translate-x-20 flex items-center justify-center">
