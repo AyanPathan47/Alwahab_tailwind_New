@@ -2,6 +2,47 @@
 import Layout from "../layouts/Layout.astro";
 import HeadersBanner from "../components/HeadersBanner.astro";
 import UmmahCharity from "../components/Ummah_Charity.astro";
+import LatestBlogcard from "../components/LatestBlogcard.astro";
+
+const LatestBlooog =[
+  {
+      image : "https://alwahabfoundation.org/wp-content/uploads/2024/11/awf-birmingham-event-charity-dinner-768x513.jpg.webp",
+      date : "November 26, 2024",
+      title : "Birmingham Charity Dinner 2024: Celebrating 10 Years of Al-Wahab Foundation",
+      description : "Al-Wahab Foundation’s 10-years celebration Charity Dinner at Crystal Plaza, Birmingham turns into a remarkable success",
+  },
+  {
+      image : "https://alwahabfoundation.org/wp-content/uploads/2024/11/awf-birmingham-event-charity-dinner-768x513.jpg.webp",
+      date : "November 26, 2024",
+      title : "Birmingham Charity Dinner 2024: Celebrating 10 Years of Al-Wahab Foundation",
+      description : "Al-Wahab Foundation’s 10-years celebration Charity Dinner at Crystal Plaza, Birmingham turns into a remarkable success",
+  },
+  {
+      image : "https://alwahabfoundation.org/wp-content/uploads/2024/11/awf-birmingham-event-charity-dinner-768x513.jpg.webp",
+      date : "November 26, 2024",
+      title : "Birmingham Charity Dinner 2024: Celebrating 10 Years of Al-Wahab Foundation",
+      description : "Al-Wahab Foundation’s 10-years celebration Charity Dinner at Crystal Plaza, Birmingham turns into a remarkable success",
+  },
+  {
+      image : "https://alwahabfoundation.org/wp-content/uploads/2024/11/awf-birmingham-event-charity-dinner-768x513.jpg.webp",
+      date : "November 26, 2024",
+      title : "Birmingham Charity Dinner 2024: Celebrating 10 Years of Al-Wahab Foundation",
+      description : "Al-Wahab Foundation’s 10-years celebration Charity Dinner at Crystal Plaza, Birmingham turns into a remarkable success",
+  },
+  {
+      image : "https://alwahabfoundation.org/wp-content/uploads/2024/11/awf-birmingham-event-charity-dinner-768x513.jpg.webp",
+      date : "November 26, 2024",
+      title : "Birmingham Charity Dinner 2024: Celebrating 10 Years of Al-Wahab Foundation",
+      description : "Al-Wahab Foundation’s 10-years celebration Charity Dinner at Crystal Plaza, Birmingham turns into a remarkable success",
+  },
+  {
+      image : "https://alwahabfoundation.org/wp-content/uploads/2024/11/awf-birmingham-event-charity-dinner-768x513.jpg.webp",
+      date : "November 26, 2024",
+      title : "Birmingham Charity Dinner 2024: Celebrating 10 Years of Al-Wahab Foundation",
+      description : "Al-Wahab Foundation’s 10-years celebration Charity Dinner at Crystal Plaza, Birmingham turns into a remarkable success",
+  },
+  
+]
 
 const BannerData = [
 {
@@ -15,6 +56,7 @@ const BannerData = [
     <HeadersBanner HeadersBanners={BannerData} />
     <UmmahCharity />
 
+    <LatestBlogcard LatestBlog={LatestBlooog}/>
 
     <div class="w-screen overflow-hidden mt-10">
         <div class="flex flex-wrap">
@@ -76,12 +118,7 @@ const BannerData = [
     
     
     <div class="container mx-auto bg-[#aa71454D]  max-w-screen-2xl">
-        <div class="row">
-          <!-- Header Text -->
-          <p class="text-2xl md:text-4xl text-center pt-20 font-bold">GET INVOLVED</p>
-          <p class="text-center mt-6 text-gray-700">
-            Your support is vital to helping us achieve this, and we couldn’t do it without our dedicated volunteers.
-          </p>
+        <div class="row py-16">
       
           <!-- Form Section -->
           <div class="flex justify-center mt-9">
