@@ -243,16 +243,20 @@ const HeaderBanned = [
 
     <div class="container mx-auto">
         <div class="row flex justify-center">
-            <div
-                class="relative w-full max-w-[100%] md:max-w-[88%]"
-                style="padding-top: 56.25%; /* Aspect ratio 16:9 */">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/_rm_E501yiQ?si=wjb--GODZlCUAqG2"
-                 title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                </iframe>        
-            </div>
+          <div class="relative w-full max-w-[100%] md:max-w-[88%] aspect-w-16 aspect-h-9">
+            <iframe 
+              class="absolute inset-0 w-full h-full"
+              src="https://www.youtube.com/embed/_rm_E501yiQ?si=wjb--GODZlCUAqG2"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen>
+            </iframe>
+          </div>
         </div>
-    </div>
+      </div>
+      
     
     <div class="container">
         <div class="row">
@@ -400,7 +404,7 @@ const HeaderBanned = [
 
             <!-- Step 4 -->
             <div
-                class="bg-customBeige flex flex-col items-center justify-center px-6 pb-6 text-dark rounded-lg shadow-lg"
+                class="bg-customBeige flex flex-col items-center justify-center px-6  py-6 text-dark rounded-lg shadow-lg"
             >
                 <svg
                     class="duration-300 hover:stroke-maroon -mt-3"
