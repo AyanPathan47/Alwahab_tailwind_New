@@ -38,11 +38,8 @@ export default defineConfig({
             label: "Layout",
             type: "string",
             required: true,
-            ui: {
-              description: "Type ../../layouts/BlogLayout.astro to use the BlogLayout",
-              placeholder: "Type the Above layout path",
-            },
-            options: ["BlogLayout" , "LeftLayout"]
+            
+            options:  ["../../layouts/Right_Blog_Layout.astro", "../../layouts/Left_Blog_Layout.astro", "../../layouts/Center_Blog_Layout.astro"],
           },
           {
             type: "string",
