@@ -1,40 +1,19 @@
 ---
-layout: ../../layouts/BlogLayout.astro
+layout : ../../layouts/Center_Blog_Layout.astro
 title: try
 creationdate: 2024-12-28T18:30:00.000Z
 bannertitle: try one
 section1title: sec one title
-section1content: >-
+section1content:
   Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-  when an unknown printer took a galley of type and scrambled it to make a type
-  specimen book. It has survived not only five centuries, but also the leap into
-  electronic typesetting, remaining essentially unchanged. It was popularised in
-  the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-  and more recently with desktop publishing software like Aldus PageMaker
-  including versions of Lorem Ipsum.
 section1image: /assets/images/MOBILE-BANNER-EYE.jpg
 section2title: sec two title
-section2content: >-
+section2content: 
   Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-  when an unknown printer took a galley of type and scrambled it to make a type
-  specimen book. It has survived not only five centuries, but also the leap into
-  electronic typesetting, remaining essentially unchanged. It was popularised in
-  the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-  and more recently with desktop publishing software like Aldus PageMaker
-  including versions of Lorem Ipsum.
 section2image: /assets/images/Mobile-banner-water.jpg
 section3title: sec three title
-section3content: >-
+section3content:
   Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-  when an unknown printer took a galley of type and scrambled it to make a type
-  specimen book. It has survived not only five centuries, but also the leap into
-  electronic typesetting, remaining essentially unchanged. It was popularised in
-  the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-  and more recently with desktop publishing software like Aldus PageMaker
-  including versions of Lorem Ipsum.
 section3image: /assets/images/MOBILE-BANNER-MASJID.jpg
 ---
 

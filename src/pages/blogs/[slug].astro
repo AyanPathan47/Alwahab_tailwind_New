@@ -1,18 +1,21 @@
 ---
-import BlogLayout from "../../layouts/BlogLayout.astro";
-import LeftLayout from  "../../layouts/left-layout.astro";
+import BlogLayout from "../../layouts/Right_Blog_Layout.astro";
+import CenterBlogLayout from "../../layouts/Center_Blog_Layout.astro";
+import LeftLayout from "../../layouts/Left_Blog_Layout.astro";
 
-const { frontmatter, content } = Astro.props;
+const { frontmatter } = Astro.props;
 
 // Map layout to layout components
-const layouts : Record<string, string> = {
-    BlogLayout : "../../layouts/BlogLayout.astro",
-    LeftLayout : "../../layouts/left-layout.astro"
+const layouts = {
+    BlogLayout,
+    LeftLayout
 };
 
 console.log("Frontmatter layout:", frontmatter.layout); // Debug log
-console.log("Resolved Layout:", layouts[frontmatter.layout]);
-const Layout = layouts[frontmatter.layout];
+console.log("Resolved Layout:", layouts[frontmatter.customLayout]);
+const Layout = layouts[frontmatter.customLayout] || BlogLayout;
 ---
 
-<Layout/>
+<Layout>
+    
+</Layout>
