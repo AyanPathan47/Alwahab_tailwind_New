@@ -1,187 +1,209 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import UmmahCharity from '../components/Ummah_Charity.astro';
-import SeeOtherProjectCard from '../components/SeeOtherProjectCard.astro';
-import OngoingAppeals from '../components/OngoingAppeals.astro';
-import Test from '../components/Test.astro';
+import Layout from "../layouts/Layout.astro";
+import UmmahCharity from "../components/Ummah_Charity.astro";
+import SeeOtherProjectCard from "../components/SeeOtherProjectCard.astro";
+import OngoingAppeals from "../components/OngoingAppeals.astro";
+import Test from "../components/Test.astro";
 // import Donationcard from '../components/Donationcard.astro';
-import { Debug } from 'astro:components';
+import { Debug } from "astro:components";
 
 const goingAppeals = [
 	{
 		src: "https://icharms.alwahabfoundation.org/storage/program/eJSEZYRaZYqsZjYygSWhl5nYV2m1aoDcHtYlK8mD.jpg",
-        buttonData: "Donate Now",
-        title: "Where Most Needed",
-        link: "https://icharms.alwahabfoundation.org/storage/program/eJSEZYRaZYqsZjYygSWhl5nYV2m1aoDcHtYlK8mD.jpg",
-        alt: "Where Most Needed",
+		buttonData: "Donate Now",
+		title: "Where Most Needed",
+		link: "https://icharms.alwahabfoundation.org/storage/program/eJSEZYRaZYqsZjYygSWhl5nYV2m1aoDcHtYlK8mD.jpg",
+		alt: "Where Most Needed",
 	},
 	{
 		src: "https://icharms.alwahabfoundation.org/storage/program/4yoKufWEbMKVjRi7oqiDmaQyUjlPsEFNNPQbV9nj.jpg",
-        buttonData: "Donate Now",
-        title: "Water Hand Pump",
-        link: "https://icharms.alwahabfoundation.org/storage/program/eJSEZYRaZYqsZjYygSWhl5nYV2m1aoDcHtYlK8mD.jpg",
-        alt: "Water Hand Pump",
+		buttonData: "Donate Now",
+		title: "Water Hand Pump",
+		link: "https://icharms.alwahabfoundation.org/storage/program/eJSEZYRaZYqsZjYygSWhl5nYV2m1aoDcHtYlK8mD.jpg",
+		alt: "Water Hand Pump",
 	},
 	{
 		src: "https://icharms.alwahabfoundation.org/storage/program_rate/IDuREBJ6Qcu1DkFQcin5zk0Q4RbSQ7BMS8MMHGz5.jpg",
-        buttonData: "Donate Now",
-        title: "Water Well",
-        link: "https://icharms.alwahabfoundation.org/storage/program/eJSEZYRaZYqsZjYygSWhl5nYV2m1aoDcHtYlK8mD.jpg",
-        alt: " Water Well ",
+		buttonData: "Donate Now",
+		title: "Water Well",
+		link: "https://icharms.alwahabfoundation.org/storage/program/eJSEZYRaZYqsZjYygSWhl5nYV2m1aoDcHtYlK8mD.jpg",
+		alt: " Water Well ",
 	},
 	{
 		src: "https://icharms.alwahabfoundation.org/storage/program/lBBv8zeSeTZJQATAxsJvgXEjKCFBIoRh5ab2fNW9.jpg",
-        buttonData: "Donate Now",
-        title: " Riskshaw",
-        link: "https://icharms.alwahabfoundation.org/storage/program/eJSEZYRaZYqsZjYygSWhl5nYV2m1aoDcHtYlK8mD.jpg",
-        alt: " Riskshaw ",
+		buttonData: "Donate Now",
+		title: " Riskshaw",
+		link: "https://icharms.alwahabfoundation.org/storage/program/eJSEZYRaZYqsZjYygSWhl5nYV2m1aoDcHtYlK8mD.jpg",
+		alt: " Riskshaw ",
 	},
 	{
 		src: "https://icharms.alwahabfoundation.org/storage/program/qdYFTqD1TDap2M4SMuqcNHPZx4k7aR50ASGem5Zw.jpg",
-        buttonData: "Donate Now",
-        title: "Sewing Machine ",
-        link: "https://icharms.alwahabfoundation.org/storage/program/qdYFTqD1TDap2M4SMuqcNHPZx4k7aR50ASGem5Zw.jpg",
-        alt: "Sewing Machine",
+		buttonData: "Donate Now",
+		title: "Sewing Machine ",
+		link: "https://icharms.alwahabfoundation.org/storage/program/qdYFTqD1TDap2M4SMuqcNHPZx4k7aR50ASGem5Zw.jpg",
+		alt: "Sewing Machine",
 	},
 	{
 		src: "https://icharms.alwahabfoundation.org/storage/program/E1f5Gyd4MIUANNg8Pvfdr0ITe69b4eBHAcLM1Wt4.jpg",
-        buttonData: "Donate Now",
-        title: "Eye Camp",
-        link: "https://icharms.alwahabfoundation.org/storage/program/E1f5Gyd4MIUANNg8Pvfdr0ITe69b4eBHAcLM1Wt4.jpg",
-        alt: "Eye Camp",
+		buttonData: "Donate Now",
+		title: "Eye Camp",
+		link: "https://icharms.alwahabfoundation.org/storage/program/E1f5Gyd4MIUANNg8Pvfdr0ITe69b4eBHAcLM1Wt4.jpg",
+		alt: "Eye Camp",
 	},
 	{
 		src: "https://icharms.alwahabfoundation.org/storage/program/ctw0fhWZ2O0k8bYgJOzd5GfUgHNTmhWkQn3HHNGk.jpg",
-        buttonData: "Donate Now",
-        title: "Eye Surgery",
-        link: "https://icharms.alwahabfoundation.org/storage/program/ctw0fhWZ2O0k8bYgJOzd5GfUgHNTmhWkQn3HHNGk.jpg",
-        alt: "Eye Surgery",
+		buttonData: "Donate Now",
+		title: "Eye Surgery",
+		link: "https://icharms.alwahabfoundation.org/storage/program/ctw0fhWZ2O0k8bYgJOzd5GfUgHNTmhWkQn3HHNGk.jpg",
+		alt: "Eye Surgery",
 	},
 	{
 		src: "https://icharms.alwahabfoundation.org/storage/program_rate/vL1BkFdQmC9ru0F9CyKpyAzQQPidKLZSg3RtsOU2.jpg",
-        buttonData: "Donate Now",
-        title: "Food Pack",
-        link: "https://icharms.alwahabfoundation.org/storage/program_rate/vL1BkFdQmC9ru0F9CyKpyAzQQPidKLZSg3RtsOU2.jpg",
-        alt: "Food Pack",
+		buttonData: "Donate Now",
+		title: "Food Pack",
+		link: "https://icharms.alwahabfoundation.org/storage/program_rate/vL1BkFdQmC9ru0F9CyKpyAzQQPidKLZSg3RtsOU2.jpg",
+		alt: "Food Pack",
 	},
 	{
 		src: "https://icharms.alwahabfoundation.org/storage/program_rate/fLp6DBCdbq80EYbuq0PaioBt0NMiNNB93AaXnYhY.jpg",
-        buttonData: "Donate Now",
-        title: "Cooked Food",
-        link: "https://icharms.alwahabfoundation.org/storage/program_rate/fLp6DBCdbq80EYbuq0PaioBt0NMiNNB93AaXnYhY.jpg",
-        alt: "Cooked Food",
+		buttonData: "Donate Now",
+		title: "Cooked Food",
+		link: "https://icharms.alwahabfoundation.org/storage/program_rate/fLp6DBCdbq80EYbuq0PaioBt0NMiNNB93AaXnYhY.jpg",
+		alt: "Cooked Food",
 	},
 	{
 		src: "https://icharms.alwahabfoundation.org/storage/program/7HSdTR6tt4KRncdncQ5MFH6lxSZzbqgQuFMQVD4y.jpg",
-        buttonData: "Donate Now",
-        title: "Support A Maktab Monthly",
-        link: "https://icharms.alwahabfoundation.org/storage/program/7HSdTR6tt4KRncdncQ5MFH6lxSZzbqgQuFMQVD4y.jpg",
-        alt: "Support A Maktab Monthly ",
+		buttonData: "Donate Now",
+		title: "Support A Maktab Monthly",
+		link: "https://icharms.alwahabfoundation.org/storage/program/7HSdTR6tt4KRncdncQ5MFH6lxSZzbqgQuFMQVD4y.jpg",
+		alt: "Support A Maktab Monthly ",
 	},
 	{
 		src: "https://icharms.alwahabfoundation.org/storage/program_rate/aGsVJEJPa9QxRk4r47jUFgrraO6r9xRs5flDlawq.jpg",
-        buttonData: "Donate Now",
-        title: "Build A Masjid",
-        link: "https://icharms.alwahabfoundation.org/storage/program_rate/aGsVJEJPa9QxRk4r47jUFgrraO6r9xRs5flDlawq.jpg",
-        alt: "Build A Masjid",
+		buttonData: "Donate Now",
+		title: "Build A Masjid",
+		link: "https://icharms.alwahabfoundation.org/storage/program_rate/aGsVJEJPa9QxRk4r47jUFgrraO6r9xRs5flDlawq.jpg",
+		alt: "Build A Masjid",
 	},
 	{
 		src: "https://icharms.alwahabfoundation.org/storage/program_rate/o5Fbf3CpTST0JwisB7WDs1HBj4gtQlt0AvLOuumQ.jpg",
-        buttonData: "Donate Now",
-        title: "Musallah",
-        link: "https://icharms.alwahabfoundation.org/storage/program_rate/o5Fbf3CpTST0JwisB7WDs1HBj4gtQlt0AvLOuumQ.jpg",
-        alt: "Musallah",
+		buttonData: "Donate Now",
+		title: "Musallah",
+		link: "https://icharms.alwahabfoundation.org/storage/program_rate/o5Fbf3CpTST0JwisB7WDs1HBj4gtQlt0AvLOuumQ.jpg",
+		alt: "Musallah",
 	},
 	{
 		src: "https://icharms.alwahabfoundation.org/storage/program/P3T55aPnYAeRz682q1niNZGch5LxLtDQyNWdlG8K.jpg",
-        buttonData: "Donate Now",
-        title: "Sadaqah",
-        link: "https://icharms.alwahabfoundation.org/storage/program/P3T55aPnYAeRz682q1niNZGch5LxLtDQyNWdlG8K.jpg",
-        alt: "Sadaqah",
+		buttonData: "Donate Now",
+		title: "Sadaqah",
+		link: "https://icharms.alwahabfoundation.org/storage/program/P3T55aPnYAeRz682q1niNZGch5LxLtDQyNWdlG8K.jpg",
+		alt: "Sadaqah",
 	},
 	{
 		src: "https://icharms.alwahabfoundation.org/storage/program/PLEHSlkkZSN0dSbtwkqloOlMu7Mc6y5TwU2mSGUN.jpg",
-        buttonData: "Donate Now",
-        title: "Zakat",
-        link: "https://icharms.alwahabfoundation.org/storage/program/PLEHSlkkZSN0dSbtwkqloOlMu7Mc6y5TwU2mSGUN.jpg",
-        alt: "Zakat",
-	}
+		buttonData: "Donate Now",
+		title: "Zakat",
+		link: "https://icharms.alwahabfoundation.org/storage/program/PLEHSlkkZSN0dSbtwkqloOlMu7Mc6y5TwU2mSGUN.jpg",
+		alt: "Zakat",
+	},
+];
 
-]
-
-const OtherProject =[
+const OtherProject = [
 	{
 		title: "Birmingham Charity Dinner 2024: Celebrating 10 Years of Al-Wahab Foundation ",
-		description : "Al-Wahab Foundation’s 10-years celebration Charity Dinner at Crystal Plaza, Birmingham turns into a remarkable success with the participation of our... ",
-        src: "https://alwahabfoundation.org/wp-content/uploads/2024/11/awf-birmingham-event-charity-dinner-1024x684.jpg.webp",
+		description:
+			"Al-Wahab Foundation’s 10-years celebration Charity Dinner at Crystal Plaza, Birmingham turns into a remarkable success with the participation of our... ",
+		src: "https://alwahabfoundation.org/wp-content/uploads/2024/11/awf-birmingham-event-charity-dinner-1024x684.jpg.webp",
 	},
 	{
 		title: "The Benefits & Rewards of Building a Masjid – Sadaqah Jariyah ",
-		description : "Building a masjid is one of the greatest deeds and a Sadaqah Jariyah i.e. an ongoing charity. The benefits of... 	",
-        src: "https://alwahabfoundation.org/wp-content/uploads/2024/11/masjids-awf-collage-1024x683.jpg.webp",
+		description:
+			"Building a masjid is one of the greatest deeds and a Sadaqah Jariyah i.e. an ongoing charity. The benefits of... 	",
+		src: "https://alwahabfoundation.org/wp-content/uploads/2024/11/masjids-awf-collage-1024x683.jpg.webp",
 	},
 	{
 		title: "Mufti Abdul Wahab’s Pakistan Relief Trip For Al-Wahab Foundation – An Overview! ",
-		description : "Like every year, Chairman Al-Wahab Foundation, Mufti Abdul Wahab recently embarked on a journey to provide relief and hope in ",
-        src: "https://alwahabfoundation.org/wp-content/uploads/2024/11/pakistan-relief-trip-mufti-abdul-wahab-1024x683.jpg.webp",
+		description:
+			"Like every year, Chairman Al-Wahab Foundation, Mufti Abdul Wahab recently embarked on a journey to provide relief and hope in ",
+		src: "https://alwahabfoundation.org/wp-content/uploads/2024/11/pakistan-relief-trip-mufti-abdul-wahab-1024x683.jpg.webp",
 	},
 	{
 		title: "Provide Essential Winter Survival Kits to Help the Needy in the UK ",
-		description : "Every year, winter season brings various challenges for many people living around the world. As temperatures plumet, countless people are... ",
-        src: "https://alwahabfoundation.org/wp-content/uploads/2024/11/winter-survival-kits-awf-afghanistan-1024x683.jpg.webp",
+		description:
+			"Every year, winter season brings various challenges for many people living around the world. As temperatures plumet, countless people are... ",
+		src: "https://alwahabfoundation.org/wp-content/uploads/2024/11/winter-survival-kits-awf-afghanistan-1024x683.jpg.webp",
 	},
 	{
 		title: "Al-Wahab Foundation’s Impactful Presence at the Global Peace & Unity Festival 2024 ",
-		description : "The most anticipated Global Peace and Unity Festival returned to London on the 19th and 20th of October, 2024 at...",
-        src: "https://alwahabfoundation.org/wp-content/uploads/2024/10/gpu-festival-2024-awf-1024x658.jpg.webp",
+		description:
+			"The most anticipated Global Peace and Unity Festival returned to London on the 19th and 20th of October, 2024 at...",
+		src: "https://alwahabfoundation.org/wp-content/uploads/2024/10/gpu-festival-2024-awf-1024x658.jpg.webp",
 	},
 	{
 		title: "Celebrating Al-Wahab Foundation’s 10-Years – Manchester Charity Dinner Highlights! ",
-		description : "Al-Wahab Foundation’s 10-years celebration Charity Dinner at Manzil Banqueting Hall, Manchester marks its success with an overwhelming response from esteemed..",
-        src: "https://alwahabfoundation.org/wp-content/uploads/2024/10/AWF-Manchester-Event-1024x658.jpg.webp",
+		description:
+			"Al-Wahab Foundation’s 10-years celebration Charity Dinner at Manzil Banqueting Hall, Manchester marks its success with an overwhelming response from esteemed..",
+		src: "https://alwahabfoundation.org/wp-content/uploads/2024/10/AWF-Manchester-Event-1024x658.jpg.webp",
 	},
 	{
 		title: "Al-Wahab Foundation’s London Charity Dinner – Highlights from 10-Years Celebration! ",
-		description : "The most anticipated Global Peace and Unity Festival returned to London on the 19th and 20th of October, 2024 at",
-        src: "https://alwahabfoundation.org/wp-content/uploads/2024/09/Al-Wahab-Foundation-10-Years-Celebration-1024x384.jpg.webp",
+		description:
+			"The most anticipated Global Peace and Unity Festival returned to London on the 19th and 20th of October, 2024 at",
+		src: "https://alwahabfoundation.org/wp-content/uploads/2024/09/Al-Wahab-Foundation-10-Years-Celebration-1024x384.jpg.webp",
 	},
 	{
 		title: "What is Serving Humanity and Why is it Important?",
-		description : "The term ‘Serving humanity’ is commonly used by the members of a society but less understood when it comes to... ",
-        src: "https://alwahabfoundation.org/wp-content/uploads/2024/09/crescent-moon-is-visible-mosque-Medium-1024x683.jpg.webp",
+		description:
+			"The term ‘Serving humanity’ is commonly used by the members of a society but less understood when it comes to... ",
+		src: "https://alwahabfoundation.org/wp-content/uploads/2024/09/crescent-moon-is-visible-mosque-Medium-1024x683.jpg.webp",
 	},
 	{
 		title: "The Month of Rabi-ul-Awwal: Understanding The Significance of Reflection, Gratitude, and Charity ",
-		description : "The month of Rabi ul Awwal is a significant month in Islam, marking the birth of Prophet Muhammad (S.A.W.), celebrated ",
-        src: "https://alwahabfoundation.org/wp-content/uploads/2024/09/3L5A4727-Medium-1024x683.jpg.webp",
+		description:
+			"The month of Rabi ul Awwal is a significant month in Islam, marking the birth of Prophet Muhammad (S.A.W.), celebrated ",
+		src: "https://alwahabfoundation.org/wp-content/uploads/2024/09/3L5A4727-Medium-1024x683.jpg.webp",
 	},
 	{
 		title: "Acts of Sadaqah Jariyah: A Charity That Keeps on Giving ",
-		description : "In Islam, charity is the cornerstone of the faith, deeply embedded in the teachings of Quran and Sunnah. Among the... ",
-        src: "https://alwahabfoundation.org/wp-content/uploads/2024/09/3L5A4727-Medium-1024x683.jpg.webp",
+		description:
+			"In Islam, charity is the cornerstone of the faith, deeply embedded in the teachings of Quran and Sunnah. Among the... ",
+		src: "https://alwahabfoundation.org/wp-content/uploads/2024/09/3L5A4727-Medium-1024x683.jpg.webp",
 	},
 	{
 		title: "What is Serving Humanity and Why is it Important?",
-		description : "The term ‘Serving humanity’ is commonly used by the members of a society but less understood when it comes to...",
-        src: "https://alwahabfoundation.org/wp-content/uploads/2024/10/food-distribution-uk-1024x609.jpg.webp",
+		description:
+			"The term ‘Serving humanity’ is commonly used by the members of a society but less understood when it comes to...",
+		src: "https://alwahabfoundation.org/wp-content/uploads/2024/10/food-distribution-uk-1024x609.jpg.webp",
 	},
-]
+];
 ---
+
 <Layout>
 	<div class="relative w-full h-56 md:min-h-screen hidden md:block">
 		<!-- Title -->
-		<div class="absolute top-[400px] left-1/2 transform -translate-x-1/2 text-center z-10">
-			<h1 class="text-xl md:text-5xl font-bold text-white uppercase drop-shadow-md">
+		<div
+			class="absolute top-[400px] left-1/2 transform -translate-x-1/2 text-center z-10"
+		>
+			<h1
+				class="text-xl md:text-5xl font-bold text-white uppercase drop-shadow-md"
+			>
 				KEEPING HOPES ALIVE
 			</h1>
 		</div>
 
 		<!-- Carousel -->
-		<div id="default-carousel" class="relative w-full z-[-10]" data-carousel="slide">
+		<div
+			id="default-carousel"
+			class="relative w-full z-[-10]"
+			data-carousel="slide"
+		>
 			<!-- Carousel wrapper -->
-			<div class="relative h-56 overflow-hidden md:min-h-screen"	>
+			<div class="relative h-56 overflow-hidden md:min-h-screen">
 				<!-- Item 1 -->
-				<div class="absolute duration-1000 ease-in-out " data-carousel-item>
+				<div
+					class="absolute duration-1000 ease-in-out"
+					data-carousel-item
+				>
 					<div class="relative">
 						<img
 							src="/assets/images/website-banner-UK-winter-1.jpg "
@@ -197,7 +219,7 @@ const OtherProject =[
 				</div>
 				<!-- Item 2 -->
 				<div
-					class="hidden duration-1000 ease-in-out "
+					class="hidden duration-1000 ease-in-out"
 					data-carousel-item
 				>
 					<div class="relative">
@@ -407,42 +429,69 @@ const OtherProject =[
 	</div>
 
 	<div class="-mt-28">
-	  <UmmahCharity />
-    </div>
-<!-- ++++++++++++++++++++++++++++ Bring Hope to Rohingya Refugees  ++++++++++++++++++++++++++++++++ -->
+		<UmmahCharity />
+	</div>
+	<!-- ++++++++++++++++++++++++++++ Bring Hope to Rohingya Refugees  ++++++++++++++++++++++++++++++++ -->
 
-
-<div class="container mt-16 px-4 sm:px-0">
-    <div class="flex flex-col md:flex-row items-center justify-center ">
-        <!-- Left Section with Image and Text -->
-        <div class="relative felx justify-center  md:ml-16 ">
-            <img class="h-[680px] md:h-[680px] w-[800px] object-cover rounded-md" src="https://alwahabfoundation.org/wp-content/uploads/2024/08/IMG-20240629-WA0150.jpg" alt="Random image">
-            <div class="absolute inset-0 bg-[#740B2E] opacity-75 rounded-md"></div>
-            <div class="absolute inset-0 p-4 sm:p-6 md:p-8 flex flex-col justify-center md:ml-11">
-                <p class="text-[#c9945a] sm:text-3xl md:text-3xl font-bold italic text-left">Bring Hope to Rohingya Refugees</p>
-                <p class="mt-6 text-white  sm:text-xs md:text-lg text-left ">
-                    In August 2017, the people of Rohingya confronted brutal genocide in Myanmar,
-                    leaving them displaced and devastated. Hundreds and thousands were reported dead,
-                    while many began to flee to Bangladesh in a traumatic state.
-                </p>
-                <p class="text-white mt-4 sm:text-xs md:text-lg text-left">
-                    As of now, after the Rohingya crisis, there are approximately over 1 million refugees
-                    who are managing their survival in the highly populated Cox’s Bazar, recorded as
-                    the largest refugee camp in the world. To alleviate their suffering, Al-Wahab
-                    Foundation is on the ground to provide sustenance for better survival through
-                    the Rohingya Emergency Appeal.
-                </p>
-                <button class="text-[#740B2E] bg-white mt-3 font-bold sm:mt-4 md:mt-6 rounded-full px-6 py-3 flex justify-center items-center mx-auto sm:mx-0 hover:bg-[#c9945a] hover:text-white duration-300">
-                    DONATE NOW
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                         class="lucide lucide-move-right ml-2 hover:bg-[#c9945a] hover:text-white duration-300 mt-1">
-                        <path d="M18 8L22 12L18 16"/>
-                        <path d="M2 12H22"/>
-                    </svg>
-                </button>
-            </div>
-        </div>
+	<div class="container mt-16 px-4 sm:px-0">
+		<div class="flex flex-col md:flex-row items-center justify-center">
+			<!-- Left Section with Image and Text -->
+			<div class="relative felx justify-center md:ml-16">
+				<img
+					class="h-[680px] md:h-[680px] w-[800px] object-cover rounded-md"
+					src="https://alwahabfoundation.org/wp-content/uploads/2024/08/IMG-20240629-WA0150.jpg"
+					alt="Random image"
+				/>
+				<div
+					class="absolute inset-0 bg-[#740B2E] opacity-75 rounded-md"
+				>
+				</div>
+				<div
+					class="absolute inset-0 p-4 sm:p-6 md:p-8 flex flex-col justify-center md:ml-11"
+				>
+					<p
+						class="text-[#c9945a] sm:text-3xl md:text-3xl font-bold italic text-left"
+					>
+						Bring Hope to Rohingya Refugees
+					</p>
+					<p class="mt-6 text-white sm:text-xs md:text-lg text-left">
+						In August 2017, the people of Rohingya confronted brutal
+						genocide in Myanmar, leaving them displaced and
+						devastated. Hundreds and thousands were reported dead,
+						while many began to flee to Bangladesh in a traumatic
+						state.
+					</p>
+					<p class="text-white mt-4 sm:text-xs md:text-lg text-left">
+						As of now, after the Rohingya crisis, there are
+						approximately over 1 million refugees who are managing
+						their survival in the highly populated Cox’s Bazar,
+						recorded as the largest refugee camp in the world. To
+						alleviate their suffering, Al-Wahab Foundation is on the
+						ground to provide sustenance for better survival through
+						the Rohingya Emergency Appeal.
+					</p>
+					<button
+						class="text-[#740B2E] bg-white mt-3 font-bold sm:mt-4 md:mt-6 rounded-full px-6 py-3 flex justify-center items-center mx-auto sm:mx-0 hover:bg-[#c9945a] hover:text-white duration-300"
+					>
+						DONATE NOW
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							class="lucide lucide-move-right ml-2 hover:bg-[#c9945a] hover:text-white duration-300 mt-1"
+						>
+							<path d="M18 8L22 12L18 16"></path>
+							<path d="M2 12H22"></path>
+						</svg>
+					</button>
+				</div>
+			</div>
 
 			<!-- Right Section with Image -->
 			<div
@@ -509,543 +558,956 @@ const OtherProject =[
 
 	<!-- ++++++++++++++++++    AWF Appeals   ++++++++++++++++++++++++++++ -->
 
-  <div class="container mx-auto p-5 ">
-	<!-- Title -->
-	<div class="text-center mb-10">
-	  <p class="text-[#740B2E] font-bold text-4xl">AWF Appeals</p>
-	</div>
-  
-	<!-- Card Grid -->
-	<div class="flex items-center justify-center">
-	<div class="grid grid-cols-1  md:grid-cols-3 gap-6 ">
-	
-	  <!-- Card 1 -->
-	  <div class="w-full md:w-[350px] bg-white  rounded-3xl shadow-lg shadow-grey overflow-hidden relative ">
-		<a href="#">
-		  <img class="rounded-3xl w-full md:w-[350px] object-cover h-auto inset-0" src="https://icharms.alwahabfoundation.org/storage/program/PLEHSlkkZSN0dSbtwkqloOlMu7Mc6y5TwU2mSGUN.jpg" alt="Card image" />
-		</a>
-		<div class="absolute inset-0 flex items-center justify-center">
-			<button class="inset-0 absolute bg-white text-black text-base inline-flex hover:bg-[#c9945a] hover:text-white duration-300 items-center justify-center font-semibold w-44 top-60 left-20 h-8 rounded-md shadow-md">
-				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-				     viewBox="0 0 24 24" fill="none" stroke="currentColor" 
-					 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
-					 class="lucide lucide-earth mr-2">
-					 <path d="M21.54 15H17a2 2 0 0 0-2 2v4.54"/>
-					 <path d="M7 3.34V5a3 3 0 0 0 3 3a2 2 0 0 1 2 2c0 1.1.9 2 2 2a2 2 0 0 0 2-2c0-1.1.9-2 2-2h3.17"/>
-					<path d="M11 21.95V18a2 2 0 0 0-2-2a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05"/>
-					<circle cx="12" cy="12" r="10"/>
-				</svg> 
-				PAKISTAN
-			</button>
-		  </div>
-		<div class="py-4">
-		  <a class=" flex justify-center " href="#">
-			<h5 class="text-lg md:text-xl font-semibold tracking-tight text-black text-center my-2">Zakat</h5>
-		  </a>
-		  <p class=" my-2 text-lg text-black flex items-center justify-center font-bold md:text-2xl">
-			£ ANY AMOUNT			
-		  </p>
-		  <p class="flex items-center justify-center py-4 relative">
-		    <a href="#" class="px-6 py-3 items-center inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
-				DONATE NOW
-			  <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10" stroke="currentColor" stroke-width="2">
-			     <path d="M1 5h12m0 0L9 1m4 4L9 9" />
-			  </svg>
-		    </a>
-		  </p>
+	<div class="container mx-auto p-5">
+		<!-- Title -->
+		<div class="text-center mb-10">
+			<p class="text-[#740B2E] font-bold text-4xl">AWF Appeals</p>
 		</div>
-	  </div>
-  
-	  <!-- Card 2 -->
-	  <div class="w-full md:w-[350px] bg-white  rounded-3xl shadow-lg shadow-grey overflow-hidden relative ">
-		<a href="#">
-		  <img class="rounded-3xl w-full md:w-[350px] object-cover h-auto inset-0" src="https://icharms.alwahabfoundation.org/storage/program/5KCTOoyC6NyoDKd4uXZwpXt7BF24ap21ofVSrmhV.jpg" alt="Card image" />
-		</a>
-		<div class="absolute inset-0 flex items-center justify-center">
-			<button class="inset-0 absolute bg-white text-black text-base inline-flex hover:bg-[#c9945a] hover:text-white duration-300 items-center justify-center font-semibold w-44 top-60 left-20 h-8 rounded-md shadow-md">
-				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-				     viewBox="0 0 24 24" fill="none" stroke="currentColor" 
-					 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
-					 class="lucide lucide-earth mr-2">
-					 <path d="M21.54 15H17a2 2 0 0 0-2 2v4.54"/>
-					 <path d="M7 3.34V5a3 3 0 0 0 3 3a2 2 0 0 1 2 2c0 1.1.9 2 2 2a2 2 0 0 0 2-2c0-1.1.9-2 2-2h3.17"/>
-					<path d="M11 21.95V18a2 2 0 0 0-2-2a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05"/>
-					<circle cx="12" cy="12" r="10"/>
-				</svg> 
-				PAKISTAN
-			</button>
-		  </div>
-		<div class="py-4">
-		  <a class=" flex justify-center " href="#">
-			<h5 class="my-2 text-lg md:text-xl font-semibold tracking-tight text-black text-center">Rozgar</h5>
-		  </a>
-		  <p class="my-2  text-black flex items-center justify-center font-bold text-xl md:text-2xl">
-			£ ANY AMOUNT			
-		  </p>
-		  <p class="flex items-center justify-center py-4 relative">
-		    <a href="#" class="px-6 py-3 items-center inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
-				DONATE NOW
-			  <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10" stroke="currentColor" stroke-width="2">
-			     <path d="M1 5h12m0 0L9 1m4 4L9 9" />
-			  </svg>
-		    </a>
-		  </p>
+
+		<!-- Card Grid -->
+		<div class="flex items-center justify-center">
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+				<!-- Card 1 -->
+				<div
+					class="w-full md:w-[350px] bg-white rounded-3xl shadow-lg shadow-grey overflow-hidden relative"
+				>
+					<a href="#">
+						<img
+							class="rounded-3xl w-full md:w-[350px] object-cover h-auto inset-0"
+							src="https://icharms.alwahabfoundation.org/storage/program/PLEHSlkkZSN0dSbtwkqloOlMu7Mc6y5TwU2mSGUN.jpg"
+							alt="Card image"
+						/>
+					</a>
+					<div
+						class="absolute inset-0 flex items-center justify-center"
+					>
+						<button
+							class="inset-0 absolute bg-white text-black text-base inline-flex hover:bg-[#c9945a] hover:text-white duration-300 items-center justify-center font-semibold w-44 top-60 left-20 h-8 rounded-md shadow-md"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								class="lucide lucide-earth mr-2"
+							>
+								<path d="M21.54 15H17a2 2 0 0 0-2 2v4.54"
+								></path>
+								<path
+									d="M7 3.34V5a3 3 0 0 0 3 3a2 2 0 0 1 2 2c0 1.1.9 2 2 2a2 2 0 0 0 2-2c0-1.1.9-2 2-2h3.17"
+								></path>
+								<path
+									d="M11 21.95V18a2 2 0 0 0-2-2a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05"
+								></path>
+								<circle cx="12" cy="12" r="10"></circle>
+							</svg>
+							PAKISTAN
+						</button>
+					</div>
+					<div class="py-4">
+						<a class="flex justify-center" href="#">
+							<h5
+								class="text-lg md:text-xl font-semibold tracking-tight text-black text-center my-2"
+							>
+								Zakat
+							</h5>
+						</a>
+						<p
+							class="my-2 text-lg text-black flex items-center justify-center font-bold md:text-2xl"
+						>
+							£ ANY AMOUNT
+						</p>
+						<p
+							class="flex items-center justify-center py-4 relative"
+						>
+							<a
+								href="#"
+								class="px-6 py-3 items-center inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300"
+							>
+								DONATE NOW
+								<svg
+									class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 14 10"
+									stroke="currentColor"
+									stroke-width="2"
+								>
+									<path d="M1 5h12m0 0L9 1m4 4L9 9"></path>
+								</svg>
+							</a>
+						</p>
+					</div>
+				</div>
+
+				<!-- Card 2 -->
+				<div
+					class="w-full md:w-[350px] bg-white rounded-3xl shadow-lg shadow-grey overflow-hidden relative"
+				>
+					<a href="#">
+						<img
+							class="rounded-3xl w-full md:w-[350px] object-cover h-auto inset-0"
+							src="https://icharms.alwahabfoundation.org/storage/program/5KCTOoyC6NyoDKd4uXZwpXt7BF24ap21ofVSrmhV.jpg"
+							alt="Card image"
+						/>
+					</a>
+					<div
+						class="absolute inset-0 flex items-center justify-center"
+					>
+						<button
+							class="inset-0 absolute bg-white text-black text-base inline-flex hover:bg-[#c9945a] hover:text-white duration-300 items-center justify-center font-semibold w-44 top-60 left-20 h-8 rounded-md shadow-md"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								class="lucide lucide-earth mr-2"
+							>
+								<path d="M21.54 15H17a2 2 0 0 0-2 2v4.54"
+								></path>
+								<path
+									d="M7 3.34V5a3 3 0 0 0 3 3a2 2 0 0 1 2 2c0 1.1.9 2 2 2a2 2 0 0 0 2-2c0-1.1.9-2 2-2h3.17"
+								></path>
+								<path
+									d="M11 21.95V18a2 2 0 0 0-2-2a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05"
+								></path>
+								<circle cx="12" cy="12" r="10"></circle>
+							</svg>
+							PAKISTAN
+						</button>
+					</div>
+					<div class="py-4">
+						<a class="flex justify-center" href="#">
+							<h5
+								class="my-2 text-lg md:text-xl font-semibold tracking-tight text-black text-center"
+							>
+								Rozgar
+							</h5>
+						</a>
+						<p
+							class="my-2 text-black flex items-center justify-center font-bold text-xl md:text-2xl"
+						>
+							£ ANY AMOUNT
+						</p>
+						<p
+							class="flex items-center justify-center py-4 relative"
+						>
+							<a
+								href="#"
+								class="px-6 py-3 items-center inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300"
+							>
+								DONATE NOW
+								<svg
+									class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 14 10"
+									stroke="currentColor"
+									stroke-width="2"
+								>
+									<path d="M1 5h12m0 0L9 1m4 4L9 9"></path>
+								</svg>
+							</a>
+						</p>
+					</div>
+				</div>
+				<!-- Card 3 -->
+				<div
+					class="w-full md:w-[350px] bg-white rounded-3xl shadow-lg shadow-grey overflow-hidden relative"
+				>
+					<a class="flex justify-center" href="#">
+						<img
+							class="rounded-3xl w-full md:w-[350px] object-cover h-auto inset-0"
+							src="https://icharms.alwahabfoundation.org/storage/program_rate/5PwWI2AVBNjUn7dIHYanPzyqMmPoabJ673tBvpvM.jpg"
+							alt="Card image"
+						/>
+					</a>
+					<div
+						class="absolute inset-0 flex items-center justify-center"
+					>
+						<button
+							class="inset-0 absolute bg-white text-black hover:bg-[#c9945a] hover:text-white duration-300 text-base inline-flex items-center justify-center font-semibold w-44 top-60 left-20 h-8 rounded-md shadow-md"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								class="lucide lucide-earth mr-2"
+							>
+								<path d="M21.54 15H17a2 2 0 0 0-2 2v4.54"
+								></path>
+								<path
+									d="M7 3.34V5a3 3 0 0 0 3 3a2 2 0 0 1 2 2c0 1.1.9 2 2 2a2 2 0 0 0 2-2c0-1.1.9-2 2-2h3.17"
+								></path>
+								<path
+									d="M11 21.95V18a2 2 0 0 0-2-2a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05"
+								></path>
+								<circle cx="12" cy="12" r="10"></circle>
+							</svg>
+							PAKISTAN
+						</button>
+					</div>
+					<div class="py-4">
+						<a class="flex justify-center" href="#">
+							<h5
+								class="my-2 text-lg md:text-xl font-semibold tracking-tight text-black text-center mt-2"
+							>
+								Build A Masjid
+							</h5>
+						</a>
+						<p
+							class="my-2 text-black flex items-center justify-center font-bold text-xl md:text-2xl"
+						>
+							£ 7000.00
+						</p>
+						<p
+							class="flex items-center justify-center py-4 relative"
+						>
+							<a
+								href="#"
+								class="px-6 py-3 items-center inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300"
+							>
+								DONATE NOW
+								<svg
+									class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 14 10"
+									stroke="currentColor"
+									stroke-width="2"
+								>
+									<path d="M1 5h12m0 0L9 1m4 4L9 9"></path>
+								</svg>
+							</a>
+						</p>
+					</div>
+				</div>
+
+				<!-- Repeat Cards for Row 2 -->
+				<div
+					class="w-full md:w-[350px] bg-white rounded-3xl shadow-lg shadow-grey overflow-hidden relative"
+				>
+					<a class="flex justify-center" href="#">
+						<img
+							class="rounded-3xl w-full md:w-[350px] object-cover h-auto inset-0"
+							src="https://icharms.alwahabfoundation.org/storage/program/ctw0fhWZ2O0k8bYgJOzd5GfUgHNTmhWkQn3HHNGk.jpg"
+							alt="Card image"
+						/>
+					</a>
+					<div
+						class="absolute inset-0 flex items-center justify-center"
+					>
+						<button
+							class="inset-0 absolute bg-white text-black hover:bg-[#c9945a] hover:text-white duration-300 text-base inline-flex items-center justify-center font-semibold w-44 top-60 left-20 h-8 rounded-md shadow-md"
+						>
+							PAKISTAN
+						</button>
+					</div>
+					<div class="py-4">
+						<a class="flex justify-center" href="#">
+							<h5
+								class="my-2 text-lg md:text-xl font-bold tracking-tight text-black text-center"
+							>
+								Rozgar
+							</h5>
+						</a>
+						<p
+							class="my-2 text-black flex items-center justify-center font-bold text-xl md:text-2xl"
+						>
+							£ 75.00
+						</p>
+						<p
+							class="flex items-center justify-center py-4 relative"
+						>
+							<a
+								href="#"
+								class="px-6 py-3 items-center inline-flex md:text-base font-bold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300"
+							>
+								DONATE NOW
+								<svg
+									class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 14 10"
+									stroke="currentColor"
+									stroke-width="2"
+								>
+									<path d="M1 5h12m0 0L9 1m4 4L9 9"></path>
+								</svg>
+							</a>
+						</p>
+					</div>
+				</div>
+
+				<div
+					class="w-full md:w-[350px] bg-white rounded-3xl shadow-lg shadow-grey overflow-hidden relative"
+				>
+					<a class="flex justify-center" href="#">
+						<img
+							class="rounded-3xl w-full md:w-[350px] object-cover h-auto inset-0"
+							src="https://icharms.alwahabfoundation.org/storage/program/qdYFTqD1TDap2M4SMuqcNHPZx4k7aR50ASGem5Zw.jpg"
+							alt="Card image"
+						/>
+					</a>
+					<div
+						class="absolute inset-0 flex items-center justify-center"
+					>
+						<button
+							class="inset-0 absolute bg-white text-black hover:bg-[#c9945a] hover:text-white duration-300 text-base inline-flex items-center justify-center font-semibold w-44 top-60 left-20 h-8 rounded-md shadow-md"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								class="lucide lucide-earth mr-2"
+							>
+								<path d="M21.54 15H17a2 2 0 0 0-2 2v4.54"
+								></path>
+								<path
+									d="M7 3.34V5a3 3 0 0 0 3 3a2 2 0 0 1 2 2c0 1.1.9 2 2 2a2 2 0 0 0 2-2c0-1.1.9-2 2-2h3.17"
+								></path>
+								<path
+									d="M11 21.95V18a2 2 0 0 0-2-2a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05"
+								></path>
+								<circle cx="12" cy="12" r="10"></circle>
+							</svg>
+							PAKISTAN
+						</button>
+					</div>
+					<div class="py-4">
+						<a class="flex justify-center" href="#">
+							<h5
+								class="my-2 text-lg md:text-xl font-bold tracking-tight text-black text-center"
+							>
+								Sewing Machine
+							</h5>
+						</a>
+						<p
+							class="my-2 text-black flex items-center justify-center font-bold text-lg md:text-2xl"
+						>
+							£ 75.00
+						</p>
+						<p
+							class="flex items-center justify-center py-4 relative"
+						>
+							<a
+								href="#"
+								class="px-6 py-3 items-center inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300"
+							>
+								DONATE NOW
+								<svg
+									class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 14 10"
+									stroke="currentColor"
+									stroke-width="2"
+								>
+									<path d="M1 5h12m0 0L9 1m4 4L9 9"></path>
+								</svg>
+							</a>
+						</p>
+					</div>
+				</div>
+
+				<div
+					class="w-full md:w-[350px] bg-white rounded-3xl shadow-lg shadow-grey overflow-hidden relative"
+				>
+					<a class="" href="#">
+						<img
+							class="rounded-3xl w-full md:w-[350px] object-cover h-auto inset-0"
+							src="https://icharms.alwahabfoundation.org/storage/program_rate/IDuREBJ6Qcu1DkFQcin5zk0Q4RbSQ7BMS8MMHGz5.jpg"
+							alt="Card image"
+						/>
+					</a>
+					<div
+						class="absolute inset-0 flex items-center justify-center"
+					>
+						<button
+							class="inset-0 absolute bg-white text-black hover:bg-[#c9945a] hover:text-white duration-300 text-base inline-flex items-center justify-center font-semibold w-44 top-60 left-20 h-8 rounded-md shadow-md"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								class="lucide lucide-earth mr-2"
+							>
+								<path d="M21.54 15H17a2 2 0 0 0-2 2v4.54"
+								></path>
+								<path
+									d="M7 3.34V5a3 3 0 0 0 3 3a2 2 0 0 1 2 2c0 1.1.9 2 2 2a2 2 0 0 0 2-2c0-1.1.9-2 2-2h3.17"
+								></path>
+								<path
+									d="M11 21.95V18a2 2 0 0 0-2-2a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05"
+								></path>
+								<circle cx="12" cy="12" r="10"></circle>
+							</svg>
+							UGANDA
+						</button>
+					</div>
+					<div class="py-4">
+						<a class="flex justify-center" href="#">
+							<h5
+								class="my-2 text-xl font-bold tracking-tight text-black text-center"
+							>
+								Water Well
+							</h5>
+						</a>
+						<p
+							class="my-2 text-black flex items-center justify-center font-bold text-lg md:text-2xl"
+						>
+							£ 2000.00
+						</p>
+						<p
+							class="flex items-center justify-center py-4 relative"
+						>
+							<a
+								href="#"
+								class="px-6 py-3 items-center inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300"
+							>
+								DONATE NOW
+								<svg
+									class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 14 10"
+									stroke="currentColor"
+									stroke-width="2"
+								>
+									<path d="M1 5h12m0 0L9 1m4 4L9 9"></path>
+								</svg>
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>
 		</div>
-	  </div>
-	  <!-- Card 3 -->
-	  <div class="w-full md:w-[350px] bg-white  rounded-3xl shadow-lg shadow-grey overflow-hidden relative">
-		<a class="flex justify-center" href="#">
-		  <img class="rounded-3xl w-full md:w-[350px] object-cover h-auto inset-0" src="https://icharms.alwahabfoundation.org/storage/program_rate/5PwWI2AVBNjUn7dIHYanPzyqMmPoabJ673tBvpvM.jpg" alt="Card image" />
-		</a>
-		<div class="absolute inset-0 flex items-center justify-center">
-			<button class="inset-0 absolute bg-white text-black hover:bg-[#c9945a] hover:text-white duration-300 text-base inline-flex items-center justify-center font-semibold w-44 top-60 left-20 h-8 rounded-md shadow-md">
-				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-				     viewBox="0 0 24 24" fill="none" stroke="currentColor" 
-					 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
-					 class="lucide lucide-earth mr-2">
-					 <path d="M21.54 15H17a2 2 0 0 0-2 2v4.54"/>
-					 <path d="M7 3.34V5a3 3 0 0 0 3 3a2 2 0 0 1 2 2c0 1.1.9 2 2 2a2 2 0 0 0 2-2c0-1.1.9-2 2-2h3.17"/>
-					<path d="M11 21.95V18a2 2 0 0 0-2-2a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05"/>
-					<circle cx="12" cy="12" r="10"/>
-				</svg> 
-				PAKISTAN
-			</button>
-		  </div>
-		  <div class="py-4">
-			<a class=" flex justify-center " href="#">
-			  <h5 class="my-2 text-lg md:text-xl font-semibold tracking-tight text-black text-center mt-2">Build A Masjid</h5>
-			</a>
-			<p class="my-2  text-black flex items-center justify-center font-bold text-xl md:text-2xl">
-			  £ 7000.00			
-			</p>
-			<p class="flex items-center justify-center py-4 relative">
-			  <a href="#" class="px-6 py-3 items-center inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
-				  DONATE NOW
-				<svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10" stroke="currentColor" stroke-width="2">
-				   <path d="M1 5h12m0 0L9 1m4 4L9 9" />
-				</svg>
-			  </a>
-			</p>
-		  </div>
-	  </div>
-  
-	  <!-- Repeat Cards for Row 2 -->
-	  <div class="w-full md:w-[350px] bg-white  rounded-3xl shadow-lg shadow-grey overflow-hidden relative">
-		<a class="flex justify-center" href="#">
-		  <img class="rounded-3xl w-full md:w-[350px] object-cover h-auto inset-0" src="https://icharms.alwahabfoundation.org/storage/program/ctw0fhWZ2O0k8bYgJOzd5GfUgHNTmhWkQn3HHNGk.jpg" alt="Card image" />
-		</a>
-		<div class="absolute inset-0 flex items-center justify-center">
-			<button class="inset-0 absolute bg-white text-black hover:bg-[#c9945a] hover:text-white duration-300 text-base inline-flex items-center justify-center font-semibold w-44 top-60 left-20 h-8 rounded-md shadow-md">
-				
-				PAKISTAN
-			</button>
-		  </div>
-		  <div class="py-4">
-			<a class=" flex justify-center " href="#">
-			  <h5 class="my-2 text-lg md:text-xl font-bold tracking-tight text-black text-center">Rozgar</h5>
-			</a>
-			<p class="my-2  text-black flex items-center justify-center font-bold text-xl md:text-2xl">
-			  £ 75.00			
-			</p>
-			<p class="flex items-center justify-center py-4 relative">
-			  <a href="#" class="px-6 py-3 items-center inline-flex  md:text-base font-bold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
-				  DONATE NOW
-				<svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10" stroke="currentColor" stroke-width="2">
-				   <path d="M1 5h12m0 0L9 1m4 4L9 9" />
-				</svg>
-			  </a>
-			</p>
-		  </div>
-	  </div>
-  
-	  <div class="w-full md:w-[350px]  bg-white rounded-3xl shadow-lg shadow-grey overflow-hidden relative">
-		<a class="flex justify-center" href="#">
-		  <img class="rounded-3xl w-full md:w-[350px] object-cover h-auto inset-0" src="https://icharms.alwahabfoundation.org/storage/program/qdYFTqD1TDap2M4SMuqcNHPZx4k7aR50ASGem5Zw.jpg" alt="Card image" />
-		</a>
-		<div class="absolute inset-0 flex items-center justify-center">
-			<button class="inset-0 absolute bg-white text-black hover:bg-[#c9945a] hover:text-white duration-300 text-base inline-flex items-center justify-center font-semibold w-44 top-60 left-20 h-8 rounded-md shadow-md">
-				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-				     viewBox="0 0 24 24" fill="none" stroke="currentColor" 
-					 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
-					 class="lucide lucide-earth mr-2">
-					 <path d="M21.54 15H17a2 2 0 0 0-2 2v4.54"/>
-					 <path d="M7 3.34V5a3 3 0 0 0 3 3a2 2 0 0 1 2 2c0 1.1.9 2 2 2a2 2 0 0 0 2-2c0-1.1.9-2 2-2h3.17"/>
-					<path d="M11 21.95V18a2 2 0 0 0-2-2a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05"/>
-					<circle cx="12" cy="12" r="10"/>
-				</svg> 
-				PAKISTAN
-			</button>
-		  </div>
-		<div class="py-4">
-		  <a class="flex justify-center" href="#">
-			<h5 class=" my-2 text-lg md:text-xl font-bold tracking-tight text-black text-center">Sewing Machine</h5>
-		  </a>
-		  <p class="my-2 text-black flex items-center justify-center font-bold text-lg  md:text-2xl">
-			£ 75.00
-		  </p>
-		  <p class="flex items-center justify-center py-4 relative">
-		    <a href="#" class="px-6 py-3 items-center inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
-				DONATE NOW
-			  <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10" stroke="currentColor" stroke-width="2">
-			     <path d="M1 5h12m0 0L9 1m4 4L9 9" />
-			  </svg>
-		    </a>
-		  </p>
+	</div>
+
+	<!-- +++++++++++++++++++++++++++++++YOUR SUPPORT CAN TRANSFORM LIVES++++++++++++++++++++++++++++++++ -->
+
+	<div
+		class="relative container my-20 mx-auto max-w-screen-2xl sm:px-6 lg:px-8 h-[900px] md:h-screen bg-cover bg-fixed bg-center bg-no-repeat"
+		style="background-image: url('https://alwahabfoundation.org/wp-content/uploads/2022/07/3L5A6312-Edit.jpg' );"
+	>
+		<!-- Color Overlay -->
+		<div class="absolute inset-0 bg-[#740B2E] opacity-70"></div>
+
+		<!-- Content -->
+		<div
+			class="relative z-10 text-white text-center flex items-center justify-start h-full"
+		>
+			<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full">
+				<!-- Left Column -->
+				<div
+					class="flex flex-col items-center sm:items-center justify-center text-center sm:text-left"
+				>
+					<p
+						class="text-2xl sm:text-3xl lg:text-4xl font-semibold leading-tight"
+					>
+						YOUR SUPPORT <br />
+						<span class="text-3xl">CAN</span>
+						<br />
+						TRANSFORM <br />
+						<span class="text-4xl">LIVES!</span>
+						<br />
+						<button
+							class="mt-6 bg-[#c9945a] hover:bg-white text-[#740B2E] text-white duration-300 px-6 py-2 left-8 inline-flex rounded-lg text-lg font-medium"
+							>SUPPORT NOW</button
+						>
+					</p>
+				</div>
+
+				<!-- Right Column -->
+				<div
+					class="flex flex-col items-center sm:items-start justify-start text-center sm:text-left"
+				>
+					<div class="mt-4 sm:mt-0">
+						<!-- Aligns the right column text with the left -->
+						<p
+							class="text-lg sm:text-xl lg:text-2xl font-medium mb-4"
+						>
+							In Islam, relieving others’ hardships is a
+							fundamental principle. Our founder, Mufti Abdul
+							Wahab, firmly believes that empowering individuals
+							to attain a sustainable income is the most effective
+							way to combat poverty and bring about lasting
+							change.
+						</p>
+						<p class="text-lg sm:text-xl lg:text-2xl font-medium">
+							By contributing to our Rozgar project with your
+							Zakat or Sadaqah donation, you not only help create
+							this income but also give independence and dignity
+							to those in need, breaking the cycle of poverty for
+							generations to come. Your donation today can be the
+							catalyst that transforms their futures. Donate now
+							and make a difference in their lives.
+						</p>
+					</div>
+				</div>
+			</div>
 		</div>
-	  </div>
-	  
-	  <div class="w-full md:w-[350px]  bg-white rounded-3xl shadow-lg shadow-grey overflow-hidden relative">
-		<a class="" href="#">
-		  <img class="rounded-3xl w-full md:w-[350px]  object-cover h-auto inset-0" src="https://icharms.alwahabfoundation.org/storage/program_rate/IDuREBJ6Qcu1DkFQcin5zk0Q4RbSQ7BMS8MMHGz5.jpg" alt="Card image" />
-		</a>
-		<div class="absolute inset-0 flex items-center justify-center">
-			<button class="inset-0 absolute bg-white text-black hover:bg-[#c9945a] hover:text-white duration-300 text-base inline-flex items-center justify-center font-semibold w-44 top-60 left-20 h-8 rounded-md shadow-md">
-				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-				     viewBox="0 0 24 24" fill="none" stroke="currentColor" 
-					 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
-					 class="lucide lucide-earth mr-2">
-					 <path d="M21.54 15H17a2 2 0 0 0-2 2v4.54"/>
-					 <path d="M7 3.34V5a3 3 0 0 0 3 3a2 2 0 0 1 2 2c0 1.1.9 2 2 2a2 2 0 0 0 2-2c0-1.1.9-2 2-2h3.17"/>
-					<path d="M11 21.95V18a2 2 0 0 0-2-2a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05"/>
-					<circle cx="12" cy="12" r="10"/>
-				</svg> 
-				UGANDA
-			</button>
-		  </div>
-		<div class="py-4">
-		  <a class="flex justify-center" href="#">
-			<h5 class="my-2 text-xl font-bold tracking-tight text-black text-center">Water Well</h5>
-		  </a>
-		  <p class="my-2 text-black flex items-center justify-center font-bold text-lg md:text-2xl">
-			£ 2000.00
-		  </p>
-		  <p class="flex items-center justify-center py-4 relative">
-		    <a href="#" class="px-6 py-3 items-center inline-flex sm:text-sm md:text-base font-semibold text-white bg-[#740B2E] rounded-full hover:bg-[#c9945a] duration-300">
-				DONATE NOW
-			  <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10" stroke="currentColor" stroke-width="2">
-			     <path d="M1 5h12m0 0L9 1m4 4L9 9" />
-			  </svg>
-		    </a>
-		  </p>
-		</div>
-	  </div>
 	</div>
-  </div>
-</div>
 
-  
-<!-- +++++++++++++++++++++++++++++++YOUR SUPPORT CAN TRANSFORM LIVES++++++++++++++++++++++++++++++++ -->
+	<div class="container mx-auto px-5">
+		<!-- Card Row -->
+		<div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-5 mt-10">
+			<!-- Card 1 -->
+			<div class="relative">
+				<img
+					class="w-[360px] h-64 object-cover mx-auto top-6 relative rounded-t-md"
+					src="https://alwahabfoundation.org/wp-content/uploads/2022/10/IMG_8942-1.jpg"
+					alt=""
+				/>
+				<p class="bg-[#740B2E] w-full pt-9 pb-4 pr-4 pl-4 text-white">
+					<span class="text-lg font-semibold">GIVE ZAKAT →</span><br
+					/>
+					Under our 100% transparent Zakat policy, we ensure that every
+					single donation reaches the right destination in compliance with
+					Shariah Law!
+				</p>
+			</div>
 
-<div class="relative container my-20 mx-auto max-w-screen-2xl  sm:px-6 lg:px-8 h-[900px] md:h-screen bg-cover bg-fixed bg-center bg-no-repeat" style="background-image: url('https://alwahabfoundation.org/wp-content/uploads/2022/07/3L5A6312-Edit.jpg' );">
-    <!-- Color Overlay -->
-    <div class="absolute inset-0 bg-[#740B2E] opacity-70"></div>
+			<!-- Card 2 -->
+			<div class="relative">
+				<img
+					class="w-[360px] h-64 object-cover mx-auto top-6 relative rounded-t-md"
+					src="https://alwahabfoundation.org/wp-content/uploads/2022/07/3L5A5064-1.jpg"
+					alt=""
+				/>
+				<p
+					class="bg-[#740B2E] w-full pt-9 pb-4 pr-4 pl-4 text-white text-center"
+				>
+					<span class="text-lg font-semibold">GIVE ZAKAT →</span><br
+					/>
+					Under our 100% transparent Zakat policy, we ensure that every
+					single donation reaches the right destination in compliance with
+					Shariah Law!
+				</p>
+			</div>
 
-    <!-- Content -->
-    <div class="relative z-10 text-white text-center flex items-center justify-start h-full">
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full">
-            <!-- Left Column -->
-            <div class="flex flex-col items-center sm:items-center justify-center text-center sm:text-left">
-                <p class="text-2xl sm:text-3xl lg:text-4xl font-semibold leading-tight">
-                    YOUR SUPPORT <br>
-                    <span class="text-3xl">CAN</span> <br>
-                    TRANSFORM <br>
-                    <span class="text-4xl">LIVES!</span> <br/>
-                <button class="mt-6 bg-[#c9945a] hover:bg-white text-[#740B2E] text-white duration-300 px-6 py-2 left-8 inline-flex rounded-lg text-lg font-medium">SUPPORT NOW</button>
-			</p>
-            </div>
-
-            <!-- Right Column -->
-            <div class="flex flex-col items-center sm:items-start justify-start text-center sm:text-left">
-                <div class="mt-4 sm:mt-0"> <!-- Aligns the right column text with the left -->
-                    <p class="text-lg sm:text-xl lg:text-2xl font-medium mb-4">
-                        In Islam, relieving others’ hardships is a fundamental principle. Our founder, Mufti Abdul Wahab, firmly believes that empowering individuals to attain a sustainable income is the most effective way to combat poverty and bring about lasting change.
-                    </p>
-                    <p class="text-lg sm:text-xl lg:text-2xl font-medium">
-                        By contributing to our Rozgar project with your Zakat or Sadaqah donation, you not only help create this income but also give independence and dignity to those in need, breaking the cycle of poverty for generations to come. Your donation today can be the catalyst that transforms their futures. Donate now and make a difference in their lives.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="container mx-auto px-5">
-	<!-- Card Row -->
-	<div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-5 mt-10">
-  
-	  <!-- Card 1 -->
-	  <div class="relative">
-		<img class=" w-[360px] h-64  object-cover mx-auto top-6 relative  rounded-t-md" src="https://alwahabfoundation.org/wp-content/uploads/2022/10/IMG_8942-1.jpg" alt="">
-		<p class="bg-[#740B2E] w-full pt-9 pb-4 pr-4 pl-4 text-white">
-		  <span class="text-lg font-semibold">GIVE ZAKAT →</span><br>
-		  Under our 100% transparent Zakat policy, we ensure that every single donation reaches the right destination in compliance with Shariah Law!
-		</p>
-	  </div>
-	  
-	  <!-- Card 2 -->
-	  <div class="relative">
-		<img class="w-[360px] h-64  object-cover mx-auto top-6 relative  rounded-t-md" src="https://alwahabfoundation.org/wp-content/uploads/2022/07/3L5A5064-1.jpg" alt="">
-		<p class="bg-[#740B2E] w-full pt-9 pb-4 pr-4 pl-4 text-white text-center">
-		  <span class="text-lg font-semibold">GIVE ZAKAT →</span><br>
-		  Under our 100% transparent Zakat policy, we ensure that every single donation reaches the right destination in compliance with Shariah Law!
-		</p>
-	  </div>
-  
-	  <!-- Card 3 -->
-	  <div class="relative">
-		<img class=" w-[360px] h-64  object-cover mx-auto top-6 relative  rounded-t-md" src="https://alwahabfoundation.org/wp-content/uploads/2023/09/IMG_4085-61-1536x1329.jpg" alt="">
-		<p class="bg-[#740B2E] w-full pt-9 pb-4 pr-4 pl-4 text-white text-center">
-		  <span class="text-lg font-semibold">GIVE ZAKAT →</span><br>
-		  Under our 100% transparent Zakat policy, we ensure that every single donation reaches the right destination in compliance with Shariah Law!
-		</p>
-	  </div>
-	</div>
-  </div>
-
-  <div class="container my-16 w-full">
-	<div class="row flex flex-col lg:flex-row bg-maroon relative text-white items-center">
-	  <!-- Text Content -->
-	  <div class="lg:w-1/2 w-full text-center lg:text-left px-6">
-		<p>
-		  <span class="text-lg lg:text-xl font-semibold block mb-4">AWF ANNUAL REPORT 2022-23</span>
-		  Please review our <span class="font-semibold">2022-23 report</span> to see the remarkable projects made possible by 
-		  your generous support. With your help, we look forward to continuing to build for 
-		  the future and empower people worldwide!
-		</p>
-		<button class="bg-customBeige text-white px-10 py-3 rounded-full mt-6 hover:bg-white hover:text-maroon duration-300 text-sm md:text-base font-semibold">
-		  DOWNLOAD ANNUAL REPORT
-		</button>
-	  </div>
-  
-	  <!-- Image Section -->
-	  <div class="lg:w-1/2 w-full flex justify-center lg:justify-center relative">
-		<img class="w-3/4 md:w-1/2 h-auto sm:-bottom-32 md:-mt-20 lg:-mr-7" src="https://alwahabfoundation.org/wp-content/uploads/2024/08/AWF-Annual-Report-Mockup-1573x2048.png" alt="">
-	  </div>
-	</div>
-  </div>
-  
-<!-- ++++++++++++++++++++++++++++++Latest Blog+++++++++++++++++++++++++++++++++++++++++ -->
-
-<div class="mt-20 px-4">
-	<SeeOtherProjectCard SeeOtherProjects={OtherProject}/>
-</div>
-
-
-  <div class="container mx-auto mt-20 mb-11">
-    <div class="row flex justify-center">
-        <!-- Wrapper for Responsive iframe -->
-        <div class="relative pb-[56.25%] w-full max-w-full">
-            <iframe 
-                src="https://www.youtube.com/embed/Pt-HX0iSOuA?si=tg9LSkohDRH4KwIe" 
-                title="YouTube video player" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-                class="absolute inset-0 w-full h-full">
-            </iframe>
-        </div>
-    </div>
-</div>
-
-  
-<div class="container mx-auto mt-24">
-    <div class="row  mx-auto grid grid-cols-2 md:grid-cols-4 justify-center items-center gap-12 sm:gap-16 md:gap-24">
-        <!-- Water Project -->
-        <div class="flex flex-col items-center text-center">
-            <p>
-                <svg xmlns="http://www.w3.org/2000/svg"
-                    class="fill-maroon hover:fill-customBeige duration-300 w-24 md:w-32"
-                    viewBox="0 0 512 512">
-                    <path d="M224 0c17.7 0 32 14.3 32 32l0 12 96-12c17.7 0 32 14.3 32 32s-14.3 32-32 32L256 84l-31-3.9-1-.1-1 .1L192 84 96 96C78.3 96 64 81.7 64 64s14.3-32 32-32l96 12 0-12c0-17.7 14.3-32 32-32zM0 224c0-17.7 14.3-32 32-32l96 0 22.6-22.6c6-6 14.1-9.4 22.6-9.4l18.7 0 0-43.8 32-4 32 4 0 43.8 18.7 0c8.5 0 16.6 3.4 22.6 9.4L320 192l32 0c88.4 0 160 71.6 160 160c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32s-14.3-32-32-32l-36.1 0c-20.2 29-53.9 48-91.9 48s-71.7-19-91.9-48L32 320c-17.7 0-32-14.3-32-32l0-64zM436.8 423.4c1.9-4.5 6.3-7.4 11.2-7.4s9.2 2.9 11.2 7.4l18.2 42.4c1.8 4.1 2.7 8.6 2.7 13.1l0 1.2c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-1.2c0-4.5 .9-8.9 2.7-13.1l18.2-42.4z"/>
-                </svg>
-            </p>
-            <p class="mt-6">
-                <span class="text-3xl font-semibold">302,800 + </span><br><br>
-                People benefited <br>
-                from water <br>
-                project
-            </p>
-        </div>
-
-        <!-- Provided with Food -->
-        <div class="flex flex-col items-center text-center">
-            <p>
-                <svg xmlns="http://www.w3.org/2000/svg"
-                    class="hover:stroke-customBeige duration-300 w-24 md:w-32"
-                    width="99" height="99" viewBox="0 0 24 24"
-                    fill="none" stroke="#7a132b" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round"
-                    class="lucide lucide-utensils">
-                    <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/>
-                    <path d="M7 2v20"/>
-                    <path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/>
-                </svg>
-            </p>
-            <p class="mt-6">
-                <span class="text-3xl font-semibold">282,000 + </span><br><br>
-                People provided <br>
-                with food
-            </p>
-        </div>
-
-        <!-- Masjid Project -->
-        <div class="flex flex-col items-center text-center">
-            <p>
-                <svg xmlns="http://www.w3.org/2000/svg"
-                    class="hover:fill-customBeige fill-maroon duration-300 w-24 md:w-32"
-                    width="99" height="99"
-                    viewBox="0 0 640 512">
-                    <path d="M400 0c5 0 9.8 2.4 12.8 6.4c34.7 46.3 78.1 74.9 133.5 111.5c0 0 0 0 0 0s0 0 0 0c5.2 3.4 10.5 7 16 10.6c28.9 19.2 45.7 51.7 45.7 86.1c0 28.6-11.3 54.5-29.8 73.4l-356.4 0c-18.4-19-29.8-44.9-29.8-73.4c0-34.4 16.7-66.9 45.7-86.1c5.4-3.6 10.8-7.1 16-10.6c0 0 0 0 0 0s0 0 0 0C309.1 81.3 352.5 52.7 387.2 6.4c3-4 7.8-6.4 12.8-6.4zM288 512l0-72c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 72-48 0c-17.7 0-32-14.3-32-32l0-128c0-17.7 14.3-32 32-32l416 0c17.7 0 32 14.3 32 32l0 128c0 17.7-14.3 32-32 32l-48 0 0-72c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 72-64 0 0-58c0-19-8.4-37-23-49.2L400 384l-25 20.8C360.4 417 352 435 352 454l0 58-64 0zM70.4 5.2c5.7-4.3 13.5-4.3 19.2 0l16 12C139.8 42.9 160 83.2 160 126l0 2L0 128l0-2C0 83.2 20.2 42.9 54.4 17.2l16-12zM0 160l160 0 0 136.6c-19.1 11.1-32 31.7-32 55.4l0 128c0 9.6 2.1 18.6 5.8 26.8c-6.6 3.4-14 5.2-21.8 5.2l-64 0c-26.5 0-48-21.5-48-48L0 176l0-16z"/>
-                </svg>
-            </p>
-            <p class="mt-6">
-                <span class="text-3xl font-semibold">26,300 +</span><br><br>
-                Beneficiaries of <br>
-                Masjid Project
-            </p>
-        </div>
-
-        <!-- Eye Care -->
-        <div class="flex flex-col items-center text-center">
-            <p>
-                <svg xmlns="http://www.w3.org/2000/svg"
-                    class="hover:fill-customBeige fill-maroon duration-300 w-24 md:w-32"
-                    width="99" height="99"
-                    viewBox="0 0 576 512">
-                    <path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM144 256a144 144 0 1 1 288 0 144 144 0 1 1 -288 0zm144-64c0 35.3-28.7 64-64 64c-7.1 0-13.9-1.2-20.3-3.3c-5.5-1.8-11.9 1.6-11.7 7.4c.3 6.9 1.3 13.8 3.2 20.7c13.7 51.2 66.4 81.6 117.6 67.9s81.6-66.4 67.9-117.6c-11.1-41.5-47.8-69.4-88.6-71.1c-5.8-.2-9.2 6.1-7.4 11.7c2.1 6.4 3.3 13.2 3.3 20.3z"/>
-                </svg>
-            </p>
-            <p class="mt-6">
-                <span class="text-3xl font-semibold">40,000 +</span><br><br>
-                Beneficiaries of <br>
-                Eye Care
-            </p>
-        </div>
-    </div>
-</div>
-
-<!-- +++++++++++++++++++++++++++++++Ongoing Appeals+++++++++++++++++++++++++++++++ -->
-<!--  -->
-<div class="container mx-auto mt-24 " data-aos="fade-up">
-	<p class="text-3xl text-grey font-bold text-center py-8">Ongoing appeals</p>
-    <OngoingAppeals goingAppeals= {goingAppeals}/>
-  
-</div>
-
-<div class="container">
-<p class="mt-11 flex justify-center">
-	<a class="py-2 px-6 bg-maroon text-white hover:bg-customBeige rounded-full font-semibold text-2xl" href="">VIEW ALL APPEALS</a>
- </p>
-</div>
-
-<div class="container">
-	<div class="row mt-20">
-		<p class="text-4xl text-maroon font-semibold text-center">Why Have We Rebranded?</p>
-		<p class="text-xl text-grey text-center mt-5">
-			<span class="text-grey font-semibold">Ummah Charity International</span>is now <span class="text-grey font-semibold">Al-Wahab Foundation.</span> We have <span class="text-grey font-semibold">rebranded </span>to <br/>
-			create a new, stronger identity for the organisation. This decision was taken after <br/>
-			careful deliberation by our board of trustees and senior staff, the goal being to create <br/>
-			a new, stronger and bespoke identity for the organisation. We envision a world free of <br/>
-			poverty, and discrimination, where people can realise their potential and live with <br/>
-			peace and tranquillity. To learn more about our current changes, please read <br/>
-			<a class="text-maroon text-lg font-semibold hover:text-customBeige" href="#">our rebranding journey.</a>
-		</p>
-
-		<p class="flex justify-center mt-10">
-		  <a class="px-6 py-2 text-white text-xl font-semibold  bg-maroon rounded-full hover:bg-customBeige text-center" href="">ABOUT US</a>
-		</p>
-	</div>
-</div>
-
-<div class="w-screen overflow-hidden mt-10">
-	<div class="flex flex-wrap">
-		<!-- First Image with Text Overlay -->
-		<div class="relative w-full sm:w-1/2 lg:w-1/3  transform transition hover:scale-110 duration-300">
-			<!-- The image -->
-			<img class="w-full h-60 sm:h-80 lg:h-[400px] object-cover  " src="https://alwahabfoundation.org/wp-content/uploads/2023/11/Give-Zakat.jpg" alt="">
-			<!-- Semi-transparent overlay -->
-			<div class="absolute inset-0 bg-[#740B2E] opacity-70 z-10"></div>
-			<!-- Text container -->
-			<div class="absolute inset-0 flex top-52 justify-center z-20 px-2">
-				<p class="text-white ">
-					<span class="text-2xl font-semibold block">GIVE ZAKAT</span>
-					<span class="text-lg font-normal block mt-4 pb-8">GIVE ZAKAT AND PURIFY YOUR  WEALTH</span>
-					<a href="" class="mt-6 inline-block text-maroon font-medium px-5 py-1 bg-white rounded-full text-lg">Give Zakat</a>
+			<!-- Card 3 -->
+			<div class="relative">
+				<img
+					class="w-[360px] h-64 object-cover mx-auto top-6 relative rounded-t-md"
+					src="https://alwahabfoundation.org/wp-content/uploads/2023/09/IMG_4085-61-1536x1329.jpg"
+					alt=""
+				/>
+				<p
+					class="bg-[#740B2E] w-full pt-9 pb-4 pr-4 pl-4 text-white text-center"
+				>
+					<span class="text-lg font-semibold">GIVE ZAKAT →</span><br
+					/>
+					Under our 100% transparent Zakat policy, we ensure that every
+					single donation reaches the right destination in compliance with
+					Shariah Law!
 				</p>
 			</div>
 		</div>
+	</div>
 
-		<!-- Second Image -->
-		<div class="relative w-full sm:w-1/2 lg:w-1/3 transform transition hover:scale-110 duration-300">
-			<!-- The image -->
-			<img class="w-full h-60 sm:h-80 lg:h-[400px] object-cover" src="https://alwahabfoundation.org/wp-content/uploads/2023/11/Sadaqah-Saves-Lives.jpg" alt="">
-			<!-- Semi-transparent overlay -->
-			<div class="absolute inset-0 bg-customBeige opacity-70 z-10"></div>
-			<!-- Text container -->
-			<div class="absolute inset-0 flex top-52 justify-center z-20 px-4">
-				<p class=" text-white">
-					<span class="text-2xl font-semibold block">SADAQAH SAVES LIVES</span>
-					<span class="text-lg font-normal block mt-4">YOUR SADAQAH HELPS PEOPLE IN DESPERATE NEED</span>
-					<a href="" class="mt-6 inline-block text-maroon px-5 font-medium  py-1 bg-white rounded-full text-lg">Donate Now</a>
+	<div class="container my-16 w-full">
+		<div
+			class="row flex flex-col lg:flex-row bg-maroon relative text-white items-center"
+		>
+			<!-- Text Content -->
+			<div class="lg:w-1/2 w-full text-center lg:text-left px-6">
+				<p>
+					<span class="text-lg lg:text-xl font-semibold block mb-4"
+						>AWF ANNUAL REPORT 2022-23</span
+					>
+					Please review our <span class="font-semibold"
+						>2022-23 report</span
+					> to see the remarkable projects made possible by your generous
+					support. With your help, we look forward to continuing to build
+					for the future and empower people worldwide!
+				</p>
+				<button
+					class="bg-customBeige text-white px-10 py-3 rounded-full mt-6 hover:bg-white hover:text-maroon duration-300 text-sm md:text-base font-semibold"
+				>
+					DOWNLOAD ANNUAL REPORT
+				</button>
+			</div>
+
+			<!-- Image Section -->
+			<div
+				class="lg:w-1/2 w-full flex justify-center lg:justify-center relative"
+			>
+				<img
+					class="w-3/4 md:w-1/2 h-auto sm:-bottom-32 md:-mt-20 lg:-mr-7"
+					src="https://alwahabfoundation.org/wp-content/uploads/2024/08/AWF-Annual-Report-Mockup-1573x2048.png"
+					alt=""
+				/>
+			</div>
+		</div>
+	</div>
+
+	<!-- ++++++++++++++++++++++++++++++Latest Blog+++++++++++++++++++++++++++++++++++++++++ -->
+
+	<div class="mt-20 px-4">
+		<SeeOtherProjectCard SeeOtherProjects={OtherProject} />
+	</div>
+
+	<div class="container mx-auto mt-20 mb-11">
+		<div class="row flex justify-center">
+			<!-- Wrapper for Responsive iframe -->
+			<div class="relative pb-[56.25%] w-full max-w-full">
+				<iframe
+					src="https://www.youtube.com/embed/Pt-HX0iSOuA?si=tg9LSkohDRH4KwIe"
+					title="YouTube video player"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					referrerpolicy="strict-origin-when-cross-origin"
+					allowfullscreen
+					class="absolute inset-0 w-full h-full"
+				>
+				</iframe>
+			</div>
+		</div>
+	</div>
+
+	<div class="container mx-auto mt-24">
+		<div
+			class="row mx-auto grid grid-cols-2 md:grid-cols-4 justify-center items-center gap-12 sm:gap-16 md:gap-24"
+		>
+			<!-- Water Project -->
+			<div class="flex flex-col items-center text-center">
+				<p>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						class="fill-maroon hover:fill-customBeige duration-300 w-24 md:w-32"
+						viewBox="0 0 512 512"
+					>
+						<path
+							d="M224 0c17.7 0 32 14.3 32 32l0 12 96-12c17.7 0 32 14.3 32 32s-14.3 32-32 32L256 84l-31-3.9-1-.1-1 .1L192 84 96 96C78.3 96 64 81.7 64 64s14.3-32 32-32l96 12 0-12c0-17.7 14.3-32 32-32zM0 224c0-17.7 14.3-32 32-32l96 0 22.6-22.6c6-6 14.1-9.4 22.6-9.4l18.7 0 0-43.8 32-4 32 4 0 43.8 18.7 0c8.5 0 16.6 3.4 22.6 9.4L320 192l32 0c88.4 0 160 71.6 160 160c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32s-14.3-32-32-32l-36.1 0c-20.2 29-53.9 48-91.9 48s-71.7-19-91.9-48L32 320c-17.7 0-32-14.3-32-32l0-64zM436.8 423.4c1.9-4.5 6.3-7.4 11.2-7.4s9.2 2.9 11.2 7.4l18.2 42.4c1.8 4.1 2.7 8.6 2.7 13.1l0 1.2c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-1.2c0-4.5 .9-8.9 2.7-13.1l18.2-42.4z"
+						></path>
+					</svg>
+				</p>
+				<p class="mt-6">
+					<span class="text-3xl font-semibold">302,800 + </span><br
+					/><br />
+					People benefited <br />
+					from water <br />
+					project
+				</p>
+			</div>
+
+			<!-- Provided with Food -->
+			<div class="flex flex-col items-center text-center">
+				<p>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						class="hover:stroke-customBeige duration-300 w-24 md:w-32"
+						width="99"
+						height="99"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="#7a132b"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						class="lucide lucide-utensils"
+					>
+						<path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"></path>
+						<path d="M7 2v20"></path>
+						<path
+							d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"
+						></path>
+					</svg>
+				</p>
+				<p class="mt-6">
+					<span class="text-3xl font-semibold">282,000 + </span><br
+					/><br />
+					People provided <br />
+					with food
+				</p>
+			</div>
+
+			<!-- Masjid Project -->
+			<div class="flex flex-col items-center text-center">
+				<p>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						class="hover:fill-customBeige fill-maroon duration-300 w-24 md:w-32"
+						width="99"
+						height="99"
+						viewBox="0 0 640 512"
+					>
+						<path
+							d="M400 0c5 0 9.8 2.4 12.8 6.4c34.7 46.3 78.1 74.9 133.5 111.5c0 0 0 0 0 0s0 0 0 0c5.2 3.4 10.5 7 16 10.6c28.9 19.2 45.7 51.7 45.7 86.1c0 28.6-11.3 54.5-29.8 73.4l-356.4 0c-18.4-19-29.8-44.9-29.8-73.4c0-34.4 16.7-66.9 45.7-86.1c5.4-3.6 10.8-7.1 16-10.6c0 0 0 0 0 0s0 0 0 0C309.1 81.3 352.5 52.7 387.2 6.4c3-4 7.8-6.4 12.8-6.4zM288 512l0-72c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 72-48 0c-17.7 0-32-14.3-32-32l0-128c0-17.7 14.3-32 32-32l416 0c17.7 0 32 14.3 32 32l0 128c0 17.7-14.3 32-32 32l-48 0 0-72c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 72-64 0 0-58c0-19-8.4-37-23-49.2L400 384l-25 20.8C360.4 417 352 435 352 454l0 58-64 0zM70.4 5.2c5.7-4.3 13.5-4.3 19.2 0l16 12C139.8 42.9 160 83.2 160 126l0 2L0 128l0-2C0 83.2 20.2 42.9 54.4 17.2l16-12zM0 160l160 0 0 136.6c-19.1 11.1-32 31.7-32 55.4l0 128c0 9.6 2.1 18.6 5.8 26.8c-6.6 3.4-14 5.2-21.8 5.2l-64 0c-26.5 0-48-21.5-48-48L0 176l0-16z"
+						></path>
+					</svg>
+				</p>
+				<p class="mt-6">
+					<span class="text-3xl font-semibold">26,300 +</span><br
+					/><br />
+					Beneficiaries of <br />
+					Masjid Project
+				</p>
+			</div>
+
+			<!-- Eye Care -->
+			<div class="flex flex-col items-center text-center">
+				<p>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						class="hover:fill-customBeige fill-maroon duration-300 w-24 md:w-32"
+						width="99"
+						height="99"
+						viewBox="0 0 576 512"
+					>
+						<path
+							d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM144 256a144 144 0 1 1 288 0 144 144 0 1 1 -288 0zm144-64c0 35.3-28.7 64-64 64c-7.1 0-13.9-1.2-20.3-3.3c-5.5-1.8-11.9 1.6-11.7 7.4c.3 6.9 1.3 13.8 3.2 20.7c13.7 51.2 66.4 81.6 117.6 67.9s81.6-66.4 67.9-117.6c-11.1-41.5-47.8-69.4-88.6-71.1c-5.8-.2-9.2 6.1-7.4 11.7c2.1 6.4 3.3 13.2 3.3 20.3z"
+						></path>
+					</svg>
+				</p>
+				<p class="mt-6">
+					<span class="text-3xl font-semibold">40,000 +</span><br
+					/><br />
+					Beneficiaries of <br />
+					Eye Care
 				</p>
 			</div>
 		</div>
+	</div>
 
-		<!-- Third Image -->
-		<div class="relative w-full lg:w-1/3 transform transition hover:scale-110 duration-300">
-			<!-- The image -->
-			<img class="w-full h-60 sm:h-80 lg:h-[400px] object-cover" src="https://alwahabfoundation.org/wp-content/uploads/2023/03/IMG_9857e.jpeg" alt="">
-			<!-- Semi-transparent overlay -->
-			<div class="absolute inset-0 bg-[#740B2E] opacity-70 z-10"></div>
-			<!-- Text container -->
-			<div class="absolute inset-0 flex top-52 justify-center z-20 px-4">
-				<p class="text-white">
-					<span class="text-2xl font-semibold block ">CALCULATE YOUR ZAKAT</span>
-					<span class="text-lg font-normal block mt-4  pr-4">CALCULATING YOUR ZAKAT HAS NEVER BEEN EASIER</span>
-					<a href="" class="mt-6 inline-block text-maroon font-medium  px-5 py-1 bg-white rounded-full text-lg">Calculate Now</a>
-				</p>
+	<!-- +++++++++++++++++++++++++++++++Ongoing Appeals+++++++++++++++++++++++++++++++ -->
+	<!--  -->
+	<div class="container mx-auto mt-24" data-aos="fade-up">
+		<p class="text-3xl text-grey font-bold text-center py-8">
+			Ongoing appeals
+		</p>
+		<OngoingAppeals goingAppeals={goingAppeals} />
+	</div>
+
+	<div class="container">
+		<p class="mt-11 flex justify-center">
+			<a
+				class="py-2 px-6 bg-maroon text-white hover:bg-customBeige rounded-full font-semibold text-2xl"
+				href="">VIEW ALL APPEALS</a
+			>
+		</p>
+	</div>
+
+	<div class="container">
+		<div class="row mt-20">
+			<p class="text-4xl text-maroon font-semibold text-center">
+				Why Have We Rebranded?
+			</p>
+			<p class="text-xl text-grey text-center mt-5">
+				<span class="text-grey font-semibold"
+					>Ummah Charity International</span
+				>is now <span class="text-grey font-semibold"
+					>Al-Wahab Foundation.</span
+				> We have <span class="text-grey font-semibold"
+					>rebranded
+				</span>to <br />
+				create a new, stronger identity for the organisation. This decision
+				was taken after <br />
+				careful deliberation by our board of trustees and senior staff, the
+				goal being to create <br />
+				a new, stronger and bespoke identity for the organisation. We envision
+				a world free of <br />
+				poverty, and discrimination, where people can realise their potential
+				and live with <br />
+				peace and tranquillity. To learn more about our current changes,
+				please read <br />
+				<a
+					class="text-maroon text-lg font-semibold hover:text-customBeige"
+					href="#">our rebranding journey.</a
+				>
+			</p>
+
+			<p class="flex justify-center mt-10">
+				<a
+					class="px-6 py-2 text-white text-xl font-semibold bg-maroon rounded-full hover:bg-customBeige text-center"
+					href="">ABOUT US</a
+				>
+			</p>
+		</div>
+	</div>
+
+	<div class="w-screen overflow-hidden mt-10">
+		<div class="flex flex-wrap">
+			<!-- First Image with Text Overlay -->
+			<div
+				class="relative w-full sm:w-1/2 lg:w-1/3 transform transition hover:scale-110 duration-300"
+			>
+				<!-- The image -->
+				<img
+					class="w-full h-60 sm:h-80 lg:h-[400px] object-cover"
+					src="https://alwahabfoundation.org/wp-content/uploads/2023/11/Give-Zakat.jpg"
+					alt=""
+				/>
+				<!-- Semi-transparent overlay -->
+				<div class="absolute inset-0 bg-[#740B2E] opacity-70 z-10">
+				</div>
+				<!-- Text container -->
+				<div
+					class="absolute inset-0 flex top-52 justify-center z-20 px-2"
+				>
+					<p class="text-white">
+						<span class="text-2xl font-semibold block"
+							>GIVE ZAKAT</span
+						>
+						<span class="text-lg font-normal block mt-4 pb-8"
+							>GIVE ZAKAT AND PURIFY YOUR WEALTH</span
+						>
+						<a
+							href=""
+							class="mt-6 inline-block text-maroon font-medium px-5 py-1 bg-white rounded-full text-lg"
+							>Give Zakat</a
+						>
+					</p>
+				</div>
+			</div>
+
+			<!-- Second Image -->
+			<div
+				class="relative w-full sm:w-1/2 lg:w-1/3 transform transition hover:scale-110 duration-300"
+			>
+				<!-- The image -->
+				<img
+					class="w-full h-60 sm:h-80 lg:h-[400px] object-cover"
+					src="https://alwahabfoundation.org/wp-content/uploads/2023/11/Sadaqah-Saves-Lives.jpg"
+					alt=""
+				/>
+				<!-- Semi-transparent overlay -->
+				<div class="absolute inset-0 bg-customBeige opacity-70 z-10">
+				</div>
+				<!-- Text container -->
+				<div
+					class="absolute inset-0 flex top-52 justify-center z-20 px-4"
+				>
+					<p class="text-white">
+						<span class="text-2xl font-semibold block"
+							>SADAQAH SAVES LIVES</span
+						>
+						<span class="text-lg font-normal block mt-4"
+							>YOUR SADAQAH HELPS PEOPLE IN DESPERATE NEED</span
+						>
+						<a
+							href=""
+							class="mt-6 inline-block text-maroon px-5 font-medium py-1 bg-white rounded-full text-lg"
+							>Donate Now</a
+						>
+					</p>
+				</div>
+			</div>
+
+			<!-- Third Image -->
+			<div
+				class="relative w-full lg:w-1/3 transform transition hover:scale-110 duration-300"
+			>
+				<!-- The image -->
+				<img
+					class="w-full h-60 sm:h-80 lg:h-[400px] object-cover"
+					src="https://alwahabfoundation.org/wp-content/uploads/2023/03/IMG_9857e.jpeg"
+					alt=""
+				/>
+				<!-- Semi-transparent overlay -->
+				<div class="absolute inset-0 bg-[#740B2E] opacity-70 z-10">
+				</div>
+				<!-- Text container -->
+				<div
+					class="absolute inset-0 flex top-52 justify-center z-20 px-4"
+				>
+					<p class="text-white">
+						<span class="text-2xl font-semibold block"
+							>CALCULATE YOUR ZAKAT</span
+						>
+						<span class="text-lg font-normal block mt-4 pr-4"
+							>CALCULATING YOUR ZAKAT HAS NEVER BEEN EASIER</span
+						>
+						<a
+							href=""
+							class="mt-6 inline-block text-maroon font-medium px-5 py-1 bg-white rounded-full text-lg"
+							>Calculate Now</a
+						>
+					</p>
+				</div>
 			</div>
 		</div>
-
 	</div>
-</div>
 
+	<div class="container mx-auto bg-[#aa71454D] max-w-screen-2xl">
+		<div class="row">
+			<!-- Header Text -->
+			<p class="text-2xl md:text-4xl text-center pt-20 font-bold">
+				GET INVOLVED
+			</p>
+			<p class="text-center mt-6 text-gray-700">
+				Your support is vital to helping us achieve this, and we
+				couldn’t do it without our dedicated volunteers.
+			</p>
 
-<div class="container mx-auto bg-[#aa71454D]  max-w-screen-2xl">
-	<div class="row">
-	  <!-- Header Text -->
-	  <p class="text-2xl md:text-4xl text-center pt-20 font-bold">GET INVOLVED</p>
-	  <p class="text-center mt-6 text-gray-700">
-		Your support is vital to helping us achieve this, and we couldn’t do it without our dedicated volunteers.
-	  </p>
-  
-	  <!-- Form Section -->
-	  <div class="flex justify-center mt-9">
-		<div class="bg-maroon px-10 py-8 mb-12 rounded-xl w-full max-w-2xl">
-		  <p class="text-center text-white text-2xl font-semibold">Sign up to our Newsletter</p>
-  
-		  <form action="#" method="post" class="mt-6">
-			<!-- Form Group -->
-			<div class="flex flex-col ">
-			  <label for="email" class="block text-white text-sm font-medium mb-2">Email Address 
-				<span class="text-[#e04562] text-lg">*</span>
-			  </label>
-			  <input id="email" name="email" type="email" placeholder="Type your email address here"
-				class="w-full px-4 py-1 border bg-[#ededed] rounded-xl border-maroon shadow-sm placeholder:text-maroon text-maroon focus:ring focus:ring-customBeige focus:border-customBeige"
-			  />
-			  <a href="" class="mt-5 rounded-md w-36 py-2 text-maroon hover:text-white hover:bg-customBeige font-semibold text-center bg-white">Send Message</a>
+			<!-- Form Section -->
+			<div class="flex justify-center mt-9">
+				<div
+					class="bg-maroon px-10 py-8 mb-12 rounded-xl w-full max-w-2xl"
+				>
+					<p class="text-center text-white text-2xl font-semibold">
+						Sign up to our Newsletter
+					</p>
+
+					<form action="#" method="post" class="mt-6">
+						<!-- Form Group -->
+						<div class="flex flex-col">
+							<label
+								for="email"
+								class="block text-white text-sm font-medium mb-2"
+								>Email Address
+								<span class="text-[#e04562] text-lg">*</span>
+							</label>
+							<input
+								id="email"
+								name="email"
+								type="email"
+								placeholder="Type your email address here"
+								class="w-full px-4 py-1 border bg-[#ededed] rounded-xl border-maroon shadow-sm placeholder:text-maroon text-maroon focus:ring focus:ring-customBeige focus:border-customBeige"
+							/>
+							<a
+								href=""
+								class="mt-5 rounded-md w-36 py-2 text-maroon hover:text-white hover:bg-customBeige font-semibold text-center bg-white"
+								>Send Message</a
+							>
+						</div>
+					</form>
+				</div>
 			</div>
-		  </form>
 		</div>
-	  </div>
 	</div>
-  </div>
-  	<!-- <Donationcard programId={[1, 4, 13]} /> -->
-	 <Test />
-
-
-
+	<!-- <Donationcard programId={[1, 4, 13]} /> -->
+	<Test />
 </Layout>
 <script is:inline>
 	const Program_dropdown = document.getElementById("Program_dropdown");
@@ -1056,17 +1518,16 @@ const OtherProject =[
 	}
 
 	//  document.getElementById('next-btn').addEventListener('click', () => {
-    //     document.querySelector('.movie-container').scrollBy({
-    //         left: 300,
-    //         behavior: 'smooth'
-    //     });
-    // });
+	//     document.querySelector('.movie-container').scrollBy({
+	//         left: 300,
+	//         behavior: 'smooth'
+	//     });
+	// });
 
-    // document.getElementById('prev-btn').addEventListener('click', () => {
-    //     document.querySelector('.movie-container').scrollBy({
-    //         left: -300,
-    //         behavior: 'smooth'
-    //     });
-    // });
+	// document.getElementById('prev-btn').addEventListener('click', () => {
+	//     document.querySelector('.movie-container').scrollBy({
+	//         left: -300,
+	//         behavior: 'smooth'
+	//     });
+	// });
 </script>
-
