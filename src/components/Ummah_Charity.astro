@@ -2,14 +2,14 @@
 
 ---
 <div class="text-base md:text-lg flex flex-row justify-center">
-    <p class="font-semibold py-2">
+    <p class=" w-screen flex justify-center font-semibold py-2 bg-[#f5d3b5]">
       Ummah Charity International is now Al-Wahab Foundation
     </p>
   </div>
-<div class=" fixed bottom-1 z-20 w-screen hidden md:block ">
-  
+
+<div class="fixed bottom-0 z-20 w-screen hidden md:block ">
   <div
-    class="bg-[#740B2E] px-4 py-4 flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 justify-center items-center md:items-start"
+    class="bg-maroon py-3 flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 justify-center items-center h-16"
   >
     <!-- Donate Label -->
     <p class="text-white text-base md:text-xl mt-1 whitespace-nowrap">
@@ -17,9 +17,9 @@
     </p>
 
     <!-- Program Selection -->
-    <div class="w-full md:w-auto">
+    <div class="w-full md:w-auto ">
       <select
-        class="px-6 py-2 rounded-md text-[#740B2E] focus:ring-[#740B2E] w-full"
+        class="px-6 py-2 rounded-md text-[#740B2E] focus:ring-[#740B2E]  h-10 w-[300px]"
         id="program"
         name="program"
         required
@@ -46,7 +46,8 @@
         </p>
         <input
           class="md:text-lg sm:text-base w-full md:w-28 h-[40px] text-[#740B2E] rounded-r-md"
-          type="number"
+          type="text"
+          inputmode="numeric"
           placeholder="Amount"
         />
       </div>
@@ -65,7 +66,7 @@
           required
         >
           <option class="text-[#740B2E] duration-300" value="" disabled selected
-            >Select Program</option
+            >Select Category</option
           >
           <option value="program1">Program 1</option>
           <option value="program2">Program 2</option>

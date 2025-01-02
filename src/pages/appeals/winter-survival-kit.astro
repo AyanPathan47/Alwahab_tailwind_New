@@ -163,33 +163,42 @@ const HeaderBannerData = [
     <!--support banner -->
     <SupportBanner BannerDetails={SupportBannerDetails} />
     <!--section n -->
-    <div class="counter grid grid-cols-2 md:grid-cols-6 gap-2 px-4 py-[70px] md:py-10">
+    <div class="counter grid grid-cols-2 md:grid-cols-6 gap-2 md:px-32  py-[70px] md:py-10">
         <!-- Item 1 -->
-        <div class="flex flex-col items-center text-center" data-aos="fade-up">
+        <div class="flex flex-col  items-center text-center" data-aos="fade-up">
           <div>
-            <img src="https://via.placeholder.com/50" alt="icon" class="mx-auto" />
+            <svg xmlns="http://www.w3.org/2000/svg" height="80" viewBox="0 0 512 512" width="80" class=" fill-maroon hover:fill-customBeige duration-300 ">
+                <path d="m90 242h240v-242h-225c-57.898438 0-105 47.101562-105 105v177.722656c22.007812-24.953125 54.195312-40.722656 90-40.722656zm0 0"></path>
+                <path d="m420 .804688v271.195312h-330c-41.90625 0-77.21875 28.792969-87.1875 67.636719 21.890625-23.160157 52.878906-37.636719 87.1875-37.636719h332c35.804688 0 67.992188 15.769531 90 40.722656v-237.722656c0-53.496094-40.214844-97.773438-92-104.195312zm0 0"></path>
+                <path d="m360 0h30v242h-30zm0 0"></path>
+                <path d="m422 407h-332c-8.269531 0-15 6.730469-15 15s6.730469 15 15 15h332c8.269531 0 15-6.730469 15-15s-6.730469-15-15-15zm0 0"></path>
+                <path d="m422 332h-332c-49.625 0-90 40.375-90 90s40.375 90 90 90h332c49.625 0 90-40.375 90-90s-40.375-90-90-90zm0 135h-332c-24.8125 0-45-20.1875-45-45s20.1875-45 45-45h332c24.8125 0 45 20.1875 45 45s-20.1875 45-45 45zm0 0"></path>
+            </svg>
           </div>
           <div>
-            <p class="text-size-34 leading-[1.1] text-blackColor font-bold font-hind dark:text-blackColor-dark">
+            <p class="text-size-34 leading-[1.1] text-grey font-bold font-hind dark:text-blackColor-dark">
               <span data-countup-number="740">740</span><span>+</span>
             </p>
-            <p class="uppercase text-blackColor font-medium leading-[18px] whitespace-nowrap sm:whitespace-normal dark:text-blackColor-dark">
-              Total Achievement
+            <p class="uppercase text-grey font-medium leading-[18px] text-start dark:text-blackColor-dark">
+                Blankets <br/> Distributed
             </p>
           </div>
         </div>
       
         <!-- Item 2 -->
         <div class="flex flex-col items-center text-center" data-aos="fade-up">
-          <div>
-            <img src="https://via.placeholder.com/50" alt="icon" class="mx-auto" />
-          </div>
+            <div style="display: inline-block; padding: 0; margin: 0;">
+                <svg xmlns="http://www.w3.org/2000/svg"  width="80" height="80" viewBox="0 0 128 128" class=" fill-maroon hover:fill-customBeige duration-300 " >
+                    <path d="m64.16 9c6.23 0 12.93-2.39 16.64-3.92v4.21c-4.1 2.6-10.29 4.13-16.8 4.13s-12.7-1.53-16.8-4.13v-4.24c3.8 1.52 10.68 3.95 16.96 3.95zm-47.95 93.8h8.94v4.13h-8.94zm78.43 16.31v4.89h-61.28v-4.94zm17.15-12.14h-8.94v-4.13s8.7 0 8.94 0zm9.51-49-6.12 37.35a4.15 4.15 0 0 1 -4.11 3.5h-8.22v-63.15a2 2 0 1 0 -4 0v73.82a5.58 5.58 0 0 1 -5.57 5.57h-58.56a5.58 5.58 0 0 1 -5.57-5.57v-73.82a2 2 0 0 0 -4 0v63.12h-8.22a4.15 4.15 0 0 1 -4.11-3.5l-6.12-37.35c6.35-15.07 18.14-39 23.48-40.83s10.26-3.32 14.66-4.57c4.79 3.11 11.7 4.88 19.16 4.88s14.37-1.77 19.16-4.88c4.4 1.26 9.33 2.79 14.66 4.57 5.34 1.79 17.18 25.76 23.48 40.83z"></path>
+                </svg>
+            </div>
+            
           <div>
             <p class="text-size-34 leading-[1.1] text-blackColor font-bold font-hind dark:text-blackColor-dark">
               <span data-countup-number="790">790</span><span>+</span>
             </p>
-            <p class="uppercase text-blackColor font-medium leading-[18px] whitespace-nowrap sm:whitespace-normal dark:text-blackColor-dark">
-              Total Students
+            <p class="uppercase text-grey text-start font-medium leading-[18px]  dark:text-blackColor-dark">
+                Sweaters <br/> Distributed
             </p>
           </div>
         </div>
@@ -197,14 +206,30 @@ const HeaderBannerData = [
         <!-- Item 3 -->
         <div class="flex flex-col items-center text-center" data-aos="fade-up">
           <div>
-            <img src="https://via.placeholder.com/50" alt="icon" class="mx-auto" />
+            <svg xmlns="http://www.w3.org/2000/svg" height="80" viewBox="0 0 64 64" width="80" class=" fill-maroon hover:fill-customBeige duration-300 ">
+                <path d="m10.354 44.703c1.214.359 3.972 1.255 7.142 2.78.316-.755.779-1.464 1.393-2.078l12.172-12.172c.279-.279.439-.666.439-1.061v-13.672h-1.5c-1.379 0-2.5-1.121-2.5-2.5v-.853l-11.948 2.525 2.818 13.375c.138.65.015 1.32-.35 1.884z"></path>
+                <path d="m14.161 5.401h4v10.999h-4z" transform="matrix(.978 -.207 .207 .978 -1.904 3.576)"></path>
+                <path d="m10.623 6.449c-.806.172-1.328.971-1.163 1.781l1.659 7.826c.173.808.969 1.328 1.777 1.154l1.466-.31-2.273-10.76z"></path>
+                <path d="m30.485 62.5c1.498 0 2.88-.572 3.919-1.611l1.992-1.992c-3.639-7.759-13.417-13.275-15.303-14.283l-1.498 1.498c-2.145 2.145-2.145 5.633 0 7.777l7 7c1.04 1.039 2.422 1.611 3.89 1.611z"></path>
+                <path d="m32.5 32.172c0 .668-.26 1.295-.732 1.768l-9.933 9.933c2.459 1.327 11.546 6.625 15.313 14.273l7.261-7.261c-5.291-11.987 5.203-18.193 7.092-19.191v-13.194h-19v13.672z"></path>
+                <path d="m19.053 4.367h3.999v10.998h-3.999z" transform="matrix(.978 -.207 .207 .978 -1.585 4.566)"></path>
+                <path d="m10.232 54.961 8.301 5.41c1.209.791 2.713 1.074 4.132.77.708-.151 1.365-.432 1.948-.821l-5.724-5.724c-1.666-1.666-2.229-4.017-1.705-6.154-3.412-1.652-6.421-2.582-7.4-2.864l-1.155 1.774c-.802 1.232-1.076 2.703-.771 4.142.303 1.438 1.146 2.668 2.374 3.467z"></path>
+                <path d="m45.17 50.122.683-.683c.28-.279.667-.439 1.061-.439h1.086c4.136 0 7.5-3.364 7.5-7.5v-1.843c0-.936-.364-1.814-1.025-2.476l-1.656-1.656c-.741-.74-1.17-1.698-1.274-2.727-2.493 1.387-10.731 6.913-6.375 17.324z"></path>
+                <path d="m34.104 1.489-1.47.311.782 3.7h3.068l-.602-2.856c-.174-.809-.97-1.327-1.778-1.155z"></path>
+                <path d="m54 6.5h-1.5v11h1.5c.827 0 1.5-.673 1.5-1.5v-8c0-.827-.673-1.5-1.5-1.5z"></path>
+                <path d="m31.655 2.007-3.912.826.686 3.239c.43-.352.973-.572 1.571-.572h2.393z"></path>
+                <path d="m32.5 6.5h4v11h-4z"></path><path d="m28.5 8v8c0 .827.673 1.5 1.5 1.5h1.5v-11h-1.5c-.827 0-1.5.673-1.5 1.5z"></path>
+                <path d="m27.5 8c0-.283.057-.55.144-.803l-.88-4.157-3.913.826 2.273 10.76 2.375-.502v-6.124z"></path>
+                <path d="m37.5 6.5h4v11h-4z"></path><path d="m47.5 6.5h4v11h-4z"></path>
+                <path d="m42.5 6.5h4v11h-4z"></path>
+            </svg>
           </div>
           <div>
             <p class="text-size-34 leading-[1.1] text-blackColor font-bold font-hind dark:text-blackColor-dark">
               <span data-countup-number="490">490</span><span>k</span>
             </p>
             <p class="uppercase text-blackColor font-medium leading-[18px] whitespace-nowrap sm:whitespace-normal dark:text-blackColor-dark">
-              Total Instructors
+                Gloves & Socks <br/> Distributed
             </p>
           </div>
         </div>
@@ -212,14 +237,17 @@ const HeaderBannerData = [
         <!-- Item 4 -->
         <div class="flex flex-col items-center text-center" data-aos="fade-up">
           <div>
-            <img src="https://via.placeholder.com/50" alt="icon" class="mx-auto" />
+            <svg xmlns="http://www.w3.org/2000/svg"  height="80" viewBox="0 0 128 128" width="80" class=" fill-maroon hover:fill-customBeige duration-300 ">
+                <path d="m124.49 24.51-43.225-23a2.991 2.991 0 0 0 -1.967-.3c-.874.165-2.212.412-3.661.659a82.7 82.7 0 0 1 -11.637 1.341c-3.963 0-10.929-1.192-14.353-1.825-.342-.064-.666-.124-.948-.178a2.988 2.988 0 0 0 -1.966.3l-43.253 23.013a4.5 4.5 0 0 0 -2.26 4.35l9.438 96.653a1.5 1.5 0 0 0 1.49 1.355 1.466 1.466 0 0 0 .148-.007 1.5 1.5 0 0 0 1.347-1.639l-.823-8.432 7.138-3.6.713 7.3a1.5 1.5 0 0 0 1.491 1.354c.048 0 .1 0 .148-.006a1.5 1.5 0 0 0 1.346-1.639l-.826-8.457 6.543-3.3.714 7.317a1.5 1.5 0 0 0 1.491 1.355 1.48 1.48 0 0 0 .148-.007 1.5 1.5 0 0 0 1.347-1.639l-.828-8.473 6.543-3.3.716 7.334a1.5 1.5 0 0 0 1.496 1.361 1.48 1.48 0 0 0 .148-.007 1.5 1.5 0 0 0 1.347-1.638l-.83-8.49 6.543-3.3.718 7.351a1.5 1.5 0 0 0 1.491 1.355c.048 0 .1 0 .148-.007a1.5 1.5 0 0 0 1.346-1.639l-.831-8.507 6.554-3.3.875 7.565a1.5 1.5 0 0 0 1.488 1.328 1.479 1.479 0 0 0 .175-.01 1.5 1.5 0 0 0 1.317-1.662l-12.399-97.109c.848.159 1.919.352 3.1.552l9.21 71.188a1.008 1.008 0 0 0 .943.88q1.655.079 3.308 0a1.008 1.008 0 0 0 .943-.88l9.216-71.189c1.182-.2 2.252-.392 3.1-.551l-12.394 97.114a1.5 1.5 0 0 0 1.317 1.662 1.479 1.479 0 0 0 .175.01 1.5 1.5 0 0 0 1.488-1.328l.875-7.565 6.554 3.3-.831 8.507a1.5 1.5 0 0 0 1.346 1.639c.05 0 .1.007.148.007a1.5 1.5 0 0 0 1.491-1.355l.718-7.351 6.543 3.3-.83 8.49a1.5 1.5 0 0 0 1.347 1.638 1.48 1.48 0 0 0 .148.007 1.5 1.5 0 0 0 1.495-1.355l.716-7.334 6.543 3.3-.828 8.473a1.5 1.5 0 0 0 1.347 1.639 1.48 1.48 0 0 0 .148.007 1.5 1.5 0 0 0 1.491-1.355l.714-7.317 6.543 3.3-.826 8.457a1.5 1.5 0 0 0 1.346 1.639c.05 0 .1.006.148.006a1.5 1.5 0 0 0 1.491-1.354l.713-7.3 7.138 3.6-.823 8.432a1.5 1.5 0 0 0 1.347 1.639 1.466 1.466 0 0 0 .148.007 1.5 1.5 0 0 0 1.49-1.355l9.434-96.674a4.488 4.488 0 0 0 -2.29-4.35zm-69.4 49.726 2.169 16.8-44.749 22.564-1.6-16.324zm60.4 39.364-44.75-22.56 2.171-16.816 44.194 22.85z">
+                </path>
+            </svg>
           </div>
           <div>
             <p class="text-size-34 leading-[1.1] text-blackColor font-bold font-hind dark:text-blackColor-dark">
               <span data-countup-number="470">470</span><span>+</span>
             </p>
             <p class="uppercase text-blackColor font-medium leading-[18px] whitespace-nowrap sm:whitespace-normal dark:text-blackColor-dark">
-              Over the World
+                Shawls <br/> Distributed
             </p>
           </div>
         </div>
@@ -227,14 +255,21 @@ const HeaderBannerData = [
         <!-- Item 5 -->
         <div class="flex flex-col items-center text-center" data-aos="fade-up">
           <div>
-            <img src="https://via.placeholder.com/50" alt="icon" class="mx-auto" />
+            <svg xmlns="http://www.w3.org/2000/svg"  height="80" viewBox="0 0 51 51"  width="80" class=" fill-maroon hover:fill-customBeige duration-300 ">
+                <g id="Line">
+                    <path d="m6.314 20.107c-.12.307-.486 1.389-.553 1.621l6.239 4.991 4.375-3.5c.365-.292.884-.292 1.249 0l4.375 3.5 4.375-3.5c.365-.292.885-.292 1.25 0l4.375 3.5 4.375-3.5c.365-.292.885-.292 1.25 0l5.375 4.3s-.141-2.703-.165-2.893l-5.815-4.362-4.395 3.516c-.365.292-.885.292-1.25 0l-4.374-3.499-4.375 3.5c-.365.292-.884.292-1.249 0l-4.376-3.5-4.375 3.5c-.355.285-.859.293-1.225.019l-5.049-3.786c-.012.031-.025.062-.037.093z"></path>
+                    <path d="m5 30.295c.634-.19 37.366-.19 38 0l-6-5.014-4.375 3.5c-.365.292-.885.292-1.25 0l-4.375-3.5-4.375 3.5c-.365.292-.884.292-1.249 0l-4.376-3.5-4.375 3.5c-.365.292-.884.292-1.249 0l-6.1-4.88c-.037.236-.276 6.394-.276 6.394z"></path>
+                    <path d="m7.222 18.167 4.759 3.569 4.395-3.516c.365-.292.884-.292 1.249 0l4.375 3.5 4.375-3.5c.365-.292.885-.292 1.25 0l4.375 3.5 4.375-3.5c.356-.284.86-.293 1.225-.019l4.621 3.466c-.101-1.223-4.686-13.667-18.221-13.667-11.225 0-16.306 9.275-16.778 10.167z"></path>
+                    <path d="m28.961 6.617c-.199-2.576-2.335-4.617-4.961-4.617s-4.762 2.041-4.961 4.617c1.594-.389 3.249-.617 4.961-.617s3.367.228 4.961.617z"></path>
+                    <path d="m40.923 46h-33.846c-2.804 0-5.077-2.273-5.077-5.077v-3.845c0-2.805 2.273-5.078 5.077-5.078h33.845c2.805 0 5.078 2.273 5.078 5.077v3.845c0 2.805-2.273 5.078-5.077 5.078z">
+                </path></g></svg>
           </div>
           <div>
             <p class="text-size-34 leading-[1.1] text-blackColor font-bold font-hind dark:text-blackColor-dark">
               <span data-countup-number="440">440</span><span>+</span>
             </p>
             <p class="uppercase text-blackColor font-medium leading-[18px] whitespace-nowrap sm:whitespace-normal dark:text-blackColor-dark">
-              Over the World
+                Caps & Suits <br/> Distributed
             </p>
           </div>
         </div>
@@ -242,14 +277,18 @@ const HeaderBannerData = [
         <!-- Item 6 -->
         <div class="flex flex-col items-center text-center" data-aos="fade-up">
           <div>
-            <img src="https://via.placeholder.com/50" alt="icon" class="mx-auto" />
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class=" fill-maroon hover:fill-customBeige duration-300 " x="0px" y="0px" width="80.13px" height="80.13px" viewBox="0 0 80.13 80.13" style="enable-background:new 0 0 80.13 80.13;" xml:space="preserve">
+                <g>	
+                    <path d="M48.355,17.922c3.705,2.323,6.303,6.254,6.776,10.817c1.511,0.706,3.188,1.112,4.966,1.112  c6.491,0,11.752-5.261,11.752-11.751c0-6.491-5.261-11.752-11.752-11.752C53.668,6.35,48.453,11.517,48.355,17.922z M40.656,41.984  c6.491,0,11.752-5.262,11.752-11.752s-5.262-11.751-11.752-11.751c-6.49,0-11.754,5.262-11.754,11.752S34.166,41.984,40.656,41.984  z M45.641,42.785h-9.972c-8.297,0-15.047,6.751-15.047,15.048v12.195l0.031,0.191l0.84,0.263  c7.918,2.474,14.797,3.299,20.459,3.299c11.059,0,17.469-3.153,17.864-3.354l0.785-0.397h0.084V57.833  C60.688,49.536,53.938,42.785,45.641,42.785z M65.084,30.653h-9.895c-0.107,3.959-1.797,7.524-4.47,10.088  c7.375,2.193,12.771,9.032,12.771,17.11v3.758c9.77-0.358,15.4-3.127,15.771-3.313l0.785-0.398h0.084V45.699  C80.13,37.403,73.38,30.653,65.084,30.653z M20.035,29.853c2.299,0,4.438-0.671,6.25-1.814c0.576-3.757,2.59-7.04,5.467-9.276  c0.012-0.22,0.033-0.438,0.033-0.66c0-6.491-5.262-11.752-11.75-11.752c-6.492,0-11.752,5.261-11.752,11.752  C8.283,24.591,13.543,29.853,20.035,29.853z M30.589,40.741c-2.66-2.551-4.344-6.097-4.467-10.032  c-0.367-0.027-0.73-0.056-1.104-0.056h-9.971C6.75,30.653,0,37.403,0,45.699v12.197l0.031,0.188l0.84,0.265  c6.352,1.983,12.021,2.897,16.945,3.185v-3.683C17.818,49.773,23.212,42.936,30.589,40.741z"></path>
+                </g>
+            </svg>
           </div>
           <div>
             <p class="text-size-34 leading-[1.1] text-blackColor font-bold font-hind dark:text-blackColor-dark">
               <span data-countup-number="1780">1780</span><span>+</span>
             </p>
             <p class="uppercase text-blackColor font-medium leading-[18px] whitespace-nowrap sm:whitespace-normal dark:text-blackColor-dark">
-              Over the World
+                Beneficiaries
             </p>
           </div>
         </div>
