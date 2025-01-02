@@ -3,7 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import UmmahCharity from "../components/Ummah_Charity.astro";
 import SeeOtherProjectCard from "../components/SeeOtherProjectCard.astro";
 import OngoingAppeals from "../components/OngoingAppeals.astro";
-// import Donationcard from '../components/Donationcard.astro';
+import SupportBanner from "../components/SupportBanner.astro";
 import { Debug } from "astro:components";
 
 const goingAppeals = [
@@ -173,6 +173,15 @@ const OtherProject = [
 		description:
 			"The term ‘Serving humanity’ is commonly used by the members of a society but less understood when it comes to...",
 		src: "https://alwahabfoundation.org/wp-content/uploads/2024/10/food-distribution-uk-1024x609.jpg.webp",
+	},
+];
+
+const SupportBannerData = [
+	{
+		leftDescription: "YOUR SUPPORT CAN TRANSFORM LIVES!",
+		rightDescription:
+			"In Islam, relieving others’ hardships is a fundamental principle. Our founder, Mufti Abdul Wahab, firmly believes that empowering individuals to attain a sustainable income is the most effective way to combat poverty and bring about lasting change.\n\nBy contributing to our Rozgar project with your Zakat or Sadaqah donation, you not only help create this income but also give independence and dignity to those in need, breaking the cycle of poverty for generations to come. Your donation today can be the catalyst that transforms their futures. Donate now and make a difference in their lives.",
+		src: "https://alwahabfoundation.org/wp-content/uploads/2022/07/3L5A6312-Edit.jpg",
 	},
 ];
 ---
@@ -1014,68 +1023,7 @@ const OtherProject = [
 
 	<!-- +++++++++++++++++++++++++++++++YOUR SUPPORT CAN TRANSFORM LIVES++++++++++++++++++++++++++++++++ -->
 
-	<div
-		class="relative container my-20 mx-auto max-w-screen-2xl sm:px-6 lg:px-8 h-[900px] md:h-screen bg-cover bg-fixed bg-center bg-no-repeat"
-		style="background-image: url('https://alwahabfoundation.org/wp-content/uploads/2022/07/3L5A6312-Edit.jpg' );"
-	>
-		<!-- Color Overlay -->
-		<div class="absolute inset-0 bg-[#740B2E] opacity-70"></div>
-
-		<!-- Content -->
-		<div
-			class="relative z-10 text-white text-center flex items-center justify-start h-full"
-		>
-			<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full">
-				<!-- Left Column -->
-				<div
-					class="flex flex-col items-center sm:items-center justify-center text-center sm:text-left"
-				>
-					<p
-						class="text-2xl sm:text-3xl lg:text-4xl font-semibold leading-tight"
-					>
-						YOUR SUPPORT <br />
-						<span class="text-3xl">CAN</span>
-						<br />
-						TRANSFORM <br />
-						<span class="text-4xl">LIVES!</span>
-						<br />
-						<button
-							class="mt-6 bg-[#c9945a] hover:bg-white text-[#740B2E] text-white duration-300 px-6 py-2 left-8 inline-flex rounded-lg text-lg font-medium"
-							>SUPPORT NOW</button
-						>
-					</p>
-				</div>
-
-				<!-- Right Column -->
-				<div
-					class="flex flex-col items-center sm:items-start justify-start text-center sm:text-left"
-				>
-					<div class="mt-4 sm:mt-0">
-						<!-- Aligns the right column text with the left -->
-						<p
-							class="text-lg sm:text-xl lg:text-2xl font-medium mb-4"
-						>
-							In Islam, relieving others’ hardships is a
-							fundamental principle. Our founder, Mufti Abdul
-							Wahab, firmly believes that empowering individuals
-							to attain a sustainable income is the most effective
-							way to combat poverty and bring about lasting
-							change.
-						</p>
-						<p class="text-lg sm:text-xl lg:text-2xl font-medium">
-							By contributing to our Rozgar project with your
-							Zakat or Sadaqah donation, you not only help create
-							this income but also give independence and dignity
-							to those in need, breaking the cycle of poverty for
-							generations to come. Your donation today can be the
-							catalyst that transforms their futures. Donate now
-							and make a difference in their lives.
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+	<SupportBanner BannerDetails={SupportBannerData} />
 
 	<div class="container mx-auto px-5">
 		<!-- Card Row -->
