@@ -1,15 +1,15 @@
 ---
 
 ---
-<div class="text-sm  md:text-lg flex flex-row justify-center">
-    <p class="font-semibold py-2 bg-customBeige">
+<div class="text-base md:text-lg flex flex-row justify-center">
+    <p class=" w-screen flex justify-center font-semibold py-2 bg-[#f5d3b5]">
       Ummah Charity International is now Al-Wahab Foundation
     </p>
   </div>
 
 <div class=" fixed bottom-0 z-20 w-screen hidden md:block ">
   <div
-    class="bg-[#740B2E] py-3 flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 justify-center items-center"
+    class="bg-[#740B2E] py-2 flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 justify-center items-center md:items-start"
   >
     <!-- Donate Label -->
     <p class="text-white text-base md:text-xl mt-1 whitespace-nowrap">
@@ -19,7 +19,7 @@
     <!-- Program Selection -->
     <div class="w-full md:w-auto">
       <select
-        class="px-5 py-1 rounded-md text-[#740B2E] focus:ring-[#740B2E] w-60 h-10"
+        class="px-6 py-2 rounded-md text-[#740B2E] focus:ring-[#740B2E] w-full"
         id="program"
         name="program"
         required
@@ -40,14 +40,13 @@
           For :
         </p>
         <p
-          class="py-1.5 px-3 h-10 text-lg font-semibold sm:text-base text-white rounded-l-md bg-customBeige"
+          class="py-[7px] px-3 text-lg font-semibold sm:text-base text-white rounded-l-md bg-[#c9945a]"
         >
           £
         </p>
         <input
-          class="py-1 md:text-lg sm:text-base w-full md:w-28 h-10 text-maroon rounded-r-md"  
-          type="text"
-          inputmode="numeric"
+          class="md:text-lg sm:text-base w-full md:w-28 h-[40px] text-[#740B2E] rounded-r-md"
+          type="number"
           placeholder="Amount"
         />
       </div>
@@ -60,13 +59,13 @@
           AS :
         </p>
         <select
-          class="px-5 py-1 rounded-md text-maroon focus:ring-[#740B2E] w-full h-10 md:w-auto"
+          class="px-8 py-2 rounded-md text-[#740B2E] focus:ring-[#740B2E] w-full md:w-auto"
           id="program"
           name="program"
           required
         >
-          <option class="text-maroon duration-300" value="" disabled selected
-            >Select Category</option
+          <option class="text-[#740B2E] duration-300" value="" disabled selected
+            >Select Program</option
           >
           <option value="program1">Program 1</option>
           <option value="program2">Program 2</option>
