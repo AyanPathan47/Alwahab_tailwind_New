@@ -508,20 +508,20 @@ const OtherProject = [
 	<!-- ++++++++++++++++++++++++ Build a Masjid ++++++++++++++++++++++++  -->
 
 	<div class="container mx-auto px-4">
-		<div class="row mt-20">
+		<div class="row md:mt-20">
 			<div class="text-center">
 				<!-- Title -->
 				<p
-					class="text-4xl sm:text-5xl md:text-xl lg:text-5xl text-[#740B2E] font-bold"
+					class="text-xl md:text-4xl  text-[#740B2E] font-bold"
 				>
 					Build a Masjid
 				</p>
 
 				<!-- Description -->
 				<p
-					class="mt-4 text-lg sm:text-xl md:text-xl font-semibold text-slate-800 mx-auto max-w-3xl"
+					class="mt-4 text-base md:text-xl font-medium md:px-10  text-grey mx-auto max-w-3xl"
 				>
-					A mosque is the heart of the community, a place full of
+					A mosque is the heart of the community, a place full of 
 					peace that brings the community together. In rural areas,
 					where mosques are damaged and unsafe due to floods, storms,
 					or earthquakes, having a suitable place to pray again can
@@ -1192,12 +1192,12 @@ const OtherProject = [
 		</div>
 	</div>
 
-	<div class="container mx-auto mt-24">
+	<div class="container mx-auto mt-24 md:px-24">
 		<div
-			class="row mx-auto grid grid-cols-2 md:grid-cols-4 justify-center items-center gap-12 sm:gap-16 md:gap-24"
+			class="row mx-auto grid grid-cols-2 md:grid-cols-4 justify-center items-center gap-4 "
 		>
 			<!-- Water Project -->
-			<div class="flex flex-col items-center text-center">
+			<div class="flex flex-col items-center counter">
 				<p>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -1209,17 +1209,16 @@ const OtherProject = [
 						></path>
 					</svg>
 				</p>
-				<p class="mt-6">
-					<span class="text-3xl font-semibold">302,800 + </span><br
-					/><br />
-					People benefited <br />
-					from water <br />
+				<p class="mt-6 font-medium text-grey">
+					<span class="text-3xl font-semibold text"data-countup-number="302,800">302,800 + </span><br/>
+					People benefited <br>
+					from water <br>
 					project
 				</p>
 			</div>
 
 			<!-- Provided with Food -->
-			<div class="flex flex-col items-center text-center">
+			<div class="flex flex-col items-center counter">
 				<p>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -1241,16 +1240,15 @@ const OtherProject = [
 						></path>
 					</svg>
 				</p>
-				<p class="mt-6">
-					<span class="text-3xl font-semibold">282,000 + </span><br
-					/><br />
+				<p class="mt-6 text-grey font-medium">
+					<span class="text-3xl font-semibold" data-countup-number="282,000">282,000 + </span><br/>
 					People provided <br />
 					with food
 				</p>
 			</div>
 
 			<!-- Masjid Project -->
-			<div class="flex flex-col items-center text-center">
+			<div class="flex flex-col items-center text-center counter">
 				<p>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -1264,16 +1262,15 @@ const OtherProject = [
 						></path>
 					</svg>
 				</p>
-				<p class="mt-6">
-					<span class="text-3xl font-semibold">26,300 +</span><br
-					/><br />
+				<p class="mt-6 text-grey font-medium">
+					<span class="text-3xl font-semibold" data-countup-number="26,300">26,300 +</span><br/>
 					Beneficiaries of <br />
 					Masjid Project
 				</p>
 			</div>
 
 			<!-- Eye Care -->
-			<div class="flex flex-col items-center text-center">
+			<div class="flex flex-col items-center counter">
 				<p>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -1287,9 +1284,8 @@ const OtherProject = [
 						></path>
 					</svg>
 				</p>
-				<p class="mt-6">
-					<span class="text-3xl font-semibold">40,000 +</span><br
-					/><br />
+				<p class="mt-6 text-grey font-medium">
+					<span class="text-3xl font-semibold" data-countup-number="400,000">40,000 +</span><br />
 					Beneficiaries of <br />
 					Eye Care
 				</p>
@@ -1309,7 +1305,7 @@ const OtherProject = [
 	<div class="container">
 		<p class="mt-11 flex justify-center">
 			<a
-				class="py-2 px-6 bg-maroon text-white hover:bg-customBeige rounded-full font-semibold text-2xl"
+				class="py-2 px-6 bg-maroon text-white hover:bg-customBeige rounded-full font-semibold text-xl md:text-2xl"
 				href="">VIEW ALL APPEALS</a
 			>
 		</p>
@@ -1317,12 +1313,12 @@ const OtherProject = [
 
 	<div class="container">
 		<div class="row mt-20">
-			<p class="text-4xl text-maroon font-semibold text-center">
+			<p class="md:text-4xl text-xl text-maroon font-semibold text-center">
 				Why Have We Rebranded?
 			</p>
-			<p class="text-xl text-grey text-center mt-5">
+			<p class="text-xl text-grey font-medium text-center mt-5 md:px-56">
 				<span class="text-grey font-semibold">Ummah Charity International</span
-				>is now <span class="text-grey font-semibold"
+				> is now <span class="text-grey font-semibold"
 					>Al-Wahab Foundation.</span
 				> We have <span class="text-grey font-semibold">rebranded</span>to 
 				create a new, stronger identity for the organisation. This decision was taken after
@@ -1453,7 +1449,7 @@ const OtherProject = [
 			<p class="text-2xl md:text-4xl text-center pt-20 font-bold">
 				GET INVOLVED
 			</p>
-			<p class="text-center mt-6 text-gray-700">
+			<p class="text-center mt-6 text-gray-800 ">
 				Your support is vital to helping us achieve this, and we
 				couldn’t do it without our dedicated volunteers.
 			</p>
