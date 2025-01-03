@@ -11,16 +11,16 @@ export interface Props{
 const {ReStroingLives} = Astro.props
 ---
 {ReStroingLives.map((ReStroingLive) => (
-  <div class="relative w-screen mt-5">
+  <div class="relative w-full h-full mt-5">
     <div class="absolute inset-0 bg-[#e5d4c7] opacity-100"></div>
     <!-- Background Container -->
     <div 
-      class="relative z-20 bg-cover bg-fixed bg-center w-full md:w-screen h-[165vh] md:h-screen flex flex-col md:flex-row items-center justify-between px-4 md:px-8 pt-10 md:py-5"
+      class="relative z-20 bg-cover bg-fixed bg-center w-full h-full min-h-screen flex flex-col md:flex-row items-center justify-center px-4"
       style="background-image: url('/assets/images/appeals/uganda-appeal/restoreBanner.png');"
     >
-      <div class="relative flex flex-col md:flex-row items-center justify-between w-full">
+      <div class="relative flex flex-col md:flex-row items-center justify-between w-full max-w-screen-xl">
         <!-- Left-Side Image -->
-        <div class="w-full  md:w-2/5 mb-8 md:mb-0">
+        <div class="w-full md:w-2/5 mb-8 md:mb-0">
           <img 
             src={ReStroingLive.src} 
             alt="Left Image" 
