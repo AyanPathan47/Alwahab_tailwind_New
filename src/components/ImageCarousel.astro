@@ -20,7 +20,7 @@ const {imageCarousel} = Astro.props;
     <!-- Image Container -->
     <div class="image-container flex justify-between gap-2 overflow-x-auto scroll-smooth space-x-4 w-full pb-4">
         {imageCarousel.map((item) => (
-            <img class="your-class-name w-[350px] md:w-96 rounded-md h-72" src={item.src} alt={item.alt || 'Image'} />
+            <img class="your-class-name w-[350px] md:w-80 rounded-md h-auto" src={item.src} alt={item.alt || 'Image'} />
         ))}
     </div>
     

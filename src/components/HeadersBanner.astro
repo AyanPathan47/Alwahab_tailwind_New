@@ -3,6 +3,8 @@ export interface Props {
   HeadersBanners: {
     src: string;
     title: string;
+    titleline1: string;
+    titleline2: string;
   }[];
 }
 
@@ -26,7 +28,10 @@ const { HeadersBanners } = Astro.props;
     {/* Text Overlay at the bottom */}
     <div class="absolute bottom-0 left-0 w-full p-4">
       <p class="text-lg md:text-5xl text-white text-center font-bold">
-        {items.title}
+        {items.title}   <br />
+        {items.titleline1}   <br />
+        {items.titleline2}
+
       </p>
     </div>
   </div>
