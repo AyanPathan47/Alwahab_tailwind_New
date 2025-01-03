@@ -63,9 +63,10 @@ const ImagesCarousel = [
             <p class="text-4xl text-maroon font-bold text-center pt-16">
                 Overview
             </p><br />
-            <p class="text-center px-10 font-medium">
-                Since 2014, <strong class="text-grey">Al-Wahab Foundation (AWF)</strong> has delivered
-                emergency<br />
+            <p class="text-lg text-center px-10 font-medium">
+                Since 2014, <strong class="text-grey"
+                    >Al-Wahab Foundation (AWF)</strong
+                > has delivered emergency<br />
                 and developmental aid to combat and eradicate poverty, growing to
                 reach thousands of <br />people each year. Our aim is to see a
                 world where people are empowered to be able<br /> to step up out
@@ -77,23 +78,70 @@ const ImagesCarousel = [
             <p class="flex justify-center my-7">
                 <a
                     href=""
-                    class="px-6 font-bold py-3 bg-maroon text-white hover:bg-customBeige rounded-full uppercase"
+                    class="px-7 text-xl font-bold py-2.5 bg-maroon text-white hover:bg-customBeige rounded-full uppercase"
                     >READ OUR CHAIRMAN’S MESSAGE</a
                 >
             </p>
         </div>
     </div>
 
-    <SupportBanners BannerDetails={SupportBannerData} />
+    <div
+        class="relative w-full px-4 mt-20 sm:px-6 lg:px-8 bg-cover bg-fixed bg-center bg-no-repeat bg-[url('https://alwahabfoundation.org/wp-content/uploads/2022/06/cc88100de121c6e1ac8386e1b4ca334b.jpg')]"
+    >
+        <div class="absolute inset-0 bg-[#740B2E] opacity-70"></div>
+        <div
+            class="relative z-10 text-white text-center flex items-center justify-start py-16 sm:py-24 w-full"
+        >
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full">
+                <div
+                    class="flex flex-col md:items-center items-start justify-center text-center sm:text-left"
+                >
+                    <p
+                        class="text-2xl sm:text-3xl lg:text-[40px] font-bold leading-10 px-28"
+                    >
+                        ABOUT <br />AWF
+                        <br />
+                        <button
+                            class="mt-6 uppercase bg-[#c9945a] hover:bg-white text-white hover:text-[#740B2E] duration-300 px-[30px] py-3 left-8 inline-flex rounded-full text-xl font-bold"
+                        >
+                            Get Involved
+                        </button>
+                    </p>
+                </div>
+                <div
+                    class="flex flex-col items-center md:items-start justify-start text-center sm:text-left"
+                >
+                    <div class="mt-4 sm:mt-0">
+                        <p
+                            class="text-lg sm:text-xl lg:text-[27px] leading-8 font-medium mb-4"
+                        >
+                            AWF (previously known as Ummah Charity
+                            International) has been creating networks of care
+                            and relief since 2014. Our chairperson, Mufti Abdul
+                            Wahab, has seen first-hand the devastation caused by
+                            natural disaster in underdeveloped countries where
+                            the most vulnerable suffer the most. From these
+                            experiences, AWF was founded and has grown today to
+                            help thousands of people suffering extreme poverty
+                            and living in desperate conditions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="container">
         <div class="row">
-            <p class=" md:text-4xl text-lg text-center font-bold text-maroon px-20 py-8">
+            <p
+                class="md:text-4xl text-lg text-center font-bold text-maroon px-20 py-8"
+            >
                 AWF Vision & Mission
             </p>
-            <p class=" md:text-lg text-base text-grey font-semibold md:px-24">
-                <span class="text-maroon textlg md:text-xl  font-semibold">Our vision</span><br
-                /><br />
+            <p class="md:text-lg text-base leading-[22px] text-grey font-medium md:px-24">
+                <span class="text-maroon text-lg md:text-lg font-bold"
+                    >Our vision</span
+                ><br /><br />
                 At Al-Wahab Foundation our vision is to address the root causes of
                 poverty by ensuring that every individual in our society can earn
                 a stable livelihood to support their needs and that of their family.
@@ -103,18 +151,25 @@ const ImagesCarousel = [
                 programmes help people by providing business support, finance, training,
                 tools and resources so they can learn, achieve and earn.<br
                 /><br />
-                <span class="text-maroon textlg md:text-xl font-semibold">Our Mission</span><br/>
-                Our mission, inspired by our founder <a class="font-bold text-maroon hover:text-customBeige" href="">Mufti Abdul Wahab</a>, is to provide
-                sustainable solutions to people in poverty, empowering them to earn
-                a stable living without the need for humanitarian support. Our programmes
-                focus on providing access to economic stability that combats and
-                eradicates poverty in all its forms.
+                <span class="text-maroon text-lg md:text-lg font-bold"
+                    >Our Mission</span
+                ><br />
+                Our mission, inspired by our founder <a
+                    class="font-bold text-maroon hover:text-customBeige"
+                    href="">Mufti Abdul Wahab</a
+                >, is to provide sustainable solutions to people in poverty,
+                empowering them to earn a stable living without the need for
+                humanitarian support. Our programmes focus on providing access
+                to economic stability that combats and eradicates poverty in all
+                its forms.
             </p>
         </div>
     </div>
     <ImageCarousel imageCarousel={ImagesCarousel} />
 
-    <p class="md:text-4xl text-lg text-center font-bold text-maroon px-20 py-12">
+    <p
+        class="md:text-4xl text-lg text-center font-bold text-maroon px-20 py-12"
+    >
         Our Values
     </p>
     <div
@@ -125,7 +180,8 @@ const ImagesCarousel = [
         <!-- card 1 -->
         <div data-aos="fade-up">
             <div
-                class="p-30px group bg-whiteColor rounded-xl transition-all duration-300 hover:-translate-y-5px shadow-dropdown-secodary"
+                style="box-shadow: 0px 0px 10px 2px rgba(90,89,89,0.418);"
+                class="p-30px group bg-whiteColor rounded-xl transition-all shadow-grey duration-300 hover:-translate-y-5px "
             >
                 <!-- card svg -->
                 <div
@@ -157,11 +213,11 @@ const ImagesCarousel = [
                 <div>
                     <a
                         href="#"
-                        class="text-size-22 sm:text-size-17 md:text-size-22 lg:text-size-17 2xl:text-size-22 leading-29px sm:leading-15px md:leading-29px lg:leading-15px 2xl:leading-29px font-semibold mb-5px text-maroon"
+                        class="text-size-22 sm:text-size-17 md:text-lg leading-6 sm:leading-15px md:leading-29px lg:leading-15px 2xl:leading-29px font-bold mb-5px text-maroon"
                     >
                         COMPASSION
                     </a>
-                    <p class="text-contentColor leading-29px">
+                    <p class="text-[#333132] md:text-sm font-medium">
                         Inspired by the teaching of our faith, we believe in
                         kindness and compassion to all humanity, not only to
                         those who are in immediate need and who struggle in
@@ -173,7 +229,8 @@ const ImagesCarousel = [
         <!-- card 2 -->
         <div data-aos="fade-up">
             <div
-                class="p-30px group bg-whiteColor rounded-xl transition-all duration-300 hover:-translate-y-5px shadow-dropdown-secodary"
+                style="box-shadow: 0px 0px 10px 2px rgba(90,89,89,0.418);"
+                class="p-30px group bg-whiteColor rounded-xl transition-all duration-300 hover:-translate-y-5px "
             >
                 <!-- card svg -->
                 <div
@@ -203,11 +260,11 @@ const ImagesCarousel = [
                 <div>
                     <a
                         href="#"
-                        class="text-size-22 sm:text-size-17 md:text-size-22 lg:text-size-17 2xl:text-size-22 leading-29px sm:leading-15px md:leading-29px lg:leading-15px 2xl:leading-29px font-semibold mb-5px text-maroon dark:text-whiteColor dark:hover:text-secondaryColor dark:transition-all dark:duration-300"
+                        class="text-size-22 sm:text-size-17 md:text-lg leading-6 sm:leading-15px md:leading-29px lg:leading-15px 2xl:leading-29px font-bold mb-5px text-maroon"
                     >
                         EQUALITY
                     </a>
-                    <p class="text-contentColor leading-29px">
+                    <p class="text-[#333132] md:text-sm font-medium">
                         Islam teaches equality, irrespective of colour, class,
                         race, gender, age, disability, ethnicity, and religion.
                         This is our foundation and reflected across our work
@@ -219,7 +276,8 @@ const ImagesCarousel = [
         <!-- card 3 -->
         <div data-aos="fade-up">
             <div
-                class="p-30px group bg-whiteColor rounded-xl transition-all duration-300 hover:-translate-y-5px shadow-dropdown-secodary"
+                style="box-shadow: 0px 0px 10px 2px rgba(90,89,89,0.418);"
+                class="p-30px group bg-whiteColor rounded-xl transition-all duration-300 hover:-translate-y-5px "
             >
                 <!-- card svg -->
                 <div
@@ -251,11 +309,11 @@ const ImagesCarousel = [
                 <div>
                     <a
                         href="#"
-                        class="text-size-22 sm:text-size-17 md:text-size-22 lg:text-size-17 2xl:text-size-22 leading-29px sm:leading-15px md:leading-29px lg:leading-15px 2xl:leading-29px font-semibold mb-5px text-maroon dark:text-whiteColor dark:hover:text-secondaryColor dark:transition-all dark:duration-300"
+                        class="text-size-22 sm:text-size-17 md:text-lg leading-6 sm:leading-15px md:leading-29px lg:leading-15px 2xl:leading-29px font-bold mb-5px text-maroon"
                     >
                         TRANSPARENCY
                     </a>
-                    <p class="text-contentColor leading-29px">
+                    <p class="text-[#333132] md:text-sm font-medium">
                         We have a policy of honesty and openness as we believe
                         we are answerable to Allah (SWT). We believe we owe our
                         donors transparency, which is why we keep you informed
@@ -267,7 +325,8 @@ const ImagesCarousel = [
         <!-- card 4 -->
         <div data-aos="fade-up">
             <div
-                class="p-30px group bg-whiteColor rounded-xl transition-all duration-300 hover:-translate-y-5px shadow-dropdown-secodary"
+                style="box-shadow: 0px 0px 10px 2px rgba(90,89,89,0.418);"
+                class="p-30px group bg-whiteColor rounded-xl transition-all duration-300 hover:-translate-y-5px "
             >
                 <!-- card svg -->
                 <div
@@ -299,11 +358,11 @@ const ImagesCarousel = [
                 <div>
                     <a
                         href="#"
-                        class="text-size-22 sm:text-size-17 md:text-size-22 lg:text-size-17 2xl:text-size-22 leading-29px sm:leading-15px md:leading-29px lg:leading-15px 2xl:leading-29px font-semibold mb-5px text-maroon dark:text-whiteColor dark:hover:text-secondaryColor dark:transition-all dark:duration-300"
+                        class="text-size-22 sm:text-size-17 md:text-lg leading-6 sm:leading-15px md:leading-29px lg:leading-15px 2xl:leading-29px font-bold mb-5px text-maroon"
                     >
                         INTEGRITY
                     </a>
-                    <p class="text-contentColor leading-29px">
+                    <p class="text-[#333132] md:text-sm font-medium">
                         Integrity is our priority. We take your Zakat and
                         Sadaqah donations seriously, treating your generosity
                         with respect. We maintain transparent processes and
@@ -316,7 +375,8 @@ const ImagesCarousel = [
         <!-- card 5 -->
         <div data-aos="fade-up">
             <div
-                class="p-30px group bg-whiteColor rounded-xl transition-all duration-300 hover:-translate-y-5px shadow-dropdown-secodary"
+                style="box-shadow: 0px 0px 10px 2px rgba(90,89,89,0.418);"
+                class="p-30px group bg-whiteColor rounded-xl transition-all duration-300 hover:-translate-y-5px"
             >
                 <!-- card svg -->
                 <div
@@ -344,11 +404,11 @@ const ImagesCarousel = [
                 <div>
                     <a
                         href="#"
-                        class="text-size-22 sm:text-size-17 md:text-size-22 lg:text-size-17 2xl:text-size-22 leading-29px sm:leading-15px md:leading-29px lg:leading-15px 2xl:leading-29px font-semibold text-maroon mb-5px dark:text-whiteColor dark:hover:text-secondaryColor dark:transition-all dark:duration-300"
+                        class="text-size-22 sm:text-size-17 md:text-lg leading-6 sm:leading-15px md:leading-29px lg:leading-15px 2xl:leading-29px font-bold mb-5px text-maroon"
                     >
                         EXCELLENCE
                     </a>
-                    <p class="text-contentColor leading-29px">
+                    <p class="text-[#333132] md:text-sm font-medium">
                         Our goal is to achieve excellence in providing
                         humanitarian aid in times of crisis, underpinned by
                         long-term solutions that address inequalities, empower
@@ -361,7 +421,8 @@ const ImagesCarousel = [
         <!-- card 6 -->
         <div data-aos="fade-up">
             <div
-                class="p-30px group bg-whiteColor rounded-xl transition-all duration-300 hover:-translate-y-5px shadow-dropdown-secodary"
+                style="box-shadow: 0px 0px 10px 2px rgba(90,89,89,0.418);"
+                class="p-30px group bg-whiteColor rounded-xl transition-all duration-300 hover:-translate-y-5px "
             >
                 <!-- card svg -->
                 <div
@@ -391,11 +452,11 @@ const ImagesCarousel = [
                 <div>
                     <a
                         href="#"
-                        class="text-size-22 sm:text-size-17 md:text-size-22 lg:text-size-17 2xl:text-size-22 leading-29px sm:leading-15px md:leading-29px lg:leading-15px 2xl:leading-29px font-semibold text-maroon mb-5px dark:text-whiteColor dark:hover:text-secondaryColor dark:transition-all dark:duration-300"
+                        class="text-size-22 sm:text-size-17 md:text-lg leading-6 sm:leading-15px md:leading-29px lg:leading-15px 2xl:leading-29px font-bold mb-5px text-maroon"
                     >
                         PARTNERSHIP
                     </a>
-                    <p class="text-contentColor leading-29px">
+                    <p class="text-[#333132] md:text-sm font-medium">
                         We work together with our local and international
                         partners to effectively serve people across communities.
                         We use our local knowledge to help those who are hardest
@@ -408,10 +469,12 @@ const ImagesCarousel = [
     </div>
 
     <div class="max-w-5xl mx-auto">
-        <p class="md:text-4xl text-lg text-center font-bold text-maroon px-20 py-8 pt-24">
+        <p
+            class="md:text-4xl text-lg text-center font-bold text-maroon px-20 py-8 pt-24"
+        >
             Our Journey So Far...
         </p>
-        <div class="relative ">
+        <div class="relative">
             <!-- Vertical line -->
             <div
                 class="absolute left-1/2 transform -translate-x-1/2 w-1 h-[90.5%] mt-[15.5rem] bg-maroon"
@@ -684,31 +747,48 @@ const ImagesCarousel = [
                 </div>
             </div>
         </div>
- 
-        <div class="flex justify-center items-center py-8 mt-6 ">
-            <a class="bg-maroon hover:bg-customBeige text-2xl text-white px-4 py-2 rounded-full font-bold " href="">DONATE NOW</a>
-        </div>
 
+        <div class="flex justify-center items-center py-8 mt-6">
+            <a
+                class="bg-maroon hover:bg-customBeige text-2xl text-white px-4 py-2 rounded-full font-bold"
+                href="">DONATE NOW</a
+            >
+        </div>
     </div>
 
-    <div class="w-screen bg-[#aa71454D] ">
+    <div class="w-screen bg-[#aa71454D]">
         <div class="flex justify-center mt-9 pt-20">
-            <div class="bg-maroon px-10 py-8 mb-12 rounded-3xl w-11/12 md:w-3/5 h-80">
-              <p class="text-center text-white text-2xl font-semibold mt-10">Sign up to our Newsletter</p>
-              <form action="#" method="post" class="mt-6">
-                <!-- Form Group -->
-                <div class="flex flex-col ">
-                  <label for="email" class="block text-white text-sm font-medium mb-2">Email Address 
-                    <span class="text-[#e04562] text-lg">*</span>
-                  </label>
-                  <input id="email" name="email" type="email" placeholder="Type your email address here"
-                    class="w-full px-4 py-1 h-12 border bg-[#ededed] rounded-xl border-maroon shadow-sm placeholder:text-maroon text-maroon focus:ring focus:ring-customBeige focus:border-customBeige"
-                  />
-                  <a href="" class="mt-5 rounded-md w-36 py-2 text-maroon hover:text-white hover:bg-customBeige font-semibold text-center bg-white">Send Message</a>
-                </div>
-              </form>
+            <div
+                class="bg-maroon px-10 py-8 mb-12 rounded-3xl w-11/12 md:w-3/5 h-80"
+            >
+                <p class="text-center text-white text-2xl font-semibold mt-10">
+                    Sign up to our Newsletter
+                </p>
+                <form action="#" method="post" class="mt-6">
+                    <!-- Form Group -->
+                    <div class="flex flex-col">
+                        <label
+                            for="email"
+                            class="block text-white text-sm font-medium mb-2"
+                            >Email Address
+                            <span class="text-[#e04562] text-lg">*</span>
+                        </label>
+                        <input
+                            id="email"
+                            name="email"
+                            type="email"
+                            placeholder="Type your email address here"
+                            class="w-full px-4 py-1 h-12 border bg-[#ededed] rounded-xl border-maroon shadow-sm placeholder:text-maroon text-maroon focus:ring focus:ring-customBeige focus:border-customBeige"
+                        />
+                        <a
+                            href=""
+                            class="mt-5 rounded-md w-36 py-2 text-maroon hover:text-white hover:bg-customBeige font-semibold text-center bg-white"
+                            >Send Message</a
+                        >
+                    </div>
+                </form>
             </div>
-          </div>
+        </div>
     </div>
 
     <style>
