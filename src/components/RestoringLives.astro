@@ -10,66 +10,63 @@ export interface Props{
 }
 const {ReStroingLives} = Astro.props
 ---
-
 {ReStroingLives.map((ReStroingLive) => (
-<div class="relative w-full mt-5 md:px-20">
-  <div class="absolute  inset-0 bg-[#e5d4c7] opacity-80"></div>
+  <div class="relative w-screen mt-5">
+    <div class="absolute inset-0 bg-[#e5d4c7] opacity-100"></div>
     <!-- Background Container -->
     <div 
-      class="relative z-20 bg-cover bg-fixed bg-center w-full h-[1100px] md:h-[670px] flex flex-col md:flex-row items-center justify-between px-4 md:px-8 pt-10 md:py-5"
+      class="relative z-20 bg-cover bg-fixed bg-center w-full md:w-screen h-[165vh] md:h-screen flex flex-col md:flex-row items-center justify-between px-4 md:px-8 pt-10 md:py-5"
       style="background-image: url('/assets/images/appeals/uganda-appeal/restoreBanner.png');"
     >
-
       <div class="relative flex flex-col md:flex-row items-center justify-between w-full">
         <!-- Left-Side Image -->
-        <div class="w-full md:w-2/5 mb-8 md:mb-0">
-        <img 
-          src={ReStroingLive.src} 
-          alt="Left Image" 
-          class="w-full h-auto object-cover rounded-2xl shadow-lg border-8 border-white"
-        />
+        <div class="w-full  md:w-2/5 mb-8 md:mb-0">
+          <img 
+            src={ReStroingLive.src} 
+            alt="Left Image" 
+            class="w-full h-auto object-cover rounded-2xl shadow-lg border-8 border-white"
+          />
         </div>
   
-      <!-- Right-Side Text -->
+        <!-- Right-Side Text -->
         <div class="w-full md:w-3/5 text-center text-gray-700 space-y-4 md:pl-12">
-        <!-- Centered Quote Icon -->
+          <!-- Centered Quote Icon -->
           <div class="flex justify-center items-center mb-4">
-          <svg 
-            xmlns="http://www.w3.org/2000/svg" 
-            class="fill-maroon stroke-maroon w-12 h-12" 
-            viewBox="0 0 24 24" 
-            stroke="currentColor" 
-            stroke-width="2" 
-            stroke-linecap="round" 
-            stroke-linejoin="round"
-          >
-            <path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/>
-            <path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/>
-          </svg>
-        </div>
+            <svg 
+              xmlns="http://www.w3.org/2000/svg" 
+              class="fill-maroon stroke-maroon w-12 h-12" 
+              viewBox="0 0 24 24" 
+              stroke="currentColor" 
+              stroke-width="2" 
+              stroke-linecap="round" 
+              stroke-linejoin="round"
+            >
+              <path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/>
+              <path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/>
+            </svg>
+          </div>
   
-        <!-- Heading -->
-        <h2 class="text-2xl md:text-3xl font-semibold text-maroon">
-          {ReStroingLive.title}
-        </h2>
+          <!-- Heading -->
+          <h2 class="text-2xl md:text-3xl font-semibold text-maroon">
+            {ReStroingLive.title}
+          </h2>
   
-        <!-- Paragraph -->
-        <p class="text-sm md:text-lg leading-relaxed font-bold text-[#333132]">
-          {ReStroingLive.description}
-        </p>
+          <!-- Paragraph -->
+          <p class="text-sm md:text-lg leading-relaxed font-bold text-[#333132]">
+            {ReStroingLive.description}
+          </p>
   
-        <!-- Button -->
-        <div>
-          <a 
-            class="text-white font-semibold text-base rounded-full md:text-lg px-6 py-2 bg-customBeige hover:bg-maroon" 
-            href="#"
-          >
-            {ReStroingLive.buttonTitle}
-          </a>
+          <!-- Button -->
+          <div>
+            <a 
+              class="text-white font-semibold text-base rounded-full md:text-lg px-6 py-2 bg-customBeige hover:bg-maroon" 
+              href="#"
+            >
+              {ReStroingLive.buttonTitle}
+            </a>
+          </div>
         </div>
       </div>
-      </div>
-      
     </div>
   </div>
 ))}

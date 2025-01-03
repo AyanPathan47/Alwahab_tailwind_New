@@ -136,9 +136,8 @@ const HeaderBannerData = [
     <HeadersBanner HeadersBanners={HeaderBannerData} />
     <UmmahCharity />
     <div class="mt-12">
-        <p class="text-maroon md:text-3xl font-bold text-center text-4xl font-sans-serif">
-            Bringing Comfort and Hope to the Most Vulnerable <br />Through
-            Winter Appeal
+        <p class="text-maroon md:text-4xl font-bold text-center text-xl font-sans-serif px-4 md:px-56">
+            Bringing Comfort and Hope to the Most Vulnerable Through Winter Appeal
         </p>
         <p class="text-grey text-lg font-medium md:text-xl text-center mt-5 px-4 md:px-20 lg:px-72">
             Climate changes aren’t always pleasant for everyone. Specifically,
@@ -163,7 +162,7 @@ const HeaderBannerData = [
     <!--support banner -->
     <SupportBanner BannerDetails={SupportBannerDetails} />
     <!--section n -->
-    <div class="counter grid grid-cols-2 md:grid-cols-6 gap-2 md:px-32  py-[70px] md:py-10">
+    <div class="counter grid grid-cols-2 md:grid-cols-6 gap-2 md:px-32   py-[70px] md:py-10">
         <!-- Item 1 -->
         <div class="flex flex-col  items-center text-center" data-aos="fade-up">
           <div>
@@ -226,7 +225,7 @@ const HeaderBannerData = [
           </div>
           <div>
             <p class="text-size-34 leading-[1.1] text-grey font-bold font-hind dark:text-blackColor-dark">
-              <span data-countup-number="490">490</span><span>k</span>
+              <span data-countup-number="490">490</span><span>k+</span>
             </p>
             <p class="uppercase text-grey font-medium leading-[18px] whitespace-nowrap sm:whitespace-normal dark:text-blackColor-dark">
                 Gloves & Socks <br/> Distributed
@@ -305,24 +304,24 @@ const HeaderBannerData = [
     <div class="absolute inset-0 bg-maroon bg-opacity-75 z-10"></div>
 
     <!-- Text content -->
-    <div class="relative z-20 text-white">
+    <div class="relative z-20 text-white px-2 ">
         <div class="text-center text-xl md:text-5xl font-bold pt-20">
             <p>Winter Aid: Countries Seeking Help This Year</p>
         </div>
 
         <!-- Pakistan Section -->
-        <div class="flex py-6">
-            <div class="w-1/4 flex justify-center">
-                <div class=" flex items-center justify-center rounded">
-                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" height="100" viewBox="0 0 500 500" width="100" class="fill-customBeige md:-mt-14">
+        <div class="flex flex-col md:flex-row py-6 items-center md:items-start">
+            <div class="w-full md:w-1/4 flex justify-center md:justify-end md:pr-10 mb-4 md:mb-0">
+                <div class="flex items-center justify-end rounded">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" height="70" viewBox="0 0 500 500" width="70" class="fill-customBeige">
                         <g><path d="m278.953 235.563-22.953-49.545-22.953 49.545-54.214 6.52 40.028 37.14-10.552 53.574 47.691-26.592 47.691 26.592-10.552-53.574 40.028-37.14z"></path>
                            <path d="m0 51.853v408.295h512v-408.295zm345.641 338.683-89.641-49.982-89.641 49.982 19.835-100.699-75.236-69.808 101.899-12.253 43.143-93.127 43.143 93.126 101.899 12.253-75.236 69.808z"></path>
                         </g>
                     </svg>
                 </div>
             </div>
-            <div class="w-3/4 flex ">
-                <p class="md:text-xl text-base px-4 md:pr-28 font-medium ">
+            <div class="w-full md:w-3/4 text-center md:text-left">
+                <p class="md:text-xl text-base px-4 md:pr-28 font-medium">
                     <span class="text-customBeige text-xl font-semibold md:text-5xl">Pakistan</span> <br/>
                     In Pakistan, every single day is a new challenge for people living below 
                     the poverty line due to inflation and unemployment. They are struggling to get back 
@@ -332,74 +331,77 @@ const HeaderBannerData = [
             </div>
         </div>
         <p class="flex justify-center py-4 mb-8">
-            <a class="py-2 px-4 mb-7 font-bold text-base md:text-xl bg-customBeige hover:bg-white text-white hover:text-maroon rounded-full" href="">
-                Donate Pakistan Winter Kit £ 50
+            <a class="py-2 px-4 mb-7 font-semibold text-base md:text-xl bg-customBeige hover:bg-white text-white hover:text-maroon rounded-full" href="">
+                DONATE PAKISTAN WINTER KIT £ 50
             </a>
         </p>
 
-        <div class="flex py-6">
-            <div class="w-1/4 flex justify-center">
-                <div class="bg-customBeige flex items-center justify-center w-16 h-16 rounded">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="32"
-                        height="32"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="lucide lucide-star"
-                    >
-                        <path
-                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
-                        ></path>
-                    </svg>
+        <!-- UK Section -->
+        <div class="flex flex-col md:flex-row py-6 items-center md:items-start">
+            <div class="w-full md:w-1/4 flex justify-center md:justify-end md:pr-10 mb-4 md:mb-0">
+                <div class=" flex items-center justify-center w-16 h-16 rounded">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 500 500" class="fill-customBeige">
+                        <g>
+                          <path d="M206.042 305.864h-50.117L0 422.127v28.49h27.974l178.068-132.774z"></path>
+                          <path d="M206.042 206.042v-11.979L27.974 61.289H0v28.489l155.925 116.264z"></path>
+                          <path d="M511.906 275.864v-39.822H275.864V61.289h-39.822v174.753H0v39.822h236.042v174.753h39.822V275.864z"></path>
+                          <path d="M511.906 384.706v-78.842h-105.738z"></path>
+                          <path d="M0 305.864v78.842l105.738-78.842z"></path>
+                          <path d="M0 127.2v78.842h105.738z"></path>
+                          <path d="M206.042 61.289h-127.881l127.881 95.353z"></path>
+                          <path d="M78.161 450.617h127.881v-95.353z"></path>
+                          <path d="M305.864 450.617h127.881l-127.881-95.353z"></path>
+                          <path d="M305.864 206.042h50.117L511.906 89.778V61.289h-27.974L305.864 194.063z"></path>
+                          <path d="M305.864 305.864v11.979l178.068 132.774h27.974v-28.49L355.982 305.864z"></path>
+                          <path d="M511.906 206.042v-78.842l-105.738 78.842z"></path>
+                          <path d="M433.745 61.289h-127.881v95.353z"></path>
+                        </g>
+                      </svg>
+                      
                 </div>
             </div>
-            <div class="w-3/4 flex">
+            <div class="w-full md:w-3/4 text-center md:text-left">
                 <p class="md:text-xl text-base px-4 md:pr-28 font-medium">
                     <span class="text-customBeige font-semibold text-xl md:text-5xl">UNITED KINGDOM</span> <br />
                     Even in developed nations like the United Kingdom, many people are battling 
-                     with rising cost of living and unemployment. The winter season highlights their 
-                      struggle, and your generosity can provide a vital support, ensuring they have 
-                       access to essentials, a warm meal, and everything that can give them comfort to 
-                        live through this phase. To help them survive, join AWF’s Winter Appeal and 
-                         make a lasting impact.
+                    with rising cost of living and unemployment. The winter season highlights their 
+                    struggle, and your generosity can provide a vital support, ensuring they have 
+                    access to essentials, a warm meal, and everything that can give them comfort to 
+                    live through this phase. To help them survive, join AWF’s Winter Appeal and 
+                    make a lasting impact.
                 </p>
             </div>
         </div>
         <p class="flex justify-center mb-8">
-            <a class="py-2 px-4 mb-7 font-bold text-base md:text-xl bg-customBeige hover:bg-white text-white hover:text-maroon rounded-full" href="">
-                Donate Pakistan Winter Kit £ 50
+            <a class="py-2 px-4 mb-7 font-semibold text-base md:text-xl bg-customBeige hover:bg-white text-white hover:text-maroon rounded-full" href="">
+                DONATE UK WINTER KIT £ 50
             </a>
         </p>
 
-        <div class="flex py-6">
-            <div class="w-1/4 flex justify-center">
-                <div class="bg-customBeige flex items-center justify-center w-16 h-16 rounded">
-                    <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="32"
-                    height="32"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="lucide lucide-star"
-                >
-                    <path
-                        d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
-                    ></path>
-                </svg>
+        <!-- Afghanistan Section -->
+        <div class="flex flex-col md:flex-row py-6 items-center md:items-start">
+            <div class="w-full md:w-1/4 flex justify-center md:justify-end md:pr-10 mb-4 md:mb-0">
+                <div class=" flex items-center justify-center w-16 h-16 rounded">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 500 500" class="fill-customBeige">
+                          <path d="M206.042 305.864h-50.117L0 422.127v28.49h27.974l178.068-132.774z"></path>
+                          <path d="M206.042 206.042v-11.979L27.974 61.289H0v28.489l155.925 116.264z"></path>
+                          <path d="M511.906 275.864v-39.822H275.864V61.289h-39.822v174.753H0v39.822h236.042v174.753h39.822V275.864z"></path>
+                          <path d="M511.906 384.706v-78.842h-105.738z"></path>
+                          <path d="M0 305.864v78.842l105.738-78.842z"></path>
+                          <path d="M0 127.2v78.842h105.738z"></path>
+                          <path d="M206.042 61.289h-127.881l127.881 95.353z"></path>
+                          <path d="M78.161 450.617h127.881v-95.353z"></path>
+                          <path d="M305.864 450.617h127.881l-127.881-95.353z"></path>
+                          <path d="M305.864 206.042h50.117L511.906 89.778V61.289h-27.974L305.864 194.063z"></path>
+                          <path d="M305.864 305.864v11.979l178.068 132.774h27.974v-28.49L355.982 305.864z"></path>
+                          <path d="M511.906 206.042v-78.842l-105.738 78.842z"></path>
+                          <path d="M433.745 61.289h-127.881v95.353z"></path>
+                      </svg>
                 </div>
             </div>
-            <div class="w-3/4 flex">
-                <p class="md:text-xl text-base px-4 md:pr-28  font-medium ">
-                    <span class="text-customBeige font-semibold text-xl md:text-5xl">AFGHANISTAN </span> <br />
+            <div class="w-full md:w-3/4 text-center md:text-left">
+                <p class="md:text-xl text-base px-4 md:pr-28 font-medium">
+                    <span class="text-customBeige font-semibold text-xl md:text-5xl">AFGHANISTAN</span> <br />
                     Afghanistan has been struggling for a long time under dire situations due to 
                     various circumstances, making it difficult for them to survive. There are many 
                     who are compelled to live life of homelessness while others struggle to meet 
@@ -411,12 +413,13 @@ const HeaderBannerData = [
             </div>
         </div>
         <p class="flex justify-center ">
-            <a class="py-2 px-4 mb-10 font-bold text-base md:text-xl bg-customBeige hover:bg-white text-white hover:text-maroon rounded-full" href="">
-                Donate Pakistan Winter Kit £ 50
+            <a class="py-2 px-4 mb-10 font-semibold text-base md:text-xl bg-customBeige hover:bg-white text-white hover:text-maroon rounded-full" href="">
+                DONATE AFGHANISTAN WINTER KIT £ 50
             </a>
         </p>
     </div>
 </div>
+
 
     <!--section 2 -->
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
