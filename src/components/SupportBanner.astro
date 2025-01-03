@@ -25,9 +25,9 @@ const { BannerDetails } = Astro.props;
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full">
         {/* Left Column */}
         <div class="flex flex-col md:items-center items-start justify-center text-center sm:text-left">
-          <p class="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight px-28 ">
+          <p class="text-2xl sm:text-3xl lg:text-[40px] font-bold leading-10 px-28 ">
             {BannerDetail.leftDescription} <br />
-            <button class="mt-6 bg-[#c9945a] hover:bg-white text-white hover:text-[#740B2E] duration-300 px-6 py-2 left-8 inline-flex rounded-full text-lg font-semibold">
+            <button class="mt-6 bg-[#c9945a] hover:bg-white text-white hover:text-[#740B2E] duration-300 px-[30px] py-3 left-8 inline-flex rounded-full text-xl font-bold">
               SUPPORT NOW
             </button>
           </p>
@@ -36,7 +36,7 @@ const { BannerDetails } = Astro.props;
         {/* Right Column */}
         <div class="flex flex-col items-center md:items-start justify-start text-center sm:text-left">
           <div class="mt-4 sm:mt-0">
-            <p class="text-lg sm:text-xl lg:text-3xl font-normal mb-4">
+            <p class="text-lg sm:text-xl lg:text-[27px] leading-8 font-medium mb-4">
               {BannerDetail.rightDescription}
             </p>
           </div>
