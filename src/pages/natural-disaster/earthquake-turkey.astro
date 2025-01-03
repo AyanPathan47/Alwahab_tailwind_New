@@ -4,40 +4,128 @@ import HeadersBanner from "../../components/HeadersBanner.astro";
 import UmmahCharity from "../../components/Ummah_Charity.astro";
 import CardforCountry from "../../components/CardforCountry.astro";
 import SupportBanners from "../../components/SupportBanner.astro";
+import ImageCarousel from "../../components/ImageCarousel.astro";
+import RestoringLives from "../../components/RestoringLives.astro";
+import SeeOtherProjectCard from "../../components/SeeOtherProjectCard.astro";
+const SeeOtherproject = [
+  {
+    src: "https://alwahabfoundation.org/wp-content/uploads/2023/03/80953110-f97e-4453-986d-5774276033de-1024x768.jpg",
+    title: "Turkey & Syria Earthquake Appeal",
+    description:
+      "In early February 2023, Turkiye was hit by a devastating series of major earthquakes near the border with Syria. Tragically,",
+  },
+  {
+    src: "https://alwahabfoundation.org/wp-content/uploads/2023/12/IMG_6194a-1024x683.jpg",
+    title: "Afghanistan Earthquake Appeal",
+    description:
+      "The long-suffering Afghans once again face a daunting challenge as a massive earthquake measuring 6.3 in magnitude, struck on both",
+  },
+  {
+    src: "https://alwahabfoundation.org/wp-content/uploads/2023/09/IMG_3855-1024x768.jpg",
+    title: "Morocco Earthquake Appeal",
+    description:
+      "A disastrous earthquake struck Morocco on Friday night, September 8th, at just past 11 PM local time resulting in a",
+  },
+  
+];
+const restore = [
+    {
+        title: "Restoring Lives: Azra Extends Warm Thanks to Al-Wahab Foundation for Assistance ",
+        description:
+            "My name is Azra, and I reside in Hatay with my family. Our lives were turned upside down by the natural disasters that struck our city. We lost our home, our belongings, and our means of income. Providing for my children became an overwhelming challenge, as we struggled to find food, clean water, and other necessities.It was a time of immense uncertainty and fear for our future. We are deeply grateful to the Al-Wahab Foundation and Mufti Abdul Wahab for their understanding and support during this difficult time. The Emergency Relief Package they provided has been a true blessing for my family. I am thankful to Almighty Allah that we still have got kind people like Mufti Abdul Wahab and the dedicated team of Al-Wahab Foundation to help suffering families in bringing ease to them.",
+        src: "https://alwahabfoundation.org/wp-content/uploads/2023/02/IMG_1245-1.jpg",
+        buttonTitle: "Read More",
+    },
+];
+
+const image = [
+    {
+        src: "https://alwahabfoundation.org/wp-content/uploads/2023/03/1B611849-C321-467F-9262-7A5042EA6D9E.jpg",
+        alt: "",
+    },
+    {
+        src: "https://alwahabfoundation.org/wp-content/uploads/2023/03/bf46017a-acf9-4816-a9c4-7e11676224af.jpg",
+        alt: "",
+    },
+    {
+        src: "https://alwahabfoundation.org/wp-content/uploads/2023/03/fe664b87-c1eb-4592-afa8-c1638481e289.jpg",
+        alt: "",
+    },
+    {
+        src: "https://alwahabfoundation.org/wp-content/uploads/2023/03/e776628d-24a4-4b2f-af7b-444d59478032.jpg",
+        alt: "",
+    },
+    {
+        src: "https://alwahabfoundation.org/wp-content/uploads/2023/03/06CA2519-9A84-443E-9A02-32908DB6872A.jpg",
+        alt: "",
+    },
+    {
+        src: "https://alwahabfoundation.org/wp-content/uploads/2023/03/IMG_1250.jpg",
+        alt: "",
+    },
+    {
+        src: "https://alwahabfoundation.org/wp-content/uploads/2023/03/IMG_1279.jpg",
+        alt: "",
+    },
+    {
+        src: "https://alwahabfoundation.org/wp-content/uploads/2023/03/IMG_1204.jpg",
+        alt: "",
+    },
+    {
+        src: "https://alwahabfoundation.org/wp-content/uploads/2023/03/80953110-f97e-4453-986d-5774276033de.jpg",
+        alt: "",
+    },
+    {
+        src: "https://alwahabfoundation.org/wp-content/uploads/2023/03/2d05a44d-4ba6-4045-8eb6-d31cfd4dc15d.jpg",
+        alt: "",
+    },
+    {
+        src: "https://alwahabfoundation.org/wp-content/uploads/2023/03/f44e0ffe-1deb-4558-88b6-44a64618b746.jpg",
+        alt: "",
+    },
+    {
+        src: "https://alwahabfoundation.org/wp-content/uploads/2023/03/cf0d6c5a-7207-4713-a08a-ce0c7578089f.jpg",
+        alt: "",
+    },
+    {
+        src: "https://alwahabfoundation.org/wp-content/uploads/2023/03/1B611849-C321-467F-9262-7A5042EA6D9E.jpg",
+        alt: "",
+    },
+];
 
 const SupportBannerDetail = [
     {
-        leftDescription:"REBUILDING LIVES IN TURKEY AFTER DEVASTATION",
-        rightDescription:"Six months have passed since the world witnessed one of the most devastating natural disasters to strike the regions of Southeast Türkiye and Northwest Syria; there is still a lot required to do to bring the sufferers back to life. Al-Wahab Foundation has been tirelessly working to rebuild lives and provide essential support. With our ongoing efforts, we are focused on offering vital aid in the form of food packs and cooked meals to those who have lost everything. Through the provision of nourishment, we aim to bring sustenance and comfort to the affected communities, offering hope and resilience as they navigate through these challenging times. Together, we stand committed to serving and rebuilding lives, ensuring that no one faces this difficult journey alone. Your support makes a significant difference in our mission to bring relief and assistance to those in need. Donate to Turkey earthquake relief efforts and help rebuild lives.",
-        src:"/assets/images/Help-The-Homeless-in-UK.jpg",
-    }
-]
+        leftDescription: "REBUILDING LIVES IN TURKEY AFTER DEVASTATION",
+        rightDescription:
+            "Six months have passed since the world witnessed one of the most devastating natural disasters to strike the regions of Southeast Türkiye and Northwest Syria; there is still a lot required to do to bring the sufferers back to life. Al-Wahab Foundation has been tirelessly working to rebuild lives and provide essential support. With our ongoing efforts, we are focused on offering vital aid in the form of food packs and cooked meals to those who have lost everything. Through the provision of nourishment, we aim to bring sustenance and comfort to the affected communities, offering hope and resilience as they navigate through these challenging times. Together, we stand committed to serving and rebuilding lives, ensuring that no one faces this difficult journey alone. Your support makes a significant difference in our mission to bring relief and assistance to those in need. Donate to Turkey earthquake relief efforts and help rebuild lives.",
+        src: "/assets/images/Help-The-Homeless-in-UK.jpg",
+    },
+];
 
-const card =[
+const card = [
     {
-        name: 'PAKISTAN',
-        title: 'Emergency Relief',
-        amount :'ANY AMOUNT',
-        src:"https://picsum.photos/200/300",
+        name: "PAKISTAN",
+        title: "Emergency Relief",
+        amount: "ANY AMOUNT",
+        src: "https://picsum.photos/200/300",
     },
     {
-        name: 'PAKISTAN',
-        title: 'Food Pack',
-        amount :'50.00',
-        src:"https://picsum.photos/200/300",
+        name: "PAKISTAN",
+        title: "Food Pack",
+        amount: "50.00",
+        src: "https://picsum.photos/200/300",
     },
     {
-        name: 'UGANDA',
-        title: 'Cooked Food',
-        amount :'200.00',
-        src:"https://picsum.photos/200/300",
+        name: "UGANDA",
+        title: "Cooked Food",
+        amount: "200.00",
+        src: "https://picsum.photos/200/300",
     },
-
-]
+];
 
 const HeaderBannerData = [
     {
-        src: "/assets/images/website-banner-masjid.jpg",
+        src: "https://alwahabfoundation.org/wp-content/uploads/2023/03/80953110-f97e-4453-986d-5774276033de.jpg",
         title: "Turkey Syria \nEarthquake Appeal",
     },
 ];
@@ -50,32 +138,182 @@ const HeaderBannerData = [
         <p class="text-maroon text-xl md:text-3xl font-bold text-center">
             Provide Sustenance: Donate to Turkey Syria Earthquake Appeal
         </p>
-       <p class=" text-grey text-base md:text-xl text-center mt-5">In early February 2023, Turkiye was hit by a devastating series of major earthquakes near the border<br> with Syria. Tragically, over 51,000 people lost their lives, crushed beneath collapsed buildings<br> in what became the worst natural disaster in decades. As we continue to assist the affected <br>communities, your donation can make a significant impact. </p>
-        <p class=" text-grey text-base md:text-xl text-center mt-5">
-            With your support, we can provide <a href="">essential food packs</a> and cooked meals to those who have lost<br>  everything and are in desperate need. Join us in our efforts to meet the ongoing needs of the <br> survivors and help save lives. Your generosity can bring hope and sustenance to those <br>facing immense challenges.  <span class="text-grey font-bold"
-                >Turkey earthquake survivors </span
-            >now and make a difference!
+        <p
+            class="text-grey text-base md:text-xl md:px-40 px-2 text-center mt-5"
+        >
+            In early February 2023, Turkiye was hit by a devastating series of
+            major earthquakes near the border with Syria. Tragically, over
+            51,000 people lost their lives, crushed beneath collapsed buildings
+            in what became the worst natural disaster in decades. As we continue
+            to assist the affected communities, your donation can make a
+            significant impact.
+        </p>
+        <p
+            class="text-grey text-base md:text-xl md:px-40 px-2 text-center mt-5"
+        >
+            With your support, we can provide <a
+                class="font-bold text-maroon hover:text-customBeige"
+                href="">essential food packs</a
+            > and cooked meals to those who have lost everything and are in desperate
+            need. Join us in our efforts to meet the ongoing needs of the survivors
+            and help save lives. Your generosity can bring hope and sustenance to
+            those facing immense challenges. <span class="text-grey font-bold"
+                >Turkey earthquake survivors
+            </span>now and make a difference!
         </p>
     </div>
-  <!--card -->
-  <CardforCountry CountryCardDetails={card}/>
+    <!--card -->
+    <CardforCountry CountryCardDetails={card} />
 
-
-  <div class="container mx-auto px-4 mt-16">
-    <!-- Responsive Video Wrapper -->
-    <div class="relative w-full" style="padding-bottom: 56.25%; /* 16:9 Aspect Ratio */">
-      <iframe
-        class="absolute top-0 left-0 w-full h-full"
-        src="https://www.youtube.com/embed/1JEPUTuo5Y0?si=NPzJJaWNGBJMtDaf"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
-      ></iframe>
+    <div class="container mx-auto px-4 mt-16">
+        <!-- Responsive Video Wrapper -->
+        <div
+            class="relative w-full"
+            style="padding-bottom: 56.25%; /* 16:9 Aspect Ratio */"
+        >
+            <iframe
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/1JEPUTuo5Y0?si=NPzJJaWNGBJMtDaf"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen></iframe>
+        </div>
     </div>
-  </div>
 
-  <!-- Support Banner  -->
-   <SupportBanners BannerDetails={SupportBannerDetail} /> 
+    <!-- Support Banner  -->
+    <SupportBanners BannerDetails={SupportBannerDetail} />
+
+    <div class="container mx-auto px-2 md:px-16 py-8">
+        <div class="row">
+            <p class="text-maroon font-bold text-2xl pl-4">
+                Recover and Rebuild Together: Your Support Matters!
+            </p>
+            <p class="px-4 py-3 md:text-lg">
+                <span class="text-grey font-medium"
+                    >While the earthquakes may have only taken seconds to wreak
+                    havoc and devastation, the journey of recovery will span
+                    years. For the survivors caught in the aftermath, homes have
+                    been destroyed, and basic necessities like water, gas, and
+                    electricity remain damaged. The disruption of food
+                    distribution chains has left a vast region, spanning more
+                    than 500km, in dire need. To ease down the suffering,
+                    Al-Wahab Foundation is on the ground to provide sustenance
+                    and nourishment to the traumatized survivors.<br /><br />
+                    Through our food packs and cooked food project, we strive to
+                    bring hope to those who have lost everything. Your donation can
+                    save impoverished children and their families from continuing
+                    hunger, giving them the time needed to heal and grieve as they
+                    begin the journey of rebuilding their lives.<br /><br />As
+                    you donate to Turkey earthquake through your <a
+                        class="font-bold text-maroon hover:text-customBeige"
+                        href="">pay zakat online</a
+                    > or <a
+                        class="font-bold text-maroon hover:text-customBeige"
+                        href="">Sadaqah donation</a
+                    >, we can provide one-month food packs for families and
+                    offer hot-cooked meals to the surviving locals in Turkey.
+                    Your <strong
+                        >donations for Turkey earthquake survivors</strong
+                    > can help us in this ongoing journey of healing and renewal.
+                </span>
+            </p>
+        </div>
+    </div>
+
+    <ImageCarousel imageCarousel={image} />
+
+    <RestoringLives ReStroingLives={restore} />
+
+    <div class="flex justify-center mb-10 mt-10 sm:mt-12">
+        <a
+            href="#"
+            class="bg-customBeige hover:bg-maroon text-white font-bold py-2 px-6 sm:px-8 rounded-full uppercase text-sm sm:text-base"
+        >
+            READ OUR BLOG ON EMERGENCY RELIEF FOR EARTHQUAKE VICTIMS
+        </a>
+    </div>
+
+    <div class="container mx-auto px-2 md:px-16 py-6">
+        <div class="row">
+            <p class="text-maroon font-bold text-2xl pl-4">
+                Mufti Abdul Wahab’s Visits to Turkey
+            </p>
+            <p class="px-4 py-3 md:text-lg">
+                Team AWF has been actively engaged in Turkey following the
+                devastating earthquakes. With a strong commitment, we have been
+                providing essential aid and support to the earthquake survivors.
+                Through our food packs and cooked food project, we continue to
+                nourish and sustain those who need it the most. <br /><br />
+                Our chairman <a class="font-bold text-maroon hover:text-customBeige" href="">Mufti Abdul Wahab</a> himself visited the affected areas
+                twice and supervised the distribution of cooked meals and essential
+                food items to the families living in desperate conditions. With generous
+                contributions from supporters, we succeeded in providing 166 food
+                packs, 200 Ramadan food packs, and 200 Iftar packs in Turkey. <br
+                /><br />As we move forward, our aim is to offer them much-needed
+                relief during this challenging time. Donate to Turkey earthquake
+                survivors and help us make a widespread difference!
+            </p>
+        </div>
+    </div>
+    <div class="container mx-auto px-2 md:px-16 py-6">
+        <div class="row">
+            <p class="text-maroon font-bold text-2xl pl-4">
+                What AWF has Achieved So Far in Turkey?
+            </p>
+            <p class="px-4 py-3 md:text-lg">
+                The commitment of our team and the generous support from our
+                esteemed donors have brought hope and relief to the survivors of
+                Turkey’s earthquake. Under the guidance of our chairman, Mufti
+                Abdul Wahab, we were able to distribute 1,766 Food Packs, 1,200
+                <a class="font-bold text-maroon hover:text-customBeige" href="">Hot Cooked Meals</a>, and £1,250 cash vouchers, providing crucial
+                assistance to those in dire need. None of this would have been
+                possible without your valuable contribution. <br /><br />To
+                continue our efforts in rebuilding the lives of the people in
+                Turkey, we strive to do even better, ensuring they can lead
+                comfortable and secure lives ahead. Your continued support is
+                vital in our journey of bringing positive change and renewal to
+                the lives affected by this tragic event. Together, we can make a
+                lasting impact and pave the way for a brighter future for the
+                survivors.
+            </p>
+        </div>
+    </div>
+    <div class="container mx-auto px-2 md:px-16 py-6">
+        <div class="row">
+            <p class="text-maroon font-bold text-2xl pl-4">
+                Ways to Contribute
+            </p>
+            <p class="px-4 py-3 md:text-lg">
+                <strong>Online Donation:</strong> You can easily donate to Turkey earthquake
+                relief through our secure online donation portal. Your
+                contribution, no matter how small, can make a big difference. <br
+                /><br />
+                <strong>Our Donation Hotline:</strong> Apart from our online portal, you can donate
+                to <strong>Turkey earthquake relief</strong> activities by calling us on our donation
+                hotline at <a class="font-bold text-maroon hover:text-customBeige" href="">020 8903 8944.</a> <br /><br />In times of calamity, the
+                spirit of compassion and solidarity shines the brightest. Your
+                support, in the form of donations for cooked food and food
+                packs, can help bring hope and relief to those affected by the
+                Turkey earthquake. Join hands with Al-Wahab Foundation in
+                supporting this critical mission and making a positive impact on
+                the lives of the affected communities.
+            </p>
+        </div>
+    </div>
+    <div class="flex justify-start pl-28 mb-10  sm:mt-12">
+        <a
+            href="#"
+            class="bg-maroon hover:bg-customBeige text-white font-bold py-2 px-6 sm:px-8 rounded-full uppercase text-sm sm:text-base"
+        >
+            Donate to Turkey earthquake relief today!
+        </a>
+    </div>
+
+    <div class="mx-auto px-4 py-8">
+        <p class="text-center text-grey text-4xl font-bold">See Other Projects</p>
+      </div>
+    
+      <SeeOtherProjectCard SeeOtherProjects={SeeOtherproject} />
 </Layout>
