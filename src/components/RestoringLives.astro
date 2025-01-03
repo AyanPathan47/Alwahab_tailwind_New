@@ -3,6 +3,7 @@ export interface Props{
     ReStroingLives:{
         title : string,
         description : string,
+        description1 : string,
         src: string,
         buttonTitle: string,
 
@@ -51,10 +52,11 @@ const {ReStroingLives} = Astro.props
             {ReStroingLive.title}
           </h2>
   
-          <!-- Paragraph -->
-          <p class="text-sm md:text-lg leading-relaxed font-bold text-[#333132]">
-            {ReStroingLive.description}
-          </p>
+        <!-- Paragraph -->
+        <p class="text-sm md:text-lg leading-relaxed font-bold text-[#333132]">
+          {ReStroingLive.description}<br/><br/>
+          {ReStroingLive.description1}
+        </p>
   
           <!-- Button -->
           <div>
