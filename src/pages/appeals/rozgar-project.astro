@@ -128,21 +128,23 @@ const HeaderBannerData = [
 <Layout>
   <HeadersBanner HeadersBanners={HeaderBannerData} />
   <UmmahCharity />
-  <div class="mt-12">
-    <p class="text-maroon md:text-3xl font-bold text-center text-xl">
+  <div class="mt-12 md:px-72">
+    <p class="text-maroon md:text-4xl font-bold text-center text-xl">
       Help Create Livelihood Opportunities
     </p>
-    <p class="text-grey text-base font-semibold md:text-lg text-center mt-5">
-      The economic statistics in Pakistan sound alarming, with approximately 24% <br
-      />of the population living below the poverty line, a figure aggravated by
-      the<br /> impact of the economic crisis and inflation. Compounded by insufficient<br
-      /> infrastructure and limited employment prospects, the daily struggles <br
-      />of people in remote regions present a disheartening image. <br /><br
-      />However, at Al-Wahab Foundation, we are committed to creating solutions <br
-      />that bring hope and stability to struggling families, liberating them
-      from<br /> the poverty cycle. By offering means for a stable livelihood, we
-      are touching <br />the lives of countless people across Pakistan.
-      Together, we can work<br /> towards a brighter and more prosperous future for
+    <p class="text-grey text-base font-medium md:text-lg text-center mt-5">
+      The economic statistics in Pakistan sound alarming, with approximately 24%
+      of the population living below the poverty line, a figure aggravated by
+      the impact of the economic crisis and inflation. Compounded by insufficient
+      infrastructure and limited employment prospects, the daily struggles 
+     of people in remote regions present a disheartening image. 
+     </p>
+     <p class="text-grey text-base font-medium md:text-lg text-center mt-5">
+      However, at Al-Wahab Foundation, we are committed to creating solutions 
+     that bring hope and stability to struggling families, liberating them
+      from the poverty cycle. By offering means for a stable livelihood, we
+      are touching the lives of countless people across Pakistan.
+      Together, we can work towards a brighter and more prosperous future for
       those in need.
     </p>
   </div>
@@ -159,16 +161,19 @@ const HeaderBannerData = [
     <!-- Item 1 -->
     <div class="flex flex-col items-center text-center" data-aos="fade-up">
       <div>
-        <img src="https://via.placeholder.com/50" alt="icon" class="mx-auto" />
+        <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" height="80" class="fill-maroon hover:fill-customBeige duration-300" viewBox="0 0 53 53" width="80">
+          <path d="m49.3381348 11.1287203c-.5682106-.076663-1.0802994.309659-1.1624756.8698521l-.663414 4.6203394-1.9468956.9827805-.8873253-7.7091045c-.3386612-2.9554186-2.5141678-5.3669291-5.397747-6.0031586-8.3120747-1.8266402-17.8966733-1.8573931-25.6443596-.0615688-2.8322811.6464391-4.9667635 3.04774-5.2951508 5.972343l-.8980999 7.8055591-1.9549131-.9868507-.663413-4.6203394c-.0811725-.5606937-.5882525-.9515257-1.1624753-.8698521-.5601928.0806713-.9500229.6007795-.8698523 1.1614733l.7395749 5.1499672c.0481024.331707.2545421.619318.5541801.7701397l3.1431308 1.5859394c-.2849817 3.2567482-.2508464 6.5416813.137042 9.788847l1.2006187 9.8718987c.1372929 1.1496353.7529793 2.1270905 1.6213903 2.7785416v3.4504089c0 1.1698647 1.0774822 2.1242104 2.3909674 2.1242104h2.0626421c1.3135471 0 2.3910294-.9543457 2.3910294-2.1242104v-2.6167603h1.862278c.0197926.0011292.0365772.0115242.0566826.0115242h2.1344833v4.340744c0 1.7035027 1.3750534 3.0785561 3.0785561 3.0785561h4.6794033c1.6931667 0 3.0785561-1.3750534 3.0785561-3.0785561v-4.340744h2.1242085c.0201073 0 .0368919-.0103951.0566864-.0115242h1.8724861v2.6167603c0 1.1698647 1.0672722 2.1242104 2.3807564 2.1242104h2.062645c1.3135452 0 2.3910294-.9543457 2.3910294-2.1242104v-3.4504091c.868412-.6514511 1.4840965-1.6289063 1.6213875-2.7785416.9520149-8.4538822 1.5392799-10.9567375 1.5392799-15.567215 0-1.3675365-.0774765-2.7336349-.1937866-4.0966625l3.1369896-1.5828075c.2996407-.1508217.5060806-.4384327.5541801-.7701397l.7395782-5.1499672c.0801695-.5606937-.309662-1.0808019-.8698541-1.1614732zm-34.901825 1.6166925c.1436815-1.5187969 1.4264126-2.6783915 2.9554195-2.6783915h18.2456036c1.529007 0 2.8014679 1.1595945 2.9451485 2.6783915l.8209343 8.3941879h-25.7880411zm15.7314377 15.9468975c0 2.031826-1.6418705 3.6737595-3.6634884 3.6737595-2.031826 0-3.6737614-1.6419334-3.6737614-3.6737595 0-2.0216179 1.6419353-3.6840324 3.6737614-3.6840324 2.0216179 0 3.6634884 1.6624145 3.6634884 3.6840324zm-16.8602161-.6465015c-.5643892 0-1.026185-.4617958-1.026185-1.026186 0-.5746613.4617958-1.026186 1.026185-1.026186h4.0944691c.5643902 0 1.026186.4515247 1.026186 1.026186 0 .5643902-.4617958 1.026186-1.026186 1.026186zm6.1327476 12.7465191c1.0662708-2.8659172 3.8194466-4.9064484 7.0639801-4.9064484 3.2362671 0 5.9879398 2.0405312 7.053896 4.9064484zm15.1297817-13.7727051c0-.5746613.4617958-1.026186 1.0261841-1.026186h4.094532c.5643921 0 1.0261879.4515247 1.0261879 1.026186 0 .5643902-.4617958 1.026186-1.0261879 1.026186h-4.094532c-.5643883 0-1.0261841-.4617958-1.0261841-1.026186z">
+          </path>
+        </svg>
       </div>
       <div>
         <p
-          class="text-2xl font-bold font-hind text-blackColor dark:text-blackColor-dark"
+          class="text-2xl font-bold font-hind text-grey dark:text-blackColor-dark"
         >
           <span data-countup-number="58">58</span><span>+</span>
         </p>
         <p
-          class="uppercase text-blackColor font-medium dark:text-blackColor-dark"
+          class="uppercase text-grey font-medium dark:text-blackColor-dark"
         >
           Rickshaws Distributed
         </p>
@@ -178,16 +183,19 @@ const HeaderBannerData = [
     <!-- Item 2 -->
     <div class="flex flex-col items-center text-center" data-aos="fade-up">
       <div>
-        <img src="https://via.placeholder.com/50" alt="icon" class="mx-auto" />
+        <svg xmlns="http://www.w3.org/2000/svg" height="80" class="fill-maroon hover:fill-customBeige duration-300" viewBox="0 0 512 512" width="80">
+          <rect height="218.66" rx="38.43" width="77.24" x="217.38" y="293.34"></rect>
+          <path d="m411.12 43.35h-49.34c-3.94-7.67-11.91-12.93-21.13-12.93h-22.87c-7.47 0-14.41-3.59-19-9.49-9.91-12.74-25.39-20.94-42.78-20.94s-32.87 8.2-42.78 20.94c-4.59 5.9-11.52 9.49-19 9.49h-22.87c-9.22 0-17.19 5.26-21.13 12.93h-49.34c-5.98 0-10.83 4.85-10.83 10.83s4.85 10.83 10.83 10.83h49.34c3.94 7.67 11.91 12.93 21.13 12.93h22.87c7.47 0 14.41 3.59 19 9.49 9.91 12.74 25.39 20.94 42.78 20.94s32.87-8.2 42.78-20.94c4.59-5.9 11.52-9.49 19-9.49h22.87c9.22 0 17.19-5.26 21.13-12.93h49.34c5.98 0 10.83-4.85 10.83-10.83s-4.85-10.83-10.83-10.83zm-155.12 40.85c-16.7 0-30.23-13.53-30.23-30.23s13.53-30.23 30.23-30.23 30.23 13.53 30.23 30.23-13.53 30.23-30.23 30.23z"></path><path d="m380.04 183.96c-5.16-26.62-29.49-52.37-56.04-58.25-16.12-3.35-38.05-6.63-68-6.69-29.94.05-51.87 3.34-68 6.69-26.55 5.88-50.88 31.62-56.04 58.25-3.24 16.23-7.25 61.47-6.92 91.4-.33 29.93 3.68 75.18 6.92 91.4 5.16 26.63 29.49 52.37 56.04 58.25 3.65.76 7.62 1.51 11.89 2.23v-95.28c0-30.93 25.17-56.1 56.1-56.1s56.1 25.17 56.1 56.1v95.28c4.27-.72 8.24-1.47 11.89-2.23 26.55-5.88 50.88-31.62 56.04-58.25 3.24-16.22 7.25-61.47 6.92-91.4.33-29.93-3.68-75.18-6.92-91.4zm-187.27 45.29c-.71 3.65-4.04 7.18-7.69 7.99-2.21.46-5.22.91-9.33.92-4.11 0-7.11-.46-9.33-.92-3.64-.81-6.98-4.34-7.69-7.99-.44-2.23-.95-11.32-.95-23.61s.5-21.39.95-23.61c.71-3.65 4.04-7.18 7.69-7.99 2.21-.46 5.22-.91 9.33-.92 4.11 0 7.11.46 9.33.92 3.64.81 6.98 4.34 7.69 7.99.44 2.23.95 12.02.95 23.61 0 12.3-.5 21.39-.95 23.61zm160.48 0c-.71 3.65-4.04 7.18-7.69 7.99-2.21.46-5.22.91-9.33.92-4.11 0-7.11-.46-9.33-.92-3.64-.81-6.98-4.34-7.69-7.99-.44-2.23-.95-11.32-.95-23.61s.5-21.39.95-23.61c.71-3.65 4.04-7.18 7.69-7.99 2.21-.46 5.22-.91 9.33-.92 4.11 0 7.11.46 9.33.92 3.64.81 6.98 4.34 7.69 7.99.44 2.23.95 12.02.95 23.61 0 12.3-.5 21.39-.95 23.61z"></path>
+        </svg>
       </div>
       <div>
         <p
-          class="text-2xl font-bold font-hind text-blackColor dark:text-blackColor-dark"
+          class="text-2xl font-bold font-hind text-grey dark:text-blackColor-dark"
         >
           <span data-countup-number="80">80</span><span>+</span>
         </p>
         <p
-          class="uppercase text-blackColor font-medium dark:text-blackColor-dark"
+          class="uppercase text-grey font-medium dark:text-blackColor-dark"
         >
           Motorbikes Distributed
         </p>
@@ -196,16 +204,18 @@ const HeaderBannerData = [
     <!-- Item 3 -->
     <div class="flex flex-col items-center text-center" data-aos="fade-up">
       <div>
-        <img src="https://via.placeholder.com/50" alt="icon" class="mx-auto" />
+        <svg xmlns="http://www.w3.org/2000/svg" class="fill-maroon hover:fill-customBeige duration-300" xmlns:xlink="http://www.w3.org/1999/xlink"  width="80px" height="80px" viewBox="0 0 80.13 80.13" xml:space="preserve">	
+          <path d="M48.355,17.922c3.705,2.323,6.303,6.254,6.776,10.817c1.511,0.706,3.188,1.112,4.966,1.112  c6.491,0,11.752-5.261,11.752-11.751c0-6.491-5.261-11.752-11.752-11.752C53.668,6.35,48.453,11.517,48.355,17.922z M40.656,41.984  c6.491,0,11.752-5.262,11.752-11.752s-5.262-11.751-11.752-11.751c-6.49,0-11.754,5.262-11.754,11.752S34.166,41.984,40.656,41.984  z M45.641,42.785h-9.972c-8.297,0-15.047,6.751-15.047,15.048v12.195l0.031,0.191l0.84,0.263  c7.918,2.474,14.797,3.299,20.459,3.299c11.059,0,17.469-3.153,17.864-3.354l0.785-0.397h0.084V57.833  C60.688,49.536,53.938,42.785,45.641,42.785z M65.084,30.653h-9.895c-0.107,3.959-1.797,7.524-4.47,10.088  c7.375,2.193,12.771,9.032,12.771,17.11v3.758c9.77-0.358,15.4-3.127,15.771-3.313l0.785-0.398h0.084V45.699  C80.13,37.403,73.38,30.653,65.084,30.653z M20.035,29.853c2.299,0,4.438-0.671,6.25-1.814c0.576-3.757,2.59-7.04,5.467-9.276  c0.012-0.22,0.033-0.438,0.033-0.66c0-6.491-5.262-11.752-11.75-11.752c-6.492,0-11.752,5.261-11.752,11.752  C8.283,24.591,13.543,29.853,20.035,29.853z M30.589,40.741c-2.66-2.551-4.344-6.097-4.467-10.032  c-0.367-0.027-0.73-0.056-1.104-0.056h-9.971C6.75,30.653,0,37.403,0,45.699v12.197l0.031,0.188l0.84,0.265  c6.352,1.983,12.021,2.897,16.945,3.185v-3.683C17.818,49.773,23.212,42.936,30.589,40.741z"></path>
+        </svg>
       </div>
       <div>
         <p
-          class="text-2xl font-bold font-hind text-blackColor dark:text-blackColor-dark"
+          class="text-2xl font-bold font-hind text-grey dark:text-blackColor-dark"
         >
           <span data-countup-number="1380 ">1380 </span><span>+</span>
         </p>
         <p
-          class="uppercase text-blackColor font-medium dark:text-blackColor-dark"
+          class="uppercase text-grey font-medium dark:text-blackColor-dark"
         >
           Families given a stable income
         </p>
@@ -243,7 +253,7 @@ const HeaderBannerData = [
         Why Donate to AWF’s Rozgar Project?
       </p>
       <p
-        class="mt-5 sm:mt-7 text-grey text-base sm:text-lg font-semibold text-justify"
+        class="mt-5 sm:mt-7 text-grey text-base sm:text-lg font-medium text-justify"
       >
         Breaking the poverty cycle in deprived communities requires innovative
         and sustainable change. Every individual should have the opportunity to
@@ -272,7 +282,7 @@ const HeaderBannerData = [
       <p class="md:text-2xl text-lg text-maroon font-bold mt-10">
         Mufti Abdul Wahab in Pakistan: Rozgar Project Distribution Event
       </p>
-      <p class="mt-5 text-grey text-base sm:text-lg font-semibold text-justify">
+      <p class="mt-5 text-grey text-base sm:text-lg font-medium text-justify">
         Chairman Al-Wahab Foundation, Mufti Abdul Wahab recently visited
         Pakistan to lead a significant distribution event for the Rozgar
         Project. AWF’s efforts were focused on providing rickshaws and delivery
@@ -299,7 +309,7 @@ const HeaderBannerData = [
         How is Al-Wahab Foundation Creating Livelihoods?
       </p>
       <p
-        class="mt-5 sm:mt-7 text-grey text-base sm:text-lg font-semibold text-justify"
+        class="mt-5 sm:mt-7 text-grey text-base sm:text-lg font-medium text-justify"
       >
         At Al-Wahab Foundation, we strongly believe in creating stable incomes
         for impoverished families to secure brighter futures that positively
@@ -316,11 +326,13 @@ const HeaderBannerData = [
         <span class="font-bold text-grey">
         The Messenger of Allah (swt) said, “It is better for any one of you
         to carry a bundle of wood on his back and sell it than to beg of
-        someone whether he gives him or refuses.”- Al-Bukhari and Muslim</span><br /><br />
+        someone whether he gives him or refuses.”- Al-Bukhari and Muslim</span>
+
+        </p>        
+        <p>
          Your <a href="#" class="text-maroon hover:text-customBeige font-bold">donation of Zakat</a>
-        or <a href="#" class="text-maroon hover:text-customBeige font-bold"
-          >Sadaqah</a
-        > has the power to change their lives with our innovative, long-term solutions
+        or <a href="#" class="text-maroon hover:text-customBeige font-bold">Sadaqah</a>
+         has the power to change their lives with our innovative, long-term solutions
         to tackling poverty. When you give with AWF, you can be sure your donation
         will make a real difference to those in desperate need.
       </p>
@@ -329,12 +341,12 @@ const HeaderBannerData = [
   <div class="container mx-auto px-4 md:px-6">
     <div class="row px-4 md:px-24">
       <!-- Title -->
-      <p class="text-lg md:text-2xl text-maroon font-bold mt-10 md:mt-20">
+      <p class="text-lg md:text-2xl text-maroon font-bold my-5">
         Providing Job Opportunities With Motorbikes
       </p>
   
       <!-- Description -->
-      <p class="mt-5 md:mt-7 text-grey text-base md:text-lg font-semibold text-justify">
+      <p class="my-5 text-grey text-base md:text-lg font-medium text-justify">
         Motorbikes have proven to be an excellent means of empowering people with employment opportunities. The <span class="text-grey font-bold">Rozgar Project</span> identifies individuals who are eager to work and possess the necessary skills but lack access to transportation to kick-start their careers.
          Through <a href="#" class="text-maroon hover:text-customBeige font-bold"> generous donations </a> and community support, the project provides motorbikes to these individuals, enabling them to venture into delivery services for local businesses.
       </p>
@@ -343,12 +355,10 @@ const HeaderBannerData = [
   
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
     <div class="row px-4 md:px-24">
-      <p class="md:text-2xl text-lg text-maroon font-bold mt-10 sm:mt-20">
+      <p class="md:text-2xl text-lg text-maroon font-bold ">
         Our Achievement So Far…!
       </p>
-      <p
-        class="mt-5 sm:mt-7 text-grey text-base md:text-lg font-semibold text-justify"
-      >
+      <p class=" my-5 text-grey text-base md:text-lg font-medium text-justify">
         Under the vision of chairman Mufti Abdul Wahab and the generous support
         from our valued donors, Al-Wahab Foundation has successfully provided a
         total of 73 rickshaws and 130 motorbikes. This initiative has had a
@@ -373,7 +383,7 @@ const HeaderBannerData = [
       DONATE NOW
     </a>
   </div>
-</Layout>
+
 <!--section step -->
 <div class="container mx-auto px-4 py-8">
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-1">
@@ -503,3 +513,4 @@ const HeaderBannerData = [
   </div>
 </div>
 <Otherproject SeeOtherProjects={otherproject} />
+</Layout>
