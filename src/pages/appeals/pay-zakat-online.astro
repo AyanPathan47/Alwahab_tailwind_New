@@ -144,49 +144,46 @@ const single =[
     <HeadersBanner HeadersBanners={HeaderBanned} />
     <UmmahCharity />
 
-    <div class="container">
+    <div class="container my-10">
         <div class="row">
-            <p class="text-4xl text-maroon font-bold text-center pt-16">
-                Pay Zakat Online with Al-Wahab <br />Foundation
-            </p><br />
-            <p class="text-center px-10 font-semibold">
+            <p class="md:text-4xl text-xl text-maroon font-bold text-center md:px-72">
+                Pay Zakat Online with Al-Wahab Foundation
+            </p>
+            <p class="text-center md:px-60 text-base md:text-lg font-medium py-5 text-grey">
                 The economic situation in Pakistan has caused devastation,
-                leaving many people in <br /> desperation. Approximately 36% of the
-                population now lives in severe poverty. Your <br />zakat
-                donation can make a difference as Al-Wahab Foundation provides
-                essentials<br />
-                like <a
-                    class="text-maroon hover:text-customBeige duration-300 cursor-pointer"
-                    >food</a
-                > and <a
-                    class="text-maroon hover:text-customBeige duration-300 cursor-pointer"
-                    >water</a
-                > to support communities all over Pakistan. Consider donating <br
-                /> your Zakat today and helping those in need.
+                leaving many people in  desperation. Approximately 36% of the
+                population now lives in severe poverty. Your <span class="font-bold"> zakat donation </span> 
+                can make a difference as Al-Wahab Foundation provides essentials like
+                 <a class="text-maroon hover:text-customBeige duration-300 font-bold cursor-pointer">food</a>
+                 and <a class="text-maroon hover:text-customBeige duration-300 font-bold cursor-pointer">water</a>
+                to support communities all over Pakistan. Consider donating your Zakat today and helping those in need.
             </p>
         </div>
     </div>
     <Singleregular SingleRegulars={single}/>
     <SupportBanners BannerDetails={SupportBannerData} />
     <div class="container mx-auto mt-10">
-        <div class="row flex justify-center">
-            <div
-                class="relative w-full max-w-[100%] md:max-w-[88%] pb-[45.25%]"
-            >
-                <iframe
-                    class="absolute top-0 left-0 w-full h-full"
-                    src="https://www.youtube.com/embed/x1npUyPEmx4?si=87DHoJHBDYxIRLDD"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen></iframe>
+        <div class="flex justify-center">
+          <div class="relative w-full max-w-[100%] md:max-w-[88%]">
+            <!-- Aspect Ratio Wrapper -->
+            <div class="relative pt-[56.25%]"> <!-- 16:9 aspect ratio -->
+              <iframe 
+                class="absolute inset-0 w-full h-full" 
+                src="https://www.youtube.com/embed/xh5fiJ4lxF0?si=rR2ruMZR-hljnSeO" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+              </iframe>
             </div>
+          </div>
         </div>
-    </div>
-    <div class="container grid grid-cols-2 lg:grid-cols-12 items-center md:px-20">
+      </div>
+      
+    <div class="container grid grid-cols-2 lg:grid-cols-12 items-center md:px-24">
         <div class="row col-span-8">
-            <p class="text-2xl font-bold text-maroon py-4 md:py-8">
+            <p class="text-2xl font-bold text-maroon py-4 mt-16 md:py-8">
                 Zakat & Eligibility Criteria
             </p>
             <p class="text-lg">
@@ -219,36 +216,31 @@ const single =[
     <RestoringLive ReStroingLives={RestoreData} />
     <div class="container">
         <div class="row text-[#333132]">
-            <p class="text-2xl font-bold text-maroon px-16 pt-10">
+            <p class="text-2xl font-bold text-maroon md:px-16 md:mt-20  ">
                 Your Zakat Donation with Al-Wahab Foundation
             </p>
 
-            <p class="px-16 py-5 text-lg font-medium">
+            <p class="md:px-16 py-5 text-lg font-medium">
                 With your Zakat donation, Al-Wahab Foundation can reach those in
                 greatest of need, providing lifesaving and life-changing aid. So
-                far, it has delivered <a
-                    class="text-maroon font-semibold hover:text-customBeige duration-300 cursor-pointer"
-                    >clean drinking water where it was a crisis</a
-                >
+                far, it has delivered <a class="text-maroon font-semibold hover:text-customBeige duration-300 cursor-pointer">
+                clean drinking water where it was a crisis</a>
                 to over 200,000 people and fed over 100,000 people through our Iftar
-                and <a
-                    class="text-maroon font-semibold hover:text-customBeige duration-300 cursor-pointer"
-                    >cooked meals
-                </a> programme across rural Pakistan. Our donors can pay Zakat online
-                to <a
-                    class="text-maroon font-semibold hover:text-customBeige duration-300 cursor-pointer"
-                    >serve humanity
-                </a> our initiatives in wide-spread regions.<br />
-                <br />
-
-                Since our beginning, Al-Wahab Foundation has always considered
-                an Amanah in the sight of Allah (SWT). We strive to run
-                long-lasting, impactful projects with your <strong>Zakat</strong
-                > donations, helping communities to break the poverty cycle and maximising
-                your blessings..<br /><br />
-
-                You can pay Zakat online for:<br />
-                <ul class="list-disc md:pl-24">
+                and <a class="text-maroon font-semibold hover:text-customBeige duration-300 cursor-pointer">
+                cooked meals</a> programme across rural Pakistan. Our donors can pay Zakat onlineto 
+                <a class="text-maroon font-semibold hover:text-customBeige duration-300 cursor-pointer">
+                serve humanity </a> our initiatives in wide-spread regions.
+                </p>
+                <p class="md:px-16  text-lg font-medium ">
+                   Since our beginning, Al-Wahab Foundation has always considered
+                   an Amanah in the sight of Allah (SWT). We strive to run
+                   long-lasting, impactful projects with your <strong>Zakat</strong>
+                   donations, helping communities to break the poverty cycle and maximising
+                   your blessings..
+                </p>
+                <p class="md:px-16 text-grey text-lg font-medium py-2">
+                  You can pay Zakat online for:<br />
+                   <ul class="list-disc font-medium md:pl-24">
                     <li class="text-lg">
                         Access to safe, clean water to improve health and
                         sanitation
@@ -276,9 +268,10 @@ const single =[
                             >Women empowerment
                         </a> that help widows learn skills and earn stable income
                     </li>
-                </ul><br />
+                </ul>
             </p>
-            <p class="px-16 py-5 text-lg font-medium">
+            </p>
+            <p class="md:px-16 py-5 text-lg font-medium">
                 Use our simple calculator below to work out how much Zakat you
                 need to pay. The nisab is the equivalent value of 87.48 grams of
                 gold; 612.36 grams of silver. Every Sahib-e-Nisaab should give
@@ -288,14 +281,14 @@ const single =[
             <p class="text-2xl font-bold text-maroon px-16 pt-10">
                 Zakat Applicable Initiatives
             </p>
-            <p class="px-16 py-5 text-lg font-medium">
+            <p class="md:px-16 py-5 text-lg font-medium">
                 At Al-Wahab Foundation, we carefully allocate Zakat
                 contributions to impactful initiatives that uphold the
                 principles of Islamic charity. Your Zakat is channelled towards
                 projects that benefit the less fortunate, including the
                 following:
             </p>
-            <ul class="list-disc pl-24">
+            <ul class="list-disc pl-24 font-medium">
                 <li class="text-lg">
                     <a
                         class="text-maroon font-semibold hover:text-customBeige duration-300 cursor-pointer"
@@ -313,21 +306,19 @@ const single =[
                 <li class="text-lg">Food Packs</li>
                 <li class="text-lg">Emergency Relief</li>
             </ul>
-            <p class="px-16 py-5 text-lg font-medium">
+            <p class="md:px-16 py-5 text-lg font-medium">
                 Donate today and help us in the mission of transforming lives.
                 You can calculate your Zakat by using our <a
-                    class="text-maroon font-semibold hover:text-customBeige duration-300 cursor-pointer"
-                    >Zakat calculator.
+                    class="text-maroon font-semibold hover:text-customBeige duration-300 cursor-pointer">Zakat calculator.
                 </a>
                 Together we can make a significant difference!
             </p>
             <p class="text-2xl font-bold text-maroon px-16 pt-10">
                 Pay Zakat Online Securely and Conveniently
             </p>
-            <p class="px-16 py-5 text-lg font-medium">
-                At <a
-                class="text-maroon font-semibold hover:text-customBeige duration-300 cursor-pointer"
-                >Al-Wahab Foundation</a> ,we make it simple to pay zakat online
+            <p class="md:px-16 py-5 text-lg font-medium">
+                At <a class="text-maroon font-semibold hover:text-customBeige duration-300 cursor-pointer">
+                Al-Wahab Foundation</a> ,we make it simple to pay zakat online
                 securely and conveniently. Your zakat donations can make a
                 significant impact on the lives of countless individuals.
                 Whether you choose to give zakat as an individual or a group,
