@@ -2,7 +2,7 @@
 import Layout from "../../layouts/Layout.astro";
 import HeadersBanner from "../../components/HeadersBanner.astro";
 import UmmahCharity from '../../components/Ummah_Charity.astro';
-
+import image
 import SupportBanner from "../../components/SupportBanner.astro";
 import Singleregular from "../../components/singel-regular.astro";
 
@@ -99,28 +99,42 @@ const BannerData =[
     <UmmahCharity />
 
     <div class="container px-4 py-8">
-        <div class="row">
-            <p class="text-maroon font-bold text-3xl text-center">Serving the UK's Diverse Communities</p>
-            <p class="text-grey font-normal text-xl text-center py-8">
-                In the UK, many people face daily challenges due to rising costs and unemployment.<br> This includes those living below the poverty line and experiencing homelessness,<br>especially in London. As food prices continue to rise, it becomes increasingly difficult <br>for them to afford nourishment.<br> <br>
-                As winter approaches, cold, hunger, and homelessness become harsh realities. Al-<br>Wahab Foundation is here to help through Serving Humanity Appeal serve humanity<br> by providing hot meals and winter survival kits to those in need in the UK. Your<br> support can make a difference!
+        <div class="row md:px-56">
+            <p class="text-maroon font-bold text-xl md:text-4xl text-center mt-7">Serving the UK's Diverse Communities</p>
+            <p class="text-grey font-medium text-base md:text-lg text-center my-4">
+                In the UK, many people face daily challenges due to rising costs and unemployment.
+                This includes those living below the poverty line and experiencing homelessness,
+                especially in London. As food prices continue to rise, it becomes increasingly difficult
+                for them to afford nourishment.
             </p>
+            <p class="text-grey font-medium text-base md:text-lg text-center my-4">
+                As winter approaches, cold, hunger, and homelessness become harsh realities. Al-
+                Wahab Foundation is here to help through Serving Humanity Appeal serve humanity
+                 by providing hot meals and winter survival kits to those in need in the UK. Your
+                support can make a difference!
+            </p>
+                
     </div>
 
    
     <Singleregular SingleRegulars={single}/>
-
-    <SupportBanner BannerDetails={BannerDatail}/>
+    <div class="max-full">
+      <SupportBanner BannerDetails={BannerDatail}/>
+    </div>
     <div class="container">
-        <div class="row px-5 py-8">
-           
+        <div class="row md:px-24 py-8">
             <p class="text-maroon font-bold text-2xl py-4">Proving Sustenance to Uplift Communities Through Serving Humanity </p>
             <p class="text-maroon font-bold text-2xl py-4">Appeal</p>
-            <p class="text-lg"> At Al-Wahab Foundation, we believe providing sustenance is essential for better health and resilience. We are among the top food poverty charities <span class="font-bold text-grey">serving humanity in the UK</span>, alleviating food insecurity for adults and children in need. It’s not just about filling stomachs; it’s about nurturing spirits and building resilience. Your support for our UK welfare projects uplifts communities.
+            <p class="text-lg font-medium text-grey"> At Al-Wahab Foundation, we believe providing sustenance is essential for better health and
+                resilience. We are among the top food poverty charities <span class="font-bold text-grey">
+                serving humanity in the UK</span>, alleviating food insecurity for adults and children in need.
+                It’s not just about filling stomachs; it’s about nurturing spirits and building resilience. Your
+                support for our UK welfare projects uplifts communities.
             </p>
-            
         </div>
     </div>
+
+    <------------------------------------------------>
 
   
     
