@@ -182,7 +182,7 @@ const HeaderBanned = [
     <UmmahCharity />
 
     <div class="container">
-        <div class="row">
+        <div class="row md:px-60">
             <p class="md:text-4xl text-xl text-maroon font-bold text-center pt-6 md:pt-16">
                 Donate Today to Build a Mosque for Those in Need
             </p>
@@ -204,9 +204,15 @@ const HeaderBanned = [
             <div
                 class="w-1/2 bg-maroon duration-300 border-2 py-20 px-4 border-customBeige flex flex-col items-center justify-center"
             >
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"
-            class="fill-customBeige hover:fill-white w-20 mx-auto mb-4 duration-300">
-                <path d="M400 0c5 0 9.8 2.4 12.8 6.4c34.7 46.3 78.1 74.9 133.5 111.5c0 0 0 0 0 0s0 0 0 0c5.2 3.4 10.5 7 16 10.6c28.9 19.2 45.7 51.7 45.7 86.1c0 28.6-11.3 54.5-29.8 73.4l-356.4 0c-18.4-19-29.8-44.9-29.8-73.4c0-34.4 16.7-66.9 45.7-86.1c5.4-3.6 10.8-7.1 16-10.6c0 0 0 0 0 0s0 0 0 0C309.1 81.3 352.5 52.7 387.2 6.4c3-4 7.8-6.4 12.8-6.4zM288 512l0-72c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 72-48 0c-17.7 0-32-14.3-32-32l0-128c0-17.7 14.3-32 32-32l416 0c17.7 0 32 14.3 32 32l0 128c0 17.7-14.3 32-32 32l-48 0 0-72c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 72-64 0 0-58c0-19-8.4-37-23-49.2L400 384l-25 20.8C360.4 417 352 435 352 454l0 58-64 0zM70.4 5.2c5.7-4.3 13.5-4.3 19.2 0l16 12C139.8 42.9 160 83.2 160 126l0 2L0 128l0-2C0 83.2 20.2 42.9 54.4 17.2l16-12zM0 160l160 0 0 136.6c-19.1 11.1-32 31.7-32 55.4l0 128c0 9.6 2.1 18.6 5.8 26.8c-6.6 3.4-14 5.2-21.8 5.2l-64 0c-26.5 0-48-21.5-48-48L0 176l0-16z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" id="Capa_1" class=" fill-customBeige duration-300 hover:fill-[#ffff] " height="80" viewBox="0 0 512 512" width="80">
+                <path d="m191 408.49v103.51h130v-103.51l-65-39z"></path>
+                <path d="m125 512h36v-112c0-5.27 2.76-10.15 7.28-12.86l80-48c4.75-2.85 10.69-2.85 15.44 0l80 48c4.52 2.71 7.28 7.59 7.28 12.86v112h36v-208h-262z"></path>
+                <path d="m497 304h-65c-8.28 0-15 6.72-15 15v178c0 8.28 6.72 15 15 15h65c8.28 0 15-6.72 15-15v-178c0-8.28-6.72-15-15-15z"></path>
+                <path d="m479 179.272v-19.272c0-8.284-6.716-15-15-15s-15 6.716-15 15v19.611c-18.601 6.442-32 24.126-32 44.889v31.5c0 8.28 6.72 15 15 15h65c8.28 0 15-6.72 15-15v-31.5c0-21.134-13.88-39.083-33-45.228z"></path>
+                <path d="m153 256c0 8.28 6.72 15 15 15h176c8.28 0 15-6.72 15-15v-11h-206z"></path><path d="m157.39 210.61c2.82 2.81 6.63 4.39 10.61 4.39h176c3.98 0 7.79-1.58 10.61-4.39l2.49-2.49c16.7-16.71 25.9-38.92 25.9-62.54 0-30.89-16.45-59.95-42.94-75.83-27.84-16.71-52.08-38.15-72.06-63.75l-.18-.24c-2.84-3.63-7.2-5.76-11.82-5.76s-8.98 2.13-11.82 5.76l-.19.24c-19.97 25.6-44.21 47.04-72.05 63.75-26.49 15.88-42.94 44.94-42.94 75.83 0 23.62 9.2 45.83 25.9 62.54z"></path>
+                <path d="m80 304h-65c-8.28 0-15 6.72-15 15v178c0 8.28 6.72 15 15 15h65c8.28 0 15-6.72 15-15v-178c0-8.28-6.72-15-15-15z"></path><path d="m63 179.611v-19.611c0-8.284-6.716-15-15-15s-15 6.716-15 15v19.272c-19.12 6.145-33 24.094-33 45.228v31.5c0 8.28 6.72 15 15 15h65c8.28 0 15-6.72 15-15v-31.5c0-20.763-13.399-38.447-32-44.889z">
+                </path>
+            </svg>
                 <p class="text-center font-bold text-white text-xl md:text-2xl py-4">
                    <span data-countup-number="76">76</span> +<br />
                     Mosques
@@ -219,14 +225,8 @@ const HeaderBanned = [
             >
                 <div>
                     <!-- SVG Icon -->
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="fill-maroon hover:fill-customBeige w-20 mx-auto mb-4 duration-300"
-                        viewBox="0 0 640 512"
-                    >
-                        <path
-                            d="M96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3zM609.3 512l-137.8 0c5.4-9.4 8.6-20.3 8.6-32l0-8c0-60.7-27.1-115.2-69.8-151.8c2.4-.1 4.7-.2 7.1-.2l61.4 0C567.8 320 640 392.2 640 481.3c0 17-13.8 30.7-30.7 30.7zM432 256c-31 0-59-12.6-79.3-32.9C372.4 196.5 384 163.6 384 128c0-26.8-6.6-52.1-18.3-74.3C384.3 40.1 407.2 32 432 32c61.9 0 112 50.1 112 112s-50.1 112-112 112z"
-                        ></path>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Capa_1" x="0px" y="0px" class="fill-maroon hover:fill-customBeigem " width="80px" height="80px" viewBox="0 0 80.13 80.13" xml:space="preserve">
+                        <path d="M48.355,17.922c3.705,2.323,6.303,6.254,6.776,10.817c1.511,0.706,3.188,1.112,4.966,1.112  c6.491,0,11.752-5.261,11.752-11.751c0-6.491-5.261-11.752-11.752-11.752C53.668,6.35,48.453,11.517,48.355,17.922z M40.656,41.984  c6.491,0,11.752-5.262,11.752-11.752s-5.262-11.751-11.752-11.751c-6.49,0-11.754,5.262-11.754,11.752S34.166,41.984,40.656,41.984  z M45.641,42.785h-9.972c-8.297,0-15.047,6.751-15.047,15.048v12.195l0.031,0.191l0.84,0.263  c7.918,2.474,14.797,3.299,20.459,3.299c11.059,0,17.469-3.153,17.864-3.354l0.785-0.397h0.084V57.833  C60.688,49.536,53.938,42.785,45.641,42.785z M65.084,30.653h-9.895c-0.107,3.959-1.797,7.524-4.47,10.088  c7.375,2.193,12.771,9.032,12.771,17.11v3.758c9.77-0.358,15.4-3.127,15.771-3.313l0.785-0.398h0.084V45.699  C80.13,37.403,73.38,30.653,65.084,30.653z M20.035,29.853c2.299,0,4.438-0.671,6.25-1.814c0.576-3.757,2.59-7.04,5.467-9.276  c0.012-0.22,0.033-0.438,0.033-0.66c0-6.491-5.262-11.752-11.75-11.752c-6.492,0-11.752,5.261-11.752,11.752  C8.283,24.591,13.543,29.853,20.035,29.853z M30.589,40.741c-2.66-2.551-4.344-6.097-4.467-10.032  c-0.367-0.027-0.73-0.056-1.104-0.056h-9.971C6.75,30.653,0,37.403,0,45.699v12.197l0.031,0.188l0.84,0.265  c6.352,1.983,12.021,2.897,16.945,3.185v-3.683C17.818,49.773,23.212,42.936,30.589,40.741z"></path>
                     </svg>
 
                     <!-- Text Below SVG -->
@@ -240,66 +240,69 @@ const HeaderBanned = [
     </div>
 
     <div class="container mx-auto">
-        <div class="row flex justify-center">
-          <div class="relative w-full max-w-[100%] md:max-w-[88%] aspect-w-16 aspect-h-9">
-            <iframe 
-              class="absolute inset-0 w-full h-full"
-              src="https://www.youtube.com/embed/_rm_E501yiQ?si=wjb--GODZlCUAqG2"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen>
-            </iframe>
+        <div class="flex justify-center">
+          <div class="relative w-full max-w-[100%] md:max-w-[88%]">
+            <!-- Aspect Ratio Wrapper -->
+            <div class="relative pt-[56.25%]"> <!-- 16:9 aspect ratio -->
+              <iframe 
+                class="absolute inset-0 w-full h-full"
+                src="https://www.youtube.com/embed/urFWzj8sXZA?si=zVcEFCSWJyQDRxUj" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+              </iframe>
+            </div>
           </div>
         </div>
       </div>
       
+      
     
-    <div class="container">
+    <div class="container my-10">
         <div class="row">
-            <p class="md:text-2xl text-xl font-bold text-maroon md:px-24 py-8">
+            <p class="md:text-2xl text-xl font-bold text-maroon md:px-28 py-5">
                 Caring for a house of Allah – One of the greatest virtues
             </p>
-            <p class="md:text-lg text-base text-grey font-semibold md:px-28">
+            <p class="md:text-lg text-base text-grey font-semibold md:px-28 py-3">
                 <span class="font-bold"
                     > <i> “We aim to work in those villages where Mosques have been
                     completely demolished and reshape the religious identities
-                    of individuals in those areas.” </span
-                > – <a
-                    href="#"
-                    class="text-maroon hover:text-customBeige font-bold"
-                    >Mufti Abdul Wahab, Chairman AWF.</a
-                ></i><br />
-                <br />
-                Plunged into chaos, people struggle in severe poverty when disaster
-                hits. You can ease their hardship. Earn endless blessings and donate
-                today to help reconstruct or repair masjids that unite communities
-                together in times of crisis.<br /><br />Your donation will count
-                as sadaqah jariyah, meaning it can continue to benefit you and
-                your loved ones for years ahead. Help to create a sanctuary for
-                those who are struggling and <strong>build a masjid</strong> for the people of
-                Pakistan today.
+                    of individuals in those areas.” </span> – <ahref="#" class="text-maroon hover:text-customBeige font-bold">
+                    Mufti Abdul Wahab, Chairman AWF.
+                    </a></i>
+                 <p class="md:text-lg text-base text-grey font-medium px-28 py-3">Plunged into chaos, people struggle in severe poverty when disaster
+                    hits. You can ease their hardship. Earn endless blessings and donate
+                    today to help reconstruct or repair masjids that unite communities
+                    together in times of crisis.</p>
+
+                  <p class="md:text-lg text-base text-grey font-medium px-28">Your donation will count as sadaqah jariyah, meaning it can continue to benefit you and
+                     your loved ones for years ahead. Help to create a sanctuary for those who are struggling and <strong>build a masjid</strong> for the people of
+                    Pakistan today.
+                  </p>
+                
             </p>
         </div>
     </div>
     <RestoringLive ReStroingLives={RestoreData} />
-    <div class="container">
+    <div class="container my-8">
         <div class="row md:px-24">
             <p class="md:text-2xl text-base font-bold text-maroon md:px-16 pt-10">
                 Restore A Masjid With Us
             </p>
            
-            <p class="md:px-16 py-5 text-base font-semibold text-grey md:text-xl">
-                Thanks to you and thousands like you, we have been able to rebuild more than 50 mosques across Pakistan so far, benefitting more than 14,000 people who have lost access to a suitable place for prayer.<br />
-                <br />
-
+            <p class="md:px-16 py-5 text-base font-medium text-grey md:text-lg">
+                Thanks to you and thousands like you, we have been able to rebuild more than 50 mosques across Pakistan so far, benefitting more than 14,000 people who have lost access to a suitable place for prayer.
+                
+            <p class="md:px-16 text-base font-medium text-grey md:text-lg">
                 These masjids provide not just a beautiful place for worship; they also bring people together in the toughest of times, providing a safe haven and uplifting the spirits of those who are struggling. By working in some of the more impoverished areas, your support in repairing local masjids can bring hope and community strength. From daily congregational prayers to educational activities, essential service, support and advice, the mosques you help rebuild are a beacon of a brighter future.
+            <p/>
             </p>
-            <p class="text-grey text-base md:text-xl font-semibold md:px-14 pt-5">
+            <p class="text-grey text-base md:text-lg font-bold md:px-14 pt-5">
                 If you would like to rebuild a Masjid with AWF, please call our donation hotline on 0208 903 8944.  
             </p>
-            <p class="text-grey text-base md:text-xl font-semibold md:px-14 pt-5">
+            <p class="text-grey text-base md:text-lg font-bold md:px-14 pt-5">
                 Our team will then send you a contract agreement to sign and send back. Once this is complete, our specialist team will commence rebuilding of the masjid and keep you informed of progress in the restoring a place of worship for those in need.   
             </p>
             <p class="text-grey text-xl font-bold px-16 pt-5">

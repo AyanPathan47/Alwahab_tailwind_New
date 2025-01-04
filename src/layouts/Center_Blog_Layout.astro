@@ -1,6 +1,12 @@
 ---
 import Layout from "../layouts/Layout.astro";
 const { frontmatter } = Astro.props;
+const creationDate = new Date(Astro.props.frontmatter.creationdate);
+const formattedDate = creationDate.toLocaleDateString("en-US", {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+});
 ---
 
 <Layout>
@@ -8,8 +14,8 @@ const { frontmatter } = Astro.props;
     <!-- Image Section -->
     <img
       class="w-full h-auto object-cover"
-      src="/assets/images/website-banner-EYE.jpg"
-      alt="Banner Image"
+      src={frontmatter.bannerimage}
+      alt={frontmatter.bannertitle}
     />
 
     <!-- Gradient Overlay -->
@@ -27,7 +33,7 @@ const { frontmatter } = Astro.props;
 
     <!-- Date Section -->
     <div
-      class="flex absolute inset-x-0 bottom-2 justify-center items-center text-white md:bottom-[12%]"
+      class="flex absolute inset-x-0 top-[76vh] justify-center items-center text-white md:bottom-[12%]"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -51,7 +57,7 @@ const { frontmatter } = Astro.props;
         <path d="M16 18h.01"></path>
       </svg>
       <p class="mx-2 text-xs font-medium sm:text-sm md:text-base lg:text-lg">
-        {frontmatter.creationdate}
+        {formattedDate || frontmatter.creationDate}
       </p>
     </div>
   </div>

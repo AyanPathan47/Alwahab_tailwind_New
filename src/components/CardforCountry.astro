@@ -27,15 +27,19 @@ const {CountryCardDetails} = Astro.props;
   <div class="flex justify-center">
     <div class="grid grid-cols-1 gap-10 md:grid-cols-3 w-full px-4 md:px-16">
       {responseData.map((item) => (
-        <div class="bg-white rounded-3xl shadow-grey w-full md:w-[350px] mx-auto overflow-hidden relative" style="box-shadow: 0px 0px 10px 2px rgba(90, 89, 89, 0.521);">
+        <div
+          class="bg-white rounded-3xl shadow-grey w-full md:w-[350px] mx-auto overflow-hidden relative"
+          style="box-shadow: 0px 0px 8px 3px rgba(90, 89, 89, 0.521);"
+        >
           <!-- Card Image -->
           <a class="flex justify-center" href={item.donation_url}>
             <img
               class="rounded-3xl w-full object-cover h-80"
               src={item.image}
-              alt="Card image"
+              alt={`Image for ${item.program_name}`}
             />
           </a>
+
           <!-- Button Overlay -->
           <div class="relative flex items-center justify-center">
             <a href={item.donation_url}>
@@ -55,7 +59,9 @@ const {CountryCardDetails} = Astro.props;
                   class="lucide lucide-earth mr-2"
                 >
                   <path d="M21.54 15H17a2 2 0 0 0-2 2v4.54" />
-                  <path d="M7 3.34V5a3 3 0 0 0 3 3a2 2 0 0 1 2 2c0 1.1.9 2 2 2a2 2 0 0 0 2-2c0-1.1.9-2 2-2h3.17" />
+                  <path
+                    d="M7 3.34V5a3 3 0 0 0 3 3a2 2 0 0 1 2 2c0 1.1.9 2 2 2a2 2 0 0 0 2-2c0-1.1.9-2 2-2h3.17"
+                  />
                   <path d="M11 21.95V18a2 2 0 0 0-2-2a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05" />
                   <circle cx="12" cy="12" r="10" />
                 </svg>
@@ -63,18 +69,24 @@ const {CountryCardDetails} = Astro.props;
               </button>
             </a>
           </div>
+
           <!-- Card Content -->
           <div class="py-5">
             <a class="flex justify-center" href="#">
-              <h5 class="text-xl font-semibold tracking-tight text-black text-center ">
+              <h5
+                class="text-xl font-semibold tracking-tight text-black text-center"
+              >
                 {item.program_name}
               </h5>
             </a>
-            <p class="my-2 text-sm text-black flex items-center justify-center font-semibold sm:text-base md:text-xl">
+            <p
+              class="my-2 text-sm text-black flex items-center justify-center font-semibold sm:text-base md:text-xl"
+            >
               <span class="text-2xl px-2">£</span>
               {item.program_rate || "Any amount"}
             </p>
           </div>
+
           <!-- Donate Now Button -->
           <div class="flex justify-center my-2 mb-10">
             <a
@@ -89,5 +101,3 @@ const {CountryCardDetails} = Astro.props;
     </div>
   </div>
 </div>
-
-

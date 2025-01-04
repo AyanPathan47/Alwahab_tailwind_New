@@ -1,15 +1,20 @@
 ---
 import Layout from "../layouts/Layout.astro";
 const { frontmatter} = Astro.props;
+const creationDate = new Date(Astro.props.frontmatter.creationdate);
+const formattedDate = creationDate.toLocaleDateString("en-US", {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+});
 ---
 
 <Layout>
   <div class="relative w-full">
     <img
       class="w-full h-auto"
-      src="/assets/images/website-banner-EYE.jpg"
-      alt=""
-      srcset=""
+      src={frontmatter.bannerimage}
+      alt={frontmatter.bannertitle}
     />
     <div
       class="absolute inset-0 bg-gradient-to-t from-maroon via-transparent to-[#94434A00] opacity-80"
@@ -20,7 +25,7 @@ const { frontmatter} = Astro.props;
     >
       {frontmatter.bannertitle}
     </p>
-    <div class="flex absolute inset-0 top-[500px] justify-center">
+    <div class="flex absolute inset-0 top-[76vh] justify-center">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         class="stroke-customBeige"
@@ -46,7 +51,7 @@ const { frontmatter} = Astro.props;
         <path d="M16 18h.01"></path>
       </svg>
       <p class="mx-1 text-[#ffff] font-medium text-base md:text-lg">
-        {frontmatter.creationdate}
+        {formattedDate || frontmatter.creationDate}
       </p>
     </div>
   </div>

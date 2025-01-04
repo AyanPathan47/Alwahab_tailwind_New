@@ -4,6 +4,7 @@ import UmmahCharity from "../components/Ummah_Charity.astro";
 import SeeOtherProjectCard from "../components/SeeOtherProjectCard.astro";
 import OngoingAppeals from "../components/OngoingAppeals.astro";
 import SupportBanner from "../components/SupportBanner.astro";
+import Newsletter from "../components/Newsletter.astro";
 import { Debug } from "astro:components";
 
 const goingAppeals = [
@@ -577,7 +578,7 @@ const SupportBannerData = [
 			<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 				<!-- Card 1 -->
 				<div
-					class="w-full md:w-[350px] bg-white rounded-3xl shadow-lg shadow-grey overflow-hidden relative"
+					class="w-full md:w-[350px] bg-white rounded-3xl  shadow-grey overflow-hidden relative" style="box-shadow: 0px 0px 8px 3px rgba(90, 89, 89, 0.521);"
 				>
 					<a href="#">
 						<img
@@ -655,7 +656,7 @@ const SupportBannerData = [
 
 				<!-- Card 2 -->
 				<div
-					class="w-full md:w-[350px] bg-white rounded-3xl shadow-lg shadow-grey overflow-hidden relative"
+					class="w-full md:w-[350px] bg-white rounded-3xl shadow-grey overflow-hidden relative" style="box-shadow: 0px 0px 8px 3px rgba(90, 89, 89, 0.521);
 				>
 					<a href="#">
 						<img
@@ -732,7 +733,7 @@ const SupportBannerData = [
 				</div>
 				<!-- Card 3 -->
 				<div
-					class="w-full md:w-[350px] bg-white rounded-3xl shadow-lg shadow-grey overflow-hidden relative"
+					class="w-full md:w-[350px] bg-white rounded-3xl shadow-grey overflow-hidden relative " style="box-shadow: 0px 0px 8px 3px rgba(90, 89, 89, 0.521);
 				>
 					<a class="flex justify-center" href="#">
 						<img
@@ -810,7 +811,7 @@ const SupportBannerData = [
 
 				<!-- Repeat Cards for Row 2 -->
 				<div
-					class="w-full md:w-[350px] bg-white rounded-3xl shadow-lg shadow-grey overflow-hidden relative"
+					class="w-full md:w-[350px] bg-white rounded-3xl shadow-grey overflow-hidden relative" style="box-shadow: 0px 0px 8px 3px rgba(90, 89, 89, 0.521);
 				>
 					<a class="flex justify-center" href="#">
 						<img
@@ -865,7 +866,7 @@ const SupportBannerData = [
 				</div>
 
 				<div
-					class="w-full md:w-[350px] bg-white rounded-3xl shadow-lg shadow-grey overflow-hidden relative"
+					class="w-full md:w-[350px] bg-white rounded-3xl shadow-grey overflow-hidden relative" style="box-shadow: 0px 0px 8px 3px rgba(90, 89, 89, 0.521);
 				>
 					<a class="flex justify-center" href="#">
 						<img
@@ -942,7 +943,7 @@ const SupportBannerData = [
 				</div>
 
 				<div
-					class="w-full md:w-[350px] bg-white rounded-3xl shadow-lg shadow-grey overflow-hidden relative"
+					class="w-full md:w-[350px] bg-white rounded-3xl shadow-grey overflow-hidden relative" style="box-shadow: 0px 0px 8px 3px rgba(90, 89, 89, 0.521);
 				>
 					<a class="" href="#">
 						<img
@@ -1085,14 +1086,11 @@ const SupportBannerData = [
 			class="row flex flex-col lg:flex-row bg-maroon relative text-white items-center"
 		>
 			<!-- Text Content -->
-			<div class="lg:w-1/2 w-full text-center lg:text-left px-6">
-				<p>
-					<span class="text-lg lg:text-xl font-semibold block mb-4"
-						>AWF ANNUAL REPORT 2022-23</span
-					>
-					Please review our <span class="font-semibold"
-						>2022-23 report</span
-					> to see the remarkable projects made possible by your generous
+			<div class="lg:w-1/2 w-full text-center lg:text-left px-14">
+				<p class="text-lg lg:text-3xl font-bold block  mb-7">AWF ANNUAL REPORT 2022-23</p>
+				  <p class="">
+					Please review our <span class="font-semibold">2022-23 report</span> 
+					to see the remarkable projects made possible by your generous
 					support. With your help, we look forward to continuing to build
 					for the future and empower people worldwide!
 				</p>
@@ -1402,40 +1400,7 @@ const SupportBannerData = [
 				couldn’t do it without our dedicated volunteers.
 			</p>
 
-			<!-- Form Section -->
-			<div class="flex justify-center mt-9">
-				<div
-					class="bg-maroon px-10 py-8 mb-12 rounded-xl w-full max-w-2xl"
-				>
-					<p class="text-center text-white text-2xl font-semibold">
-						Sign up to our Newsletter
-					</p>
-
-					<form action="#" method="post" class="mt-6">
-						<!-- Form Group -->
-						<div class="flex flex-col">
-							<label
-								for="email"
-								class="block text-white text-sm font-medium mb-2"
-								>Email Address
-								<span class="text-[#e04562] text-lg">*</span>
-							</label>
-							<input
-								id="email"
-								name="email"
-								type="email"
-								placeholder="Type your email address here"
-								class="w-full px-4 py-1 border bg-[#ededed] rounded-xl border-maroon shadow-sm placeholder:text-maroon text-maroon focus:ring focus:ring-customBeige focus:border-customBeige"
-							/>
-							<a
-								href=""
-								class="mt-5 rounded-md w-36 py-2 text-maroon hover:text-white hover:bg-customBeige font-semibold text-center bg-white"
-								>Send Message</a
-							>
-						</div>
-					</form>
-				</div>
-			</div>
+			<Newsletter/>
 		</div>
 	</div>
 </Layout>
