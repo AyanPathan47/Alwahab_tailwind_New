@@ -1,9 +1,6 @@
 ---
 // Import the fetchPrograms function
 import { fetchPrograms } from "./api.js";
-
-
-
 type Program = {
   program_id: number;
   program_name: string;
@@ -22,8 +19,6 @@ type Program = {
   direct_debit_url: string;
   programId: number;
 };
-
-
 
 // Use fetchPrograms to get data
 const data = await fetchPrograms();
@@ -46,8 +41,7 @@ var { programId } = Astro.props
         )
         .slice(0, 8)
         .map((program) => (
-          <div
-            
+          <div 
             class="max-w-xs bg-gray-50 text-gray-800 shadow-lg border-2"
                    >
             <img
