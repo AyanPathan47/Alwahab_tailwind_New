@@ -38,15 +38,14 @@ export default defineConfig({
             label: "Layout",
             type: "string",
             required: true,
-            
             options:  ["../../layouts/Right_Blog_Layout.astro", "../../layouts/Left_Blog_Layout.astro", "../../layouts/Center_Blog_Layout.astro"],
           },
           {
-            type: "string",
             name: "title",
             label: "Title",
-            isTitle: true,
+            type: "string",
             required: true,
+            isTitle: true,
           },
           {
             name: "creationdate",
@@ -58,6 +57,12 @@ export default defineConfig({
             name: "bannertitle",
             label: "Banner Title",
             type: "string",
+            required: true,
+          },
+          {
+            name: "bannerimage",
+            label: "Banner Image",
+            type: "image",
             required: true,
           },
           {
@@ -115,9 +120,9 @@ export default defineConfig({
             required: true,
           },
           {
-            type: "rich-text",
             name: "body",
             label: "Body",
+            type: "rich-text",
             isBody: true,
           },
         ],
