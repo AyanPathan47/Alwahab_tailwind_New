@@ -7,12 +7,10 @@ export const fetchPrograms = async () => {
   const response = await fetch(`${icharmsUrl}/all-program-list`, {
     headers: {
       Authorization: `Bearer ${apiKey}`,
-     
+
     },
   });
-  
+
   const data = await response.json();
-  console.log(data);
-  
   return data; // Assuming the response is an array of programs
 };
