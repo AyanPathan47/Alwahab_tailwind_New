@@ -3,6 +3,7 @@ export interface Props{
     ReStroingLives:{
         title : string,
         description : string,
+        description1 : string,
         src: string,
         buttonTitle: string,
 
@@ -11,11 +12,11 @@ export interface Props{
 const {ReStroingLives} = Astro.props
 ---
 {ReStroingLives.map((ReStroingLive) => (
-  <div class="relative w-full h-full mt-5">
-    <div class="absolute inset-0 bg-[#e5d4c7] opacity-35"></div>
+  <div class="relative w-full md:h-full   mt-5">
+    <div class="absolute inset-0 bg-[#e5d4c7] md:h-full opacity-40"></div>
     <!-- Background Container -->
     <div 
-      class="relative z-20 bg-cover bg-fixed bg-center w-full h-full min-h-screen flex flex-col md:flex-row items-center justify-center px-4"
+      class="relative z-20 bg-cover bg-fixed bg-center w-full md:h-full h-[1020px]   flex flex-col md:flex-row items-center justify-center px-4"
       style="background-image: url('/assets/images/appeals/uganda-appeal/restoreBanner.png');"
     >
       <div class="relative flex flex-col md:flex-row items-center justify-between w-full max-w-screen-xl">
@@ -51,10 +52,11 @@ const {ReStroingLives} = Astro.props
             {ReStroingLive.title}
           </h2>
   
-          <!-- Paragraph -->
-          <p class="text-sm md:text-lg leading-relaxed font-bold text-[#333132]">
-            {ReStroingLive.description}
-          </p>
+        <!-- Paragraph -->
+        <p class="text-sm md:text-lg leading-relaxed font-bold text-[#333132]">
+          {ReStroingLive.description}<br/><br/>
+          {ReStroingLive.description1}
+        </p>
   
           <!-- Button -->
           <div>
