@@ -3,7 +3,7 @@ import Layout from "../../layouts/Layout.astro";
 import HeadersBanner from "../../components/HeadersBanner.astro";
 import UmmahCharity from "../../components/Ummah_Charity.astro";
 import LatestBlogcard from "../../components/LatestBlogcard.astro";
-import Newsletter from "../../components/Newsletter.astro";
+import NewsLetter from "../../components/NewsLetter.astro";
 
 const posts = import.meta.glob('/src/pages/blogs/*.md', { eager: true });
 const LatestBlog = Object.entries(posts).map(([filePath, module]) => ({
@@ -171,5 +171,5 @@ const BannerData = [
         )).reverse()}
       </div>
     
-        <Newsletter />
+        <NewsLetter />
 </Layout>
