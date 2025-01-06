@@ -22,12 +22,12 @@ const {SeeOtherProjects} = Astro.props
     >
       {SeeOtherProjects.map((SeeOtherProject) => (
         <div
-          class="relative bg-white rounded-lg shadow-grey shadow-lg scroll-smooth h-[660px] w-80 flex-shrink-0 overflow-hidden"
+          class="relative bg-white rounded-3xl shadow-grey  scroll-smooth h-[660px] w-80 flex-shrink-0 overflow-hidden"  style="box-shadow: 0px 0px 8px 2px rgba(90, 89, 89, 0.521);"
         >
           <!-- Card Image -->
           <a class="flex justify-center" href="#">
             <img
-              class="rounded-t-lg w-full object-cover h-64"
+              class="rounded-3xl w-80 object-cover h-52"
               src={SeeOtherProject.src}
               alt={SeeOtherProject.title}
             />
@@ -39,7 +39,7 @@ const {SeeOtherProjects} = Astro.props
                {SeeOtherProject.title}
              </h5>
             </a>
-            <p class="py-4 text-black text-center font-medium text-base md:text-lg">
+            <p class="py-2 text-black text-center font-medium text-base md:text-lg">
               {SeeOtherProject.description}
             </p>
             <div class="absolute bottom-8 translate-x-20 flex items-center justify-center">
